@@ -824,22 +824,22 @@
     <div class="factory-slider">
       <div class="factory-slides">
         <div class="factory-slide active">
-          <img src="https://sc02.alicdn.com/kf/A52e55d7e691b42fb90e98929981b181bG.png" alt="Raw Materials">
+          <img src="https://sc01.alicdn.com/kf/A8f89969b36f34b079423a09cc4f29010i.jpg" alt="Raw Materials Warehouse">
           <div class="slide-caption">
             <span class="slide-num">01</span>
             <div>
-              <h4>Premium Raw Materials</h4>
-              <p>FSC-certified kraft & coated art paper, sourced from sustainable mills</p>
+              <h4>Material Stock & Readiness</h4>
+              <p>FSC-certified paper and raw materials stocked for immediate production</p>
             </div>
           </div>
         </div>
         <div class="factory-slide">
-          <img src="https://sc02.alicdn.com/kf/A56f4e8428700471883c285b428aa5a80b.png" alt="Printing">
+          <img src="https://sc01.alicdn.com/kf/A7daee3055877469ba22de290991a9bc6A.jpg" alt="Printing and Processing machinery">
           <div class="slide-caption">
             <span class="slide-num">02</span>
             <div>
-              <h4>Precision Printing</h4>
-              <p>Offset printing with gold foil stamping, UV coating & full-color CMYK</p>
+              <h4>Advanced Production Lines</h4>
+              <p>High-speed automated processing ensuring precision and consistent quality</p>
             </div>
           </div>
         </div>
@@ -1037,6 +1037,32 @@
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+</script>
+
+<script>
+  // Factory Slider
+  let factoryCurrent = 0;
+  const factoryTotal = 4;
+  function factoryUpdate() {
+    document.querySelectorAll('.factory-slide').forEach((s,i) => s.classList.toggle('active', i===factoryCurrent));
+    document.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i===factoryCurrent));
+  }
+  function factorySlide(dir) {
+    factoryCurrent = (factoryCurrent + dir + factoryTotal) % factoryTotal;
+    factoryUpdate();
+  }
+  function factoryGoTo(i) {
+    factoryCurrent = i;
+    factoryUpdate();
+  }
+  // Auto-play every 4s
+  setInterval(() => factorySlide(1), 4000);
+</script>
+
+</body>
+</html>
+.classList.toggle('scrolled', window.scrollY > 60);
   });
 </script>
 
