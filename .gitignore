@@ -1,6 +1,14 @@
 # wrangler files
-.wrangler
+.wrangler/
 .dev.vars*
 !.dev.vars.example
 .env*
 !.env.example
+
+.accio/
+node_modules/
+public.zip
+*.log
+.DS_Store
+dist/
+build/

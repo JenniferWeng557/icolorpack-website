@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iColorPack — Premium Gift Bags & Gift Boxes | Custom Packaging Manufacturer</title>
+  <meta name="description" content="Custom paper gift bags and gift boxes. Factory direct from China. MOQ 3,000 units. FSC certified. Serving US distributors & brands.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8D5A0;
+      --dark: #0D0D0D;
+      --dark2: #1A1A1A;
+      --dark3: #252525;
+      --white: #FFFFFF;
+      --off-white: #F7F4EF;
+      --text-muted: #999;
+      --accent: #C9A84C;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--white); overflow-x: hidden; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 24px 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, transparent 100%);
+      backdrop-filter: blur(2px);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 700; letter-spacing: 3px;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: var(--gold); }
+    nav ul { list-style: none; display: flex; gap: 36px; }
+    nav ul a {
+      color: rgba(255,255,255,0.8); text-decoration: none;
+      font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    nav ul a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold); color: var(--dark) !important;
+      padding: 10px 24px; font-weight: 600 !important;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative; height: 100vh; min-height: 700px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.08) 0%, transparent 50%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0d0d0d 100%);
+    }
+    /* Animated floating orbs */
+    .orb {
+      position: absolute; border-radius: 50%;
+      filter: blur(80px); opacity: 0.3;
+      animation: float 8s ease-in-out infinite;
+    }
+    .orb1 { width: 500px; height: 500px; background: rgba(201,168,76,0.4); top: -100px; right: -100px; animation-delay: 0s; }
+    .orb2 { width: 300px; height: 300px; background: rgba(201,168,76,0.2); bottom: 50px; left: -50px; animation-delay: 3s; }
+    .orb3 { width: 200px; height: 200px; background: rgba(255,200,100,0.3); top: 40%; left: 35%; animation-delay: 5s; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-30px) scale(1.05); }
+    }
+
+    /* Grid lines decoration */
+    .grid-lines {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center; padding: 0 20px;
+      max-width: 900px;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 10px;
+      border: 1px solid rgba(201,168,76,0.4);
+      padding: 8px 20px; border-radius: 100px;
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 32px;
+    }
+    .hero-tag::before {
+      content: ''; width: 6px; height: 6px; background: var(--gold);
+      border-radius: 50%; animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 300; line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+    }
+    .hero h1 em {
+      font-style: italic; color: var(--gold);
+    }
+    .hero p {
+      font-size: 17px; line-height: 1.7;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px; margin: 0 auto 48px;
+      font-weight: 300;
+    }
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold); color: var(--dark);
+      padding: 16px 40px; font-size: 13px; font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.3s; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.3); }
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.3); color: var(--white);
+      padding: 16px 40px; font-size: 13px; font-weight: 400;
+      letter-spacing: 2px; text-transform: uppercase;
+      text-decoration: none; transition: all 0.3s; display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Stats bar */
+    .stats-bar {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 28px 60px;
+      display: flex; justify-content: center; gap: 80px;
+    }
+    .stat { text-align: center; }
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px; font-weight: 600; color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label { font-size: 11px; letter-spacing: 2px; color: var(--text-muted); text-transform: uppercase; margin-top: 6px; }
+
+    /* ─── SECTION COMMON ─── */
+    section { padding: 120px 60px; }
+    .section-tag {
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 16px; display: block;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 300; line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .section-sub {
+      font-size: 16px; color: rgba(255,255,255,0.55);
+      line-height: 1.7; max-width: 500px;
+    }
+    .divider {
+      width: 60px; height: 1px; background: var(--gold);
+      margin: 24px 0;
+    }
+
+    /* ─── PRODUCTS ─── */
+    .products { background: var(--dark2); }
+    .products-header { text-align: center; margin-bottom: 72px; }
+    .products-header .section-sub { margin: 0 auto; }
+    .products-header .divider { margin: 24px auto; }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px; max-width: 1200px; margin: 0 auto;
+    }
+    .product-card {
+      position: relative; overflow: hidden;
+      aspect-ratio: 3/4; cursor: pointer;
+      background: var(--dark3);
+    }
+    .product-card:first-child { grid-row: span 2; aspect-ratio: auto; }
+    .product-visual {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      transition: transform 0.6s ease;
+    }
+    .product-card:hover .product-visual { transform: scale(1.05); }
+
+    /* Product visual backgrounds */
+    .pv1 { background: linear-gradient(145deg, #1C1008 0%, #3D2B0E 50%, #1C1008 100%); }
+    .pv2 { background: linear-gradient(145deg, #0A0E1A 0%, #1A2540 50%, #0A0E1A 100%); }
+    .pv3 { background: linear-gradient(145deg, #1A0A0E 0%, #3D1520 50%, #1A0A0E 100%); }
+    .pv4 { background: linear-gradient(145deg, #0D1210 0%, #1A2820 50%, #0D1210 100%); }
+    .pv5 { background: linear-gradient(145deg, #1A1A0A 0%, #2D2D10 50%, #1A1A0A 100%); }
+
+    /* 3D bag/box illustrations using CSS */
+    .bag-icon {
+      width: 120px; height: 150px;
+      position: relative;
+    }
+    .bag-body {
+      width: 100%; height: 130px;
+      border-radius: 4px 4px 8px 8px;
+      position: absolute; bottom: 0;
+    }
+    .bag-handle {
+      position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 60px; height: 30px;
+      border: 3px solid; border-bottom: none;
+      border-radius: 20px 20px 0 0;
+    }
+    .bag-fold {
+      position: absolute; top: 0; left: 0; right: 0; height: 20px;
+      opacity: 0.6;
+    }
+
+    .product-card .pv1 .bag-body { background: linear-gradient(135deg, #C9A84C, #8B6914); }
+    .product-card .pv1 .bag-handle { border-color: #8B6914; }
+    .product-card .pv2 .bag-body { background: linear-gradient(135deg, #1a3a5c, #0d1f33); border: 2px solid #C9A84C; }
+    .product-card .pv2 .bag-handle { border-color: #C9A84C; }
+    .product-card .pv3 .bag-body { background: linear-gradient(135deg, #8B1A2A, #5a0d18); }
+    .product-card .pv3 .bag-handle { border-color: #E8D5A0; }
+    .product-card .pv4 .bag-body { background: linear-gradient(135deg, #1a3a2a, #0d2018); }
+    .product-card .pv4 .bag-handle { border-color: #C9A84C; }
+
+    /* Box CSS illustration */
+    .box-icon {
+      width: 130px; height: 110px; position: relative;
+    }
+    .box-main {
+      width: 100%; height: 80px;
+      position: absolute; bottom: 0;
+      border-radius: 4px;
+    }
+    .box-lid {
+      width: 108%; height: 28px;
+      position: absolute; bottom: 75px; left: -4%;
+      border-radius: 4px 4px 0 0;
+    }
+    .box-ribbon-h {
+      position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 12px; background: rgba(201,168,76,0.6);
+    }
+    .box-ribbon-v {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      left: 0; right: 0; height: 12px;
+      background: rgba(201,168,76,0.6);
+    }
+    .product-card .pv5 .box-main { background: linear-gradient(135deg, #2d2d10, #1a1a08); border: 2px solid #C9A84C; }
+    .product-card .pv5 .box-lid { background: linear-gradient(135deg, #3d3d15, #2d2d10); border: 2px solid #C9A84C; }
+
+    .product-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, transparent 50%);
+      padding: 32px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    .product-tag {
+      font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 8px;
+    }
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px; font-weight: 400; margin-bottom: 8px;
+    }
+    .product-desc { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+
+    /* ─── WHY US ─── */
+    .why { background: var(--dark); }
+    .why-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center;
+    }
+    .why-left { }
+    .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; }
+    .feature {
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,0.07);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .feature:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .feature-icon {
+      width: 44px; height: 44px; margin-bottom: 16px;
+      background: rgba(201,168,76,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    .feature h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+    .feature p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+    /* Visual right side */
+    .why-right {
+      position: relative; height: 600px;
+    }
+    .why-card {
+      position: absolute;
+      background: var(--dark3);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 32px;
+    }
+    .why-card-main {
+      width: 340px; height: 420px; right: 0; top: 0;
+      background: linear-gradient(135deg, #1a1408 0%, #2d2010 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    .why-card-sub {
+      width: 220px; bottom: 0; left: 0;
+      background: var(--dark2);
+    }
+    .big-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 80px; color: var(--gold); line-height: 1;
+      font-weight: 700; opacity: 0.9;
+    }
+    .big-label { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 8px; }
+    .cert-badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .cert-badge {
+      border: 1px solid rgba(201,168,76,0.4); color: var(--gold);
+      padding: 6px 14px; font-size: 11px; letter-spacing: 1px;
+    }
+
+    /* ─── PROCESS ─── */
+    .process {
+      background: linear-gradient(135deg, #0D0D0D 0%, #1A1408 50%, #0D0D0D 100%);
+    }
+    .process-inner { max-width: 1100px; margin: 0 auto; }
+    .process-header { text-align: center; margin-bottom: 72px; }
+    .process-header .divider { margin: 24px auto; }
+    .steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute; top: 32px; left: 12%; right: 12%;
+      height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .step { text-align: center; padding: 0 20px; position: relative; }
+    .step-num {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--gold); color: var(--dark);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 28px;
+      position: relative; z-index: 1;
+    }
+    .step h4 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+    .step p { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+    /* ─── CONTACT / INQUIRY ─── */
+    .contact {
+      background: var(--dark2);
+    }
+    .contact-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start;
+    }
+    .contact-info { }
+    .contact-detail {
+      display: flex; gap: 16px; margin-top: 32px;
+      padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .contact-detail-icon {
+      width: 40px; height: 40px; background: rgba(201,168,76,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+    .contact-detail-text strong { display: block; font-size: 13px; color: var(--gold); margin-bottom: 4px; letter-spacing: 1px; text-transform: uppercase; }
+    .contact-detail-text span { font-size: 14px; color: rgba(255,255,255,0.7); }
+
+    /* Form */
+    .inquiry-form { }
+    .form-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px; margin-bottom: 32px; font-weight: 400;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block; font-size: 11px; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      padding: 14px 18px;
+      font-size: 14px; font-family: 'Inter', sans-serif;
+      outline: none; transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select { appearance: none; cursor: pointer; }
+    .form-group select option { background: var(--dark2); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit {
+      width: 100%;
+      background: var(--gold); color: var(--dark);
+      border: none; padding: 18px;
+      font-size: 13px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase;
+      cursor: pointer; transition: all 0.3s; margin-top: 8px;
+    }
+    .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.25); }
+    .form-note { font-size: 12px; color: var(--text-muted); margin-top: 12px; text-align: center; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #080808;
+      padding: 60px 60px 40px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 700; letter-spacing: 3px;
+      color: var(--white); margin-bottom: 16px; display: block;
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline { font-size: 13px; color: var(--text-muted); line-height: 1.7; max-width: 260px; }
+    .footer-col h5 {
+      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 20px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul a {
+      color: rgba(255,255,255,0.5); text-decoration: none;
+      font-size: 13px; transition: color 0.3s;
+    }
+    .footer-col ul a:hover { color: var(--white); }
+    .footer-bottom {
+      max-width: 1200px; margin: 32px auto 0;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-copy { font-size: 12px; color: var(--text-muted); }
+    .footer-certs { display: flex; gap: 12px; }
+    .footer-cert {
+      border: 1px solid rgba(201,168,76,0.3); color: var(--gold);
+      padding: 4px 12px; font-size: 10px; letter-spacing: 1px;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { padding: 20px 24px; }
+      nav ul { display: none; }
+      section { padding: 80px 24px; }
+      .stats-bar { gap: 32px; padding: 24px; flex-wrap: wrap; }
+      .products-grid { grid-template-columns: 1fr 1fr; }
+      .product-card:first-child { grid-row: auto; }
+      .why-inner { grid-template-columns: 1fr; gap: 60px; }
+      .why-right { height: 300px; }
+      .steps { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .steps::before { display: none; }
+      .contact-inner { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">i<span>Color</span>Pack</a>
+  <ul>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Factory Direct · China Manufacturer · Est. 2008</div>
+    <h1>
+      Packaging That<br>
+      <em>Elevates</em> Your Brand
+    </h1>
+    <p>Custom paper gift bags and gift boxes crafted for US distributors. From concept to container — factory direct, FSC certified, MOQ from 3,000 units.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Request Free Samples</a>
+      <a href="#products" class="btn-outline">View Products</a>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">500+</div>
+      <div class="stat-label">US Clients Served</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">3,000</div>
+      <div class="stat-label">Min. Order Units</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">25</div>
+      <div class="stat-label">Days Lead Time</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="products-header">
+    <span class="section-tag">Our Products</span>
+    <h2 class="section-title">Crafted for Every Occasion</h2>
+    <div class="divider"></div>
+    <p class="section-sub">From luxury boutique shopping bags to rigid gift boxes — fully custom in size, print, material, and finish.</p>
+  </div>
+
+  <div class="products-grid">
+    <!-- Card 1: Large featured -->
+    <div class="product-card">
+      <div class="product-visual pv1">
+        <div class="bag-icon">
+          <div class="bag-handle" style="border-color:#8B6914"></div>
+          <div class="bag-body" style="background:linear-gradient(135deg,#C9A84C,#8B6914)">
+            <div style="position:absolute;top:30%;left:50%;transform:translateX(-50%);width:60%;height:2px;background:rgba(255,255,255,0.3)"></div>
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:22px;color:rgba(255,255,255,0.5);font-family:'Cormorant Garamond',serif;letter-spacing:2px">iCP</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-overlay">
+        <div class="product-tag">Bestseller</div>
+        <div class="product-name">Luxury Boutique Gift Bags</div>
+        <div class="product-desc">Twisted cotton handles · Matte/gloss lamination · Foil stamping available · Custom size & print</div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+      <div class="product-visual pv2">
+        <div class="box-icon" style="width:150px;height:120px">
+          <div class="box-main" style="background:linear-gradient(135deg,#1a3a5c,#0d1f33);border:2px solid #C9A84C">
+            <div class="box-ribbon-h" style="background:rgba(201,168,76,0.5)"></div>
+            <div class="box-ribbon-v" style="background:rgba(201,168,76,0.5)"></div>
+          </div>
+          <div class="box-lid" style="background:linear-gradient(135deg,#1f4570,#152d4a);border:2px solid #C9A84C"></div>
+        </div>
+      </div>
+      <div class="product-overlay">
+        <div class="product-tag">Premium</div>
+        <div class="product-name">Rigid Magnetic Gift Boxes</div>
+        <div class="product-desc">Magnetic closure · Spot UV · Rigid board · Perfect for jewelry, cosmetics & corporate gifts</div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+      <div class="product-visual pv3">
+        <div class="bag-icon">
+          <div class="bag-handle" style="border-color:#E8D5A0"></div>
+          <div class="bag-body" style="background:linear-gradient(135deg,#8B1A2A,#5a0d18)">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70%;height:70%;border:1px solid rgba(232,213,160,0.3)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-overlay">
+        <div class="product-tag">Custom Print</div>
+        <div class="product-name">Euro Tote Paper Bags</div>
+        <div class="product-desc">Full-color offset print · Reinforced bottom · Retail-grade quality · 50K+ unit runs</div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="product-card">
+      <div class="product-visual pv4">
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+          <!-- Drawer box -->
+          <div style="width:120px;height:60px;background:linear-gradient(135deg,#1a3a2a,#0d2018);border:2px solid rgba(201,168,76,0.5);position:relative">
+            <div style="position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:16px;height:30px;background:rgba(201,168,76,0.4)"></div>
+          </div>
+          <div style="width:100px;height:60px;background:linear-gradient(135deg,#0d2018,#081410);border:1px solid rgba(255,255,255,0.1)"></div>
+        </div>
+      </div>
+      <div class="product-overlay">
+        <div class="product-tag">Elegant</div>
+        <div class="product-name">Drawer-Style Gift Boxes</div>
+        <div class="product-desc">Sliding drawer design · Ribbon pull · Insert available · Ideal for watches, accessories</div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="product-card">
+      <div class="product-visual pv5">
+        <div class="box-icon">
+          <div class="box-main" style="background:linear-gradient(135deg,#2d2d10,#1a1a08);border:2px solid #C9A84C">
+            <div class="box-ribbon-h"></div>
+            <div class="box-ribbon-v"></div>
+          </div>
+          <div class="box-lid" style="background:linear-gradient(135deg,#3d3d15,#2d2d10);border:2px solid #C9A84C"></div>
+        </div>
+      </div>
+      <div class="product-overlay">
+        <div class="product-tag">Eco-Friendly</div>
+        <div class="product-name">Kraft Paper Gift Sets</div>
+        <div class="product-desc">FSC certified · Compostable options · Soy-based ink · Perfect for eco-conscious brands</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="why-inner">
+    <div class="why-left">
+      <span class="section-tag">Why iColorPack</span>
+      <h2 class="section-title">Factory Direct.<br>Zero Compromise.</h2>
+      <div class="divider"></div>
+      <p class="section-sub">We eliminate middlemen so you get better margins, faster responses, and direct access to our production team.</p>
+
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">🏭</div>
+          <h4>Factory Direct</h4>
+          <p>No agents. No markups. Work directly with our production team in Wenzhou.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎨</div>
+          <h4>Full Custom OEM</h4>
+          <p>Your specs, your colors, your logo. Offset, foil stamp, UV, emboss — all in-house.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌿</div>
+          <h4>FSC Certified</h4>
+          <p>Eco-friendly materials ready for retail compliance. SGS-tested, no harmful substances.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h4>25-Day Lead Time</h4>
+          <p>From order confirmation to US port in 25–35 days. Sea & air freight options.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-right">
+      <div class="why-card why-card-main">
+        <div class="big-number">15+</div>
+        <div class="big-label">Years supplying US distributors & brands</div>
+        <div class="cert-badges">
+          <span class="cert-badge">FSC</span>
+          <span class="cert-badge">BSCI</span>
+          <span class="cert-badge">SGS</span>
+          <span class="cert-badge">ISO 9001</span>
+        </div>
+      </div>
+      <div class="why-card why-card-sub">
+        <div class="big-number" style="font-size:48px">500+</div>
+        <div class="big-label">US clients including major retail distributors</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-inner">
+    <div class="process-header">
+      <span class="section-tag">How It Works</span>
+      <h2 class="section-title">From Inquiry to Delivery</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Send Inquiry</h4>
+        <p>Tell us your product type, size, quantity, and customization needs. We respond within 24 hours.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Free Samples</h4>
+        <p>Receive physical samples at no charge. Review quality, finish, and printing before committing.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Confirm & Produce</h4>
+        <p>Approve the sample, confirm your PO. Production starts within 3 days. QC at every stage.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Ship & Deliver</h4>
+        <p>Sea freight to US ports in 25–35 days. Air freight available. Full tracking provided.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's Build Something<br><em style="font-family:'Cormorant Garamond',serif;color:var(--gold)">Remarkable</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Request a free quote, samples, or just ask a question. Our team replies within 24 hours, Monday–Friday.</p>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <span>jennifer@wzicolor.com</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">💬</div>
+        <div class="contact-detail-text">
+          <strong>WhatsApp</strong>
+          <span>+86 183 5859 2551</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">🌐</div>
+        <div class="contact-detail-text">
+          <strong>Alibaba Store</strong>
+          <span>wzicolor.en.alibaba.com</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div class="contact-detail-text">
+          <strong>Factory</strong>
+          <span>Wenzhou, Zhejiang, China</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="inquiry-form">
+      <div class="form-title">Request a Free Quote</div>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label>Company *</label>
+            <input type="text" placeholder="Your Company" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>WhatsApp / Phone</label>
+            <input type="tel" placeholder="+1 (555) 000-0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Product Interest *</label>
+          <select required>
+            <option value="">Select a product type...</option>
+            <option>Paper Gift Bags (Boutique / Euro Tote)</option>
+            <option>Rigid Gift Boxes (Magnetic Closure)</option>
+            <option>Drawer-Style Gift Boxes</option>
+            <option>Kraft / Eco-Friendly Packaging</option>
+            <option>Custom OEM / Full Product Line</option>
+            <option>Other (please specify below)</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Estimated Quantity</label>
+            <select>
+              <option>3,000 – 10,000 units</option>
+              <option>10,000 – 50,000 units</option>
+              <option>50,000 – 200,000 units</option>
+              <option>200,000+ units</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Timeline</label>
+            <select>
+              <option>ASAP (within 1 month)</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>Just researching</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message / Special Requirements</label>
+          <textarea placeholder="Tell us about your product specs, print requirements, reference images, or any questions..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Inquiry →</button>
+        <p class="form-note">🔒 Your information is kept private. We reply within 24 business hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <span class="footer-logo">i<span>Color</span>Pack</span>
+      <p class="footer-tagline">Premium custom paper gift bags and gift boxes. Factory direct from Wenzhou, China. Serving US distributors since 2008.</p>
+      <div style="margin-top:24px;display:flex;gap:12px">
+        <span class="footer-cert">FSC</span>
+        <span class="footer-cert">BSCI</span>
+        <span class="footer-cert">ISO 9001</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Products</h5>
+      <ul>
+        <li><a href="#products">Boutique Gift Bags</a></li>
+        <li><a href="#products">Rigid Gift Boxes</a></li>
+        <li><a href="#products">Drawer Boxes</a></li>
+        <li><a href="#products">Kraft Eco Bags</a></li>
+        <li><a href="#products">Custom OEM</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#why">About Us</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#why">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:jennifer@wzicolor.com">jennifer@wzicolor.com</a></li>
+        <li><a href="https://wa.me/8618358592551">WhatsApp: +86 183 5859 2551</a></li>
+        <li><a href="https://wzicolor.en.alibaba.com">Alibaba Store</a></li>
+        <li><a href="#">Wenzhou, China</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 iColorPack · Wenzhou iColor Packaging Co. · All rights reserved.</span>
+    <div class="footer-certs">
+      <span class="footer-cert">Privacy Policy</span>
+      <span class="footer-cert">Terms of Use</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

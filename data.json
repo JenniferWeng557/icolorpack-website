@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Nashville Wraps",
+    "suffix": "-- 美国领先零售及礼品包装分销商 [USA]",
+    "url": "https://www.nashvillewraps.com",
+    "cats": "礼品袋、各类礼盒、食品/烘焙包装、可持续环保包装。",
+    "profile": "Nashville Wraps 是美国礼品包装行业的佼佼者，主打 “Green Way” 环保理念。他们为独立零售商、美食店和精品店提供海量现货及定制服务。",
+    "phone": "+1 800-547-9727 (转采购部)",
+    "email": "abauer@nashvillewraps.com (Angela Bauer, 资深采购)",
+    "addr": "2421 Atlan Industrial Dr, Nashville, TN 37207, USA",
+    "contact": "Angela Bauer / Product Development & Purchasing",
+    "moq": "现货 1 箱起，定制视规格 500-1000 件起。",
+    "angle": "对方极其看重环保资质。建议展示 iColorPack 的 FSC 认证和再生纸产品线，强调工厂直供可比其现有国内分销价降低 20%-40%。"
+  },
+  {
+    "id": "2",
+    "name": "Paper Mart",
+    "suffix": "-- 北美最大包装及礼品供应批发商 [USA]",
+    "url": "https://www.papermart.com",
+    "cats": "全品类工业/零售包装、纸袋、瓦楞盒、缎带及礼盒。",
+    "profile": "拥有百年历史的家族企业，全美规模最大的包装材料分销商之一，以海量库存和极速发货闻名。",
+    "phone": "+1 714-787-4900",
+    "email": "hchubbuck@papermart.com (Howard Chubbuck Jr., 采购经理)",
+    "addr": "2164 N. Batavia St., Orange, CA 92865, USA",
+    "contact": "Purchasing Team / Sourcing Dept",
+    "moq": "大宗批发 5000+ 件起。",
+    "angle": "体量巨大，对价格极其敏感。直接报 FOB 直采价格对比，展示 iColorPack 的大规模自动化生产线。"
+  }
+]
