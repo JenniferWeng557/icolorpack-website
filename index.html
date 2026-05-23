@@ -235,10 +235,10 @@
       border: 1px solid rgba(255,255,255,0.03);
     }
     .consultant-avatar {
-      width: 50px; height: 50px; background: var(--gold); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; color: var(--dark-bg); font-size: 20px;
+      width: 50px; height: 50px; border-radius: 50%;
+      overflow: hidden;
     }
+    .consultant-avatar img { width: 100%; height: 100%; object-fit: cover; }
     .consultant-info h4 { font-size: 16px; margin-bottom: 4px; }
     .consultant-info p { font-size: 13px; color: #666; }
     .status-badge { color: #25D366; font-size: 11px; margin-left: auto; display: flex; align-items: center; gap: 5px; }
@@ -284,7 +284,10 @@
 <body>
 
   <nav id="navbar">
-    <a href="#" class="logo">ICOLOR<span>PACK</span></a>
+    <a href="#" class="logo">
+      <img src="https://sc02.alicdn.com/kf/Ac883bba6ae6a4f9dbf52bb335d605e8fj.png" alt="iColorPack Logo" style="height: 45px; width: auto; vertical-align: middle;">
+      <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#products">Collection</a></li>
       <li><a href="#factory">Production</a></li>
@@ -773,8 +776,14 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="#" class="logo">ICOLOR<span>PACK</span></a>
-        <p style="margin-top:25px; color: var(--text-muted); font-size: 14px;">"Package Colors Your Life." Premier B2B manufacturing partner for global luxury brands.</p>
+        <a href="#" class="logo">
+          <img src="https://sc02.alicdn.com/kf/Ac883bba6ae6a4f9dbf52bb335d605e8fj.png" alt="iColorPack Logo" style="height: 40px; width: auto; vertical-align: middle;">
+          <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
+        </a>
+        <p style="color: var(--text-muted); font-size: 14px; margin-top: 20px; line-height: 1.6;">
+          "Package Colors Your Life."<br>
+          Premier B2B manufacturing partner for global luxury brands.
+        </p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -805,7 +814,7 @@
       </div>
     </div>
     <div class="copyright">
-      &copy; 2026 WENZHOU ICOLORPACK CO., LTD. ALL RIGHTS RESERVED.
+      &copy; 2026 iColorPack Co., Ltd. ALL RIGHTS RESERVED.
     </div>
   </footer>
 
@@ -823,9 +832,11 @@
       <span class="close-modal" onclick="closeModal()">&times;</span>
       
       <div class="consultant-card">
-        <div class="consultant-avatar">J</div>
+        <div class="consultant-avatar">
+          <img src="https://sc02.alicdn.com/kf/Ac883bba6ae6a4f9dbf52bb335d605e8fj.png" alt="iColorPack Logo">
+        </div>
         <div class="consultant-info">
-          <h4>Hi, I'm Jennifer — your packaging consultant 👋</h4>
+          <h4>Hi, I'm Jennifer — your iColorPack consultant 👋</h4>
           <p>Fill the form below and I'll personally respond with your free quote.</p>
         </div>
         <div class="status-badge">
