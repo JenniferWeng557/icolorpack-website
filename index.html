@@ -211,6 +211,61 @@
     .floating-quote:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(201,168,76,0.5); }
     .floating-quote svg { width: 18px; height: 18px; fill: var(--dark-bg); }
 
+    /* MODAL FORM */
+    .modal {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9);
+      z-index: 3000; align-items: center; justify-content: center; padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+    .modal.active { display: flex; }
+    .modal-content {
+      background: #0d0d14; width: 100%; max-width: 800px; max-height: 90vh;
+      overflow-y: auto; border: 1px solid rgba(255,255,255,0.05); padding: 40px;
+      position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    }
+    .close-modal {
+      position: absolute; top: 20px; right: 20px; color: #555; font-size: 24px;
+      cursor: pointer; transition: 0.3s;
+    }
+    .close-modal:hover { color: var(--gold); }
+
+    .consultant-card {
+      background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px;
+      display: flex; align-items: center; gap: 20px; margin-bottom: 40px;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    .consultant-avatar {
+      width: 50px; height: 50px; background: var(--gold); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--dark-bg); font-size: 20px;
+    }
+    .consultant-info h4 { font-size: 16px; margin-bottom: 4px; }
+    .consultant-info p { font-size: 13px; color: #666; }
+    .status-badge { color: #25D366; font-size: 11px; margin-left: auto; display: flex; align-items: center; gap: 5px; }
+    .status-dot { width: 8px; height: 8px; background: #25D366; border-radius: 50%; }
+
+    .inquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+    .form-group { display: flex; flex-direction: column; gap: 10px; }
+    .form-group.full { grid-column: span 2; }
+    .form-group label { font-size: 11px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 1.5px; }
+    .form-group input, .form-group select, .form-group textarea {
+      background: #07070a; border: 1px solid rgba(255,255,255,0.05);
+      padding: 12px 15px; color: white; font-size: 14px; outline: none; transition: 0.3s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); background: #0d0d14; }
+    .btn-submit {
+      grid-column: span 2; background: var(--gold); color: var(--dark-bg);
+      border: none; padding: 15px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 2px; cursor: pointer; transition: 0.3s; margin-top: 10px;
+    }
+    .btn-submit:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(201,168,76,0.2); }
+
+    @media (max-width: 600px) {
+      .inquiry-form { grid-template-columns: 1fr; }
+      .form-group.full { grid-column: span 1; }
+      .modal-content { padding: 30px 20px; }
+    }
+
     @media (max-width: 1100px) {
       .reviews-grid, .blog-preview-grid { grid-template-columns: repeat(2, 1fr); }
       .factory-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -235,9 +290,9 @@
       <li><a href="#factory">Production</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="#reviews">Testimonials</a></li>
-      <li><a href="#contact-info-info">Contact</a></li>
+      <li><a href="#contact-info">Contact</a></li>
     </ul>
-    <a href="#contact-info-info" class="btn-quote-nav">Inquiry</a>
+    <a href="#contact-info" class="btn-quote-nav">Inquiry</a>
   </nav>
 
   <section class="hero">
@@ -757,12 +812,154 @@
   <a href="https://wa.me/8618058355198" class="floating-whatsapp" target="_blank" title="Contact with iColorPack">
     <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.982-.363-1.747-.756-2.879-2.506-2.966-2.62-.088-.114-.719-.951-.719-1.81 0-.859.447-1.279.607-1.446.16-.166.357-.209.476-.209s.239.004.341.009c.109.005.252-.041.396.308.144.348.491 1.196.534 1.284.044.088.073.191.014.308-.058.116-.088.188-.174.288-.088.1-.184.223-.263.299-.089.087-.183.182-.079.359.103.178.46 1.761 1.253 2.587.66.685 1.181.933 1.341.983.16.05.253.05.346-.041.093-.091.403-.467.513-.625.109-.158.219-.133.369-.079.15.054.952.449 1.116.531.164.082.274.123.313.189.04.066.04.383-.104.788zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.953-1.303A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
   </a>
-  <a href="#contact-info-info" class="floating-quote">
+  <a href="mailto:Jennifer@wzicolor.com" class="floating-quote">
     <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
     Get Free Quote
   </a>
 
+  <!-- INQUIRY MODAL -->
+  <div id="inquiryModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      
+      <div class="consultant-card">
+        <div class="consultant-avatar">J</div>
+        <div class="consultant-info">
+          <h4>Hi, I'm Jennifer — your packaging consultant 👋</h4>
+          <p>Fill the form below and I'll personally respond with your free quote.</p>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span> Online · Avg. 2h reply
+        </div>
+      </div>
+
+      <form class="inquiry-form" id="quoteForm">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" id="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label>Company Name</label>
+          <input type="text" id="company" placeholder="Your Brand / Company">
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" id="email" placeholder="john@company.com" required>
+        </div>
+        <div class="form-group">
+          <label>WhatsApp / Phone</label>
+          <input type="text" id="phone" placeholder="+1 234 567 8900">
+        </div>
+        <div class="form-group">
+          <label>Product Type *</label>
+          <select id="product" required>
+            <option value="">Select box type...</option>
+            <option value="Luxury Rigid Box">Luxury Rigid Box</option>
+            <option value="Paper Shopping Bag">Paper Shopping Bag</option>
+            <option value="Premium Mailer Box">Premium Mailer Box</option>
+            <option value="Kraft Paper Bag">Kraft Paper Bag</option>
+            <option value="Gourmet Bakery Box">Gourmet Bakery Box</option>
+            <option value="Other">Other Custom Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Estimated Quantity *</label>
+          <select id="quantity" required>
+            <option value="100-300">100 - 300 PCS (Low MOQ)</option>
+            <option value="300-500">300 - 500 PCS</option>
+            <option value="500-1000">500 - 1000 PCS</option>
+            <option value="1000-3000">1000 - 3000 PCS</option>
+            <option value="3000+">3000+ PCS</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Material & Finish</label>
+          <select id="material">
+            <option value="Rigid Paper Board (Luxury)">Rigid Paper Board (Luxury)</option>
+            <option value="Art Paper + Lamination">Art Paper + Lamination</option>
+            <option value="Natural Kraft Paper">Natural Kraft Paper</option>
+            <option value="Corrugated Cardboard">Corrugated Cardboard</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Logo Placement</label>
+          <select id="logo">
+            <option value="Lid Center (Top)">Lid Center (Top)</option>
+            <option value="Lid Corner">Lid Corner</option>
+            <option value="Inside Lid">Inside Lid</option>
+            <option value="Full Surface Print">Full Surface Print</option>
+            <option value="No Logo">No Logo (Plain)</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Internal Dimensions (L x W x H)</label>
+          <input type="text" id="dimensions" placeholder="e.g. 20x15x8 cm">
+        </div>
+        <div class="form-group full">
+          <label>Tell Us More (Optional)</label>
+          <textarea id="message" rows="3" placeholder="Describe your requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+
   <script>
+    function openModal() {
+      document.getElementById('inquiryModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('inquiryModal').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Modal triggers
+    document.querySelectorAll('.btn-quote-nav, .floating-quote, .product-cta').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        if (btn.classList.contains('floating-whatsapp')) return; // Ignore WA
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    // Form submission
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const data = {
+        name: document.getElementById('name').value,
+        company: document.getElementById('company').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        product: document.getElementById('product').value,
+        quantity: document.getElementById('quantity').value,
+        material: document.getElementById('material').value,
+        logo: document.getElementById('logo').value,
+        dims: document.getElementById('dimensions').value,
+        msg: document.getElementById('message').value
+      };
+
+      const mailBody = `Inquiry Details:\n
+- Name: ${data.name}
+- Company: ${data.company}
+- Email: ${data.email}
+- Phone: ${data.phone}
+- Product: ${data.product}
+- Quantity: ${data.quantity}
+- Material: ${data.material}
+- Logo: ${data.logo}
+- Dimensions: ${data.dims}
+- Message: ${data.msg}`;
+
+      window.location.href = `mailto:Jennifer@wzicolor.com?subject=New Packaging Inquiry from ${data.name}&body=${encodeURIComponent(mailBody)}`;
+      
+      setTimeout(() => {
+        alert('Thank you! Your email client has been opened. Please click "Send" to complete your inquiry.');
+        closeModal();
+      }, 500);
+    });
+
     let currentSlide = 0;
     const slides = document.querySelectorAll('.factory-slide');
     const totalSlides = slides.length;
