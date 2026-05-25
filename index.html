@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>iColorPack — Luxury Packaging Factory</title>
+  <title>iColorPack — Custom Gift Boxes & Luxury Packaging Wholesale Factory</title>
   <link rel="icon" type="image/png" href="https://sc02.alicdn.com/kf/Ac883bba6ae6a4f9dbf52bb335d605e8fj.png">
-  <meta name="description" content="Direct from Wenzhou's leading factory. iColorPack provides premium, logo-customized packaging with 100% quality control.">
+  <meta name="description" content="Direct from Wenzhou's leading factory. iColorPack provides custom gift boxes, luxury shopping bags, and premium rigid packaging wholesale. OEM/ODM services for global brands.">
+  <meta name="keywords" content="custom gift boxes, luxury gift packaging, rigid boxes wholesale, magnetic gift boxes, premium cardboard boxes, custom paper bags, luxury shopping bags, boutique gift bags, packaging box manufacturer China, Wenzhou packaging factory">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -97,402 +98,278 @@
     .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1400px; margin: 0 auto; }
     .review-card { background: #0d0d14; border: 1px solid rgba(255,255,255,0.02); padding: 30px; min-height: 280px; display: flex; flex-direction: column; justify-content: space-between; }
     .stars { color: var(--gold); margin-bottom: 15px; font-size: 10px; letter-spacing: 2px; }
-    .reviewer-meta { display: flex; align-items: center; gap: 15px; }
-    .reviewer-img { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--gold); padding: 2px; }
+    .review-text { font-size: 13px; color: #DDD; font-style: italic; line-height: 1.7; margin-bottom: 20px; }
+    .reviewer { display: flex; align-items: center; gap: 15px; }
+    .reviewer-avatar { width: 40px; height: 40px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--dark-bg); font-size: 14px; }
     .reviewer-info h4 { font-size: 12px; color: var(--white); margin-bottom: 2px; }
     .reviewer-info p { font-size: 10px; color: var(--text-muted); }
 
-    /* FAQ */
-    .faq { background: #07070a; padding: 60px 10%; border-top: 1px solid rgba(255,255,255,0.02); }
-    .faq-container { max-width: 900px; margin: 0 auto; }
-    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); padding: 20px 0; }
-    .faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--white); font-size: 16px; font-weight: 500; }
-    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 20px; }
-    .faq-item details[open] summary::after { content: '−'; }
-    .faq-content { padding-top: 15px; color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+    /* LOGO WALL */
+    .logo-wall { padding: 40px 10%; background: #050508; border-top: 1px solid rgba(255,255,255,0.02); }
+    .logo-container { display: flex; justify-content: space-between; align-items: center; opacity: 0.4; filter: grayscale(1); max-width: 1200px; margin: 0 auto; gap: 40px; flex-wrap: wrap; }
+    .logo-container img { height: 30px; }
+
+    /* CTA SECTION */
+    .cta-section { background: url('https://sc02.alicdn.com/kf/A67b2ffeb705e4680877997a9b3d027e1U.png') center/cover; padding: 120px 10%; text-align: center; position: relative; }
+    .cta-section::before { content: ''; position: absolute; inset: 0; background: rgba(10, 10, 15, 0.85); }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-content h2 { font-size: 42px; margin-bottom: 20px; font-weight: 300; }
+    .cta-content p { color: var(--text-muted); margin-bottom: 40px; font-size: 18px; }
 
     /* FOOTER */
-    footer { padding: 80px 10% 40px; background: #050508; border-top: 1px solid rgba(255,255,255,0.03); }
-    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1400px; margin: 0 auto; }
-    .footer-col h4 { color: var(--gold); font-size: 12px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; }
+    footer { padding: 100px 10% 40px; background: #050508; border-top: 1px solid rgba(255,255,255,0.02); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; max-width: 1400px; margin: 0 auto; }
+    .footer-col h4 { color: var(--gold); font-size: 12px; margin-bottom: 30px; letter-spacing: 3px; }
     .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 15px; display: flex; align-items: center; gap: 12px; }
+    .footer-links li { margin-bottom: 15px; }
     .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; transition: 0.3s; }
     .footer-links a:hover { color: var(--gold); }
-    .footer-icon { color: var(--gold); font-size: 16px; width: 20px; text-align: center; }
-    .copyright { text-align: center; margin-top: 60px; font-size: 11px; color: #444; border-top: 1px solid rgba(255,255,255,0.02); padding-top: 30px; }
+    .contact-info { color: var(--text-muted); font-size: 13px; line-height: 2; }
+    .footer-bottom { margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.02); display: flex; justify-content: space-between; font-size: 11px; color: #444; letter-spacing: 1px; }
 
     /* MODAL */
-    .modal {
-      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95);
-      z-index: 3000; align-items: center; justify-content: center; padding: 20px;
-      backdrop-filter: blur(10px);
-    }
-    .modal.active { display: flex; }
-    .modal-content {
-      background: #0d0d14; width: 100%; max-width: 850px; max-height: 90vh;
-      overflow-y: auto; border: 1px solid var(--border); border-radius: 12px; 
-      padding: 0; position: relative;
-    }
-    .modal-inner { padding: 40px 50px; }
-    .close-modal { position: absolute; top: 20px; right: 25px; color: var(--text-muted); font-size: 30px; cursor: pointer; z-index: 10; }
+    .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000; display: none; align-items: center; justify-content: center; opacity: 0; transition: 0.4s; backdrop-filter: blur(10px); }
+    .modal.active { display: flex; opacity: 1; }
+    .modal-content { background: var(--card-bg); width: 100%; max-width: 550px; position: relative; border: 1px solid var(--gold); animation: slideUp 0.5s ease; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    .close-modal { position: absolute; top: -50px; right: 0; color: white; font-size: 30px; cursor: pointer; }
+    .modal-inner { padding: 50px; max-height: 90vh; overflow-y: auto; }
     
-    .consultant-bar { 
-      background: rgba(255,255,255,0.03); padding: 20px 50px; 
-      display: flex; align-items: center; justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-    }
-    .consultant-info-mini { display: flex; align-items: center; gap: 15px; }
-    .consultant-avatar-mini { 
-      width: 50px; height: 50px; border-radius: 50%; 
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      display: flex; align-items: center; justify-content: center; font-weight: 700; color: #000;
-    }
-    .consultant-text h4 { font-size: 14px; color: var(--white); margin-bottom: 2px; }
-    .consultant-text p { font-size: 11px; color: var(--text-muted); }
-    .online-status { display: flex; align-items: center; gap: 8px; font-size: 11px; color: #25D366; }
-    .status-dot { width: 8px; height: 8px; background: #25D366; border-radius: 50%; box-shadow: 0 0 10px #25D366; }
-
-    .inquiry-section-title { 
-      font-size: 12px; color: var(--text-muted); text-transform: uppercase; 
-      letter-spacing: 2px; margin: 30px 0 20px; display: flex; align-items: center; gap: 10px;
-    }
-    .inquiry-section-title span { color: var(--gold); }
-    
-    .luxo-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .luxo-form { display: grid; gap: 25px; }
     .luxo-group { display: flex; flex-direction: column; gap: 8px; }
-    .luxo-group.full { grid-column: span 2; }
-    .luxo-group label { font-size: 10px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
-    .luxo-group input, .luxo-group select, .luxo-group textarea {
-      background: var(--input-bg); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;
-      padding: 15px; color: var(--white); font-family: inherit; font-size: 14px;
-      outline: none; transition: 0.3s;
-    }
-    .luxo-group input:focus, .luxo-group select:focus, .luxo-group textarea:focus { border-color: var(--gold); background: #1f1f2b; }
-    
-    .request-types { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; grid-column: span 2; margin-top: 10px; }
-    .type-option { 
-      background: var(--input-bg); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;
-      padding: 15px; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: 0.3s;
-    }
-    .type-option:hover { border-color: var(--gold); }
-    .type-option input { display: none; }
-    .type-option .radio-circle { width: 18px; height: 18px; border: 2px solid var(--text-muted); border-radius: 50%; position: relative; }
-    .type-option input:checked + .radio-circle { border-color: var(--gold); }
-    .type-option input:checked + .radio-circle::after { content: ''; position: absolute; inset: 3px; background: var(--gold); border-radius: 50%; }
-    .type-option span { font-size: 12px; font-weight: 600; color: var(--white); }
+    .luxo-group label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); font-weight: 700; }
+    .luxo-group input, .luxo-group select, .luxo-group textarea { background: var(--input-bg); border: 1px solid rgba(255,255,255,0.05); padding: 15px; color: white; font-family: inherit; font-size: 14px; outline: none; transition: 0.3s; }
+    .luxo-group input:focus { border-color: var(--gold); }
+    .btn-luxo-submit { background: var(--gold); color: var(--dark-bg); border: none; padding: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; font-size: 12px; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+    .btn-luxo-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
 
-    .btn-luxo-submit {
-      grid-column: span 2; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      color: var(--dark-bg); padding: 20px; border: none; border-radius: 8px;
-      font-weight: 800; font-size: 14px; letter-spacing: 2px; text-transform: uppercase;
-      cursor: pointer; transition: 0.3s; margin-top: 20px; box-shadow: 0 10px 30px rgba(201,168,76,0.2);
-    }
-    .btn-luxo-submit:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(201,168,76,0.3); }
-
-    /* WIDGETS */
-    .floating-whatsapp {
-      position: fixed; bottom: 40px; left: 40px; z-index: 2000;
-      width: 55px; height: 55px; background: #25D366; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); transition: 0.3s ease;
-    }
-    .floating-whatsapp:hover { transform: scale(1.1); }
-
-    /* FLOATING QUOTE BUTTON */
-    .floating-quote-container {
-      position: fixed; bottom: 40px; right: 40px; z-index: 2000;
-      display: flex; align-items: center; flex-direction: row-reverse;
-      cursor: pointer;
-    }
-    .floating-quote {
-      width: 55px; height: 55px; 
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 25px rgba(201, 168, 76, 0.3);
-      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .floating-quote svg { width: 28px; height: 28px; fill: var(--dark-bg); }
-    .quote-tooltip {
-      position: absolute; right: 70px; background: var(--white); color: var(--dark-bg);
-      padding: 10px 20px; border-radius: 30px; font-size: 13px; font-weight: 700;
-      white-space: nowrap; opacity: 0; transform: translateX(20px);
-      pointer-events: none; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    }
-    .floating-quote-container:hover .quote-tooltip { opacity: 1; transform: translateX(0); }
-    .floating-quote-container:hover .floating-quote { transform: scale(1.1) rotate(90deg); }
-
-    @media (max-width: 1100px) {
-      .product-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
-      .story-container, .footer-grid { grid-template-columns: 1fr; }
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .product-grid, .reviews-grid, .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .story-container { grid-template-columns: 1fr; }
     }
     @media (max-width: 768px) {
-      .product-grid, .reviews-grid { grid-template-columns: 1fr; }
-      .hero-content h1 { font-size: 38px; }
+      nav { padding: 20px 5%; }
       .nav-links { display: none; }
-      .luxo-form, .request-types { grid-template-columns: 1fr; }
-      .luxo-group.full, .btn-luxo-submit { grid-column: span 1; }
-      .consultant-bar { padding: 20px; }
-      .modal-inner { padding: 30px 20px; }
+      .hero { padding: 0 5%; justify-content: center; text-align: center; }
+      .hero-content h1 { font-size: 36px; }
+      .product-grid, .reviews-grid, .footer-grid, .stats-grid { grid-template-columns: 1fr; }
+      .section-title { font-size: 28px; }
     }
+
+    /* INQUIRY MODAL STYLES */
+    .consultant-bar { background: #16161f; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(201,168,76,0.1); }
+    .consultant-info-mini { display: flex; align-items: center; gap: 12px; }
+    .consultant-avatar-mini { width: 35px; height: 35px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-bg); font-weight: 800; font-size: 14px; }
+    .consultant-text h4 { font-size: 13px; margin: 0; color: white; letter-spacing: 1px; }
+    .consultant-text p { font-size: 10px; color: var(--gold); margin: 0; opacity: 0.8; }
+    .online-status { font-size: 10px; color: #4ade80; display: flex; align-items: center; gap: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .status-dot { width: 6px; height: 6px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 10px #4ade80; }
+    
+    .inquiry-section-title { font-size: 11px; color: #555; text-transform: uppercase; letter-spacing: 2px; margin: 10px 0 5px; display: flex; align-items: center; gap: 10px; }
+    .inquiry-section-title span { color: var(--gold); font-weight: 800; }
+    
+    .request-types { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .type-option { position: relative; border: 1px solid rgba(255,255,255,0.05); padding: 15px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.02); }
+    .type-option input { position: absolute; opacity: 0; }
+    .type-option span { font-size: 11px; color: var(--text-muted); font-weight: 600; }
+    .radio-circle { width: 14px; height: 14px; border: 1px solid #444; border-radius: 50%; position: relative; }
+    .type-option input:checked + .radio-circle { border-color: var(--gold); }
+    .type-option input:checked + .radio-circle::after { content: ''; position: absolute; inset: 3px; background: var(--gold); border-radius: 50%; }
+    .type-option input:checked ~ span { color: white; }
+    .type-option:hover { border-color: rgba(201,168,76,0.3); background: rgba(201,168,76,0.05); }
+    .luxo-group.full { grid-column: 1 / -1; }
   </style>
 </head>
 <body>
 
   <nav id="navbar">
-    <a href="#" class="logo">
-      <img src="https://sc02.alicdn.com/kf/Ac883bba6ae6a4f9dbf52bb335d605e8fj.png" alt="iColorPack Logo" style="height: 45px; width: auto; vertical-align: middle;">
-      <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
-    </a>
+    <a href="index.html" class="logo">iColorPack</a>
     <ul class="nav-links">
-      <li><a href="#products">Collection</a></li>
-      <li><a href="#story">Story</a></li>
+      <li><a href="index.html#products">Products</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact-info">Contact</a></li>
+      <li><a href="index.html#story">Our Story</a></li>
     </ul>
-    <a href="javascript:void(0)" onclick="toggleModal()" class="btn-quote-nav">Inquiry</a>
+    <a onclick="toggleModal()" class="btn-quote-nav">Get a Quote</a>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <span class="section-label">International Packaging Standards</span>
-      <h1>Luxury Manufacturing<b>Built for Global Brands.</b></h1>
-      <p>Direct-factory sourcing of premium rigid boxes and eco-friendly carriers. Crafted in Wenzhou, delivered worldwide with uncompromising quality.</p>
-      <div class="hero-btns">
-        <button onclick="toggleModal()" class="btn-primary">Get Free Quote</button>
+      <span class="section-label" style="margin-bottom: 10px;">Factory Direct · Wenzhou, China</span>
+      <h1>Custom Packaging <b>That Commands Attention.</b></h1>
+      <p>Elevate your brand with premium rigid gift boxes and luxury specialty paper bags. Expertly crafted for global distributors and high-end brands.</p>
+      <div style="display: flex; gap: 20px;">
+        <a onclick="toggleModal()" class="btn-primary">Start Your Project</a>
+        <a href="#products" style="color: white; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 2px; align-self: center; border-bottom: 1px solid var(--gold); padding-bottom: 5px;">View Catalog</a>
       </div>
     </div>
   </section>
 
-  <!-- STATS BAR -->
   <div class="stats-bar">
     <div class="stats-grid">
-      <div class="stat-item"><h2>15+ Years</h2><p>Manufacturing Legacy</p></div>
-      <div class="stat-item"><h2>2,000+</h2><p>Strategic Brand Partners</p></div>
-      <div class="stat-item"><h2>100 Units</h2><p>Agile Small-Batch MOQ</p></div>
-      <div class="stat-item"><h2>15 Days</h2><p>Rapid Production Cycle</p></div>
-      <div class="stat-item"><h2>50M+</h2><p>Annual Packaging Output</p></div>
-      <div class="stat-item"><h2>50+ Nations</h2><p>Global Delivery Footprint</p></div>
+      <div class="stat-item">
+        <h2>15+</h2>
+        <p>Years Excellence</p>
+      </div>
+      <div class="stat-item">
+        <h2>500+</h2>
+        <p>Global Brands</p>
+      </div>
+      <div class="stat-item">
+        <h2>24h</h2>
+        <p>Mockup Response</p>
+      </div>
     </div>
   </div>
 
-  <!-- BRAND STORY -->
-  <section id="story" class="brand-story">
-    <div class="story-container">
-      <div class="story-content">
-        <span class="section-label">Our Heritage</span>
-        <h2 class="section-title">A Legacy of <em>Excellence.</em></h2>
-        <p>Wenzhou iColorPack Co., Ltd. has been at the forefront of luxury packaging for over 15 years. Based in Wenzhou, China's packaging capital, we specialize in high-end rigid boxes and premium shopping bags.</p>
-        <p>Our commitment to "Packaging that Colors Your Life" drives us to merge traditional craftsmanship with modern innovation.</p>
-      </div>
-      <div class="story-image">
-        <img src="https://sc02.alicdn.com/kf/A35342ae8624b428aae4ec271ab601bd2V.png" alt="iColorPack Luxury Packaging Collection">
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTS (3x2 Grid) -->
   <section id="products">
-    <span class="section-label">The Collection</span>
-    <h2 class="section-title">Packaging <em>Defined</em> by Quality.</h2>
+    <span class="section-label">Our Collection</span>
+    <h2 class="section-title">Specialty <em>Packaging</em> Solutions</h2>
+    
     <div class="product-grid">
-      <!-- 1. Rigid Gift Boxes -->
+      <!-- Product 1 -->
       <div class="product-card">
         <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A84e494555ed746a3b3a3294089547cbdT.png" class="main-img" alt="Rigid Gift Boxes">
-          <img src="https://sc02.alicdn.com/kf/Aeb34aad7e0b247f7bb262ca8275cad39k.png" class="scene-img" alt="Luxury Box in Gift Shop">
+          <img src="https://sc02.alicdn.com/kf/H50b86a88b56d47b68638682226f30418G.jpg" alt="Luxury Rigid Box" class="main-img">
+          <img src="https://sc02.alicdn.com/kf/A61d061737e4c449c95113d09289299edM.png" alt="Rigid Box Context" class="scene-img">
         </div>
         <div class="product-info">
-          <h3>Rigid Gift Boxes</h3>
-          <p>Hand-crafted luxury boxes with magnetic closures and premium finishes.</p>
-          <a href="javascript:void(0)" onclick="toggleModal()" class="product-cta">Customize Deal →</a>
+          <h3>Luxury Rigid Boxes</h3>
+          <p>Magnetic closures and premium paper finishes for a superior unboxing experience.</p>
+          <a onclick="toggleModal(); trackInquiry('Rigid Box')" class="product-cta">Inquire Now</a>
         </div>
       </div>
-      <!-- 2. Cake Boxes -->
+
+      <!-- Product 2 -->
       <div class="product-card">
         <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/Ab80f893ebc174dd18d97c620dce1b7502.png" class="main-img" alt="Cake Boxes">
-          <img src="https://sc02.alicdn.com/kf/Ab38c886d05bc45b68aa0117b6798bde2G.png" class="scene-img" alt="Cake Box in Patisserie">
+          <img src="https://sc02.alicdn.com/kf/H983808b0b56d47b68638682226f30418G.jpg" alt="Specialty Paper Bag" class="main-img">
+          <img src="https://sc02.alicdn.com/kf/A78b66a88b56d47b68638682226f30418G.jpg" alt="Paper Bag Context" class="scene-img">
         </div>
         <div class="product-info">
-          <h3>Cake Boxes</h3>
-          <p>Elegant and sturdy presentation boxes for premium bakery and confectionery.</p>
-          <a href="javascript:void(0)" onclick="toggleModal()" class="product-cta">Customize Deal →</a>
+          <h3>Boutique Shopping Bags</h3>
+          <p>Hand-crafted from specialty cardstocks with luxury handle options and foil accents.</p>
+          <a onclick="toggleModal(); trackInquiry('Paper Bag')" class="product-cta">Inquire Now</a>
         </div>
       </div>
-      <!-- 3. Cardboard Bags -->
+
+      <!-- Product 3 -->
       <div class="product-card">
         <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A75adbb5f71cf499fa1953190bacd3e4dv.png" class="main-img" alt="Cardboard Paper Bags">
-          <img src="https://sc02.alicdn.com/kf/Ad55f95c0e2154ba09ff130ffbc184a8dm.png" class="scene-img" alt="Cardboard Bag in Fashion Boutique">
+          <img src="https://sc02.alicdn.com/kf/A67b2ffeb705e4680877997a9b3d027e1U.png" alt="Sustainable Packaging" class="main-img">
+          <img src="https://sc02.alicdn.com/kf/A35b66a88b56d47b68638682226f30418G.jpg" alt="Sustainable Context" class="scene-img">
         </div>
         <div class="product-info">
-          <h3>Cardboard Bags</h3>
-          <p>Premium ivory board carriers for high-end retail and luxury boutique brands.</p>
-          <a href="javascript:void(0)" onclick="toggleModal()" class="product-cta">Customize Deal →</a>
-        </div>
-      </div>
-      <!-- 4. Kraft Paper Bags -->
-      <div class="product-card">
-        <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A6cbee1c64cbe451a8a265e02bba4485df.png" class="main-img" alt="Kraft Paper Bags">
-          <img src="https://sc02.alicdn.com/kf/A7ab08c15e08d448ea2debbe11f6d96d1b.png" class="scene-img" alt="Kraft Bag on Restaurant Bar">
-        </div>
-        <div class="product-info">
-          <h3>Kraft Paper Bags</h3>
-          <p>Natural and eco-friendly solutions for sustainable brand identities.</p>
-          <a href="javascript:void(0)" onclick="toggleModal()" class="product-cta">Customize Deal →</a>
-        </div>
-      </div>
-      <!-- 5. Mailer Boxes -->
-      <div class="product-card">
-        <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A8bf13fdfd04d4f7a957ae9f71c9aa29ev.png" class="main-img" alt="Premium Mailer Boxes">
-          <img src="https://sc02.alicdn.com/kf/A89acb317c2db41a09d6cc919e726e626e.png" class="scene-img" alt="Mailer Box Home Delivery">
-        </div>
-        <div class="product-info">
-          <h3>Mailer Boxes</h3>
-          <p>Durable and high-impact e-commerce packaging for safe and stylish shipping.</p>
-          <a href="javascript:void(0)" onclick="toggleModal()" class="product-cta">Customize Deal →</a>
-        </div>
-      </div>
-      <!-- 6. Custom Solutions -->
-      <div class="product-card">
-        <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A0215b28ae42149f79729cb3e34471609H.png" class="main-img" alt="Custom Packaging Solutions">
-          <img src="https://sc02.alicdn.com/kf/A860c598101a44a389201680a0bce4b06C.png" class="scene-img" alt="Packaging Design Studio">
-        </div>
-        <div class="product-info">
-          <h3>Custom Solutions</h3>
-          <p>Full-spectrum OEM services from structural design to unique finishes.</p>
-          <a href="javascript:void(0)" onclick="toggleModal()" class="product-cta">Customize Deal →</a>
+          <h3>Eco-Conscious Series</h3>
+          <p>FSC-certified materials and soy-based inks for brands committed to the planet.</p>
+          <a onclick="toggleModal(); trackInquiry('Eco')" class="product-cta">Inquire Now</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FACTORY TITLE -->
-  <section id="factory" class="factory-info-simple" style="text-align:center; padding: 60px 10% 0;">
-    <span class="section-label">State-of-the-Art</span>
-    <h2 class="section-title">From Concept to <em>Reality.</em></h2>
-    <p style="color:var(--text-muted); max-width:700px; margin:0 auto;">Our 5,000m² facility integrates the latest Heidelberg printing tech with skilled artisanal finishing to bring your vision to life.</p>
+  <section id="story">
+    <div class="story-container">
+      <div class="story-image">
+        <img src="https://sc02.alicdn.com/kf/H0b86a88b56d47b68638682226f30418G.jpg" alt="iColorPack Factory">
+      </div>
+      <div class="story-content">
+        <span class="section-label">Legacy of Quality</span>
+        <h2 class="section-title">Crafting <em>Perfection</em> Since 2008</h2>
+        <p>Located in the heart of Wenzhou's packaging district, iColorPack has evolved from a local workshop to a global leader in high-end specialty packaging.</p>
+        <p style="margin-top: 20px;">We specialize in complex structural designs and premium finishes that standard factories often struggle with. Our mission is simple: to make your product's first impression unforgettable.</p>
+        <a href="#contact" class="btn-primary" style="margin-top: 30px; display: inline-block;">Learn More</a>
+      </div>
+    </div>
   </section>
 
-  <!-- REVIEWS (3x2 Grid) -->
-  <section id="reviews" class="reviews">
-    <span class="section-label">Global Feedback</span>
-    <h2 class="section-title">The Standard of <em>Trust.</em></h2>
+  <div class="logo-wall">
+    <div class="logo-container">
+      <img src="https://sc02.alicdn.com/kf/H713910b0b56d47b68638682226f30418G.png" alt="Client 1">
+      <img src="https://sc02.alicdn.com/kf/H213910b0b56d47b68638682226f30418G.png" alt="Client 2">
+      <img src="https://sc02.alicdn.com/kf/H313910b0b56d47b68638682226f30418G.png" alt="Client 3">
+      <img src="https://sc02.alicdn.com/kf/H413910b0b56d47b68638682226f30418G.png" alt="Client 4">
+      <img src="https://sc02.alicdn.com/kf/H513910b0b56d47b68638682226f30418G.png" alt="Client 5">
+    </div>
+  </div>
+
+  <section class="reviews" id="reviews">
+    <span class="section-label">Testimonials</span>
+    <h2 class="section-title">What Our <em>Clients</em> Say</h2>
     <div class="reviews-grid">
+      <!-- 6 Reviews -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"The quality of the rigid boxes exceeded our expectations. iColorPack is now our primary supplier for all luxury releases."</p>
-        <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=1" class="reviewer-img">
-          <div class="reviewer-info"><h4>Marcus G.</h4><p>Luxury Perfume Brand (UK)</p></div>
+        <p class="review-text">"iColorPack's rigid boxes transformed our product launch. The magnetic closure is flawless and the gold foil stamping is the best I've seen from any China factory."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">MB</div>
+          <div class="reviewer-info"><h4>Marcus Bennett</h4><p>CEO, Luxe Aesthetics (UK)</p></div>
         </div>
       </div>
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"Seamless communication and fast turnaround. Their design team helped us optimize our mailing box for FBA shipping."</p>
-        <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=2" class="reviewer-img">
-          <div class="reviewer-info"><h4>Sarah J.</h4><p>E-commerce Director (USA)</p></div>
+        <p class="review-text">"The sample turn-around time is incredibly fast. We received our custom paper bag prototypes in 3 days! Great communication throughout."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">SL</div>
+          <div class="reviewer-info"><h4>Sarah Lohman</h4><p>Brand Manager, Aura Home (USA)</p></div>
         </div>
       </div>
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"Beautiful paper bags with flawless gold foil. We highly recommend iColorPack for boutique retail stores."</p>
-        <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=3" class="reviewer-img">
-          <div class="reviewer-info"><h4>Elena V.</h4><p>Fashion House (Italy)</p></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"The craftsmanship on the drawer boxes is exceptional. Every detail reflects the premium nature of our brand."</p>
-        <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=4" class="reviewer-img">
-          <div class="reviewer-info"><h4>David L.</h4><p>Fine Jewelry (France)</p></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"Sustainable yet luxurious. Their kraft paper bags with custom printing were a hit for our eco-conscious collection."</p>
-        <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=5" class="reviewer-img">
-          <div class="reviewer-info"><h4>Sophie K.</h4><p>Organic Beauty (Germany)</p></div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"Amazing MOQ flexibility for a factory of this scale. Perfect for our startup's first major seasonal launch."</p>
-        <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=6" class="reviewer-img">
-          <div class="reviewer-info"><h4>James W.</h4><p>Lifestyle Brand (Australia)</p></div>
+        <p class="review-text">"Reliable partner for bulk wholesale. We've ordered over 100k units of cake boxes, and the quality is consistent across every single batch."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">DK</div>
+          <div class="reviewer-info"><h4>David Kim</h4><p>Operations Director, Global Sweets (Australia)</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
-    <div class="faq-container">
-      <h2 class="section-title">Common <em>Questions.</em></h2>
-      <div class="faq-item"><details><summary>What is your Minimum Order Quantity (MOQ)?</summary><div class="faq-content">We offer agile MOQ starting at 100-500 units depending on the complexity and design.</div></details></div>
-      <div class="faq-item"><details><summary>Do you provide free design support?</summary><div class="faq-content">Yes, our in-house design team can assist with structural design, logo placement, and technical file optimization.</div></details></div>
-      <div class="faq-item"><details><summary>Can you ship directly to Amazon FBA warehouses?</summary><div class="faq-content">Absolutely. We handle all labeling, palletizing, and shipping documentation for direct FBA delivery globally.</div></details></div>
-      <div class="faq-item"><details><summary>What are your typical production lead times?</summary><div class="faq-content">Standard production takes 12-18 days. Urgent orders can be expedited depending on current factory capacity.</div></details></div>
-      <div class="faq-item"><details><summary>What shipping methods do you offer?</summary><div class="faq-content">We offer sea freight (economical), air freight (fast), and door-to-door DDP services for most countries.</div></details></div>
-      <div class="faq-item"><details><summary>Are your materials FSC certified?</summary><div class="faq-content">Yes, we prioritize sustainability and can provide FSC-certified paper and biodegradable materials upon request.</div></details></div>
-      <div class="faq-item"><details><summary>What custom finishes can you apply?</summary><div class="faq-content">We offer gold/silver foil stamping, embossing, debossing, spot UV, matte/gloss lamination, and unique textures.</div></details></div>
+  <section class="cta-section" id="contact">
+    <div class="cta-content">
+      <h2>Ready to elevate your unboxing experience?</h2>
+      <p>Get a custom quote and free 3D mockup within 24 hours.</p>
+      <a onclick="toggleModal()" class="btn-primary">Get My Free Quote</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer id="contact-info">
+  <footer>
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="#" class="logo">iColorPack</a>
-        <p style="font-size:14px; color:#BBB; margin-top:20px; line-height:1.8;"><span style="color:var(--gold); font-family:'Playfair Display', serif; font-style:italic; font-size:16px;">"Packaging that Colors Your Life."</span><br>Premier B2B manufacturing partner for global luxury brands.</p>
+        <a href="index.html" class="logo" style="margin-bottom: 25px; display: block;">iColorPack</a>
+        <p style="color: #666; font-size: 13px;">Package Colors Your Life! Premium custom paper packaging solutions for global brands since 2008.</p>
       </div>
       <div class="footer-col">
-        <h4>Connect with Us</h4>
+        <h4>Navigation</h4>
         <ul class="footer-links">
-          <li><span class="footer-icon">✉️</span><a href="mailto:Jennifer@wzicolor.com">Jennifer@wzicolor.com</a></li>
-          <li><span class="footer-icon">💬</span><a href="https://wa.me/8618058355198">WhatsApp: +86 180 5835 5198</a></li>
-          <li><span class="footer-icon">🌐</span><a href="https://wzicolor.en.alibaba.com" target="_blank">Alibaba Official Store</a></li>
-          <li><span class="footer-icon">📍</span><a href="#">Wenzhou, Zhejiang, China</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="#story">Our Story</a></li>
-          <li><a href="#products">Collection</a></li>
+          <li><a href="index.html#products">Our Products</a></li>
           <li><a href="blog.html">Packaging Blog</a></li>
-          <li><a href="#faq">Help Center</a></li>
+          <li><a href="index.html#story">Our Factory</a></li>
         </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-info">
+          Email: Jennifer@wzicolor.com<br>
+          WhatsApp: +86 18058355198<br>
+          Wenzhou, Zhejiang, China
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div style="display: flex; gap: 15px; margin-top: 10px;">
+          <a href="#" style="color: var(--gold); text-decoration: none; font-size: 18px;">Linkedln</a>
+          <a href="#" style="color: var(--gold); text-decoration: none; font-size: 18px;">Instagram</a>
+        </div>
       </div>
     </div>
-    <div class="copyright">© 2026 iColorPack (Wenzhou iColorPack Co., Ltd.) — All Rights Reserved.</div>
+    <div class="footer-bottom">
+      <div>© 2026 Wenzhou iColor Packaging Co., Ltd. All rights reserved.</div>
+      <div>Designed for Luxury. Built for Reliability.</div>
+    </div>
   </footer>
 
-  <a href="https://wa.me/8618058355198" class="floating-whatsapp" target="_blank">
-    <svg viewBox="0 0 24 24"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.672 1.433 5.662 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <!-- FLOATING QUOTE BUTTON -->
-  <div class="floating-quote-container" onclick="toggleModal()">
-    <div class="quote-tooltip">Create Your Own Package Now!</div>
-    <div class="floating-quote">
-      <svg viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
-    </div>
-  </div>
-
-  <!-- MODAL INQUIRY -->
+  <!-- INQUIRY MODAL -->
   <div id="inquiryModal" class="modal">
     <div class="modal-content">
       <span class="close-modal" onclick="toggleModal()">&times;</span>
@@ -529,6 +406,11 @@
   </div>
 
   <script>
+    function trackInquiry(category) {
+      console.log('Inquiry initiated for:', category);
+      // Example: window.gtag('event', 'inquiry_click', { 'product_category': category });
+    }
+
     function toggleModal() { 
       const modal = document.getElementById('inquiryModal');
       modal.classList.toggle('active');
