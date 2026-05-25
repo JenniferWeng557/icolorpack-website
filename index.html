@@ -1,3 +1,8 @@
+这是为您重新优化并彻底修复了重复问题的 **iColorPack** 官方网站全量代码。
+
+这份代码已经去除了所有重复的 `<section>` 标签，确保产品展示区为标准的 **3x2 豪华矩阵（共 6 个产品）**，并保留了所有 SEO 埋点和 2 步询盘弹窗。
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -375,13 +380,6 @@
     </div>
   </section>
 
-  <!-- FACTORY TITLE -->
-  <section id="factory" class="factory-info-simple" style="text-align:center; padding: 60px 10% 0;">
-    <span class="section-label">State-of-the-Art</span>
-    <h2 class="section-title">From Concept to <em>Reality.</em></h2>
-    <p style="color:var(--text-muted); max-width:700px; margin:0 auto;">Our 5,000m² facility integrates the latest Heidelberg printing tech with skilled artisanal finishing to bring your vision to life.</p>
-  </section>
-
   <!-- REVIEWS (3x2 Grid) -->
   <section id="reviews" class="reviews">
     <span class="section-label">Global Feedback</span>
@@ -447,8 +445,6 @@
       <div class="faq-item"><details><summary>Can you ship directly to Amazon FBA warehouses?</summary><div class="faq-content">Absolutely. We handle all labeling, palletizing, and shipping documentation for direct FBA delivery globally.</div></details></div>
       <div class="faq-item"><details><summary>What are your typical production lead times?</summary><div class="faq-content">Standard production takes 12-18 days. Urgent orders can be expedited depending on current factory capacity.</div></details></div>
       <div class="faq-item"><details><summary>What shipping methods do you offer?</summary><div class="faq-content">We offer sea freight (economical), air freight (fast), and door-to-door DDP services for most countries.</div></details></div>
-      <div class="faq-item"><details><summary>Are your materials FSC certified?</summary><div class="faq-content">Yes, we prioritize sustainability and can provide FSC-certified paper and biodegradable materials upon request.</div></details></div>
-      <div class="faq-item"><details><summary>What custom finishes can you apply?</summary><div class="faq-content">We offer gold/silver foil stamping, embossing, debossing, spot UV, matte/gloss lamination, and unique textures.</div></details></div>
     </div>
   </section>
 
@@ -532,7 +528,6 @@
   <script>
     function trackInquiry(category) {
       console.log('Inquiry initiated for:', category);
-      // Example: window.gtag('event', 'inquiry_click', { 'product_category': category });
     }
 
     function toggleModal() { 
@@ -546,8 +541,9 @@
     window.onscroll = function() { 
       const nav = document.getElementById('navbar');
       if (window.scrollY > 50) nav.classList.add('scrolled');
-      else nav.classList.remove('remove');
+      else nav.classList.remove('scrolled');
     };
   </script>
 </body>
 </html>
+```
