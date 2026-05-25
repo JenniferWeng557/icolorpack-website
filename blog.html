@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — iColorPack</title>
+  <meta name="description" content="Stay updated with the latest trends in luxury packaging, sustainable design, and B2B packaging solutions from iColorPack.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --gold:#C9A84C;
+      --gold2:#E8C97A;
+      --gold3:#F5E4B0;
+      --champagne:#FAF3E0;
+      --accent:#8B1A1A;
+      --dark:#0D0D0D;
+      --dark2:#161412;
+      --dark3:#1E1A14;
+      --mid:#3A3228;
+      --text:#1A1612;
+      --muted:#8A7D6A;
+      --pale:#F7F2EA;
+      --cream:#FDF8F0;
+      --white:#FFFDF8;
+      --border:rgba(201,168,76,0.18);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+
+    /* NAV */
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:200;
+      padding:22px 64px;
+      display:flex;align-items:center;justify-content:space-between;
+      background:rgba(13,13,13,.97);box-shadow:0 1px 0 rgba(201,168,76,.15);
+    }
+    .logo{
+      font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;
+      letter-spacing:1px;text-transform:none;
+      color:var(--white);text-decoration:none;
+    }
+    .logo .logo-i{color:var(--gold2);font-style:italic;font-weight:700;font-size:32px}
+    .logo .logo-color{color:var(--gold);font-weight:700}
+    .logo .logo-pack{color:var(--white);font-weight:300;letter-spacing:1px}
+    nav ul{list-style:none;display:flex;gap:40px}
+    nav ul a{color:rgba(255,255,255,.7);text-decoration:none;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;transition:color .2s}
+    nav ul a:hover{color:var(--gold2)}
+    .nav-btn{background:transparent;border:1px solid var(--gold);color:var(--gold)!important;padding:11px 28px;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;transition:all .3s}
+
+    /* BLOG HERO */
+    .blog-hero{
+      padding:180px 64px 100px;
+      background:var(--dark2);
+      text-align:center;
+      position:relative;
+    }
+    .blog-hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(40px,6vw,80px);
+      font-weight:900;color:var(--white);
+      margin-bottom:24px;
+    }
+    .blog-hero p{
+      font-size:18px;color:rgba(255,255,255,.5);
+      max-width:600px;margin:0 auto;
+    }
+
+    /* BLOG LIST */
+    .blog-list{padding:100px 64px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill, minmax(350px, 1fr));gap:48px}
+    .blog-card{
+      background:var(--white);
+      border:1px solid var(--border);
+      padding:40px;
+      transition:all .3s;
+      display:flex;flex-direction:column;
+    }
+    .blog-card:hover{
+      transform:translateY(-8px);
+      border-color:var(--gold);
+      box-shadow:0 12px 48px rgba(201,168,76,.1);
+    }
+    .post-date{
+      font-size:10px;letter-spacing:3px;text-transform:uppercase;
+      color:var(--gold);font-weight:600;margin-bottom:16px;
+    }
+    .blog-card h2{
+      font-family:'Playfair Display',serif;
+      font-size:24px;font-weight:700;color:var(--dark);
+      margin-bottom:20px;line-height:1.3;
+    }
+    .blog-card p{
+      font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:24px;
+      flex-grow:1;
+    }
+    .read-more{
+      font-size:11px;letter-spacing:2px;text-transform:uppercase;
+      font-weight:700;color:var(--dark);text-decoration:none;
+      display:inline-flex;align-items:center;gap:8px;
+    }
+    .read-more::after{content:'→';transition:transform .3s}
+    .read-more:hover::after{transform:translateX(4px)}
+
+    /* FOOTER */
+    footer{background:var(--dark);padding:80px 64px 40px;border-top:1px solid rgba(201,168,76,.1)}
+    .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
+    .footer-logo{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--white);text-decoration:none}
+    .footer-logo .fi{color:var(--gold2);font-style:italic;font-weight:700}
+    .footer-copy{margin-top:60px;text-align:center;font-size:12px;color:rgba(255,255,255,.2)}
+
+    @media(max-width:768px){
+      nav{padding:20px}
+      nav ul{display:none}
+      .blog-hero,.blog-list,footer{padding-left:24px;padding-right:24px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo"><span class="logo-i">i</span><span class="logo-color">Color</span><span class="logo-pack">Pack</span></a>
+    <ul>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html#story">Our Story</a></li>
+      <li><a href="index.html#contact" class="nav-btn">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+  <header class="blog-hero">
+    <h1>Packaging Insights</h1>
+    <p>Exploring the intersection of luxury design, sustainability, and global B2B packaging trends for 2026.</p>
+  </header>
+
+  <main class="blog-list">
+    <!-- Posts will be listed here -->
+    <article class="blog-card">
+      <div class="post-date">May 25, 2026</div>
+      <h2>The Mono-Material Revolution: Redefining Luxury Rigid Boxes for Circularity in 2026</h2>
+      <p>Explore how mono-material innovation is transforming luxury rigid boxes into 100% recyclable masterpieces for global B2B brands.</p>
+      <a href="blog/mono-material-luxury-rigid-boxes" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 25, 2026</div>
+      <h2>Custom Gift Boxes Wholesale: A B2B Sourcing Guide for Global Brands</h2>
+      <p>Everything you need to know about sourcing luxury packaging directly from China factories. Quality, MOQ, and trends explained.</p>
+      <a href="blog/custom-gift-boxes-wholesale-guide" class="read-more">Read Guide</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 19, 2026</div>
+
+      <h2>Tactile Circularity: The New Gold Standard for Luxury B2B Packaging in 2026</h2>
+      <p>Explore how 2026 luxury packaging trends are shifting toward tactile circularity. Discover iColorPack’s expertise in specialty paper bags and rigid gift boxes designed for sustainable prestige.</p>
+      <a href="blog/tactile-circularity-luxury-packaging" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 7, 2026</div>
+      <h2>Multi-Sensory Sustainability: The Evolution of Premium B2B Packaging in 2026</h2>
+      <p>Explore 2026's top luxury packaging trend: Multi-Sensory Sustainability. Learn how iColorPack combines tactile specialty papers and rigid box engineering for high-end B2B solutions.</p>
+      <a href="blog/multi-sensory-sustainability-packaging" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 7, 2026</div>
+      <h2>The Future of Luxury Packaging: Sustainability Meets Sophistication in 2026</h2>
+      <p>Discover the top luxury packaging trends for 2026. Learn how iColorPack combines sustainable materials with high-end aesthetics like Champagne Gold and Charcoal Black.</p>
+      <a href="blog/luxury-packaging-trends-2026" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 6, 2026</div>
+      <h2>Sophisticated Circularity: Why Premium Reusable Packaging is the B2B Standard in 2026</h2>
+      <p>Explore the top 2026 luxury packaging trend: Sophisticated Circularity. Learn how iColorPack’s rigid gift boxes and specialty paper bags redefine B2B branding.</p>
+      <a href="blog/sophisticated-circularity-luxury-packaging" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 3, 2026</div>
+
+      <h2>Sustainable Grandeur: The Rise of Reusable High-End Packaging in 2026</h2>
+      <p>Explore how 2026 luxury packaging trends are shifting toward "Secondary-Use Design." Learn how iColorPack’s rigid gift boxes and specialty paper bags combine premium aesthetics with long-term utility.</p>
+      <a href="blog/sustainable-grandeur-luxury-packaging" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 2, 2026</div>
+      <h2>Smart Luxury: Bridging the Physical and Digital Unboxing Experience in 2026</h2>
+      <p>Explore the rise of smart luxury packaging in 2026. Discover how iColorPack combines premium craftsmanship with digital innovations like QR codes and NFC.</p>
+      <a href="blog/smart-luxury-packaging-innovation" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">May 1, 2026</div>
+      <h2>Secondary-Use Design: Elevating Brand Value through Reusable Luxury Packaging in 2026</h2>
+      <p>Discover how secondary-use design is transforming luxury packaging in 2026. Learn why iColorPack's premium rigid boxes and specialty bags are the top choice for sustainable brand loyalty.</p>
+      <a href="blog/secondary-use-luxury-packaging" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">April 30, 2026</div>
+      <h2>The Art of "Quiet Luxury": Elevating Multi-Sensory Unboxing Experiences in 2026</h2>
+      <p>Discover how the "Quiet Luxury" trend is transforming B2B packaging in 2026. Explore iColorPack’s expertise in multi-sensory unboxing with specialty paper bags and rigid gift boxes.</p>
+      <a href="blog/quiet-luxury-unboxing-trends" class="read-more">Read Article</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="post-date">April 28, 2026</div>
+      <h2>The New Era of B2B Luxury: Redefining Custom Packaging with "Sustainable Boldness" in 2026</h2>
+      <p>Explore 2026's top luxury packaging trend: Sustainable Boldness. Learn how iColorPack uses specialty paper bags and rigid boxes to combine high-end aesthetics with eco-conscious design.</p>
+      <a href="blog/sustainable-boldness-luxury-packaging" class="read-more">Read Article</a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a href="index.html" class="footer-logo"><span class="fi">i</span>ColorPack</a>
+        <p style="color:rgba(255,255,255,.3); font-size:13px; margin-top:20px; line-height:1.6">Package Colors Your Life! Premium custom paper packaging, factory direct from China since 2008.</p>
+      </div>
+      <div>
+        <h4 style="color:var(--gold); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:20px">Quick Links</h4>
+        <ul style="list-style:none">
+          <li style="margin-bottom:10px"><a href="index.html#products" style="color:rgba(255,255,255,.4); text-decoration:none; font-size:13px">Products</a></li>
+          <li style="margin-bottom:10px"><a href="blog.html" style="color:rgba(255,255,255,.4); text-decoration:none; font-size:13px">Blog</a></li>
+          <li style="margin-bottom:10px"><a href="index.html#contact" style="color:rgba(255,255,255,.4); text-decoration:none; font-size:13px">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:var(--gold); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:20px">Contact</h4>
+        <p style="color:rgba(255,255,255,.4); font-size:13px; line-height:1.6">Jennifer@wzicolor.com<br>WhatsApp: 0086-18058355198</p>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Wenzhou iColor Packaging Co., Ltd. All rights reserved.</div>
+  </footer>
+</body>
+</html>
