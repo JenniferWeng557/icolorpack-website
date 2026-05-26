@@ -171,6 +171,29 @@
     }
     .luxo-group input:focus, .luxo-group select:focus, .luxo-group textarea:focus { border-color: var(--gold); background: #1f1f2b; }
     
+    /* File Upload Area */
+    .luxo-file-upload {
+      border: 2px dashed rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.02);
+    }
+    .luxo-file-upload:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+    .luxo-file-upload svg { width: 24px; height: 24px; fill: var(--text-muted); }
+    .luxo-file-upload p { font-size: 13px; color: var(--text-muted); margin: 0; }
+    .luxo-file-upload span { font-size: 11px; color: var(--gold); font-weight: 700; }
+    .hidden-file-input { display: none; }
+    
     .request-types { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; grid-column: span 2; margin-top: 10px; }
     .type-option { 
       background: var(--input-bg); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;
@@ -521,6 +544,22 @@
           <div class="luxo-group"><label>Product Category</label><select name="product"><option value="Rigid Gift Box">Rigid Gift Box</option><option value="Cake Box">Cake Box</option><option value="Cardboard Bag">Cardboard Bag</option><option value="Kraft Bag">Kraft Paper Bag</option><option value="Mailer Box">Mailer Box</option><option value="Custom">Custom Solution</option></select></div>
           <div class="luxo-group"><label>Est. Quantity</label><input type="number" name="quantity" placeholder="Min. 100 units"></div>
           <div class="luxo-group full"><label>What do you need today? *</label><div class="request-types"><label class="type-option"><input type="radio" name="request_type" value="Quote + Mockup" checked><div class="radio-circle"></div><span>Price Quote + Free 3D Mockup (24h)</span></label><label class="type-option"><input type="radio" name="request_type" value="Physical Sample"><div class="radio-circle"></div><span>48h Physical Sample (Express)</span></label></div></div>
+          
+          <div class="luxo-group full">
+            <label>Additional Details (Optional)</label>
+            <textarea name="details" placeholder="Describe your product, brand style, color preferences, any special requirements... the more detail, the faster we can quote." rows="4"></textarea>
+          </div>
+          
+          <div class="luxo-group full">
+            <label>Upload Logo / Reference Image (Optional)</label>
+            <div class="luxo-file-upload" onclick="document.getElementById('file-upload').click()">
+              <svg viewBox="0 0 24 24"><path d="M16.5,6V17.5A4,4 0 0,1 12.5,21.5A4,4 0 0,1 8.5,17.5V5A2.5,2.5 0 0,1 11,2.5A2.5,2.5 0 0,1 13.5,5V15.5A1,1 0 0,1 12.5,16.5A1,1 0 0,1 11.5,15.5V6H10V15.5A2.5,2.5 0 0,0 12.5,18A2.5,2.5 0 0,0 15,15.5V5A4,4 0 0,0 11,1A4,4 0 0,0 7,5V17.5A5.5,5.5 0 0,0 12.5,23A5.5,5.5 0 0,0 18,17.5V6H16.5Z" /></svg>
+              <p>Click to upload PNG, AI, PDF, PSD · Max 10MB</p>
+              <span id="file-name">No file selected</span>
+              <input type="file" id="file-upload" name="attachment" class="hidden-file-input" onchange="updateFileName(this)">
+            </div>
+          </div>
+
           <button type="submit" class="btn-luxo-submit">Get a Free Quote</button>
         </form>
       </div>
@@ -530,6 +569,11 @@
   <script>
     function trackInquiry(category) {
       console.log('Inquiry initiated for:', category);
+    }
+
+    function updateFileName(input) {
+      const fileName = input.files[0] ? input.files[0].name : 'No file selected';
+      document.getElementById('file-name').textContent = fileName;
     }
 
     function toggleModal() { 
