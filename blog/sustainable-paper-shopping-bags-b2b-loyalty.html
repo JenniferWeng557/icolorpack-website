@@ -1,47 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-
-const markdownFile = process.argv[2];
-if (!markdownFile) {
-    console.error('Please provide a markdown file path.');
-    process.exit(1);
-}
-
-const content = fs.readFileSync(markdownFile, 'utf-8');
-
-// Simple parser for Title, Meta Description, and Date
-const titleMatch = content.match(/^# (.*)/m);
-const metaMatch = content.match(/\*\*Meta Description:\*\* (.*)/);
-const dateMatch = path.basename(markdownFile).match(/^(\d{4}-\d{2}-\d{2})/);
-
-const title = titleMatch ? titleMatch[1] : 'Untitled Post';
-const description = metaMatch ? metaMatch[1] : '';
-const dateStr = dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0];
-const formattedDate = new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-
-const slug = path.basename(markdownFile, '.md').replace(/^\d{4}-\d{2}-\d{2}-/, '');
-const htmlFile = `blog/${slug}.html`;
-
-// Convert Markdown-ish content to simple HTML (basic support)
-let bodyHtml = content
-    .replace(/^# (.*)/m, '') // Remove title
-    .replace(/\*\*Meta Description:\*\* .*/, '') // Remove meta
-    .replace(/---/, '') // Remove separator
-    .replace(/^## (.*)/gm, '<h3>$1</h3>')
-    .replace(/^\* (.*)/gm, '<li>$1</li>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-    .split('\n')
-    .map(line => line.trim() ? (line.startsWith('<') ? line : `<p>${line}</p>`) : '')
-    .join('\n');
-
-const template = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>${title} — iColorPack</title>
-  <meta name="description" content="${description}">
+  <title>The Sustainability Shift: How Recyclable Paper Shopping Bags Drive B2B Loyalty — iColorPack</title>
+  <meta name="description" content="Sustainability is no longer optional. Discover how iColorPack's recyclable paper shopping bags help global brands build long-term B2B loyalty in 2026.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -82,39 +45,31 @@ const template = `<!DOCTYPE html>
   </nav>
 
   <header class="post-hero">
-    <span class="post-date">${formattedDate}</span>
-    <h1>${title}</h1>
+    <span class="post-date">May 26, 2026</span>
+    <h1>The Sustainability Shift: How Recyclable Paper Shopping Bags Drive B2B Loyalty</h1>
   </header>
 
   <article>
-    ${bodyHtml}
+    <p>In 2026, sustainability is no longer a corporate buzzword—it is a mandatory pillar of global B2B commerce. As environmental regulations tighten and consumer awareness peaks, brands that prioritize <strong>Recyclable Paper Shopping Bags</strong> are seeing a direct correlation with increased B2B partner loyalty and long-term brand equity.</p>
+
+    <h3>1. The 2026 Green Mandate</h3>
+    <p>Distributors and retailers in the US and EU are increasingly demanding "Circular Economy" compliance. For a packaging solution to be viable, it must be easily recyclable within existing municipal systems. Paper bags, inherently biodegradable and widely recyclable, have become the gold standard for brands looking to future-proof their supply chains.</p>
+
+    <h3>2. Beyond Brown Kraft: Sustainable Grandeur</h3>
+    <p>A common misconception was that "eco-friendly" meant sacrificing aesthetics. At <strong>iColorPack</strong>, we have proven that <strong>Sustainable Grandeur</strong> is possible. By using FSC-certified specialty papers and soy-based inks, we create bags that offer the same premium feel as luxury synthetics but with a 100% recyclable footprint. Our eco-minimalist designs prove that green is the new gold.</p>
+
+    <h3>3. The Circular Loop: Reusability as a Metric</h3>
+    <p>Loyalty is driven by utility. When a paper bag is engineered for durability—featuring heavy-duty gsm paper and reinforced handles—it becomes a reusable item in the consumer's daily life. This extended "lifecycle" keeps your brand visible for months, effectively lowering the cost-per-impression while reinforcing your commitment to the environment.</p>
+
+    <h3>4. The iColorPack Promise</h3>
+    <p>As a leading manufacturer in Wenzhou, iColorPack is committed to factory-direct sustainable solutions. We offer full transparency in our sourcing and production, helping our B2B clients meet their ESG (Environmental, Social, and Governance) goals without compromising on the luxury experience. "Package Colors Your Life!" means a colorful life for the planet too.</p>
+
+    <p>---</p>
+    <p>*Keywords: Eco-friendly Paper Shopping Bag, Sustainable B2B Packaging, Recyclable Carrier Bags, FSC-certified, iColorPack, Green Branding 2026.*</p>
   </article>
 
   <footer>
     &copy; 2026 iColorPack. All rights reserved.
   </footer>
 </body>
-</html>`;
-
-fs.writeFileSync(htmlFile, template);
-console.log(`Generated: ${htmlFile}`);
-
-// Update blog.html
-let blogIndex = fs.readFileSync('blog.html', 'utf-8');
-const newCard = `
-    <article class="blog-card">
-      <div class="post-date">${formattedDate}</div>
-      <h2>${title}</h2>
-      <p>${description}</p>
-      <a href="blog/${slug}.html" class="read-more">Read Article</a>
-    </article>
-`;
-
-// Insert after <!-- Posts will be listed here -->
-if (blogIndex.includes(title)) {
-    console.log('Post already in index.');
-} else {
-    blogIndex = blogIndex.replace('<!-- Posts will be listed here -->', `<!-- Posts will be listed here -->${newCard}`);
-    fs.writeFileSync('blog.html', blogIndex);
-    console.log('Updated: blog.html');
-}
+</html>

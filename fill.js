@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+(async () => {
+  const content = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -171,29 +172,6 @@
     }
     .luxo-group input:focus, .luxo-group select:focus, .luxo-group textarea:focus { border-color: var(--gold); background: #1f1f2b; }
     
-    /* File Upload Area */
-    .luxo-file-upload {
-      border: 2px dashed rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 30px;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.3s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      background: rgba(255,255,255,0.02);
-    }
-    .luxo-file-upload:hover {
-      border-color: var(--gold);
-      background: rgba(201,168,76,0.05);
-    }
-    .luxo-file-upload svg { width: 24px; height: 24px; fill: var(--text-muted); }
-    .luxo-file-upload p { font-size: 13px; color: var(--text-muted); margin: 0; }
-    .luxo-file-upload span { font-size: 11px; color: var(--gold); font-weight: 700; }
-    .hidden-file-input { display: none; }
-    
     .request-types { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; grid-column: span 2; margin-top: 10px; }
     .type-option { 
       background: var(--input-bg); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;
@@ -355,164 +333,188 @@
         </div>
         <div class="product-info">
           <h3>Boutique Cardboard Bags</h3>
-          <p>Premium ivory board carrier bags for high-end retail and luxury fashion brands.</p>
+          <p>Premium ivory board carrier bags for high-end retail, available in custom sizes and finishes.</p>
           <a href="javascript:void(0)" onclick="trackInquiry('Cardboard Bags'); toggleModal()" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 4. Kraft Paper Bags -->
       <div class="product-card">
         <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A6cbee1c64cbe451a8a265e02bba4485df.png" class="main-img" alt="Eco-friendly Kraft Paper Bags Wholesale" loading="lazy">
-          <img src="https://sc02.alicdn.com/kf/A7ab08c15e08d448ea2debbe11f6d96d1b.png" class="scene-img" alt="Brown Kraft Paper Bag in Sustainable Restaurant" loading="lazy">
+          <img src="https://sc02.alicdn.com/kf/A21f00885566b4d36be8e474585c575d2n.png" class="main-img" alt="Custom Kraft Paper Bags with Twisted Handles" loading="lazy">
+          <img src="https://sc02.alicdn.com/kf/Ad978f85f1c4e4056a233636592003c401.png" class="scene-img" alt="Eco-friendly Packaging in Sustainable Store" loading="lazy">
         </div>
         <div class="product-info">
-          <h3>Eco Kraft Paper Bags</h3>
-          <p>Natural, recycled, and eco-friendly packaging solutions for sustainable brand identities.</p>
+          <h3>Sustainable Kraft Bags</h3>
+          <p>Eco-friendly kraft paper solutions with twisted or flat handles for conscious brands.</p>
           <a href="javascript:void(0)" onclick="trackInquiry('Kraft Bags'); toggleModal()" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 5. Mailer Boxes -->
       <div class="product-card">
         <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A8bf13fdfd04d4f7a957ae9f71c9aa29ev.png" class="main-img" alt="Custom Printed Mailer Boxes for E-commerce" loading="lazy">
-          <img src="https://sc02.alicdn.com/kf/A89acb317c2db41a09d6cc919e726e626e.png" class="scene-img" alt="Luxury Mailer Box Delivered at Home" loading="lazy">
+          <img src="https://sc02.alicdn.com/kf/Aa6549925e5104a37bd7d1a58ba582eb7t.png" class="main-img" alt="Custom Corrugated Mailer Boxes for E-commerce" loading="lazy">
+          <img src="https://sc02.alicdn.com/kf/A6f98f683109a4785981775f0a05a0ce8c.png" class="scene-img" alt="E-commerce Unboxing Experience with Branded Mailer" loading="lazy">
         </div>
         <div class="product-info">
-          <h3>Custom Mailer Boxes</h3>
-          <p>Durable and high-impact corrugated mailers for safe, branded e-commerce shipping.</p>
+          <h3>Branded Mailer Boxes</h3>
+          <p>Durable corrugated shipping solutions designed for a premium e-commerce unboxing experience.</p>
           <a href="javascript:void(0)" onclick="trackInquiry('Mailer Boxes'); toggleModal()" class="product-cta">Customize Deal →</a>
         </div>
       </div>
-      <!-- 6. Custom Solutions -->
+      <!-- 6. Custom Packaging -->
       <div class="product-card">
         <div class="product-img-container">
-          <img src="https://sc02.alicdn.com/kf/A0215b28ae42149f79729cb3e34471609H.png" class="main-img" alt="Complete B2B Packaging Solutions & OEM Services" loading="lazy">
-          <img src="https://sc02.alicdn.com/kf/A860c598101a44a389201680a0bce4b06C.png" class="scene-img" alt="Packaging Design Studio with Gift Box Samples" loading="lazy">
+          <img src="https://sc02.alicdn.com/kf/A600e129e160e4708817478027732d847F.png" class="main-img" alt="Full Range Custom Packaging Solutions" loading="lazy">
+          <img src="https://sc02.alicdn.com/kf/A72a7288bc92c42d38eb52924151767677.png" class="scene-img" alt="Packaging Design Concept Workshop" loading="lazy">
         </div>
         <div class="product-info">
-          <h3>OEM Custom Solutions</h3>
-          <p>Comprehensive packaging design services, from structural engineering to unique finishes.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Custom Solutions'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <h3>Bespoke Solutions</h3>
+          <p>Unique shapes, sizes, and innovative materials tailored to your specific product needs.</p>
+          <a href="javascript:void(0)" onclick="trackInquiry('Custom'); toggleModal()" class="product-cta">Customize Deal →</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- FACTORY TITLE -->
-  <section id="factory" class="factory-info-simple" style="text-align:center; padding: 60px 10% 0;">
-    <span class="section-label">State-of-the-Art</span>
-    <h2 class="section-title">From Concept to <em>Reality.</em></h2>
-    <p style="color:var(--text-muted); max-width:700px; margin:0 auto;">Our 5,000m² facility integrates the latest Heidelberg printing tech with skilled artisanal finishing to bring your vision to life.</p>
   </section>
 
   <!-- REVIEWS (3x2 Grid) -->
   <section id="reviews" class="reviews">
-    <span class="section-label">Global Feedback</span>
-    <h2 class="section-title">The Standard of <em>Trust.</em></h2>
+    <span class="section-label">Global Trust</span>
+    <h2 class="section-title">Verified <em>Client</em> Feedback.</h2>
     <div class="reviews-grid">
+      <!-- 1 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"The quality of the rigid boxes exceeded our expectations. iColorPack is now our primary supplier for all luxury releases."</p>
+        <p>"Exceptional quality on our magnetic boxes. The gold foil is crisp and the structure is solid. Jennifer's team handled our OEM requirements perfectly."</p>
         <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=1" class="reviewer-img">
-          <div class="reviewer-info"><h4>Marcus G.</h4><p>Luxury Perfume Brand (UK)</p></div>
+          <div class="reviewer-img" style="background: #222;"></div>
+          <div class="reviewer-info"><h4>Marcus L.</h4><p>Luxury Watch Brand, UK</p></div>
         </div>
       </div>
+      <!-- 2 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"Seamless communication and fast turnaround. Their design team helped us optimize our mailing box for FBA shipping."</p>
+        <p>"Best wholesale partner in Wenzhou. Their cake boxes are food-safe and beautifully designed. Our customers love the unboxing experience."</p>
         <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=2" class="reviewer-img">
-          <div class="reviewer-info"><h4>Sarah J.</h4><p>E-commerce Director (USA)</p></div>
+          <div class="reviewer-img" style="background: #222;"></div>
+          <div class="reviewer-info"><h4>Sophie R.</h4><p>Artisan Bakery Chain, France</p></div>
         </div>
       </div>
+      <!-- 3 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"Beautiful paper bags with flawless gold foil. We highly recommend iColorPack for boutique retail stores."</p>
+        <p>"We switched to iColorPack for our boutique shopping bags. The paper quality is superior and the delivery to New York was ahead of schedule."</p>
         <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=3" class="reviewer-img">
-          <div class="reviewer-info"><h4>Elena V.</h4><p>Fashion House (Italy)</p></div>
+          <div class="reviewer-img" style="background: #222;"></div>
+          <div class="reviewer-info"><h4>David K.</h4><p>Fashion House, USA</p></div>
         </div>
       </div>
+      <!-- 4 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"The craftsmanship on the drawer boxes is exceptional. Every detail reflects the premium nature of our brand."</p>
+        <p>"Low MOQ options helped our startup test premium packaging. Professional communication and very helpful design advice."</p>
         <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=4" class="reviewer-img">
-          <div class="reviewer-info"><h4>David L.</h4><p>Fine Jewelry (France)</p></div>
+          <div class="reviewer-img" style="background: #222;"></div>
+          <div class="reviewer-info"><h4>Elena M.</h4><p>Cosmetics Startup, Italy</p></div>
         </div>
       </div>
+      <!-- 5 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"Sustainable yet luxurious. Their kraft paper bags with custom printing were a hit for our eco-conscious collection."</p>
+        <p>"The corrugated mailers are incredibly durable. Zero damage reports since we started using iColorPack's shipping boxes."</p>
         <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=5" class="reviewer-img">
-          <div class="reviewer-info"><h4>Sophie K.</h4><p>Organic Beauty (Germany)</p></div>
+          <div class="reviewer-img" style="background: #222;"></div>
+          <div class="reviewer-info"><h4>James T.</h4><p>E-commerce Director, Australia</p></div>
         </div>
       </div>
+      <!-- 6 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"Amazing MOQ flexibility for a factory of this scale. Perfect for our startup's first major seasonal launch."</p>
+        <p>"High-end finish at a competitive wholesale price. Their factory capacity is impressive and quality control is top-notch."</p>
         <div class="reviewer-meta">
-          <img src="https://i.pravatar.cc/100?u=6" class="reviewer-img">
-          <div class="reviewer-info"><h4>James W.</h4><p>Lifestyle Brand (Australia)</p></div>
+          <div class="reviewer-img" style="background: #222;"></div>
+          <div class="reviewer-info"><h4>Lina W.</h4><p>Procurement Manager, Germany</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
+  <!-- FAQ Section -->
+  <section class="faq">
+    <span class="section-label">Common Inquiries</span>
+    <h2 class="section-title">Wholesale <em>FAQ.</em></h2>
     <div class="faq-container">
-      <h2 class="section-title">Common <em>Questions.</em></h2>
-      <div class="faq-item"><details><summary>What is your Minimum Order Quantity (MOQ)?</summary><div class="faq-content">We offer agile MOQ starting at 100-500 units depending on the complexity and design.</div></details></div>
-      <div class="faq-item"><details><summary>Do you provide free design support?</summary><div class="faq-content">Yes, our in-house design team can assist with structural design, logo placement, and technical file optimization.</div></details></div>
-      <div class="faq-item"><details><summary>Can you ship directly to Amazon FBA warehouses?</summary><div class="faq-content">Absolutely. We handle all labeling, palletizing, and shipping documentation for direct FBA delivery globally.</div></details></div>
-      <div class="faq-item"><details><summary>What are your typical production lead times?</summary><div class="faq-content">Standard production takes 12-18 days. Urgent orders can be expedited depending on current factory capacity.</div></details></div>
-      <div class="faq-item"><details><summary>What shipping methods do you offer?</summary><div class="faq-content">We offer sea freight (economical), air freight (fast), and door-to-door DDP services for most countries.</div></details></div>
+      <div class="faq-item">
+        <details>
+          <summary>What is your Minimum Order Quantity (MOQ)?</summary>
+          <div class="faq-content">Our standard MOQ starts at 500 units for custom rigid boxes and 1,000 units for paper bags. However, we offer agile small-batch options starting at 100 units for specific styles to help brands scale.</div>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>Can I get a physical sample before bulk production?</summary>
+          <div class="faq-content">Yes. We provide digital 3D mockups within 24 hours. Physical pre-production samples typically take 3-5 days. Sample costs are often refundable upon bulk order confirmation.</div>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>Do you offer global shipping?</summary>
+          <div class="faq-content">We deliver to over 50 countries. We offer various shipping methods including Express (Air), Sea Freight (DDP/CIF/FOB), and Railway options to balance cost and speed.</div>
+        </details>
+      </div>
+      <div class="faq-item">
+        <details>
+          <summary>Are your packaging materials sustainable?</summary>
+          <div class="faq-content">We prioritize eco-friendly solutions, including FSC-certified papers, recycled cardboard, and biodegradable coatings. We can provide certification documentation upon request.</div>
+        </details>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer id="contact-info">
+  <section id="contact-info" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.03);">
+    <h2 class="section-title">Start Your <em>Wholesale</em> Journey.</h2>
+    <p style="color: var(--text-muted); margin-bottom: 40px;">Expert consultants are ready to bring your brand vision to life.</p>
+    <button onclick="toggleModal()" class="btn-primary">Request Pricing & Mockup</button>
+  </section>
+
+  <footer>
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="#" class="logo">iColorPack</a>
-        <p style="font-size:14px; color:#BBB; margin-top:20px; line-height:1.8;"><span style="color:var(--gold); font-family:'Playfair Display', serif; font-style:italic; font-size:16px;">"Packaging that Colors Your Life."</span><br>Premier B2B manufacturing partner for global luxury brands.</p>
+        <h4 style="color: var(--white); font-size: 16px;">iColorPack</h4>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 25px; line-height: 1.6;">Your premium partner for custom gift boxes and luxury paper bags. Direct from Wenzhou's industrial heart to your doorstep.</p>
+        <div style="display: flex; gap: 15px;">
+          <a href="#" class="footer-icon">FB</a>
+          <a href="#" class="footer-icon">IG</a>
+          <a href="#" class="footer-icon">LI</a>
+        </div>
       </div>
       <div class="footer-col">
-        <h4>Connect with Us</h4>
+        <h4>Product Range</h4>
         <ul class="footer-links">
-          <li><span class="footer-icon">✉️</span><a href="mailto:Jennifer@wzicolor.com">Jennifer@wzicolor.com</a></li>
-          <li><span class="footer-icon">💬</span><a href="https://wa.me/8618058355198">WhatsApp: +86 180 5835 5198</a></li>
-          <li><span class="footer-icon">🌐</span><a href="https://wzicolor.en.alibaba.com" target="_blank">Alibaba Official Store</a></li>
-          <li><span class="footer-icon">📍</span><a href="#">Wenzhou, Zhejiang, China</a></li>
+          <li><a href="#">Rigid Gift Boxes</a></li>
+          <li><a href="#">Custom Cake Boxes</a></li>
+          <li><a href="#">Boutique Paper Bags</a></li>
+          <li><a href="#">Corrugated Mailers</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4>Contact Experts</h4>
         <ul class="footer-links">
-          <li><a href="#story">Our Story</a></li>
-          <li><a href="#products">Collection</a></li>
-          <li><a href="blog.html">Packaging Blog</a></li>
-          <li><a href="#faq">Help Center</a></li>
+          <li><span class="footer-icon">📍</span> <a href="#">Wenzhou, Zhejiang, China</a></li>
+          <li><span class="footer-icon">📧</span> <a href="mailto:sales@icolorpacks.com">sales@icolorpacks.com</a></li>
+          <li><span class="footer-icon">💬</span> <a href="https://wa.me/8613758855557">+86 137 5885 5557</a></li>
+          <li><span class="footer-icon">🕒</span> <a href="#">Mon-Sat: 9AM - 9PM (CST)</a></li>
         </ul>
       </div>
     </div>
-    <div class="copyright">© 2026 iColorPack (Wenzhou iColorPack Co., Ltd.) — All Rights Reserved.</div>
+    <div class="copyright">
+      &copy; 2026 iColorPack Packaging Co., Ltd. All Rights Reserved. | <a href="/sitemap.xml" style="color: #444; text-decoration: none;">Sitemap</a>
+    </div>
   </footer>
 
-  <a href="https://wa.me/8618058355198" class="floating-whatsapp" target="_blank">
-    <svg viewBox="0 0 24 24"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.672 1.433 5.662 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <!-- WHATSAPP WIDGET -->
+  <a href="https://wa.me/8613758855557" class="floating-whatsapp" target="_blank">
+    <svg viewBox="0 0 32 32" style="width: 32px; height: 32px; fill: white;"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.032 7.787l-2.032 7.413 7.585-1.99c2.21 1.22 4.745 1.923 7.415 1.923 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.35 0-4.577-.617-6.525-1.698l-.468-.26-4.475 1.175 1.2-4.38-.288-.458c-1.185-1.89-1.812-4.095-1.812-6.378 0-6.617 5.383-12 12-12s12 5.383 12 12-5.383 12-12 12zM22.587 18.96c-.36-.18-2.127-1.047-2.457-1.167s-.57-.18-.81.18c-.24.36-.927 1.167-1.137 1.407s-.42.27-.78.09c-.36-.18-1.52-.56-2.893-1.787-1.067-.953-1.787-2.13-1.997-2.49s-.023-.557.157-.733c.163-.16.36-.42.54-.63s.24-.36.36-.6.06-.45-.03-.63c-.09-.18-.81-1.95-1.11-2.67-.293-.703-.593-.607-.81-.62-.21-.013-.45-.013-.69-.013s-.63.09-.96.45c-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.537 3.873 6.147 5.43.857.37 1.527.59 2.05.757.86.273 1.643.233 2.26.143.69-.103 2.127-.87 2.427-1.71.3-.84.3-1.56.21-1.71s-.33-.24-.69-.42z"/></svg>
   </a>
-
-  <!-- FLOATING QUOTE BUTTON -->
-  <div class="floating-quote-container" onclick="toggleModal()">
-    <div class="quote-tooltip">Create Your Own Package Now!</div>
-    <div class="floating-quote">
-      <svg viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
-    </div>
-  </div>
 
   <!-- MODAL INQUIRY -->
   <div id="inquiryModal" class="modal">
@@ -544,22 +546,6 @@
           <div class="luxo-group"><label>Product Category</label><select name="product"><option value="Rigid Gift Box">Rigid Gift Box</option><option value="Cake Box">Cake Box</option><option value="Cardboard Bag">Cardboard Bag</option><option value="Kraft Bag">Kraft Paper Bag</option><option value="Mailer Box">Mailer Box</option><option value="Custom">Custom Solution</option></select></div>
           <div class="luxo-group"><label>Est. Quantity</label><input type="number" name="quantity" placeholder="Min. 100 units"></div>
           <div class="luxo-group full"><label>What do you need today? *</label><div class="request-types"><label class="type-option"><input type="radio" name="request_type" value="Quote + Mockup" checked><div class="radio-circle"></div><span>Price Quote + Free 3D Mockup (24h)</span></label><label class="type-option"><input type="radio" name="request_type" value="Physical Sample"><div class="radio-circle"></div><span>48h Physical Sample (Express)</span></label></div></div>
-          
-          <div class="luxo-group full">
-            <label>Additional Details (Optional)</label>
-            <textarea name="details" placeholder="Describe your product, brand style, color preferences, any special requirements... the more detail, the faster we can quote." rows="4"></textarea>
-          </div>
-          
-          <div class="luxo-group full">
-            <label>Upload Logo / Reference Image (Optional)</label>
-            <div class="luxo-file-upload" onclick="document.getElementById('file-upload').click()">
-              <svg viewBox="0 0 24 24"><path d="M16.5,6V17.5A4,4 0 0,1 12.5,21.5A4,4 0 0,1 8.5,17.5V5A2.5,2.5 0 0,1 11,2.5A2.5,2.5 0 0,1 13.5,5V15.5A1,1 0 0,1 12.5,16.5A1,1 0 0,1 11.5,15.5V6H10V15.5A2.5,2.5 0 0,0 12.5,18A2.5,2.5 0 0,0 15,15.5V5A4,4 0 0,0 11,1A4,4 0 0,0 7,5V17.5A5.5,5.5 0 0,0 12.5,23A5.5,5.5 0 0,0 18,17.5V6H16.5Z" /></svg>
-              <p>Click to upload PNG, AI, PDF, PSD · Max 10MB</p>
-              <span id="file-name">No file selected</span>
-              <input type="file" id="file-upload" name="attachment" class="hidden-file-input" onchange="updateFileName(this)">
-            </div>
-          </div>
-
           <button type="submit" class="btn-luxo-submit">Get a Free Quote</button>
         </form>
       </div>
@@ -569,11 +555,7 @@
   <script>
     function trackInquiry(category) {
       console.log('Inquiry initiated for:', category);
-    }
-
-    function updateFileName(input) {
-      const fileName = input.files[0] ? input.files[0].name : 'No file selected';
-      document.getElementById('file-name').textContent = fileName;
+      // Example: window.gtag('event', 'inquiry_click', { 'product_category': category });
     }
 
     function toggleModal() { 
@@ -591,4 +573,28 @@
     };
   </script>
 </body>
-</html>
+</html>`;
+  
+  const editor = document.querySelector('div.cm-content');
+  if (editor) {
+    // CodeMirror 6 way to set content:
+    // This is tricky without the view object.
+    // However, for GitHub, we can try to find the hidden textarea and set its value,
+    // then dispatch an input event.
+    const textarea = document.querySelector('textarea.react-code-text-area');
+    if (textarea) {
+      textarea.value = content;
+      textarea.dispatchEvent(new Event('input', { bubbles: true }));
+      textarea.dispatchEvent(new Event('change', { bubbles: true }));
+      return "Success via textarea";
+    }
+    
+    // Fallback: use execCommand (deprecated but might work for simple contenteditable)
+    editor.focus();
+    document.execCommand('selectAll', false, null);
+    document.execCommand('delete', false, null);
+    document.execCommand('insertText', false, content);
+    return "Success via insertText";
+  }
+  return "Editor not found";
+})()
