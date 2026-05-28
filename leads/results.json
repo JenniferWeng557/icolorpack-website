@@ -1,0 +1,120 @@
+{
+  "companies": [
+    {
+      "name": "Olympus Salt and Stone and Pandora Packaging",
+      "url": "https://www.linkedin.com/company/olympus-salt/",
+      "location": "Chicago, Illinois, USA",
+      "website": "https://www.olympus-salt.com"
+    },
+    {
+      "name": "Source Direct Inc",
+      "url": "https://www.linkedin.com/company/source-direct-inc/",
+      "location": "Mount Laurel, New Jersey, USA",
+      "website": "https://www.sourcedirectinc.com"
+    },
+    {
+      "name": "TricorBraun",
+      "url": "https://www.linkedin.com/company/tricorbraun/",
+      "location": "St Louis, Missouri, USA",
+      "website": "https://www.tricorbraun.com"
+    },
+    {
+      "name": "FashionTIY.com",
+      "url": "https://www.linkedin.com/company/fashiontiy/",
+      "location": "Newark, Delaware, USA",
+      "website": "https://www.fashiontiy.com"
+    },
+    {
+      "name": "Packaging Boxes Wholesale",
+      "url": "https://www.linkedin.com/company/packaging-boxes-wholesale/",
+      "location": "Jamaica, New York, USA",
+      "website": "https://www.packagingboxeswholesale.com"
+    },
+    {
+      "name": "Packaging Origins Inc.",
+      "url": "https://www.linkedin.com/company/packagingorigins/",
+      "location": "Queens, New York City, USA",
+      "website": "https://www.packagingorigins.com"
+    },
+    {
+      "name": "The Bag Ladies",
+      "url": "https://www.linkedin.com/company/the-bag-ladies/",
+      "location": "Marina Del Rey, California, USA",
+      "website": "https://www.bagladies.com"
+    },
+    {
+      "name": "International Plastics",
+      "url": "https://www.linkedin.com/company/international-plastics/",
+      "location": "Greenville, South Carolina, USA",
+      "website": "https://www.interplas.com"
+    },
+    {
+      "name": "Action Packaging",
+      "url": "https://www.linkedin.com/company/actionpackaging/",
+      "location": "Woodstock, Illinois, USA",
+      "website": "https://www.actionpackaging.com"
+    },
+    {
+      "name": "KeepCool Bags",
+      "url": "https://www.linkedin.com/company/keepcoolbags/",
+      "location": "Orinda, California, USA",
+      "website": "https://www.keepcoolbags.com"
+    }
+  ],
+  "people": [
+    {
+      "name": "Philippe Tran",
+      "title": "Chief Commercial Officer and Equity Partner",
+      "company": "EOS Corrugated Group",
+      "url": "https://www.linkedin.com/in/philippe-tran-a124521/"
+    },
+    {
+      "name": "Israel Mendoza",
+      "title": "Purchasing Team Leader",
+      "company": "Safran",
+      "url": "https://www.linkedin.com/in/isramendozam/"
+    },
+    {
+      "name": "kumaran subramani",
+      "title": "Supply chain business development Assistant",
+      "company": "VICBAG GROUP",
+      "url": "https://www.linkedin.com/in/kumaran-subramani2114/"
+    },
+    {
+      "name": "Johnny Ramos",
+      "title": "Global Procurement Manager",
+      "company": "JBS USA",
+      "url": "https://www.linkedin.com/in/johnny-ramos-6964b8198/"
+    },
+    {
+      "name": "Hani El Jamal",
+      "title": "General Manager",
+      "company": "Multisac - Workman Packaging Inc",
+      "url": "https://www.linkedin.com/in/hani-el-jamal-51399b3/"
+    },
+    {
+      "name": "Michael Heath",
+      "title": "Engineering Manager - America’s",
+      "company": "Nefab",
+      "url": "https://www.linkedin.com/in/michael-heath-71aab319/"
+    },
+    {
+      "name": "Michelle Crum Longo",
+      "title": "Sr. Director of Purchasing & Supply Chain",
+      "company": "FOCUS Brands",
+      "url": "https://www.linkedin.com/in/michellecrumlongo/"
+    },
+    {
+      "name": "Patrick Miller",
+      "title": "Director Supply Chain USA",
+      "company": "Church's Chicken",
+      "url": "https://www.linkedin.com/in/patrick-miller-34384565/"
+    },
+    {
+      "name": "Terese Madrid Kietzer",
+      "title": "Senior Manager, Global Product Management – Circular Economy & ESG",
+      "company": "Amazon",
+      "url": "https://www.linkedin.com/in/teresemkietzer/"
+    }
+  ]
+}
