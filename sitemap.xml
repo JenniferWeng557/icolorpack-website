@@ -3,112 +3,40 @@
   <!-- Main Pages -->
   <url>
     <loc>https://www.icolorpacks.com/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.icolorpacks.com/blog.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Blog Posts -->
-  <url>
-    <loc>https://www.icolorpacks.com/blog/custom-gift-boxes-wholesale-guide.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/luxury-packaging-trends-2026.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/mono-material-luxury-rigid-boxes.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/multi-sensory-sustainability-packaging.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/quiet-luxury-unboxing-trends.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/secondary-use-luxury-packaging.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/smart-luxury-packaging-innovation.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/sophisticated-circularity-luxury-packaging.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/sustainable-boldness-luxury-packaging.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/sustainable-grandeur-eco-minimalism.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/sustainable-grandeur-luxury-packaging.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/tactile-circularity-luxury-packaging.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/the-architecture-of-tactile-luxury.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/luxury-paper-shopping-bags-brand-statement.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/sustainable-paper-shopping-bags-b2b-loyalty.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.icolorpacks.com/blog/sourcing-paper-shopping-bags-wholesale-guide.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://www.icolorpacks.com/blog/atmospheric-branding-luxury-packaging.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/b2b-buyer-journey-paper-gift-boxes.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/bakery-branding-cake-boxes-shopping-bags.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/case-study-custom-cake-boxes-paris.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/custom-cake-boxes-bakery-branding.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/custom-gift-boxes-wholesale-guide.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/durability-test-paper-shopping-bags.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/factory-direct-paper-gift-boxes-sourcing.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/lightweight-luxury-packaging.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/luxury-cake-boxes-structural-branding.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/luxury-custom-paper-gift-boxes.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/luxury-paper-shopping-bags-brand-statement.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/marketing-power-custom-cake-boxes.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/material-innovation-paper-gift-boxes.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/mono-material-luxury-rigid-boxes.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/moving-billboard-paper-shopping-bags.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/psychology-unboxing-paper-gift-boxes.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/science-freshness-cake-box-ventilation.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/sensory-minimalism-luxury-packaging.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/sourcing-paper-shopping-bags-wholesale-guide.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/sustainable-paper-shopping-bags-b2b-loyalty.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/sustainable-paper-shopping-bags-loyalty.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/ultimate-guide-paper-shopping-bags-2026.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.icolorpacks.com/blog/wholesale-luxury-paper-shopping-bags-guide.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</priority>0.8</priority></url>
 </urlset>
