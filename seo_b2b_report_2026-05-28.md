@@ -25,3 +25,8 @@ Focus on B2B long-tail keywords for the "paper shopping bag" category to capture
 1.  **Index Submission**: I have updated the `sitemap.xml` (internal logic) to ensure Google crawls the new post.
 2.  **Backlink Strategy**: Internal linking from the homepage and product pages to this guide will be prioritized in the next update.
 3.  **Monitoring**: The automated daily agent will re-check these specific rankings in 48 hours.
+
+## Update - 2026-05-29 (Second B2B Optimization Pass)
+1.  **New Content**: Published [2026-05-29-sustainable-luxury-custom-recycled-paper-bags.md](blog/2026-05-29-sustainable-luxury-custom-recycled-paper-bags.md) focusing on "Custom Recycled Paper Bags Wholesale".
+2.  **Internal Linking**: Today's post includes a direct reference to yesterday's B2B guide to build a topic cluster around B2B paper bags.
+3.  **Keyword Expansion**: Added "Premium Kraft Paper Bags" and "Eco-Friendly Wholesale" to the targeting map.
