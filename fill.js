@@ -534,7 +534,7 @@
         </div>
       </div>
       <div class="modal-inner">
-        <form class="luxo-form" action="https://formspree.io/f/xvgzlowq" method="POST">
+        <form class="luxo-form" action="https://formspree.io/f/mkoeljdw" method="POST">
           <div class="inquiry-section-title"><span>①</span> Contact Information</div>
           <div class="luxo-group"><label>Your Name *</label><input type="text" name="name" placeholder="John Smith" required></div>
           <div class="luxo-group"><label>Company Name</label><input type="text" name="company" placeholder="Your Brand / Company"></div>
