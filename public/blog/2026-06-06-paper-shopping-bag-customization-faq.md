@@ -27,4 +27,4 @@ iColorPack is fully FSC-certified. We provide a complete audit trail and can pri
 
 ---
 
-[Ready to Start Your Custom Project?](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) | [View Our Full 2026 Catalog](https://www.icolorpacks.com/#products)
+[Ready to Start Your Custom Project?](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

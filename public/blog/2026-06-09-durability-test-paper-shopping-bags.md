@@ -22,4 +22,4 @@ In 2026, durability is the highest form of sustainability. A bag that lasts is a
 ### Factory-Direct Assurance
 By [sourcing directly from our Wenzhou facility](factory-direct-paper-gift-boxes-sourcing.html), you gain access to our rigorous internal stress-testing lab. Every batch of paper shopping bags is verified for tear resistance, handle strength, and ink adhesion before it leaves our floor.
 
-[See our Performance Test Results](https://www.icolorpacks.com/#products) | [Talk to a Structural Expert](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F)
+[See our Performance Test Results](https://www.icolorpacks.com/#products) | [Talk to a Structural Expert](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

@@ -16,4 +16,4 @@ Why reusable and biodegradable paper bags are the gold standard for modern distr
 ### The iColorPack Promise
 Factory-direct sustainable solutions from Wenzhou's leading manufacturer. We provide full transparency in our supply chain, from raw material sourcing to the final delivery of your custom paper shopping bags.
 
-[Learn more about our eco-friendly solutions](https://www.icolorpacks.com/#products) or [request a sample](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F).
+[Learn more about our eco-friendly solutions](https://www.icolorpacks.com/#products) or [request a sample](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

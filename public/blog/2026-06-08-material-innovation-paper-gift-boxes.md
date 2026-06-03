@@ -24,4 +24,4 @@ Most "stock" suppliers cannot keep up with this pace of material innovation. By 
 ### The 2026 Mandate: Circularity by Design
 Every paper gift box we produce is a promise to the future. By combining these advanced materials with circular design principles, we ensure that your brand stands at the forefront of the global "Conscious Luxury" movement.
 
-[Explore Our 2026 Material Lab](https://www.icolorpacks.com/#products) | [Consult with a Material Specialist](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F)
+[Explore Our 2026 Material Lab](https://www.icolorpacks.com/#products) | [Consult with a Material Specialist](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

@@ -21,4 +21,4 @@ In 2026, "luxury" is signaled by performance. Our latest [durability tests](dura
 ### Factory-Direct Consistency
 By [sourcing directly from our Wenzhou facility](factory-direct-paper-gift-boxes-sourcing.html), you gain complete control over your brand's visual output. We eliminate the color variances and finish inconsistencies typical of middleman sourcing, providing a reliable, world-class standard for global distribution.
 
-[Elevate Your Brand's Mobile Presence](https://www.icolorpacks.com/#products) | [Request a Design Consultation](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F)
+[Elevate Your Brand's Mobile Presence](https://www.icolorpacks.com/#products) | [Request a Design Consultation](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

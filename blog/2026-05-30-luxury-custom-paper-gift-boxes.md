@@ -19,4 +19,4 @@ The 2026 mandate is clear: Luxury must be circular. Our gift boxes use 100% recy
 ### Conclusion: Your Brand, Delivered
 Choosing the right paper gift box partner is a strategic decision. With iColorPack's 15+ years of expertise, you are not just buying a box; you are investing in a partnership that understands the nuances of global luxury retail.
 
-[View our custom gift box gallery](https://www.icolorpacks.com/#products) or [talk to a specialist](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F).
+[View our custom gift box gallery](https://www.icolorpacks.com/#products) or [talk to a specialist](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F
