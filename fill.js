@@ -238,6 +238,38 @@
       .consultant-bar { padding: 20px; }
       .modal-inner { padding: 30px 20px; }
     }
+    /* WIDGETS */
+    .floating-whatsapp {
+      position: fixed; bottom: 40px; left: 40px; z-index: 2000;
+      width: 55px; height: 55px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); transition: 0.3s ease;
+    }
+    .floating-whatsapp:hover { transform: scale(1.1); }
+
+    .floating-quote-container {
+      position: fixed; bottom: 40px; right: 40px; z-index: 2000;
+      display: flex; align-items: center; flex-direction: row-reverse;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .floating-quote {
+      width: 55px; height: 55px; 
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 25px rgba(201, 168, 76, 0.3);
+      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .floating-quote svg { width: 28px; height: 28px; fill: var(--dark-bg); }
+    .quote-tooltip {
+      position: absolute; right: 70px; background: var(--white); color: var(--dark-bg);
+      padding: 10px 20px; border-radius: 30px; font-size: 13px; font-weight: 700;
+      white-space: nowrap; opacity: 0; transform: translateX(20px);
+      pointer-events: none; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    .floating-quote-container:hover .quote-tooltip { opacity: 1; transform: translateX(0); }
+    .floating-quote-container:hover .floating-quote { transform: scale(1.1) rotate(90deg); }
   </style>
 </head>
 <body>
@@ -252,9 +284,9 @@
       <li><a href="#story">Story</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact-info">Contact</a></li>
+      <li><a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F">Contact</a></li>
     </ul>
-    <a href="javascript:void(0)" onclick="toggleModal()" class="btn-quote-nav">Inquiry</a>
+    <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="btn-quote-nav">Inquiry</a>
   </nav>
 
   <!-- HERO -->
@@ -264,7 +296,7 @@
       <h1>Premium Custom Gift Boxes<b>& Branded Shopping Bags.</b></h1>
       <p>Direct-factory sourcing of high-end rigid boxes and eco-friendly carrier bags. iColorPack: Your Wenzhou partner for premium B2B packaging solutions.</p>
       <div class="hero-btns">
-        <button onclick="toggleModal()" class="btn-primary">Get Custom Quote</button>
+        <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="btn-primary" style="display:inline-block; text-align:center;">Get Custom Quote</a>
       </div>
     </div>
   </section>
@@ -310,7 +342,7 @@
         <div class="product-info">
           <h3>Custom Rigid Boxes</h3>
           <p>Hand-crafted luxury magnetic gift boxes with gold foil and premium textured finishes.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Rigid Boxes'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 2. Cake Boxes -->
@@ -322,7 +354,7 @@
         <div class="product-info">
           <h3>Bakery & Cake Boxes</h3>
           <p>Elegant and sturdy custom bakery boxes for premium confectionery and artisan cakes.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Cake Boxes'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 3. Cardboard Bags -->
@@ -334,7 +366,7 @@
         <div class="product-info">
           <h3>Boutique Cardboard Bags</h3>
           <p>Premium ivory board carrier bags for high-end retail, available in custom sizes and finishes.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Cardboard Bags'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 4. Kraft Paper Bags -->
@@ -346,7 +378,7 @@
         <div class="product-info">
           <h3>Sustainable Kraft Bags</h3>
           <p>Eco-friendly kraft paper solutions with twisted or flat handles for conscious brands.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Kraft Bags'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 5. Mailer Boxes -->
@@ -358,7 +390,7 @@
         <div class="product-info">
           <h3>Branded Mailer Boxes</h3>
           <p>Durable corrugated shipping solutions designed for a premium e-commerce unboxing experience.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Mailer Boxes'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="product-cta">Customize Deal →</a>
         </div>
       </div>
       <!-- 6. Custom Packaging -->
@@ -370,7 +402,7 @@
         <div class="product-info">
           <h3>Bespoke Solutions</h3>
           <p>Unique shapes, sizes, and innovative materials tailored to your specific product needs.</p>
-          <a href="javascript:void(0)" onclick="trackInquiry('Custom'); toggleModal()" class="product-cta">Customize Deal →</a>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="product-cta">Customize Deal →</a>
         </div>
       </div>
     </div>
@@ -473,7 +505,7 @@
   <section id="contact-info" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.03);">
     <h2 class="section-title">Start Your <em>Wholesale</em> Journey.</h2>
     <p style="color: var(--text-muted); margin-bottom: 40px;">Expert consultants are ready to bring your brand vision to life.</p>
-    <button onclick="toggleModal()" class="btn-primary">Request Pricing & Mockup</button>
+    <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="btn-primary" style="display:inline-block; text-align:center;">Request Pricing & Mockup</a>
   </section>
 
   <footer>
@@ -501,7 +533,7 @@
         <ul class="footer-links">
           <li><span class="footer-icon">📍</span> <a href="#">Wenzhou, Zhejiang, China</a></li>
           <li><span class="footer-icon">📧</span> <a href="mailto:sales@icolorpacks.com">sales@icolorpacks.com</a></li>
-          <li><span class="footer-icon">💬</span> <a href="https://wa.me/8613758855557">+86 137 5885 5557</a></li>
+          <li><span class="footer-icon">💬</span> <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F">+86 180 5835 5198</a></li>
           <li><span class="footer-icon">🕒</span> <a href="#">Mon-Sat: 9AM - 9PM (CST)</a></li>
         </ul>
       </div>
@@ -512,8 +544,16 @@
   </footer>
 
   <!-- WHATSAPP WIDGET -->
-  <a href="https://wa.me/8613758855557" class="floating-whatsapp" target="_blank">
+  <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" class="floating-whatsapp" target="_blank">
     <svg viewBox="0 0 32 32" style="width: 32px; height: 32px; fill: white;"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.032 7.787l-2.032 7.413 7.585-1.99c2.21 1.22 4.745 1.923 7.415 1.923 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.35 0-4.577-.617-6.525-1.698l-.468-.26-4.475 1.175 1.2-4.38-.288-.458c-1.185-1.89-1.812-4.095-1.812-6.378 0-6.617 5.383-12 12-12s12 5.383 12 12-5.383 12-12 12zM22.587 18.96c-.36-.18-2.127-1.047-2.457-1.167s-.57-.18-.81.18c-.24.36-.927 1.167-1.137 1.407s-.42.27-.78.09c-.36-.18-1.52-.56-2.893-1.787-1.067-.953-1.787-2.13-1.997-2.49s-.023-.557.157-.733c.163-.16.36-.42.54-.63s.24-.36.36-.6.06-.45-.03-.63c-.09-.18-.81-1.95-1.11-2.67-.293-.703-.593-.607-.81-.62-.21-.013-.45-.013-.69-.013s-.63.09-.96.45c-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.537 3.873 6.147 5.43.857.37 1.527.59 2.05.757.86.273 1.643.233 2.26.143.69-.103 2.127-.87 2.427-1.71.3-.84.3-1.56.21-1.71s-.33-.24-.69-.42z"/></svg>
+  </a>
+
+  <!-- FLOATING QUOTE BUTTON -->
+  <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="floating-quote-container">
+    <div class="quote-tooltip">Create Your Own Package Now!</div>
+    <div class="floating-quote">
+      <svg viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
+    </div>
   </a>
 
   <!-- MODAL INQUIRY -->

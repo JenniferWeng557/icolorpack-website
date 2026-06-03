@@ -16,4 +16,4 @@ Sustainability shouldn't mean a sacrifice in style. Our eco-friendly cake boxes 
 ### The iColorPack Advantage
 From small-batch artisanal boutiques to global bakery franchises, iColorPack provides factory-direct solutions with low MOQs. Our structural designers work with you to create a box that is uniquely yours.
 
-[Explore our cake box collection](https://www.icolorpacks.com/#products) or [request a custom quote](https://www.icolorpacks.com/#contact).
+[Explore our cake box collection](https://www.icolorpacks.com/#products) or [request a custom quote](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F).

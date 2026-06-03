@@ -23,4 +23,4 @@ In B2B packaging, "hand-feel" is a technical metric. We apply [Premium Finishing
 ### Conclusion: More Than Just a Bag
 At iColorPack, we understand that every detail of a **paper shopping bag**—from the weight distribution to the knotting technique—is an opportunity to impress. By investing in ergonomic engineering, B2B brands can turn a simple carry-home item into a lasting memory of quality.
 
-[Contact iColorPack today](https://www.icolorpacks.com/#contact) to design your next ergonomic packaging solution.
+[Contact iColorPack today](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) to design your next ergonomic packaging solution.

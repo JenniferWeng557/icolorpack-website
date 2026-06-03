@@ -25,4 +25,4 @@ Global regulations now require verifiable proof of origin. By sourcing directly 
 ### The iColorPack Advantage: From Wenzhou to the World
 Choosing iColorPack means partnering with 15+ years of B2B excellence. We don't just manufacture boxes; we engineer brand assets that drive global growth.
 
-[Consult with our Sourcing Team](https://www.icolorpacks.com/#contact) | [View our 2026 Production Capabilities](https://www.icolorpacks.com/#products)
+[Consult with our Sourcing Team](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) | [View our 2026 Production Capabilities](https://www.icolorpacks.com/#products)

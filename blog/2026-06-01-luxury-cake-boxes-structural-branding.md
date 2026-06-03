@@ -19,4 +19,4 @@ Circular design is at the heart of our manufacturing. Our cake boxes feature bio
 ### Factory-Direct Innovation
 Based in the industrial heart of Wenzhou, iColorPack offers OEM/ODM services that bridge the gap between creative vision and technical reality. We provide the scale and reliability required by global franchises while maintaining the attention to detail expected by boutique patisseries.
 
-[Discover our 2026 Cake Box Collection](https://www.icolorpacks.com/#products) or [Consult with a Design Expert](https://www.icolorpacks.com/#contact).
+[Discover our 2026 Cake Box Collection](https://www.icolorpacks.com/#products) or [Consult with a Design Expert](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F).

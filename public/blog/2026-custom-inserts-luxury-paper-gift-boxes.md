@@ -45,4 +45,4 @@ For our B2B partners focused on [high-volume retail efficiency](blog/2026-high-v
 
 A luxury **paper gift box** is only as good as the protection it provides. By combining precision die-cutting, high-density EVA foam, and the elegance of velvet lining, iColorPack ensures that your brand’s first impression is both secure and spectacular.
 
-Are you looking to elevate your product's presentation for the next quarter? [Contact iColorPack](index.html#contact) today for a consultation on custom internal engineering.
+Are you looking to elevate your product's presentation for the next quarter? [Contact iColorPack](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) today for a consultation on custom internal engineering.

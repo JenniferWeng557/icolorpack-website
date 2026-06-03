@@ -21,4 +21,4 @@ Circularity is no longer optional. Our 2026 gift box line features 100% recyclab
 ### Factory-Direct Agility: The iColorPack Advantage
 Located in the manufacturing hub of Wenzhou, iColorPack offers the technical agility that global brands require. By [sourcing directly](factory-direct-paper-gift-boxes-sourcing.html), you bypass the quality degradation of middlemen and gain access to our advanced R&D lab for custom structural innovations.
 
-[Review Our Strategic Packaging Solutions](https://www.icolorpacks.com/#products) | [Schedule a Strategy Consultation](https://www.icolorpacks.com/#contact)
+[Review Our Strategic Packaging Solutions](https://www.icolorpacks.com/#products) | [Schedule a Strategy Consultation](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F)

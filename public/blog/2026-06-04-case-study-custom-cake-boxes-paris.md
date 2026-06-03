@@ -23,4 +23,4 @@ Six months after the transition to iColorPack's custom cake boxes, the client re
 ### Conclusion: Packaging as an Investment
 This case study proves that for luxury brands in 2026, the box is not an expense—it is a marketing vehicle. By aligning your [sustainable packaging goals](sustainable-paper-shopping-bags-loyalty.html) with high-end structural design, you can transform how customers perceive and value your brand.
 
-[Transform Your Bakery Branding](https://www.icolorpacks.com/#contact) | [Browse Our Case Studies](https://www.icolorpacks.com/#products)
+[Transform Your Bakery Branding](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) | [Browse Our Case Studies](https://www.icolorpacks.com/#products)

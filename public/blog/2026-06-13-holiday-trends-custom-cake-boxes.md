@@ -22,4 +22,4 @@ The [psychology of unboxing](psychology-unboxing-paper-gift-boxes.html) is ampli
 ### Factory-Direct Agility for Peak Season
 The holiday season demands speed and reliability. By sourcing [directly from our Wenzhou facility](factory-direct-paper-gift-boxes-sourcing.html), brands can secure their seasonal inventory with shorter lead times and guaranteed quality. We provide the technical scale to handle peak volume without compromising on the artisanal details.
 
-[Secure Your 2026 Holiday Packaging](https://www.icolorpacks.com/#contact) | [Browse Our Festive Collection](https://www.icolorpacks.com/#products)
+[Secure Your 2026 Holiday Packaging](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) | [Browse Our Festive Collection](https://www.icolorpacks.com/#products)

@@ -32,4 +32,4 @@ Furthermore, custom inserts facilitate faster inventory processing. When a produ
 
 A luxury paper gift box is incomplete without the internal engineering that matches its outward splendor. By combining the resilience of EVA foam with the elegance of silk and velvet, brands can achieve a perfect balance of protection and prestige.
 
-[Explore iColorPack’s Custom Solutions](index.html#contact) | [Request a B2B Catalog](index.html#products)
+[Explore iColorPack’s Custom Solutions](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) | [Request a B2B Catalog](index.html#products)

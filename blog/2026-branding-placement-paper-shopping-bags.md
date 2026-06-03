@@ -29,4 +29,4 @@ Optimizing your branding placement isn't just about aesthetics; it's about manuf
 ### Conclusion: Your Brand in Motion
 By strategically utilizing logo positioning, gusset printing, and interior details, you turn a simple **paper shopping bag** into a sophisticated marketing asset. In the luxury B2B sector, these details signify a brand that values quality at every touchpoint.
 
-[Contact iColorPack](https://www.icolorpacks.com/#contact) to consult with our design team on your next luxury packaging project.
+[Contact iColorPack](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F) to consult with our design team on your next luxury packaging project.

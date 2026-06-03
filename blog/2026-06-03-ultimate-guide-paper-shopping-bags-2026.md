@@ -31,4 +31,4 @@ Every paper shopping bag in 2026 must be designed with its end-of-life in mind. 
 ### Why Choose iColorPack?
 Based in Wenzhou, China, iColorPack combines factory-direct efficiency with an artisan's eye for detail. We help global B2B buyers navigate the complexities of customization, ensuring that every bag delivered is a true reflection of their brand's standard.
 
-[Download our 2026 Catalog](https://www.icolorpacks.com/#products) or [Consult with a Sourcing Expert](https://www.icolorpacks.com/#contact).
+[Download our 2026 Catalog](https://www.icolorpacks.com/#products) or [Consult with a Sourcing Expert](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F).

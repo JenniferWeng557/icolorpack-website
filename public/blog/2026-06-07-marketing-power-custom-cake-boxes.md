@@ -21,4 +21,4 @@ As discussed in our [Paris Case Study](case-study-custom-cake-boxes-paris.html),
 ### Factory-Direct Agility
 Sourcing [directly from our Wenzhou facility](factory-direct-paper-gift-boxes-sourcing.html) allows your bakery to pivot quickly with seasonal designs and localized marketing campaigns. We provide the technical agility required to stay ahead in a fast-moving gourmet market.
 
-[Browse Our 2026 Cake Box Innovations](https://www.icolorpacks.com/#products) | [Request a Custom Quote](https://www.icolorpacks.com/#contact)
+[Browse Our 2026 Cake Box Innovations](https://www.icolorpacks.com/#products) | [Request a Custom Quote](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F)
