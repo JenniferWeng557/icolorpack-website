@@ -1,0 +1,215 @@
+import os
+
+wa_link = "https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F"
+modal_trigger = 'javascript:void(0)" onclick="toggleModal()'
+
+modal_html = """
+  <!-- MODAL INQUIRY -->
+  <div id="inquiryModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="toggleModal()">&times;</span>
+      <div class="consultant-bar">
+        <div class="consultant-info-mini">
+          <div class="consultant-avatar-mini">J</div>
+          <div class="consultant-text">
+            <h4>Jennifer</h4>
+            <p>Packaging Solution Expert</p>
+          </div>
+        </div>
+        <div class="online-status">
+          <div class="status-dot"></div>
+          Online Now · 2000+ Cases Solved
+        </div>
+      </div>
+      <div class="modal-inner">
+        <form name="iColorPack Website" class="luxo-form" action="https://formspree.io/f/mkoeljdw" method="POST">
+          <input type="hidden" name="_subject" value="New Inquiry from iColorPack Website">
+          <input type="hidden" name="_next" value="https://www.icolorpacks.com/thank-you.html">
+          <div class="inquiry-section-title"><span>①</span> Contact Information</div>
+          <div class="luxo-group"><label>Your Name *</label><input type="text" name="name" placeholder="John Smith" required></div>
+          <div class="luxo-group"><label>Company Name</label><input type="text" name="company" placeholder="Your Brand / Company"></div>
+          <div class="luxo-group"><label>Email Address *</label><input type="email" name="email" placeholder="john@company.com" required></div>
+          <div class="luxo-group"><label>WhatsApp / Phone</label><input type="text" name="whatsapp" placeholder="+1 234 567 8900"></div>
+          <div class="luxo-group"><label>Target Market / Country</label><select name="market"><option value="">Where do you sell?</option><option value="USA">USA / North America</option><option value="Europe">Europe</option><option value="UK">United Kingdom</option><option value="Australia">Australia</option><option value="Other">Other Global Markets</option></select></div>
+          <div class="luxo-group"><label>Do you have existing design files?</label><select name="has_design"><option value="No">No, I need design support</option><option value="Yes">Yes, ready for print</option><option value="Draft">Just a rough concept</option></select></div>
+          <div class="inquiry-section-title"><span>②</span> Product Requirements</div>
+          <div class="luxo-group"><label>Product Category</label><select name="product"><option value="Rigid Gift Box">Rigid Gift Box</option><option value="Cake Box">Cake Box</option><option value="Cardboard Bag">Cardboard Bag</option><option value="Kraft Bag">Kraft Paper Bag</option><option value="Mailer Box">Mailer Box</option><option value="Custom">Custom Solution</option></select></div>
+          <div class="luxo-group"><label>Est. Quantity</label><input type="number" name="quantity" placeholder="Min. 500 units"></div>
+          <div class="luxo-group full"><label>What do you need today? *</label><div class="request-types"><label class="type-option"><input type="radio" name="request_type" value="Quote + Mockup" checked><div class="radio-circle"></div><span>Price Quote + Free 3D Mockup (24h)</span></label><label class="type-option"><input type="radio" name="request_type" value="Physical Sample"><div class="radio-circle"></div><span>48h Physical Sample (Express)</span></label></div></div>
+          
+          <div class="luxo-group full">
+            <label>Additional Details (Optional)</label>
+            <textarea name="details" placeholder="Describe your product, brand style, color preferences, any special requirements... the more detail, the faster we can quote." rows="4"></textarea>
+          </div>
+          
+          <div class="luxo-group full">
+            <label>Upload Logo / Reference Image (Optional)</label>
+            <div class="luxo-file-upload" onclick="document.getElementById('file-upload').click()">
+              <svg viewBox="0 0 24 24"><path d="M16.5,6V17.5A4,4 0 0,1 12.5,21.5A4,4 0 0,1 8.5,17.5V5A2.5,2.5 0 0,1 11,2.5A2.5,2.5 0 0,1 13.5,5V15.5A1,1 0 0,1 12.5,16.5A1,1 0 0,1 11.5,15.5V6H10V15.5A2.5,2.5 0 0,0 12.5,18A2.5,2.5 0 0,0 15,15.5V5A4,4 0 0,0 11,1A4,4 0 0,0 7,5V17.5A5.5,5.5 0 0,0 12.5,23A5.5,5.5 0 0,0 18,17.5V6H16.5Z" /></svg>
+              <p>Click to upload PNG, AI, PDF, PSD · Max 10MB</p>
+              <span id="file-name-modal">No file selected</span>
+              <input type="file" id="file-upload" name="attachment" class="hidden-file-input" onchange="updateFileName(this)">
+            </div>
+          </div>
+
+          <button type="submit" class="btn-luxo-submit">Get a Free Quote</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateFileName(input) {
+      const fileName = input.files[0] ? input.files[0].name : 'No file selected';
+      document.getElementById('file-name-modal').textContent = fileName;
+    }
+
+    function toggleModal() { 
+      const modal = document.getElementById('inquiryModal');
+      modal.classList.toggle('active');
+    }
+    window.onclick = function(event) { 
+      const modal = document.getElementById('inquiryModal');
+      if (event.target == modal) toggleModal(); 
+    }
+  </script>
+"""
+
+modal_css = """
+    /* MODAL */
+    .modal {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9); z-index: 3000; display: none;
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal.active { display: flex; }
+    .modal-content {
+      background: #0d0d14; width: 100%; max-width: 850px; max-height: 90vh;
+      overflow-y: auto; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px;
+      position: relative;
+    }
+    .close-modal {
+      position: absolute; top: 20px; right: 20px; font-size: 30px; color: var(--text-muted);
+      cursor: pointer; z-index: 10;
+    }
+    .modal-inner { padding: 40px; }
+    
+    .consultant-bar {
+      background: rgba(255,255,255,0.03); padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .consultant-info-mini { display: flex; align-items: center; gap: 15px; }
+    .consultant-avatar-mini { 
+      width: 40px; height: 40px; border-radius: 50%; background: var(--gold); 
+      display: flex; align-items: center; justify-content: center; font-weight: 700; color: #000;
+    }
+    .consultant-text h4 { font-size: 14px; color: var(--white); margin-bottom: 2px; }
+    .consultant-text p { font-size: 11px; color: var(--text-muted); }
+    .online-status { display: flex; align-items: center; gap: 8px; font-size: 11px; color: #25D366; }
+    .status-dot { width: 8px; height: 8px; background: #25D366; border-radius: 50%; box-shadow: 0 0 10px #25D366; }
+
+    .inquiry-section-title { 
+      font-size: 12px; color: var(--text-muted); text-transform: uppercase; 
+      letter-spacing: 2px; margin: 30px 0 20px; display: flex; align-items: center; gap: 10px;
+    }
+    .inquiry-section-title span { color: var(--gold); }
+    
+    .luxo-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .luxo-group { display: flex; flex-direction: column; gap: 8px; }
+    .luxo-group.full { grid-column: span 2; }
+    .luxo-group label { font-size: 10px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+    .luxo-group input, .luxo-group select, .luxo-group textarea {
+      background: #15151e; border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;
+      padding: 15px; color: var(--white); font-family: inherit; font-size: 14px;
+      outline: none; transition: 0.3s;
+    }
+    .luxo-group input:focus, .luxo-group select:focus, .luxo-group textarea:focus { border-color: var(--gold); background: #1f1f2b; }
+    
+    .luxo-file-upload {
+      border: 2px dashed rgba(255,255,255,0.1); border-radius: 12px; padding: 30px;
+      text-align: center; cursor: pointer; transition: 0.3s; display: flex; flex-direction: column;
+      align-items: center; gap: 10px; background: rgba(255,255,255,0.02);
+    }
+    .luxo-file-upload:hover { border-color: var(--gold); background: rgba(201,168,76,0.05); }
+    .luxo-file-upload svg { width: 24px; height: 24px; fill: var(--text-muted); }
+    .luxo-file-upload p { font-size: 13px; color: var(--text-muted); margin: 0; }
+    .luxo-file-upload span { font-size: 11px; color: var(--gold); font-weight: 700; }
+    .hidden-file-input { display: none; }
+    
+    .request-types { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; grid-column: span 2; margin-top: 10px; }
+    .type-option { background: #15151e; border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 15px; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: 0.3s; }
+    .type-option:hover { border-color: var(--gold); }
+    .type-option input { display: none; }
+    .radio-circle { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.2); border-radius: 50%; position: relative; }
+    .type-option input:checked + .radio-circle { border-color: var(--gold); }
+    .type-option input:checked + .radio-circle::after { content: ''; position: absolute; top: 3px; left: 3px; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; }
+    .type-option span { font-size: 13px; font-weight: 700; }
+
+    .btn-luxo-submit {
+      grid-column: span 2; padding: 20px; background: var(--gold); color: var(--dark-bg);
+      border: none; border-radius: 8px; font-size: 14px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; cursor: pointer; transition: 0.3s; margin-top: 10px;
+    }
+    .btn-luxo-submit:hover { background: #e0c27a; transform: translateY(-2px); }
+"""
+
+def process_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # 1. Replace all WhatsApp links
+    if wa_link in content:
+        content = content.replace(wa_link, modal_trigger)
+    
+    # 2. Check for Modal CSS
+    if '.modal {' not in content:
+        if '</style>' in content:
+            content = content.replace('</style>', modal_css + '</style>')
+    
+    # 3. Check for Modal code
+    if 'inquiryModal' not in content:
+        # Determine default category
+        filename = os.path.basename(file_path).lower()
+        local_modal_html = modal_html
+        if 'gift-box' in filename:
+            local_modal_html = local_modal_html.replace('value="Rigid Gift Box">', 'value="Rigid Gift Box" selected>')
+        elif 'cake-box' in filename:
+            local_modal_html = local_modal_html.replace('value="Cake Box">', 'value="Cake Box" selected>')
+        elif 'paper-bag' in filename:
+            local_modal_html = local_modal_html.replace('value="Cardboard Bag">', 'value="Cardboard Bag" selected>')
+        elif 'kraft-bag' in filename:
+            local_modal_html = local_modal_html.replace('value="Kraft Bag">', 'value="Kraft Bag" selected>')
+        elif 'mailer-box' in filename:
+            local_modal_html = local_modal_html.replace('value="Mailer Box">', 'value="Mailer Box" selected>')
+
+        # Inject Modal before </body>
+        if '</body>' in content:
+            content = content.replace('</body>', local_modal_html + '</body>')
+    else:
+        # If modal already exists, we might want to fix the selected option if it's a product page
+        filename = os.path.basename(file_path).lower()
+        if 'product-' in filename:
+            if 'gift-box' in filename:
+                content = content.replace('value="Rigid Gift Box">', 'value="Rigid Gift Box" selected>')
+            elif 'cake-box' in filename:
+                content = content.replace('value="Cake Box">', 'value="Cake Box" selected>')
+            elif 'paper-bag' in filename:
+                content = content.replace('value="Cardboard Bag">', 'value="Cardboard Bag" selected>')
+            elif 'kraft-bag' in filename:
+                content = content.replace('value="Kraft Bag">', 'value="Kraft Bag" selected>')
+            elif 'mailer-box' in filename:
+                content = content.replace('value="Mailer Box">', 'value="Mailer Box" selected>')
+
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+
+# Start walking from the project root
+for root, dirs, files in os.walk('.'):
+    for file in files:
+        if file.endswith('.html'):
+            file_path = os.path.join(root, file)
+            # Skip some irrelevant files if needed, but let's be thorough
+            process_file(file_path)
+
+print("Mass fix completed.")
