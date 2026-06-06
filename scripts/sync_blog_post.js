@@ -147,6 +147,11 @@ const template = `<!DOCTYPE html>
 fs.writeFileSync(htmlFile, template);
 console.log(`Generated: ${htmlFile}`);
 
+// Also write to public/blog/
+const publicHtmlFile = `public/blog/${slug}.html`;
+fs.writeFileSync(publicHtmlFile, template);
+console.log(`Generated: ${publicHtmlFile}`);
+
 // Update blog.html
 let blogIndex = fs.readFileSync('blog.html', 'utf-8');
 const newCard = `
@@ -160,9 +165,21 @@ const newCard = `
 
 // Insert after <!-- Posts will be listed here -->
 if (blogIndex.includes(title)) {
-    console.log('Post already in index.');
+    console.log('Post already in blog.html.');
 } else {
     blogIndex = blogIndex.replace('<!-- Posts will be listed here -->', `<!-- Posts will be listed here -->${newCard}`);
     fs.writeFileSync('blog.html', blogIndex);
     console.log('Updated: blog.html');
+}
+
+// Update public/blog.html
+if (fs.existsSync('public/blog.html')) {
+    let publicBlogIndex = fs.readFileSync('public/blog.html', 'utf-8');
+    if (publicBlogIndex.includes(title)) {
+        console.log('Post already in public/blog.html.');
+    } else {
+        publicBlogIndex = publicBlogIndex.replace('<!-- Posts will be listed here -->', `<!-- Posts will be listed here -->${newCard}`);
+        fs.writeFileSync('public/blog.html', publicBlogIndex);
+        console.log('Updated: public/blog.html');
+    }
 }
