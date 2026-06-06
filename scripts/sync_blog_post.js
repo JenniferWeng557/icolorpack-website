@@ -183,3 +183,26 @@ if (fs.existsSync('public/blog.html')) {
         console.log('Updated: public/blog.html');
     }
 }
+
+// Automatically update sitemaps with the new blog URL
+updateSitemaps(slug);
+
+function updateSitemaps(slug) {
+    const todayDate = new Date().toISOString().split('T')[0];
+    const sitemapEntry = `  <url><loc>https://www.icolorpacks.com/blog/${slug}.html</loc><lastmod>${todayDate}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n</urlset>`;
+    const targetUrl = `https://www.icolorpacks.com/blog/${slug}.html`;
+
+    const sitemapPaths = ['sitemap.xml', 'public/sitemap.xml'];
+    sitemapPaths.forEach(filePath => {
+        if (fs.existsSync(filePath)) {
+            let sitemapContent = fs.readFileSync(filePath, 'utf-8');
+            if (sitemapContent.includes(targetUrl)) {
+                console.log(`URL already in ${filePath}.`);
+            } else {
+                sitemapContent = sitemapContent.replace('</urlset>', sitemapEntry);
+                fs.writeFileSync(filePath, sitemapContent);
+                console.log(`Updated sitemap: ${filePath}`);
+            }
+        }
+    });
+}
