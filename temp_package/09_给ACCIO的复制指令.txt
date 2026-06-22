@@ -1,0 +1,17 @@
+请根据这个文件包，帮我完成 www.icolorpacks.com 的 SEO 和询盘转化整改。
+
+重点不是简单美化页面，而是把网站改造成 B2B 定制包装工厂的采购询盘型网站。
+
+请优先执行：
+1. 首页首屏文案和结构整改；
+2. 表单简化和 WhatsApp/询盘 CTA 优化；
+3. 核心产品页补充完整采购信息；
+4. 新建 20 个采购型 SEO 页面；
+5. 新建 8 个行业解决方案页面；
+6. 加 Product / FAQ / Organization / Breadcrumb Schema；
+7. 安装 GA4、GSC、Microsoft Clarity，并设置询盘转化事件；
+8. 更新 sitemap.xml；
+9. 检查 robots.txt、canonical、移动端、页面速度；
+10. 按 `08_验收清单.md` 逐项完成并反馈。
+
+请保留 iColorPack 现有高端、专业、工厂直供的品牌风格，页面语言使用英文，后台/交付说明可以用中文。

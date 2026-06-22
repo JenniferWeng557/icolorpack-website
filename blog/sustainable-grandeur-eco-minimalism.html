@@ -88,18 +88,121 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
     .aeo-snippet strong { color: var(--gold); }
-</style>
 
+        /* Navigation Dropdowns */
+        .nav-links li.dropdown { position: relative; }
+        .dropdown-content {
+            display: none; position: absolute; background: var(--card-bg);
+            min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border);
+        }
+        .dropdown-content a {
+            color: var(--text-muted) !important; padding: 12px 20px !important; text-decoration: none !important;
+            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
+            border-bottom: 1px solid var(--border) !important; transition: 0.3s !important;
+            text-align: left !important;
+        }
+        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
+
+        .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } .nav-links { display: none; } }
+
+    </style>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sustainable Grandeur: The New Era of Tactile Eco-Minimalism in 2026 Luxury Packaging",
+    "description": "Explore how 2026 luxury packaging trends are shifting toward Eco-Minimalism. Discover iColorPack’s expertise in specialty paper bags and rigid gift boxes designed for sustainable prestige.",
+    "image": "https://www.icolorpacks.com/images/blog-default.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "iColorPack"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "iColorPack",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.icolorpacks.com/images/Ac883bba6ae6a4f9dbf52bb335d605e8fj.webp"
+      }
+    },
+    "datePublished": "May 23, 2026"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.icolorpacks.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.icolorpacks.com/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Sustainable Grandeur: The New Era of Tactile Eco-Minimalism in 2026 Luxury Packaging",
+        "item": "https://www.icolorpacks.com/blog/sustainable-grandeur-eco-minimalism.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <nav>
-    <a href="../index.html" class="logo"><span class="logo-i">i</span><span class="logo-color">Color</span><span class="logo-pack">Pack</span></a>
-    <ul>
-      <li><a href="../index.html#products">Products</a></li>
-      <li><a href="../blog.html">Blog</a></li>
-      <li><a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank">Get a Quote</a></li>
-    </ul>
-  </nav>
+  
+    
+    <nav>
+        <a href="../index.html" class="logo">
+            <img src="../images/Ac883bba6ae6a4f9dbf52bb335d605e8fj.webp" alt="iColorPack Logo" style="height: 40px; width: auto; vertical-align: middle;">
+            <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
+        </a>
+        <div class="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Product Range <span class="arrow">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="../product-rigid-boxes.html">Rigid Boxes</a>
+                    <a href="../product-paper-bags.html">Paper Bags</a>
+                    <a href="../product-cake-boxes.html">Cake Boxes</a>
+                    <a href="../product-mailer-boxes.html">Mailer Boxes</a>
+                    <a href="../custom-kraft-paper-bags.html">Kraft Bags</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Industry Solutions <span class="arrow">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="../custom-packaging-for-cosmetics.html">Cosmetics</a>
+                    <a href="../custom-packaging-for-jewelry.html">Jewelry</a>
+                    <a href="../packaging-for-bakeries.html">Bakery</a>
+                    <a href="../custom-packaging-for-clothing-brands.html">Clothing</a>
+                    <a href="../packaging-for-candle-brands.html">Candle</a>
+                    <a href="../custom-packaging-for-perfume.html">Perfume</a>
+                    <a href="../ddp-custom-packaging-supplier-china.html">E-commerce</a>
+                    <a href="../luxury-gift-boxes-with-logo.html">Gift Shop</a>
+                </div>
+            </li>
+            <li><a href="../index.html#factory">Factory</a></li>
+            <li><a href="../index.html#cases">Case Studies</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+        </ul>
+        <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
+    </nav>
+
+
 
   <header class="post-hero">
     <span class="post-date">May 23, 2026</span>
@@ -156,9 +259,39 @@
 
   </article>
 
-  <footer>
-    &copy; 2026 iColorPack. All rights reserved.
-  </footer>
+  
+    
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="text-align: left;">
+                <a href="../index.html" class="logo">iColorPack</a>
+                <p style="margin-top: 20px; color: var(--text-muted); font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
+            </div>
+            <div class="footer-col" style="text-align: left;">
+                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li><a href="../product-rigid-boxes.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
+                    <li><a href="../product-paper-bags.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
+                    <li><a href="../product-cake-boxes.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
+                    <li><a href="../product-mailer-boxes.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
+                    <li><a href="../custom-kraft-paper-bags.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" style="text-align: left;">
+                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: var(--gold); text-decoration: none;">Jennifer@wzicolor.com</a></li>
+                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: var(--gold); text-decoration: none;">+86-18058355198</a></li>
+                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: #555;">
+            <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
 
   <!-- WHATSAPP WIDGET -->
   <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" class="floating-whatsapp" target="_blank">
@@ -172,6 +305,19 @@
       <svg viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
     </div>
   </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
 </body>
 
 </html>

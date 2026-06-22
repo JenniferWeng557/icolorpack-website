@@ -7,7 +7,7 @@
       "enabled": true,
       "deleteAfterRun": false,
       "createdAtMs": 1777359481591,
-      "updatedAtMs": 1780707603627,
+      "updatedAtMs": 1782098795198,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -19,10 +19,11 @@
         "agent": "general"
       },
       "state": {
-        "nextRunAtMs": 1780794000000,
-        "lastRunAtMs": 1780707603263,
-        "lastStatus": "ok",
-        "lastDurationMs": 3053
+        "nextRunAtMs": 1782176400000,
+        "lastRunAtMs": 1782098795126,
+        "lastStatus": "error",
+        "lastDurationMs": 1,
+        "lastError": "cron agent runner is not initialized"
       },
       "target": {
         "type": "conversation",

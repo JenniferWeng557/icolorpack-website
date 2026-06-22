@@ -45,7 +45,7 @@ The final pain point is the "MOQ Barrier." Most specialized sustainable packagin
 
 iColorPack’s commitment to B2B growth remains:
 *   **Low MOQ of 500pcs:** We allow boutique brands to go 100% plastic-free with custom-engineered paper inserts starting at just 500 units.
-*   **Regulatory Peace of Mind:** All our substrates are **FSC-certified**, providing the necessary documentation for your customs and compliance audits in 2026.
+*   **Regulatory Peace of Mind:** All our substrates are **FSC-certified**, providing the necessary documentation for your customs and compliance audits. (For a deep dive into compliance, see our guide on [Avoiding ESG Compliance Risks](esg-compliance-b2b-packaging-sourcing.html)).
 
 **Future-Proof Your Packaging Today**
 Don't wait for a customs fine or a negative viral review. Transition to 100% recyclable, paper-based luxury inserts. Visit [www.icolorpacks.com](https://www.icolorpacks.com) to consult with a structural engineer and request a quote for your **Plastic-Free Luxury Collection**.

@@ -182,7 +182,28 @@
       letter-spacing: 2px; cursor: pointer; transition: 0.3s; margin-top: 10px;
     }
     .btn-luxo-submit:hover { background: #e0c27a; transform: translateY(-2px); }
-</style>
+
+        /* Navigation Dropdowns */
+        .nav-links li.dropdown { position: relative; }
+        .dropdown-content {
+            display: none; position: absolute; background: var(--card-bg);
+            min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border);
+        }
+        .dropdown-content a {
+            color: var(--text-muted) !important; padding: 12px 20px !important; text-decoration: none !important;
+            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
+            border-bottom: 1px solid var(--border) !important; transition: 0.3s !important;
+            text-align: left !important;
+        }
+        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
+
+        .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } .nav-links { display: none; } }
+
+    </style>
 </head>
 <body>
   <div class="container">
@@ -273,5 +294,18 @@
       if (event.target == modal) toggleModal(); 
     }
   </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
