@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the MOQ for custom paper bags?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MOQ depends on size, material and printing requirements. iColorPack supports low MOQ custom packaging projects and can suggest the most cost-effective option after receiving your size and quantity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I print my logo on the packaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We support CMYK printing, Pantone color, foil stamping, embossing, debossing, spot UV and other custom logo finishes."
+      }
+    }
+  ]
+}

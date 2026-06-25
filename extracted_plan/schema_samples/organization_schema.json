@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "iColorPack",
+  "url": "https://www.icolorpacks.com",
+  "logo": "https://www.icolorpacks.com/logo.png",
+  "description": "iColorPack is a China custom packaging manufacturer for gift boxes, paper bags, cake boxes, kraft bags and mailer boxes.",
+  "sameAs": []
+}
