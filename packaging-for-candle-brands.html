@@ -35,11 +35,14 @@
         letter-spacing: 2px; display: inline-block; cursor: pointer;
     }
 
-    .section-header { padding: 140px 8% 40px; text-align: center; }
-    .section-header p { color: var(--gold); font-size: 13px; letter-spacing: 5px; text-transform: uppercase; font-weight: 600; margin-bottom: 15px; }
-    .section-header h1 { font-family: 'Playfair Display', serif; font-size: 42px; letter-spacing: 2px; }
+    .hero {
+        height: 70vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://sc02.alicdn.com/kf/A1ec674561c3e4fb6bd839b4093e6113aI.png') center/cover no-repeat;
+        display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; margin-top: 60px;
+    }
+    .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 48px; letter-spacing: 2px; margin-bottom: 20px; color: var(--white); }
+    .hero-content p { font-size: 14px; color: var(--gold); margin-bottom: 30px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; }
 
-    .gallery-container { padding: 0 8% 100px; }
+    .gallery-container { padding: 80px 8% 100px; }
     .industry-block { margin-bottom: 100px; }
     .industry-info { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid var(--border); padding-bottom: 15px; }
     .industry-info h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); }
@@ -192,10 +195,12 @@
     </nav>
 
 
-  <div class="section-header">
-    <p>Premium Scent & Aromatherapy Solutions</p>
-    <h1>Candle Packaging Solutions</h1>
-  </div>
+  <section class="hero">
+    <div class="hero-content">
+      <p>Luxury Scented Candle Solutions</p>
+      <h1>Premium Candle Packaging</h1>
+    </div>
+  </section>
 
   <div class="gallery-container">
     <div class="industry-block">
@@ -284,6 +289,17 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+tor('.nav-links');
             if (menuToggle && navLinks) {
                 menuToggle.addEventListener('click', function() {
                     navLinks.classList.toggle('active');
