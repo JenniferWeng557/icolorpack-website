@@ -12,60 +12,99 @@
   <link rel="icon" type="image/png" href="images/Ac883bba6ae6a4f9dbf52bb335d605e8fj.webp">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <style>
-    :root { --gold: #C9A84C; --gold-light: #E8C97A; --dark-bg: #0A0A0F; --card-bg: #12121A; --border: rgba(255,255,255,0.08); --text-muted: #A0A0A8; --white: #FFFFFF; }
+    :root {
+        --gold: #C9A84C; --gold-light: #E8C97A; --dark-bg: #0A0A0F; --card-bg: #12121A; --white: #FFFFFF; --text-muted: #8A8A9A;
+        --border: rgba(255, 255, 255, 0.12);
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--dark-bg); color: var(--white); font-family: 'Montserrat', sans-serif; line-height: 1.6; }
-    nav { padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; width: 100%; background: rgba(10,10,15,0.95); z-index: 1000; border-bottom: 1px solid var(--border); }
-    .logo { display: flex; align-items: center; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold); }
-    .nav-links { display: flex; list-style: none; gap: 30px; }
-    .nav-links a { text-decoration: none; color: var(--white); font-size: 12px; font-weight: 600; text-transform: uppercase; }
-    .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 10px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; text-decoration: none; }
-    .hero { padding: 160px 10% 100px; text-align: center; background: linear-gradient(rgba(10,10,15,0.85), rgba(10,10,15,0.85)), url('images/Aeb34aad7e0b247f7bb262ca8275cad39k.webp') center/cover; }
-    .section-label { color: var(--gold); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; display: block; margin-bottom: 15px; }
-    .hero h1 { font-family: 'Playfair Display', serif; font-size: 56px; margin-bottom: 20px; }
-    .hero p { color: var(--text-muted); font-size: 18px; max-width: 800px; margin: 0 auto 40px; }
-    section { padding: 100px 10%; }
-    .section-title { font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 50px; text-align: center; }
-    .section-title em { color: var(--gold); }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; align-items: center; }
-    .card { background: var(--card-bg); padding: 40px; border: 1px solid var(--border); transition: 0.3s; }
-    .card:hover { border-color: var(--gold); transform: translateY(-5px); }
-    .card h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 20px; color: var(--gold); }
-    .card p { color: var(--text-muted); font-size: 15px; }
-    .pain-points { background: #07070a; }
-    .pain-item { margin-bottom: 30px; border-left: 3px solid var(--gold); padding-left: 20px; }
-    .solution-img { width: 100%; border-radius: 4px; border: 1px solid var(--border); }
-    .faq-container { max-width: 800px; margin: 0 auto; }
-    details { background: var(--card-bg); margin-bottom: 15px; border: 1px solid var(--border); }
-    summary { padding: 20px; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; }
-    summary::after { content: '+'; color: var(--gold); }
-    footer { padding: 80px 10%; background: #050508; border-top: 1px solid var(--border); }
-    .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
-    .copyright { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border); color: #555; font-size: 12px; }
-    @media (max-width: 768px) { .hero h1 { font-size: 36px; } .grid-3, .grid-2 { grid-template-columns: 1fr; } .nav-links { display: none; } }
-  
-        /* Navigation Dropdowns */
-        .nav-links li.dropdown { position: relative; }
-        .dropdown-content {
-            display: none; position: absolute; background: var(--card-bg);
-            min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border);
-        }
-        .dropdown-content a {
-            color: var(--text-muted) !important; padding: 12px 20px !important; text-decoration: none !important;
-            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
-            border-bottom: 1px solid var(--border) !important; transition: 0.3s !important;
-            text-align: left !important;
-        }
-        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
-        .dropdown:hover .dropdown-content { display: block; }
-        .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
+    body { font-family: 'Montserrat', sans-serif; background: var(--dark-bg); color: var(--white); line-height: 1.6; }
+    
+    nav {
+        position: fixed; top: 0; width: 100%; z-index: 1000;
+        padding: 20px 8%; display: flex; align-items: center; justify-content: space-between;
+        background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .logo { font-size: 20px; font-weight: 700; text-decoration: none; color: var(--white); letter-spacing: 3px; font-family: 'Montserrat', sans-serif; }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+    .nav-links a:hover { color: var(--gold); }
+    .btn-quote-nav { 
+        border: 1px solid var(--gold); color: var(--gold); padding: 8px 18px; 
+        font-size: 10px; font-weight: 700; transition: 0.3s; text-decoration: none; 
+        letter-spacing: 2px; display: inline-block; cursor: pointer;
+    }
 
-        .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } .nav-links { display: none; } }
+    .section-header { padding: 140px 8% 40px; text-align: center; }
+    .section-header p { color: var(--gold); font-size: 13px; letter-spacing: 5px; text-transform: uppercase; font-weight: 600; margin-bottom: 15px; }
+    .section-header h1 { font-family: 'Playfair Display', serif; font-size: 42px; letter-spacing: 2px; }
 
-    </style>
+    .gallery-container { padding: 0 8% 100px; }
+    .industry-block { margin-bottom: 100px; }
+    .industry-info { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid var(--border); padding-bottom: 15px; }
+    .industry-info h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); }
+    .industry-info span { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); }
+
+    .visual-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .grid-item { position: relative; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border); aspect-ratio: 1/1; }
+    .grid-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .grid-item:hover img { transform: scale(1.05); }
+    
+    .item-label {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        padding: 25px; background: rgba(0,0,0,0.85);
+        text-align: left;
+    }
+    .item-label h3 { font-size: 14px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .item-label p { font-size: 11px; color: var(--white); text-transform: uppercase; opacity: 0.8; }
+
+    .luxo-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: var(--card-bg); padding: 40px; border-radius: 12px; border: 1px solid var(--border); max-width: 800px; margin: 0 auto; }
+    .luxo-group { display: flex; flex-direction: column; gap: 8px; text-align: left; }
+    .luxo-group.full { grid-column: span 2; }
+    .luxo-group label { font-size: 10px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+    .luxo-group input, .luxo-group select, .luxo-group textarea {
+        background: #15151e; border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;
+        padding: 15px; color: var(--white); font-family: inherit; font-size: 14px; outline: none; transition: 0.3s;
+    }
+    .btn-luxo-submit {
+        grid-column: span 2; padding: 20px; background: var(--gold); color: var(--dark-bg);
+        border: none; border-radius: 8px; font-size: 14px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 2px; cursor: pointer; transition: 0.3s; margin-top: 10px;
+    }
+
+    footer { padding: 60px 8%; background: #050508; border-top: 1px solid var(--border); text-align: center; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
+    
+    @media (max-width: 768px) {
+        .visual-grid { grid-template-columns: 1fr; }
+        .section-header h1 { font-size: 32px; }
+        .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+        .nav-links { display: none; }
+        .luxo-form { grid-template-columns: 1fr; }
+        .luxo-group.full { grid-column: span 1; }
+    }
+
+    /* Navigation Dropdowns */
+    .nav-links li.dropdown { position: relative; }
+    .dropdown-content {
+        display: none; position: absolute; background: var(--card-bg);
+        min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border);
+    }
+    .dropdown-content a {
+        color: var(--text-muted) !important; padding: 12px 20px !important; text-decoration: none !important;
+        display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
+        border-bottom: 1px solid var(--border) !important; transition: 0.3s !important;
+        text-align: left !important;
+    }
+    .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
+  </style>
 
   <script type="application/ld+json">
   {
@@ -153,83 +192,91 @@
     </nav>
 
 
-  <section class="hero"><span class="section-label">Industry Solutions</span><h1>Packaging for <b>Perfume Brands</b></h1><p>Sophisticated, high-end perfume boxes that protect your fragrance and tell your brand's unique story.</p><a href="#inquiry" class="btn-quote-nav" style="background:var(--gold); color:#000; padding: 15px 40px;">Request Fragrance Box Quote</a></section>
-  <section class="pain-points">
-    <h2 class="section-title">Perfume Industry <em>Luxury</em></h2>
-    <div class="grid-3">
-      <div class="pain-item"><h4>The Scent of Luxury</h4><p>Fragrance is an invisible product; the packaging must visualize the luxury and emotion of the scent.</p></div>
-      <div class="pain-item"><h4>High-End Protection</h4><p>Glass bottles require precise, snug-fitting inserts to prevent movement and breakage during global shipping.</p></div>
-      <div class="pain-item"><h4>Shelf Differentiation</h4><p>Unique shapes, specialty papers, and brilliant foils help your perfume stand out in a crowded retail environment.</p></div>
-    </div>
-  </section>
-  <section>
-    <h2 class="section-title">Fragrance <em>Packaging</em> Structures</h2>
-    <div class="grid-2">
-      <div><img src="images/Aeb34aad7e0b247f7bb262ca8275cad39k.webp" alt="Luxury Perfume Gift Box" class="solution-img"></div>
-      <div>
-        <div class="card"><h3>Magnetic Rigid Gift Boxes</h3><p>Providing a satisfying tactile experience and a durable home for premium fragrance collections.</p></div>
-        <div class="card" style="margin-top: 20px;"><h3>Two-Piece Shoulder Boxes</h3><p>A classic choice for high-end perfumes, offering a layered reveal and a distinct "high-jewelry" look.</p></div>
+  <div class="section-header">
+    <p>Luxury Fragrance & Scent Solutions</p>
+    <h1>Perfume Packaging Solutions</h1>
+  </div>
+
+  <div class="gallery-container">
+    <div class="industry-block">
+      <div class="industry-info">
+        <h2>Luxury Perfume Gift Boxes</h2>
+        <span>Rigid Structures | Premium Finishes</span>
+      </div>
+      <div class="visual-grid">
+        <div class="grid-item">
+          <img src="https://sc02.alicdn.com/kf/Hdbbe838f7e65457ca6239f150839e083Y.png" alt="Black Perfume Box">
+          <div class="item-label">
+            <h3>Luxe Noir Perfume Box</h3>
+            <p>Matte Black Rigid Board | Gold Foil Branding | Precise Insert</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="https://sc02.alicdn.com/kf/H742232938a1e485698b3353752e3e4eb9.png" alt="White Perfume Box">
+          <div class="item-label">
+            <h3>Minimalist White Series</h3>
+            <p>Premium White Card | Clean Lines | High-End Texture</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="https://sc02.alicdn.com/kf/A82ca80d603a14e9185a97bc8a7f0581fm.png" alt="Textured Perfume Box">
+          <div class="item-label">
+            <h3>Textured Elegance Box</h3>
+            <p>Specialty Linen Paper | Debossed Logo | Ribbon Pull</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="https://sc02.alicdn.com/kf/Aeb34aad7e0b247f7bb262ca8275cad39k.webp" alt="Classic Perfume Box">
+          <div class="item-label">
+            <h3>Classic Fragrance Box</h3>
+            <p>High-GSM Board | UV Spot Finish | Custom Foam Insert</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <section style="background: #07070a;">
-    <h2 class="section-title">Premium <em>Accents</em></h2>
-    <div class="grid-3">
-      <div class="card"><h3>Embossed/Debossed Details</h3><p>Add depth and texture to your brand logo or decorative patterns for a sophisticated feel.</p></div>
-      <div class="card"><h3>Textured Art Paper</h3><p>We source the finest papers from around the world to give your box a unique, organic, or pearlized texture.</p></div>
-      <div class="card"><h3>Velvet-Lined Inserts</h3><p>Custom-cut foam or cardboard inserts lined with velvet to cradle your bottle with the care it deserves.</p></div>
-    </div>
-  </section>
-  <section id="faq">
-    <h2 class="section-title">Perfume Packaging <em>FAQ</em></h2>
-    <div class="faq-container">
-      <details><summary>Can you handle small batches for niche perfume brands?</summary><div class="faq-content">Yes, we support niche and startup fragrance brands with MOQs starting at 500 units for luxury boxes.</div></details>
-      <details><summary>Do you provide DDP shipping for fragrance brands?</summary><div class="faq-content">Yes, we offer comprehensive door-to-door shipping (DDP) to the USA, Europe, UK, and beyond.</div></details>
-    </div>
-  </section>
+  </div>
+
   <section id="inquiry">
-    <div style="max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 50px; border: 1px solid var(--border);">
-      <h2 style="text-align: center; margin-bottom: 30px;">Get Your Perfume Packaging Quote</h2>
-      <form action="https://formspree.io/f/mkoeljdw" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-        <input type="hidden" name="_subject" value="Perfume Industry Inquiry">
-        <input type="text" name="name" placeholder="Brand Name" required style="padding: 15px; background: #1a1a24; border: 1px solid var(--border); color: #fff;">
-        <input type="email" name="email" placeholder="Contact Email" required style="padding: 15px; background: #1a1a24; border: 1px solid var(--border); color: #fff;">
-        <textarea name="message" placeholder="Bottle Size, Style, and Quantity requirements..." rows="5" style="padding: 15px; background: #1a1a24; border: 1px solid var(--border); color: #fff;"></textarea>
-        <button type="submit" style="background: var(--gold); color: #000; padding: 15px; border: none; font-weight: 700; cursor: pointer;">Send Inquiry</button>
-      </form>
-    </div>
+    <h2 class="section-title">Request a Perfume Packaging <em>Quote</em></h2>
+    <form class="luxo-form" action="https://formspree.io/f/mkoeljdw" method="POST">
+      <div class="luxo-group"><label>Name *</label><input type="text" name="name" required></div>
+      <div class="luxo-group"><label>Email *</label><input type="email" name="email" required></div>
+      <div class="luxo-group"><label>Product Type</label><input type="text" name="product" value="Perfume Packaging" readonly></div>
+      <div class="luxo-group"><label>Quantity</label><input type="number" name="quantity" placeholder="e.g., 500"></div>
+      <div class="luxo-group full"><label>Message / Requirements</label><textarea name="message" rows="5" placeholder="Bottle Size, Style, and Quantity requirements..."></textarea></div>
+      <button type="submit" class="btn-luxo-submit">Get My Factory Quote</button>
+    </form>
   </section>
-  
-    
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col" style="text-align: left;">
-                <a href="index" class="logo">iColorPack</a>
-                <p style="margin-top: 20px; color: var(--text-muted); font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
-            </div>
-            <div class="footer-col" style="text-align: left;">
-                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
-                <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li><a href="product-rigid-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
-                    <li><a href="product-paper-bags" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
-                    <li><a href="product-cake-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
-                    <li><a href="product-mailer-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
-                    <li><a href="custom-kraft-paper-bags" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
-                </ul>
-            </div>
-            <div class="footer-col" style="text-align: left;">
-                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
-                <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: var(--gold); text-decoration: none;">Jennifer@wzicolor.com</a></li>
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: var(--gold); text-decoration: none;">+86-18058355198</a></li>
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: #555;">
-            <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
-        </div>
-    </footer>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col" style="text-align: left;">
+        <a href="index" class="logo">iColorPack</a>
+        <p style="margin-top: 20px; color: var(--text-muted); font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
+      </div>
+      <div class="footer-col" style="text-align: left;">
+        <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
+        <ul class="footer-links" style="list-style: none; padding: 0;">
+          <li><a href="product-rigid-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
+          <li><a href="product-paper-bags" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
+          <li><a href="product-cake-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
+          <li><a href="product-mailer-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
+          <li><a href="custom-kraft-paper-bags" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="text-align: left;">
+        <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+        <ul class="footer-links" style="list-style: none; padding: 0;">
+          <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: var(--gold); text-decoration: none;">Jennifer@wzicolor.com</a></li>
+          <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: var(--gold); text-decoration: none;">+86-18058355198</a></li>
+          <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: #555;">
+      <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
 
