@@ -347,19 +347,15 @@
       .modal-inner { padding: 30px 20px; }
     }
 
-    /* INDUSTRY PORTFOLIO STYLES */
-    #cases { padding: 120px 8%; background: #0D0D0D; }
-    .industry-block { margin-bottom: 80px; }
-    .industry-info { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid rgba(201, 168, 76, 0.15); padding-bottom: 12px; }
-    .industry-info h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); }
-    .industry-info span { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); }
-    .visual-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
-    .grid-item { position: relative; overflow: hidden; background: #111118; border: 1px solid rgba(201, 168, 76, 0.15); aspect-ratio: 1/1; }
-    .grid-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; }
-    .grid-item:hover img { transform: scale(1.05); }
-    .item-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: rgba(0,0,0,0.85); text-align: left; }
-    .item-label h3 { font-size: 13px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-    .item-label p { font-size: 10px; color: #fff; text-transform: uppercase; opacity: 0.8; }
+    /* CASES GRID */
+    .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+    .case-card { background: #12121a; padding: 40px; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; transition: 0.3s; text-align: left; }
+    .case-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+    .case-location { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+    .case-card h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--white); margin-bottom: 25px; letter-spacing: 1px; }
+    .case-card ul { list-style: none; padding: 0; }
+    .case-card li { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    .case-card li::before { content: '•'; color: var(--gold); font-weight: bold; }
   </style>
   <script type="application/ld+json">
   {
@@ -481,93 +477,53 @@
   </div>
 
   <!-- CASE STUDIES / PORTFOLIO -->
-  <section id="cases">
-    <span class="section-label">Technical Showcase</span>
-    <h2 class="section-title">Technical <em>Engineering Portfolio.</em></h2>
-    <p style="color: var(--text-muted); text-align: center; max-width: 800px; margin: 0 auto 60px;">Explore our cross-sector engineering expertise. From structural food-safe bakery boxes to high-end rigid cosmetics packaging.</p>
-
-    <div class="gallery-container" style="max-width: 1400px; margin: 0 auto;">
-        
-      <!-- 1. BAKERY & CONFECTIONERY -->
-      <div class="industry-block">
-          <div class="industry-info">
-              <h2>Bakery & Confectionery</h2>
-              <span>Structural Design | Premium Windows & Handles</span>
-          </div>
-          <div class="visual-grid">
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A7f3536f52b594e88909e095717803d217.png" alt="Cupcake Handle Box">
-                  <div class="item-label">
-                      <h3>Cupcake Carrier</h3>
-                      <p>Integrated Carry Handle | Protective PET Window</p>
-                  </div>
-              </div>
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A8f615b0e3b664c0d800d84890925f16eZ.png" alt="Panoramic Cake Box">
-                  <div class="item-label">
-                      <h3>Panoramic Cake Box</h3>
-                      <p>Luxury Ribbon Handle | 360° Visual PET</p>
-                  </div>
-              </div>
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A641e4ffea7b64bfab9278be346c0ea89n.png" alt="Custom Macaron Box">
-                  <div class="item-label">
-                      <h3>Premium Macaron Box</h3>
-                      <p>Black Spot UV & Debossed 'MACARON' Text</p>
-                  </div>
-              </div>
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A9395f597fe2e46c78ce01f85e2c3464aW.png" alt="Artisan Pastry Box">
-                  <div class="item-label">
-                      <h3>Artisan Pastry Box</h3>
-                      <p>Auto-Lock Bottom | Food-Safe Structural Board</p>
-                  </div>
-              </div>
-          </div>
+  <section id="cases" style="padding: 120px 10%; background: #0D0D0D; text-align: center;">
+    <span class="section-label">Success Stories</span>
+    <h2 class="section-title">Real Project <em>Cases.</em></h2>
+    
+    <div class="cases-grid">
+      <!-- UK Perfume Project -->
+      <div class="case-card">
+        <span class="case-location">UK PERFUME PROJECT</span>
+        <h3>MAGNETIC RIGID GIFT BOX</h3>
+        <ul>
+          <li>Quantity: 3,000 pcs</li>
+          <li>Finish: Gold foil + Matte lamination</li>
+          <li>Sample: 5 Days</li>
+          <li>Production: 16 Days</li>
+          <li>Shipping: DDP to UK</li>
+        </ul>
       </div>
 
-      <!-- 2. GIFTS & COSMETICS -->
-      <div class="industry-block">
-          <div class="industry-info">
-              <h2>Gifts & Cosmetics</h2>
-              <span>Advanced Finishes | UV & Debossed Branding</span>
-          </div>
-          <div class="visual-grid">
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A6cfe4caef50e47c59fb90ae6ca17c5faM.png" alt="Emerald UV Box">
-                  <div class="item-label">
-                      <h3>Luxury Emerald Rigid Box</h3>
-                      <p>Glossy Spot UV Logo | Premium Matte Finish</p>
-                  </div>
-              </div>
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A5b3772eb53c84424b742376be70c8bef9.png" alt="Terracotta Debossed Box">
-                  <div class="item-label">
-                      <h3>Terracotta Collection</h3>
-                      <p>Deep Debossed Logo | High-Density Rigid Board</p>
-                  </div>
-              </div>
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/Ab09fb441f2cf4910a2021dc03276a675h.png" alt="Perfume Drawer Box">
-                  <div class="item-label">
-                      <h3>Perfume Drawer Box</h3>
-                      <p>Minimalist Grey | Ribbon Pull Sliding Mechanism</p>
-                  </div>
-              </div>
-              <div class="grid-item">
-                  <img src="https://sc02.alicdn.com/kf/A31bead8e63764f2783fa2d0334edfeac8.png" alt="Velvet Jewelry Box">
-                  <div class="item-label">
-                      <h3>High-End Jewelry Box</h3>
-                      <p>Midnight Blue Velvet Interior | Hand-Wrapped Rigid Board</p>
-                  </div>
-              </div>
-          </div>
+      <!-- USA Bakery Project -->
+      <div class="case-card">
+        <span class="case-location">USA BAKERY PROJECT</span>
+        <h3>CUSTOM CAKE BOXES</h3>
+        <ul>
+          <li>Quantity: 5,000 pcs</li>
+          <li>Material: Food-grade ivory board</li>
+          <li>Sample: 3 Days</li>
+          <li>Production: 12 Days</li>
+          <li>Shipping: Air Express DDP</li>
+        </ul>
       </div>
 
-      <div style="text-align: center; margin-top: 50px;">
-          <a href="industry-cases-2026.html" class="btn-primary">View All Industry Solutions</a>
+      <!-- EU Boutique Project -->
+      <div class="case-card">
+        <span class="case-location">EU BOUTIQUE PROJECT</span>
+        <h3>LUXURY PAPER BAGS</h3>
+        <ul>
+          <li>Quantity: 1,000 pcs</li>
+          <li>Handle: Grosgrain Ribbon</li>
+          <li>Sample: 4 Days</li>
+          <li>Production: 14 Days</li>
+          <li>Shipping: Sea Freight DDP</li>
+        </ul>
       </div>
+    </div>
 
+    <div style="text-align: center; margin-top: 60px;">
+      <a href="industry-solutions" class="btn-primary">View All Industry Solutions</a>
     </div>
   </section>
 
