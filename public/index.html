@@ -346,28 +346,21 @@
       .consultant-bar { padding: 20px; }
       .modal-inner { padding: 30px 20px; }
     }
-  
-        /* Navigation Dropdowns */
-        .nav-links li.dropdown { position: relative; }
-        .dropdown-content {
-            display: none; position: absolute; background: var(--card-bg);
-            min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border);
-        }
-        .dropdown-content a {
-            color: var(--text-muted) !important; padding: 12px 20px !important; text-decoration: none !important;
-            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
-            border-bottom: 1px solid var(--border) !important; transition: 0.3s !important;
-            text-align: left !important;
-        }
-        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
-        .dropdown:hover .dropdown-content { display: block; }
-        .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
 
-        .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } .nav-links { display: none; } }
-
-    </style>
+    /* INDUSTRY PORTFOLIO STYLES */
+    #cases { padding: 120px 8%; background: #0D0D0D; }
+    .industry-block { margin-bottom: 80px; }
+    .industry-info { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid rgba(201, 168, 76, 0.15); padding-bottom: 12px; }
+    .industry-info h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); }
+    .industry-info span { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); }
+    .visual-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+    .grid-item { position: relative; overflow: hidden; background: #111118; border: 1px solid rgba(201, 168, 76, 0.15); aspect-ratio: 1/1; }
+    .grid-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; }
+    .grid-item:hover img { transform: scale(1.05); }
+    .item-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: rgba(0,0,0,0.85); text-align: left; }
+    .item-label h3 { font-size: 13px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .item-label p { font-size: 10px; color: #fff; text-transform: uppercase; opacity: 0.8; }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -487,8 +480,8 @@
     </div>
   </div>
 
-  <!-- INDUSTRY SHOWCASE PORTFOLIO -->
-  <section id="portfolio" style="background: #0D0D0D; padding: 120px 8%;">
+  <!-- CASE STUDIES / PORTFOLIO -->
+  <section id="cases">
     <span class="section-label">Technical Showcase</span>
     <h2 class="section-title">Industry Specific <em>Portfolio.</em></h2>
     <p style="color: var(--text-muted); text-align: center; max-width: 800px; margin: 0 auto 60px;">Explore our cross-sector engineering expertise. From structural food-safe bakery boxes to high-end rigid cosmetics packaging.</p>
@@ -496,48 +489,48 @@
     <div class="gallery-container" style="max-width: 1400px; margin: 0 auto;">
         
       <!-- BAKERY & CONFECTIONERY -->
-      <div class="industry-block" style="margin-bottom: 100px;">
-          <div class="industry-info" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid rgba(201, 168, 76, 0.15); padding-bottom: 15px;">
-              <h2 style="font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold);">Bakery & Confectionery</h2>
-              <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted);">Structural Design | Premium Windows & Handles</span>
+      <div class="industry-block">
+          <div class="industry-info">
+              <h2>Bakery & Confectionery</h2>
+              <span>Structural Design | Premium Windows & Handles</span>
           </div>
-          <div class="visual-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
-              <div class="grid-item" style="position: relative; overflow: hidden; background: #111118; border: 1px solid rgba(201, 168, 76, 0.15); aspect-ratio: 1/1;">
-                  <img src="https://sc02.alicdn.com/kf/A7f3536f52b594e88909e095717803d217.png" alt="Cupcake Handle Box" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="item-label" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 25px; background: rgba(0,0,0,0.85); text-align: left;">
-                      <h3 style="font-size: 14px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Cupcake Carrier</h3>
-                      <p style="font-size: 11px; color: #fff; text-transform: uppercase; opacity: 0.8;">Integrated Carry Handle | Protective PET Window</p>
+          <div class="visual-grid">
+              <div class="grid-item">
+                  <img src="https://sc02.alicdn.com/kf/A7f3536f52b594e88909e095717803d217.png" alt="Cupcake Handle Box">
+                  <div class="item-label">
+                      <h3>Cupcake Carrier</h3>
+                      <p>Integrated Carry Handle | Protective PET Window</p>
                   </div>
               </div>
-              <div class="grid-item" style="position: relative; overflow: hidden; background: #111118; border: 1px solid rgba(201, 168, 76, 0.15); aspect-ratio: 1/1;">
-                  <img src="https://sc02.alicdn.com/kf/A8f615b0e3b664c0d800d84890925f16eZ.png" alt="Panoramic Cake Box" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="item-label" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 25px; background: rgba(0,0,0,0.85); text-align: left;">
-                      <h3 style="font-size: 14px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Panoramic Cake Box</h3>
-                      <p style="font-size: 11px; color: #fff; text-transform: uppercase; opacity: 0.8;">Luxury Ribbon Handle | 360° Visual PET</p>
+              <div class="grid-item">
+                  <img src="https://sc02.alicdn.com/kf/A8f615b0e3b664c0d800d84890925f16eZ.png" alt="Panoramic Cake Box">
+                  <div class="item-label">
+                      <h3>Panoramic Cake Box</h3>
+                      <p>Luxury Ribbon Handle | 360° Visual PET</p>
                   </div>
               </div>
           </div>
       </div>
 
       <!-- GIFTS & COSMETICS -->
-      <div class="industry-block" style="margin-bottom: 100px;">
-          <div class="industry-info" style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid rgba(201, 168, 76, 0.15); padding-bottom: 15px;">
-              <h2 style="font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold);">Gifts & Cosmetics</h2>
-              <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted);">Advanced Finishes | UV & Debossed Branding</span>
+      <div class="industry-block">
+          <div class="industry-info">
+              <h2>Gifts & Cosmetics</h2>
+              <span>Advanced Finishes | UV & Debossed Branding</span>
           </div>
-          <div class="visual-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
-              <div class="grid-item" style="position: relative; overflow: hidden; background: #111118; border: 1px solid rgba(201, 168, 76, 0.15); aspect-ratio: 1/1;">
-                  <img src="https://sc02.alicdn.com/kf/A6cfe4caef50e47c59fb90ae6ca17c5faM.png" alt="Emerald UV Box" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="item-label" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 25px; background: rgba(0,0,0,0.85); text-align: left;">
-                      <h3 style="font-size: 14px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Luxury Emerald Rigid Box</h3>
-                      <p style="font-size: 11px; color: #fff; text-transform: uppercase; opacity: 0.8;">Glossy Spot UV Logo | Premium Matte Finish</p>
+          <div class="visual-grid">
+              <div class="grid-item">
+                  <img src="https://sc02.alicdn.com/kf/A6cfe4caef50e47c59fb90ae6ca17c5faM.png" alt="Emerald UV Box">
+                  <div class="item-label">
+                      <h3>Luxury Emerald Rigid Box</h3>
+                      <p>Glossy Spot UV Logo | Premium Matte Finish</p>
                   </div>
               </div>
-              <div class="grid-item" style="position: relative; overflow: hidden; background: #111118; border: 1px solid rgba(201, 168, 76, 0.15); aspect-ratio: 1/1;">
-                  <img src="https://sc02.alicdn.com/kf/A31bead8e63764f2783fa2d0334edfeac8.png" alt="Velvet Jewelry Box" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="item-label" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 25px; background: rgba(0,0,0,0.85); text-align: left;">
-                      <h3 style="font-size: 14px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">High-End Jewelry Box</h3>
-                      <p style="font-size: 11px; color: #fff; text-transform: uppercase; opacity: 0.8;">Midnight Blue Velvet Interior | Hand-Wrapped Rigid Board</p>
+              <div class="grid-item">
+                  <img src="https://sc02.alicdn.com/kf/A31bead8e63764f2783fa2d0334edfeac8.png" alt="Velvet Jewelry Box">
+                  <div class="item-label">
+                      <h3>High-End Jewelry Box</h3>
+                      <p>Midnight Blue Velvet Interior | Hand-Wrapped Rigid Board</p>
                   </div>
               </div>
           </div>
@@ -547,81 +540,6 @@
         <a href="industry-solutions" class="btn-primary" style="display:inline-block; text-align:center;">View Full Industry Solutions Hub</a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- FACTORY CAPABILITY -->
-  <section id="factory">
-    <span class="section-label">Direct From Factory</span>
-    <h2 class="section-title">Real Packaging Factory, <em>Not Just a Trading Website.</em></h2>
-    <div class="story-container">
-      <div class="story-content">
-        <p>iColorPack works from Wenzhou, one of China’s major packaging and printing manufacturing hubs. We support OEM/ODM packaging from structure design, material sourcing, printing, finishing, hand assembly, quality control to export shipping.</p>
-        <p>Our facility integrates the latest Heidelberg printing tech with skilled artisanal finishing to bring your vision to life. We handle everything in-house to ensure the highest quality and fastest lead times.</p>
-        <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-           <div style="font-size: 13px; color: var(--text-muted); border-left: 2px solid var(--gold); padding-left: 15px;">
-              <strong style="color: var(--white); display: block; margin-bottom: 5px;">Design Support</strong>
-              Free dieline & 3D mockup to visualize your brand.
-           </div>
-           <div style="font-size: 13px; color: var(--text-muted); border-left: 2px solid var(--gold); padding-left: 15px;">
-              <strong style="color: var(--white); display: block; margin-bottom: 5px;">Quality Control</strong>
-              Strict 100% inspection before export shipping.
-           </div>
-        </div>
-      </div>
-      <div class="story-image">
-        <img src="images/A35342ae8624b428aae4ec271ab601bd2V.webp" alt="Real Packaging Factory in Wenzhou - iColorPack Production Line">
-      </div>
-    </div>
-  </section>
-
-  <!-- CASE STUDIES -->
-  <section id="cases" style="background: #07070a;">
-    <span class="section-label">Success Stories</span>
-    <h2 class="section-title">Real Project <em>Cases.</em></h2>
-    <div class="product-grid">
-      <!-- Case 1 -->
-      <div class="product-card" style="padding-bottom: 0;">
-        <div class="product-info" style="text-align: left; padding: 30px;">
-          <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 10px;">UK Perfume Project</h4>
-          <h3 style="font-size: 20px; margin-bottom: 15px;">Magnetic Rigid Gift Box</h3>
-          <ul style="list-style: none; font-size: 13px; color: var(--text-muted); line-height: 2;">
-            <li>• <b>Quantity:</b> 3,000 pcs</li>
-            <li>• <b>Finish:</b> Gold foil + Matte lamination</li>
-            <li>• <b>Sample:</b> 5 Days</li>
-            <li>• <b>Production:</b> 16 Days</li>
-            <li>• <b>Shipping:</b> DDP to UK</li>
-          </ul>
-        </div>
-      </div>
-      <!-- Case 2 -->
-      <div class="product-card" style="padding-bottom: 0;">
-        <div class="product-info" style="text-align: left; padding: 30px;">
-          <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 10px;">USA Bakery Project</h4>
-          <h3 style="font-size: 20px; margin-bottom: 15px;">Custom Cake Boxes</h3>
-          <ul style="list-style: none; font-size: 13px; color: var(--text-muted); line-height: 2;">
-            <li>• <b>Quantity:</b> 5,000 pcs</li>
-            <li>• <b>Material:</b> Food-grade ivory board</li>
-            <li>• <b>Sample:</b> 3 Days</li>
-            <li>• <b>Production:</b> 12 Days</li>
-            <li>• <b>Shipping:</b> Air Express DDP</li>
-          </ul>
-        </div>
-      </div>
-      <!-- Case 3 -->
-      <div class="product-card" style="padding-bottom: 0;">
-        <div class="product-info" style="text-align: left; padding: 30px;">
-          <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 10px;">EU Boutique Project</h4>
-          <h3 style="font-size: 20px; margin-bottom: 15px;">Luxury Paper Bags</h3>
-          <ul style="list-style: none; font-size: 13px; color: var(--text-muted); line-height: 2;">
-            <li>• <b>Quantity:</b> 1,000 pcs</li>
-            <li>• <b>Handle:</b> Grosgrain Ribbon</li>
-            <li>• <b>Sample:</b> 4 Days</li>
-            <li>• <b>Production:</b> 14 Days</li>
-            <li>• <b>Shipping:</b> Sea Freight DDP</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
