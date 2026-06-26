@@ -12,7 +12,7 @@ NAV_TEMPLATE = """
         <ul class="nav-links">
             <li><a href="{root}index.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Product Range <span class="arrow">▼</span></a>
+                <a href="javascript:void(0)" class="dropbtn">Products <span class="arrow">▼</span></a>
                 <div class="dropdown-content">
                     <a href="{root}product-rigid-boxes.html">Rigid Boxes</a>
                     <a href="{root}product-paper-bags.html">Paper Bags</a>
@@ -22,8 +22,9 @@ NAV_TEMPLATE = """
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Industry Solutions <span class="arrow">▼</span></a>
+                <a href="{root}industry-cases-2026.html" class="dropbtn">Industries <span class="arrow">▼</span></a>
                 <div class="dropdown-content">
+                    <a href="{root}industry-cases-2026.html" style="font-weight: 700; color: #C9A84C !important;">View All Industries</a>
                     <a href="{root}custom-packaging-for-cosmetics.html">Cosmetics</a>
                     <a href="{root}custom-packaging-for-jewelry.html">Jewelry</a>
                     <a href="{root}packaging-for-bakeries.html">Bakery</a>
@@ -35,7 +36,6 @@ NAV_TEMPLATE = """
                 </div>
             </li>
             <li><a href="{root}index.html#factory">Factory</a></li>
-            <li><a href="{root}index.html#cases">Case Studies</a></li>
             <li><a href="{root}blog.html">Blog</a></li>
         </ul>
         <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
@@ -47,28 +47,28 @@ FOOTER_TEMPLATE = """
         <div class="footer-grid">
             <div class="footer-col" style="text-align: left;">
                 <a href="{root}index.html" class="logo">iColorPack</a>
-                <p style="margin-top: 20px; color: var(--text-muted); font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
+                <p style="margin-top: 20px; color: #8A8A9A; font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
             </div>
             <div class="footer-col" style="text-align: left;">
-                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
                 <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li><a href="{root}product-rigid-boxes.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
-                    <li><a href="{root}product-paper-bags.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
-                    <li><a href="{root}product-cake-boxes.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
-                    <li><a href="{root}product-mailer-boxes.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
-                    <li><a href="{root}custom-kraft-paper-bags.html" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
+                    <li><a href="{root}product-rigid-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
+                    <li><a href="{root}product-paper-bags.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
+                    <li><a href="{root}product-cake-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
+                    <li><a href="{root}product-mailer-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
+                    <li><a href="{root}custom-kraft-paper-bags.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
                 </ul>
             </div>
             <div class="footer-col" style="text-align: left;">
-                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
                 <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: var(--gold); text-decoration: none;">Jennifer@wzicolor.com</a></li>
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: var(--gold); text-decoration: none;">+86-18058355198</a></li>
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: #C9A84C; text-decoration: none;">Jennifer@wzicolor.com</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: #C9A84C; text-decoration: none;">+86-18058355198</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
                 </ul>
             </div>
         </div>
-        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: #555;">
+        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: #555;">
             <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
         </div>
     </footer>
@@ -78,19 +78,21 @@ DROPDOWN_CSS = """
         /* Navigation Dropdowns */
         .nav-links li.dropdown { position: relative; }
         .dropdown-content {
-            display: none; position: absolute; background: var(--card-bg, #12121A);
-            min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border, rgba(255,255,255,0.1));
+            display: none; position: absolute; background: #0D0D14;
+            min-width: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            z-index: 1001; top: 100%; left: 0; border: 1px solid rgba(255,255,255,0.08);
+            padding: 10px 0;
         }
         .dropdown-content a {
-            color: var(--text-muted, #8A8A9A) !important; padding: 12px 20px !important; text-decoration: none !important;
-            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
-            border-bottom: 1px solid var(--border, rgba(255,255,255,0.1)) !important; transition: 0.3s !important;
-            text-align: left !important;
+            color: #8A8A9A !important; padding: 12px 25px !important; text-decoration: none !important;
+            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1.5px !important;
+            border-bottom: 1px solid rgba(255,255,255,0.03) !important; transition: 0.3s !important;
+            text-align: left !important; line-height: 1.2 !important;
         }
-        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
+        .dropdown-content a:last-child { border-bottom: none !important; }
+        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: #C9A84C !important; padding-left: 30px !important; }
         .dropdown:hover .dropdown-content { display: block; }
-        .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
+        .arrow { font-size: 8px; margin-left: 8px; vertical-align: middle; opacity: 0.7; }
 
         .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
         
@@ -98,12 +100,13 @@ DROPDOWN_CSS = """
             .menu-toggle { display: block !important; }
             .nav-links { 
                 display: none; position: absolute; top: 100%; left: 0; width: 100%; 
-                background: var(--dark-bg, #0A0A0F); flex-direction: column; padding: 20px; 
-                border-bottom: 1px solid var(--border, rgba(255,255,255,0.1)); 
+                background: #0A0A0F; flex-direction: column; padding: 20px; 
+                border-bottom: 1px solid rgba(255,255,255,0.1); 
             }
             .nav-links.active { display: flex !important; }
-            .nav-links li { margin: 10px 0; }
-            .dropdown-content { position: static; box-shadow: none; border: none; padding-left: 20px; display: block; }
+            .nav-links li { margin: 10px 0; width: 100%; }
+            .dropdown-content { position: static; box-shadow: none; border: none; padding-left: 20px; display: none; background: transparent; }
+            .dropdown.active .dropdown-content { display: block; }
         }
         @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } }
 """
@@ -113,11 +116,30 @@ MOBILE_MENU_JS = """
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const navLinks = document.querySelector('.nav-links');
+            const dropdowns = document.querySelectorAll('.nav-links .dropdown');
+
             if (menuToggle && navLinks) {
                 menuToggle.addEventListener('click', function() {
                     navLinks.classList.toggle('active');
                 });
             }
+
+            dropdowns.forEach(dropdown => {
+                const btn = dropdown.querySelector('.dropbtn');
+                btn.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 992) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            });
+
+            // Close menu on click outside
+            document.addEventListener('click', function(e) {
+                if (navLinks && navLinks.classList.contains('active') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                }
+            });
         });
     </script>
 """
@@ -134,7 +156,6 @@ def update_file(file_path):
 
     # Replace Nav
     nav_html = NAV_TEMPLATE.replace("{root}", root)
-    # Be careful with multiple matches, but re.sub with DOTALL should handle the main nav
     content = re.sub(r'<nav>.*?</nav>', nav_html, content, flags=re.DOTALL)
     content = re.sub(r'<nav id="navbar">.*?</nav>', nav_html, content, flags=re.DOTALL)
 
@@ -142,8 +163,11 @@ def update_file(file_path):
     footer_html = FOOTER_TEMPLATE.replace("{root}", root)
     content = re.sub(r'<footer>.*?</footer>', footer_html, content, flags=re.DOTALL)
 
-    # Add Dropdown CSS if not present
-    if 'Navigation Dropdowns' not in content:
+    # Add Dropdown CSS if not present or replace old
+    if 'Navigation Dropdowns' in content:
+        # Replace existing dropdown CSS block
+        content = re.sub(r'/\* Navigation Dropdowns \*/.*?(?=\s*</style>)', DROPDOWN_CSS.strip(), content, flags=re.DOTALL)
+    else:
         if '</style>' in content:
             content = content.replace('</style>', DROPDOWN_CSS + '\n    </style>')
         else:
@@ -181,7 +205,7 @@ def main():
                 if f.endswith('.html'):
                     html_files.append(os.path.join('public/blog', f))
 
-    # Remove duplicates and filtered files (like full_code.html or temp files)
+    # Remove duplicates and filtered files
     html_files = list(set(html_files))
     exclude = ['full_code.html', 'iColorPack_精美排版清单_Word专用.html', 'verify_images', 'part1.html', 'part2.html']
     html_files = [f for f in html_files if not any(x in f for x in exclude)]

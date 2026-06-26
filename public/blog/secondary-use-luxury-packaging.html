@@ -92,22 +92,37 @@
         /* Navigation Dropdowns */
         .nav-links li.dropdown { position: relative; }
         .dropdown-content {
-            display: none; position: absolute; background: var(--card-bg);
-            min-width: 200px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            z-index: 1001; top: 100%; left: 0; border: 1px solid var(--border);
+            display: none; position: absolute; background: #0D0D14;
+            min-width: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            z-index: 1001; top: 100%; left: 0; border: 1px solid rgba(255,255,255,0.08);
+            padding: 10px 0;
         }
         .dropdown-content a {
-            color: var(--text-muted) !important; padding: 12px 20px !important; text-decoration: none !important;
-            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important;
-            border-bottom: 1px solid var(--border) !important; transition: 0.3s !important;
-            text-align: left !important;
+            color: #8A8A9A !important; padding: 12px 25px !important; text-decoration: none !important;
+            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1.5px !important;
+            border-bottom: 1px solid rgba(255,255,255,0.03) !important; transition: 0.3s !important;
+            text-align: left !important; line-height: 1.2 !important;
         }
-        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; }
+        .dropdown-content a:last-child { border-bottom: none !important; }
+        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: #C9A84C !important; padding-left: 30px !important; }
         .dropdown:hover .dropdown-content { display: block; }
-        .arrow { font-size: 8px; margin-left: 5px; vertical-align: middle; }
+        .arrow { font-size: 8px; margin-left: 8px; vertical-align: middle; opacity: 0.7; }
 
         .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } .nav-links { display: none; } }
+        
+        @media (max-width: 992px) {
+            .menu-toggle { display: block !important; }
+            .nav-links { 
+                display: none; position: absolute; top: 100%; left: 0; width: 100%; 
+                background: #0A0A0F; flex-direction: column; padding: 20px; 
+                border-bottom: 1px solid rgba(255,255,255,0.1); 
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links li { margin: 10px 0; width: 100%; }
+            .dropdown-content { position: static; box-shadow: none; border: none; padding-left: 20px; display: none; background: transparent; }
+            .dropdown.active .dropdown-content { display: block; }
+        }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } }
 
     </style>
 
@@ -164,43 +179,45 @@
 <body>
   
     
+    
     <nav>
-        <a href="../../index" class="logo">
+        <a href="../../index.html" class="logo">
             <img src="../../images/Ac883bba6ae6a4f9dbf52bb335d605e8fj.webp" alt="iColorPack Logo" style="height: 40px; width: auto; vertical-align: middle;">
             <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
         </a>
         <div class="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
         <ul class="nav-links">
-            <li><a href="../../index">Home</a></li>
+            <li><a href="../../index.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Product Range <span class="arrow">▼</span></a>
+                <a href="javascript:void(0)" class="dropbtn">Products <span class="arrow">▼</span></a>
                 <div class="dropdown-content">
-                    <a href="../../product-rigid-boxes">Rigid Boxes</a>
-                    <a href="../../product-paper-bags">Paper Bags</a>
-                    <a href="../../product-cake-boxes">Cake Boxes</a>
-                    <a href="../../product-mailer-boxes">Mailer Boxes</a>
-                    <a href="../../custom-kraft-paper-bags">Kraft Bags</a>
+                    <a href="../../product-rigid-boxes.html">Rigid Boxes</a>
+                    <a href="../../product-paper-bags.html">Paper Bags</a>
+                    <a href="../../product-cake-boxes.html">Cake Boxes</a>
+                    <a href="../../product-mailer-boxes.html">Mailer Boxes</a>
+                    <a href="../../custom-kraft-paper-bags.html">Kraft Bags</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Industry Solutions <span class="arrow">▼</span></a>
+                <a href="../../industry-cases-2026.html" class="dropbtn">Industries <span class="arrow">▼</span></a>
                 <div class="dropdown-content">
-                    <a href="../../custom-packaging-for-cosmetics">Cosmetics</a>
-                    <a href="../../custom-packaging-for-jewelry">Jewelry</a>
-                    <a href="../../packaging-for-bakeries">Bakery</a>
-                    <a href="../../custom-packaging-for-clothing-brands">Clothing</a>
-                    <a href="../../packaging-for-candle-brands">Candle</a>
-                    <a href="../../custom-packaging-for-perfume">Perfume</a>
-                    <a href="../../ddp-custom-packaging-supplier-china">E-commerce</a>
-                    <a href="../../luxury-gift-boxes-with-logo">Gift Shop</a>
+                    <a href="../../industry-cases-2026.html" style="font-weight: 700; color: #C9A84C !important;">View All Industries</a>
+                    <a href="../../custom-packaging-for-cosmetics.html">Cosmetics</a>
+                    <a href="../../custom-packaging-for-jewelry.html">Jewelry</a>
+                    <a href="../../packaging-for-bakeries.html">Bakery</a>
+                    <a href="../../custom-packaging-for-clothing-brands.html">Clothing</a>
+                    <a href="../../packaging-for-candle-brands.html">Candle</a>
+                    <a href="../../custom-packaging-for-perfume.html">Perfume</a>
+                    <a href="../../ddp-custom-packaging-supplier-china.html">E-commerce</a>
+                    <a href="../../luxury-gift-boxes-with-logo.html">Gift Shop</a>
                 </div>
             </li>
-            <li><a href="../../index#factory">Factory</a></li>
-            <li><a href="../../index#cases">Case Studies</a></li>
-            <li><a href="../../blog">Blog</a></li>
+            <li><a href="../../index.html#factory">Factory</a></li>
+            <li><a href="../../blog.html">Blog</a></li>
         </ul>
         <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
     </nav>
+
 
 
 
@@ -257,35 +274,37 @@
 
   
     
+    
     <footer>
         <div class="footer-grid">
             <div class="footer-col" style="text-align: left;">
-                <a href="../../index" class="logo">iColorPack</a>
-                <p style="margin-top: 20px; color: var(--text-muted); font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
+                <a href="../../index.html" class="logo">iColorPack</a>
+                <p style="margin-top: 20px; color: #8A8A9A; font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
             </div>
             <div class="footer-col" style="text-align: left;">
-                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
                 <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li><a href="../../product-rigid-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
-                    <li><a href="../../product-paper-bags" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
-                    <li><a href="../../product-cake-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
-                    <li><a href="../../product-mailer-boxes" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
-                    <li><a href="../../custom-kraft-paper-bags" style="color: var(--text-muted); text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
+                    <li><a href="../../product-rigid-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
+                    <li><a href="../../product-paper-bags.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
+                    <li><a href="../../product-cake-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
+                    <li><a href="../../product-mailer-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
+                    <li><a href="../../custom-kraft-paper-bags.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
                 </ul>
             </div>
             <div class="footer-col" style="text-align: left;">
-                <h4 style="color: var(--gold); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
                 <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: var(--gold); text-decoration: none;">Jennifer@wzicolor.com</a></li>
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: var(--gold); text-decoration: none;">+86-18058355198</a></li>
-                    <li style="color: var(--text-muted); font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: #C9A84C; text-decoration: none;">Jennifer@wzicolor.com</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: #C9A84C; text-decoration: none;">+86-18058355198</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
                 </ul>
             </div>
         </div>
-        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: #555;">
+        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: #555;">
             <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
         </div>
     </footer>
+
 
 
 
