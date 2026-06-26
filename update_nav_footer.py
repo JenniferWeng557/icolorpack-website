@@ -4,42 +4,74 @@ import re
 # Define the new navigation and footer templates with a placeholder for root path
 NAV_TEMPLATE = """
     <nav>
-        <a href="{root}index.html" class="logo">
+        <a href="{root}index" class="logo">
             <img src="{root}images/Ac883bba6ae6a4f9dbf52bb335d605e8fj.webp" alt="iColorPack Logo" style="height: 40px; width: auto; vertical-align: middle;">
             <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
         </a>
         <div class="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
         <ul class="nav-links">
-            <li><a href="{root}index.html">Home</a></li>
+            <li><a href="{root}index">Home</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Products <span class="arrow">▼</span></a>
                 <div class="dropdown-content">
-                    <a href="{root}product-rigid-boxes.html">Rigid Boxes</a>
-                    <a href="{root}product-paper-bags.html">Paper Bags</a>
-                    <a href="{root}product-cake-boxes.html">Cake Boxes</a>
-                    <a href="{root}product-mailer-boxes.html">Mailer Boxes</a>
-                    <a href="{root}custom-kraft-paper-bags.html">Kraft Bags</a>
+                    <a href="{root}product-rigid-boxes">Rigid Boxes</a>
+                    <a href="{root}product-paper-bags">Paper Bags</a>
+                    <a href="{root}product-cake-boxes">Cake Boxes</a>
+                    <a href="{root}product-mailer-boxes">Mailer Boxes</a>
+                    <a href="{root}custom-kraft-paper-bags">Kraft Bags</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="{root}industry-cases-2026.html" class="dropbtn">Industries <span class="arrow">▼</span></a>
+                <a href="{root}industry-cases-2026" class="dropbtn">Industries <span class="arrow">▼</span></a>
                 <div class="dropdown-content">
-                    <a href="{root}industry-cases-2026.html" style="font-weight: 700; color: #C9A84C !important;">View All Industries</a>
-                    <a href="{root}custom-packaging-for-cosmetics.html">Cosmetics</a>
-                    <a href="{root}custom-packaging-for-jewelry.html">Jewelry</a>
-                    <a href="{root}packaging-for-bakeries.html">Bakery</a>
-                    <a href="{root}custom-packaging-for-clothing-brands.html">Clothing</a>
-                    <a href="{root}packaging-for-candle-brands.html">Candle</a>
-                    <a href="{root}custom-packaging-for-perfume.html">Perfume</a>
-                    <a href="{root}ddp-custom-packaging-supplier-china.html">E-commerce</a>
-                    <a href="{root}luxury-gift-boxes-with-logo.html">Gift Shop</a>
+                    <a href="{root}industry-cases-2026" style="font-weight: 700; color: #C9A84C !important;">View All Industries</a>
+                    <a href="{root}custom-packaging-for-cosmetics">Cosmetics</a>
+                    <a href="{root}custom-packaging-for-jewelry">Jewelry</a>
+                    <a href="{root}packaging-for-bakeries">Bakery</a>
+                    <a href="{root}custom-packaging-for-clothing-brands">Clothing</a>
+                    <a href="{root}packaging-for-candle-brands">Candle</a>
+                    <a href="{root}custom-packaging-for-perfume">Perfume</a>
+                    <a href="{root}ddp-custom-packaging-supplier-china">E-commerce</a>
+                    <a href="{root}luxury-gift-boxes-with-logo">Gift Shop</a>
                 </div>
             </li>
-            <li><a href="{root}index.html#factory">Factory</a></li>
-            <li><a href="{root}blog.html">Blog</a></li>
+            <li><a href="{root}index#factory">Factory</a></li>
+            <li><a href="{root}blog">Blog</a></li>
         </ul>
         <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
     </nav>
+"""
+
+FOOTER_TEMPLATE = """
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="text-align: left;">
+                <a href="{root}index" class="logo">iColorPack</a>
+                <p style="margin-top: 20px; color: #8A8A9A; font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
+            </div>
+            <div class="footer-col" style="text-align: left;">
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li><a href="{root}product-rigid-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
+                    <li><a href="{root}product-paper-bags" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
+                    <li><a href="{root}product-cake-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
+                    <li><a href="{root}product-mailer-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
+                    <li><a href="{root}custom-kraft-paper-bags" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" style="text-align: left;">
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: #C9A84C; text-decoration: none;">Jennifer@wzicolor.com</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: #C9A84C; text-decoration: none;">+86-18058355198</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: #555;">
+            <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
 """
 
 FOOTER_TEMPLATE = """
