@@ -209,7 +209,7 @@ TEMPLATE = """<!DOCTYPE html>
 
 SECTORS = [
     {
-        "file": "custom-packaging-for-cosmetics.html",
+        "files": ["custom-packaging-for-cosmetics.html", "packaging-for-cosmetics-brands.html"],
         "title": "Custom Cosmetics Packaging Solutions",
         "description": "Premium custom packaging for cosmetics brands. Luxury cosmetic boxes, skincare packaging, and branded paper bags.",
         "hero_img": "https://sc02.alicdn.com/kf/A3e7f404a41c24e38a32422d28773c969U.png",
@@ -225,7 +225,7 @@ SECTORS = [
         "label4_h3": "Cosmetic Set", "label4_p": "Magnetic Closure | Ribbon"
     },
     {
-        "file": "custom-packaging-for-jewelry.html",
+        "files": ["custom-packaging-for-jewelry.html", "packaging-for-jewelry-brands.html"],
         "title": "Custom Jewelry Packaging Solutions",
         "description": "Elevate your jewelry brand with custom luxury packaging. From velvet-lined drawer boxes to foil-stamped gift bags.",
         "hero_img": "https://sc02.alicdn.com/kf/Affe59e14aeab4230bc75914d99adfb6ai.png",
@@ -241,7 +241,7 @@ SECTORS = [
         "label4_h3": "Jewelry Set Box", "label4_p": "Multi-insert | Unified Brand"
     },
     {
-        "file": "packaging-for-bakeries.html",
+        "files": ["packaging-for-bakeries.html"],
         "title": "Artisan Bakery Packaging Solutions",
         "description": "Custom bakery boxes, cake boxes, and pastry packaging for artisan bakeries. High-quality food-grade materials.",
         "hero_img": "https://sc02.alicdn.com/kf/A3e7f404a41c24e38a32422d28773c969U.png",
@@ -257,7 +257,7 @@ SECTORS = [
         "label4_h3": "Bread Packaging", "label4_p": "Breathable | Custom Print"
     },
     {
-        "file": "custom-packaging-for-clothing-brands.html",
+        "files": ["custom-packaging-for-clothing-brands.html", "packaging-for-clothing-boutiques.html"],
         "title": "Fashion & Apparel Packaging Solutions",
         "description": "Luxury garment boxes, shipping mailers, and branded shopping bags for fashion brands. Premium unboxing for apparel.",
         "hero_img": "https://s.alicdn.com/@sc04/kf/H5254f5689502496c89aa640caf3ccb0fz.jpg",
@@ -273,7 +273,7 @@ SECTORS = [
         "label4_h3": "Branded Garment Bag", "label4_p": "High-GSM | Ribbon Handle"
     },
     {
-        "file": "packaging-for-candle-brands.html",
+        "files": ["packaging-for-candle-brands.html"],
         "title": "Premium Candle Packaging Solutions",
         "description": "Luxury candle boxes and gift packaging for candle brands. Heat-resistant materials and premium unboxing.",
         "hero_img": "https://s.alicdn.com/@sc04/kf/He312d0f9e1ba40feac67876fb1d7d54fX.jpg",
@@ -289,7 +289,7 @@ SECTORS = [
         "label4_h3": "Gift Set Box", "label4_p": "Window Cut | Scent Protection"
     },
     {
-        "file": "custom-packaging-for-perfume.html",
+        "files": ["custom-packaging-for-perfume.html", "packaging-for-perfume-brands.html"],
         "title": "Luxury Fragrance Packaging Solutions",
         "description": "High-end perfume boxes, fragrance packaging, and custom perfume gift sets. Premium finishes for luxury brands.",
         "hero_img": "https://s.alicdn.com/@sc04/kf/Hf297b45d72904c73bf987b1aa833ac35X.jpg",
@@ -305,7 +305,7 @@ SECTORS = [
         "label4_h3": "Branded Perfume Bag", "label4_p": "Luxury Shopping Bag Style"
     },
     {
-        "file": "ddp-custom-packaging-supplier-china.html",
+        "files": ["ddp-custom-packaging-supplier-china.html", "packaging-for-ecommerce-brands.html"],
         "title": "DDP E-commerce Packaging Solutions",
         "description": "Reliable DDP shipping and custom e-commerce packaging from China. Mailer boxes, poly mailers, and shipping boxes.",
         "hero_img": "https://s.alicdn.com/@sc04/kf/Ha004176cc3534f268d58f2b9e658fdfbl.jpg",
@@ -321,7 +321,7 @@ SECTORS = [
         "label4_h3": "Shipping Mailer", "label4_p": "Poly/Paper Mix | Eco-friendly"
     },
     {
-        "file": "luxury-gift-boxes-with-logo.html",
+        "files": ["luxury-gift-boxes-with-logo.html", "packaging-for-gift-shops.html"],
         "title": "Luxury Gift Store Packaging Solutions",
         "description": "Custom luxury gift boxes with logo for boutique gift shops. Ribbon-tied boxes and premium shopping bags.",
         "hero_img": "https://s.alicdn.com/@sc04/kf/H4466e5c60ecd40c58416b262d1586df3B.jpg",
@@ -335,48 +335,17 @@ SECTORS = [
         "label3_h3": "Ribbon-Tied Box", "label3_p": "Elegant Bow | Soft Touch",
         "img4": "https://s.alicdn.com/@sc04/kf/H1f2c9ded863f4252b04f1df81e90fe174.jpg",
         "label4_h3": "Pink Boutique Box", "label4_p": "Satin Lining | Chic Design"
-    },
-    {
-        "file": "packaging-for-perfume-brands.html",
-        "title": "Luxury Perfume Packaging Solutions",
-        "description": "High-end perfume boxes, fragrance packaging, and custom perfume gift sets. Premium finishes for luxury brands.",
-        "hero_img": "https://s.alicdn.com/@sc04/kf/Hf297b45d72904c73bf987b1aa833ac35X.jpg",
-        "hero_h1": "Luxury Fragrance Solutions",
-        "industry_name": "Perfume",
-        "img1": "https://s.alicdn.com/@sc04/kf/H7faaa003948a40599466ddcf59c06177N.jpg",
-        "label1_h3": "Minimalist Perfume Box", "label1_p": "Matte White | Debossed Logo",
-        "img2": "https://s.alicdn.com/@sc04/kf/Hfaf78d3ce47d43549b4e17904b9aabf20.png",
-        "label2_h3": "Textured Black Box", "label2_p": "Linen Paper | Gold Stamping",
-        "img3": "https://s.alicdn.com/@sc04/kf/H482db7b0a65d42e48124de0bddf502ecz.jpg",
-        "label3_h3": "Classic Fragrance Box", "label3_p": "Standard Rigid | Satin Lining",
-        "img4": "https://s.alicdn.com/@sc04/kf/Hcdde4cccc10e4b3e91f39718b42199b96.jpg",
-        "label4_h3": "Branded Perfume Bag", "label4_p": "Luxury Shopping Bag Style"
-    },
-    {
-        "file": "packaging-for-cosmetics-brands.html",
-        "title": "Custom Cosmetics Packaging Solutions",
-        "description": "Premium custom packaging for cosmetics brands. Luxury cosmetic boxes, skincare packaging, and branded paper bags.",
-        "hero_img": "https://sc02.alicdn.com/kf/A3e7f404a41c24e38a32422d28773c969U.png",
-        "hero_h1": "Luxury Skincare & Beauty Solutions",
-        "industry_name": "Cosmetics",
-        "img1": "https://s.alicdn.com/@sc04/kf/He312d0f9e1ba40feac67876fb1d7d54fX.jpg",
-        "label1_h3": "Luxe Cream Box", "label1_p": "Rigid Construction | Gold Foil",
-        "img2": "https://s.alicdn.com/@sc04/kf/Hf259b887b692474b863b9bfa3b4cc3bfj.jpg",
-        "label2_h3": "Serum Bottle Box", "label2_p": "Soft Touch | UV Spot",
-        "img3": "https://s.alicdn.com/@sc04/kf/H36ad5a779232427baa63fd27cd1198d0d.jpg",
-        "label3_h3": "Palette Collection", "label3_p": "Textured Paper | Precise Fit",
-        "img4": "https://s.alicdn.com/@sc04/kf/H7ef043f8dfd44062a8b91074c206c530X.png",
-        "label4_h3": "Cosmetic Set", "label4_p": "Magnetic Closure | Ribbon"
     }
 ]
 
 for sector in SECTORS:
     content = TEMPLATE.format(**sector)
-    with open(sector['file'], 'w', encoding='utf-8') as f:
-        f.write(content)
-    # Sync to public
-    public_path = os.path.join('public', sector['file'])
-    with open(public_path, 'w', encoding='utf-8') as f:
-        f.write(content)
+    for filename in sector['files']:
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(content)
+        # Sync to public
+        public_path = os.path.join('public', filename)
+        with open(public_path, 'w', encoding='utf-8') as f:
+            f.write(content)
 
 print("Regenerated all 8 industry pages successfully.")
