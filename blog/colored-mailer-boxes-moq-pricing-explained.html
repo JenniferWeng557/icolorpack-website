@@ -45,7 +45,17 @@
     @media(max-width:768px){ nav{padding:20px} nav ul{display:none} .post-hero{padding:140px 24px 60px} article{margin:40px auto} }
   
         /* Navigation Dropdowns */
+        .nav-links { display: flex; gap: 40px; list-style: none; margin: 0; padding: 0; align-items: center; }
+        .nav-links a { text-decoration: none; color: #8A8A9A; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .nav-links a:hover { color: #C9A84C; }
         .nav-links li.dropdown { position: relative; }
+        .btn-quote-nav { 
+            border: 1px solid #C9A84C; color: #C9A84C; padding: 8px 18px; 
+            font-size: 10px; font-weight: 700; transition: 0.3s; text-decoration: none; 
+            letter-spacing: 2px; display: inline-block; cursor: pointer;
+        }
+        .btn-quote-nav:hover { background: #C9A84C; color: #0A0A0F; }
+        
         .dropdown-content {
             display: none; position: absolute; background: #0D0D14;
             min-width: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -83,6 +93,7 @@
 </head>
 <body>
   
+    
     
     
     
@@ -127,6 +138,7 @@
 
 
 
+
   <header class="post-hero">
     <span class="post-date">June 25, 2026</span>
     <h1>Colored Mailer Boxes MOQ & Pricing Explained</h1>
@@ -159,6 +171,7 @@
   
     
     
+    
     <footer>
         <div class="footer-grid">
             <div class="footer-col" style="text-align: left;">
@@ -188,6 +201,7 @@
             <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
         </div>
     </footer>
+
 
 
 
