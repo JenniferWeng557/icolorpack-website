@@ -228,18 +228,18 @@ SECTORS = [
     {
         "files": ["custom-packaging-for-jewelry.html", "packaging-for-jewelry-brands.html"],
         "title": "Custom Jewelry Packaging Solutions",
-        "description": "Elevate your jewelry brand with custom luxury packaging. From velvet-lined drawer boxes to foil-stamped gift bags.",
-        "hero_img": "https://sc02.alicdn.com/kf/Aff9196c5a80543128e38374bc291ac88S.png",
+        "description": "Elevate your jewelry brand with custom paper-based luxury packaging. From rigid lid-and-base boxes to premium ribbon drawer boxes.",
+        "hero_img": "https://sc02.alicdn.com/kf/A66377202ff34404bb333996d3ebf39aeq.png",
         "hero_h1": "Premium Jewelry Solutions",
         "industry_name": "Jewelry",
-        "img1": "https://sc02.alicdn.com/kf/Abff3bf740e904c5c8a520589ef92ececo.png",
-        "label1_h3": "Velvet Ring Box", "label1_p": "Premium Suede | Gold Trim",
-        "img2": "https://sc02.alicdn.com/kf/A7809d572f48443d5963f5a9e61230131q.png",
-        "label2_h3": "Drawer Necklace Box", "label2_p": "Slide-out | Textured Finish",
-        "img3": "https://sc02.alicdn.com/kf/Ac46e29da1abb4affad751541034b7a27c.png",
-        "label3_h3": "Double Door Box", "label3_p": "Symmetrical | Luxury Presentation",
-        "img4": "https://sc02.alicdn.com/kf/Afe6bf4743bf247fc9308ba51267b932ae.png",
-        "label4_h3": "Jewelry Set Box", "label4_p": "Multi-insert | Unified Brand"
+        "img1": "https://sc02.alicdn.com/kf/A22c22410a1e0486183dfd404f2d1d4d3E.png",
+        "label1_h3": "Lid-and-Base Box", "label1_p": "Textured Paper | Gold Foil",
+        "img2": "https://sc02.alicdn.com/kf/A67f4dd663c204f4888401ac1cba3d5a2O.png",
+        "label2_h3": "Drawer Style Box", "label2_p": "Ribbon Pull | Matte Finish",
+        "img3": "https://sc02.alicdn.com/kf/Aae81b757dbc240b1accc4e040f19a37d4.png",
+        "label3_h3": "Multi-Layer Gift Box", "label3_p": "Complex Construction | Silver Foil",
+        "img4": "https://sc02.alicdn.com/kf/A952f8919886d4a3b868abe6cb13e95494.png",
+        "label4_h3": "Jewelry Boutique Set", "label4_p": "Coordinated Brand Presentation"
     },
     {
         "files": ["packaging-for-bakeries.html"],
