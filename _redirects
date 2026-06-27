@@ -74,3 +74,6 @@
 
 # Root index
 /index.html / 301
+
+# Blog Redirects (June 27)
+/blog/2026-custom-rigid-gift-boxes-cost-guide.html /blog/2026-custom-rigid-gift-boxes-cost-guide 301
