@@ -5,7 +5,7 @@ import re
 NAV_TEMPLATE = """
     <nav>
         <a href="{root}index" class="logo">
-            <img src="{root}images/Ac883bba6ae6a4f9dbf52bb335d605e8fj.webp" alt="iColorPack Logo" style="height: 40px; width: auto; vertical-align: middle;">
+            <img src="https://sc02.alicdn.com/kf/A94ddad755cf74f0d93ee51ab0229ac3ac.png" alt="iColorPack Logo" style="height: 40px; width: auto; vertical-align: middle;">
             <span style="vertical-align: middle; margin-left: 10px;">iColorPack</span>
         </a>
         <div class="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
@@ -57,38 +57,6 @@ FOOTER_TEMPLATE = """
                     <li><a href="{root}product-cake-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
                     <li><a href="{root}product-mailer-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
                     <li><a href="{root}custom-kraft-paper-bags" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
-                </ul>
-            </div>
-            <div class="footer-col" style="text-align: left;">
-                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
-                <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Email: <a href="mailto:Jennifer@wzicolor.com" style="color: #C9A84C; text-decoration: none;">Jennifer@wzicolor.com</a></li>
-                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: #C9A84C; text-decoration: none;">+86-18058355198</a></li>
-                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: #555;">
-            <p>&copy; 2026 iColorPack Packaging Solutions. All Rights Reserved.</p>
-        </div>
-    </footer>
-"""
-
-FOOTER_TEMPLATE = """
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col" style="text-align: left;">
-                <a href="{root}index.html" class="logo">iColorPack</a>
-                <p style="margin-top: 20px; color: #8A8A9A; font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
-            </div>
-            <div class="footer-col" style="text-align: left;">
-                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
-                <ul class="footer-links" style="list-style: none; padding: 0;">
-                    <li><a href="{root}product-rigid-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
-                    <li><a href="{root}product-paper-bags.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
-                    <li><a href="{root}product-cake-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
-                    <li><a href="{root}product-mailer-boxes.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
-                    <li><a href="{root}custom-kraft-paper-bags.html" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
                 </ul>
             </div>
             <div class="footer-col" style="text-align: left;">
