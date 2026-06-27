@@ -333,7 +333,7 @@ SECTORS = [
         "label2_h3": "Magnetic Gift Box", "label2_p": "Collapsible | Luxury Texture",
         "img3": "https://sc02.alicdn.com/kf/A4b594c7726cd4b398ef4f8adcd1ace31A.png",
         "label3_h3": "Ribbon-Tied Box", "label3_p": "Elegant Bow | Soft Touch",
-        "img4": "https://sc02.alicdn.com/kf/A3a6f00d3d29f4a86b562eca25cfd9150t.png",
+        "img4": "https://sc02.alicdn.com/kf/Aae1fd2bd6e7c41c6888110cd1889faffX.png",
         "label4_h3": "Pink Boutique Box", "label4_p": "Satin Lining | Chic Design"
     }
 ]
