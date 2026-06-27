@@ -6,24 +6,18 @@ from PIL import Image
 from io import BytesIO
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import glob
 
-# Main files to process
-html_files = [
-    "index.html",
-    "product-rigid-boxes.html",
-    "product-paper-bags.html",
-    "product-cake-boxes.html",
-    "product-mailer-boxes.html",
-    "product-kraft-bags.html",
-    "blog.html",
-    "public/index.html",
-    "public/product-rigid-boxes.html",
-    "public/product-paper-bags.html",
-    "public/product-cake-boxes.html",
-    "public/product-mailer-boxes.html",
-    "public/product-kraft-bags.html",
-    "public/blog.html"
-]
+# Main folders to scan for HTML files
+folders = [".", "public", "blog", "public/blog"]
+
+html_files = []
+for folder in folders:
+    html_files.extend(glob.glob(os.path.join(folder, "*.html")))
+
+# Ensure unique files and absolute paths
+html_files = list(set([os.path.normpath(f) for f in html_files]))
+
 
 # Ensure output directories exist
 os.makedirs("images", exist_ok=True)
