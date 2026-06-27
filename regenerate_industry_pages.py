@@ -307,18 +307,18 @@ SECTORS = [
     {
         "files": ["ddp-custom-packaging-supplier-china.html", "packaging-for-ecommerce-brands.html"],
         "title": "DDP E-commerce Packaging Solutions",
-        "description": "Reliable DDP shipping and custom e-commerce packaging from China. Mailer boxes, poly mailers, and shipping boxes.",
-        "hero_img": "https://sc02.alicdn.com/kf/A1ab0c66ffc1d4f908119518832856230Q.png",
+        "description": "Reliable DDP shipping and custom e-commerce packaging from China. Mailer boxes, easy-open boxes, and luxury subscription boxes.",
+        "hero_img": "https://sc02.alicdn.com/kf/Aeffc91c419f740e18a8c559a2a69ab43S.png",
         "hero_h1": "DDP E-commerce Packaging",
         "industry_name": "E-commerce",
-        "img1": "https://sc02.alicdn.com/kf/A50bb5698c67e4a4ebc3cda68e5f84ce6r.png",
-        "label1_h3": "Premium Mailer Box", "label1_p": "Heavy Duty | White/Kraft",
-        "img2": "https://sc02.alicdn.com/kf/Ac3c45038be41441aa676c20c62324341n.png",
-        "label2_h3": "Custom Shopping Bag", "label2_p": "Retail Ready | Durable",
-        "img3": "https://sc02.alicdn.com/kf/A005f90f197f0431493ed784263541065W.png",
-        "label3_h3": "Subscription Box", "label3_p": "Vibrant Print | High Strength",
-        "img4": "https://sc02.alicdn.com/kf/A88960662940441d9a90b4b10dedd787eR.png",
-        "label4_h3": "Shipping Mailer", "label4_p": "Poly/Paper Mix | Eco-friendly"
+        "img1": "https://sc02.alicdn.com/kf/A7726b5a7f5284293a41ab9be8a8112c7n.png",
+        "label1_h3": "White Tear-Strip Box", "label1_p": "Easy-Open | Self-Adhesive",
+        "img2": "https://sc02.alicdn.com/kf/Ac763efc2d5344cab993c5a0960ca4ec4n.png",
+        "label2_h3": "Custom Interior Print", "label2_p": "Kraft Mailer | Premium Branding",
+        "img3": "https://sc02.alicdn.com/kf/Ae1409852c5dd468bae697953457aa407S.png",
+        "label3_h3": "Luxury Subscription Box", "label3_p": "Matte Black | Gold Accents",
+        "img4": "https://sc02.alicdn.com/kf/A91ee96afe3a8442ea2358c25edd073f01.png",
+        "label4_h3": "Easy-Open Mailer", "label4_p": "Printed Corrugated | Secure Seal"
     },
     {
         "files": ["luxury-gift-boxes-with-logo.html", "packaging-for-gift-shops.html"],
