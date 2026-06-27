@@ -294,7 +294,7 @@
     <div class="hero-content">
       <span class="section-label">Luxury Packaging Manufacturer & Wholesale Factory</span>
       <h1>Premium Custom Gift Boxes<b>& Branded Shopping Bags.</b></h1>
-      <p>Direct-factory sourcing of high-end rigid boxes and eco-friendly carrier bags. iColorPack: Your Wenzhou partner for premium B2B packaging solutions.</p>
+      <p>Direct-factory sourcing of high-end rigid boxes and eco-friendly carrier bags. iColorPack: Your reliable partner for premium B2B packaging solutions.</p>
       <div class="hero-btns">
         <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="btn-primary" style="display:inline-block; text-align:center;">Get Custom Quote</a>
       </div>
