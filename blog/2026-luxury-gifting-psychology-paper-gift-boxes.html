@@ -424,10 +424,10 @@
   </a>
 
 
-  <!-- MODAL INQUIRY -->
+    <!-- MODAL INQUIRY -->
   <div id="inquiryModal" class="modal">
     <div class="modal-content">
-      <span class="close-modal" onclick="toggleModal()">&times;</span>
+      <span class="close-modal" >&times;</span>
       <div class="consultant-bar">
         <div class="consultant-info-mini">
           <div class="consultant-avatar-mini">J</div>
@@ -438,41 +438,63 @@
         </div>
         <div class="online-status">
           <div class="status-dot"></div>
-          Online Now · 2000+ Cases Solved
+          Free sample available · Reply within 2 hours
         </div>
       </div>
       <div class="modal-inner">
         <form name="iColorPacks Website" class="luxo-form" action="https://formspree.io/f/mkoeljdw" method="POST">
           <input type="hidden" name="_subject" value="New Inquiry from iColorPacks Website">
           <input type="hidden" name="_next" value="https://www.icolorpacks.com/thank-you">
-          <div class="inquiry-section-title"><span>①</span> Contact Information</div>
-          <div class="luxo-group"><label>Your Name *</label><input type="text" name="name" placeholder="John Smith" required></div>
-          <div class="luxo-group"><label>Company Name</label><input type="text" name="company" placeholder="Your Brand / Company"></div>
-          <div class="luxo-group"><label>Email Address *</label><input type="email" name="email" placeholder="john@company.com" required></div>
-          <div class="luxo-group"><label>WhatsApp / Phone</label><input type="text" name="whatsapp" placeholder="+1 234 567 8900"></div>
-          <div class="luxo-group"><label>Target Market / Country</label><select name="market"><option value="">Where do you sell?</option><option value="USA">USA / North America</option><option value="Europe">Europe</option><option value="UK">United Kingdom</option><option value="Australia">Australia</option><option value="Other">Other Global Markets</option></select></div>
-          <div class="luxo-group"><label>Do you have existing design files?</label><select name="has_design"><option value="No">No, I need design support</option><option value="Yes">Yes, ready for print</option><option value="Draft">Just a rough concept</option></select></div>
-          <div class="inquiry-section-title"><span>②</span> Product Requirements</div>
-          <div class="luxo-group"><label>Product Category</label><select name="product"><option value="Rigid Gift Box">Rigid Gift Box</option><option value="Cake Box">Cake Box</option><option value="Cardboard Bag">Cardboard Bag</option><option value="Kraft Bag">Kraft Paper Bag</option><option value="Mailer Box">Mailer Box</option><option value="Custom">Custom Solution</option></select></div>
-          <div class="luxo-group"><label>Est. Quantity</label><input type="number" name="quantity" placeholder="Min. 500 units"></div>
-          <div class="luxo-group full"><label>What do you need today? *</label><div class="request-types"><label class="type-option"><input type="radio" name="request_type" value="Quote + Mockup" checked><div class="radio-circle"></div><span>Price Quote + Free 3D Mockup (24h)</span></label><label class="type-option"><input type="radio" name="request_type" value="Physical Sample"><div class="radio-circle"></div><span>48h Physical Sample (Express)</span></label></div></div>
           
-          <div class="luxo-group full">
-            <label>Additional Details (Optional)</label>
-            <textarea name="details" placeholder="Describe your product, brand style, color preferences, any special requirements... the more detail, the faster we can quote." rows="4"></textarea>
+          <div class="luxo-group">
+            <label>Full Name *</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="luxo-group">
+            <label>Email or WhatsApp *</label>
+            <input type="text" name="contact" placeholder="Email or Phone (+1...)" required>
+          </div>
+          
+          <div class="luxo-group">
+            <label>Estimated Quantity *</label>
+            <select name="quantity" required>
+              <option value="">Select Quantity...</option>
+              <option value="100-300">100 - 300 PCS</option>
+              <option value="300-500">300 - 500 PCS</option>
+              <option value="500-1000">500 - 1000 PCS</option>
+              <option value="1000-3000">1000 - 3000 PCS</option>
+              <option value="3000+">3000+ PCS</option>
+            </select>
+          </div>
+
+          <div class="luxo-group">
+            <label>Product Interest</label>
+            <select name="product">
+              <option value="Not Specified">Select box type...</option>
+              <option value="Rigid Gift Box">Rigid Gift Box</option>
+              <option value="Cake / Bakery Box">Cake / Bakery Box</option>
+              <option value="Luxury Paper Bag">Luxury Paper Bag</option>
+              <option value="Mailer Box">Mailer Box</option>
+              <option value="Kraft Bag">Kraft Paper Bag</option>
+            </select>
           </div>
           
           <div class="luxo-group full">
-            <label>Upload Logo / Reference Image (Optional)</label>
+            <label>Project Details (Size, Color, Branding)</label>
+            <textarea name="details" placeholder="Tell us about your project..." rows="3" style="width: 100%; background: var(--input-bg); border: 1px solid var(--border); border-radius: 8px; padding: 15px; color: #FFF; font-family: inherit; font-size: 14px;"></textarea>
+          </div>
+          
+          <div class="luxo-group full">
+            <label>Upload Logo / Reference (Optional)</label>
             <div class="luxo-file-upload" onclick="document.getElementById('file-upload').click()">
               <svg viewBox="0 0 24 24"><path d="M16.5,6V17.5A4,4 0 0,1 12.5,21.5A4,4 0 0,1 8.5,17.5V5A2.5,2.5 0 0,1 11,2.5A2.5,2.5 0 0,1 13.5,5V15.5A1,1 0 0,1 12.5,16.5A1,1 0 0,1 11.5,15.5V6H10V15.5A2.5,2.5 0 0,0 12.5,18A2.5,2.5 0 0,0 15,15.5V5A4,4 0 0,0 11,1A4,4 0 0,0 7,5V17.5A5.5,5.5 0 0,0 12.5,23A5.5,5.5 0 0,0 18,17.5V6H16.5Z" /></svg>
-              <p>Click to upload PNG, AI, PDF, PSD · Max 10MB</p>
-              <span id="file-name-modal">No file selected</span>
+              <p>Click to upload PNG, AI, PDF · Max 10MB</p>
+              <span id="file-name">No file selected</span>
               <input type="file" id="file-upload" name="attachment" class="hidden-file-input" onchange="updateFileName(this)">
             </div>
           </div>
 
-          <button type="submit" class="btn-luxo-submit">Get a Free Quote</button>
+          <button type="submit" class="btn-luxo-submit">Get My Free Quote</button>
         </form>
       </div>
     </div>

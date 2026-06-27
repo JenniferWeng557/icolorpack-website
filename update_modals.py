@@ -1,31 +1,7 @@
-<html>
-<body>
-  <h1>Item 1: White Background</h1>
-  <img src="images/H457751587d194808ab71c909b99e4f70L.webp" width="300">
-  <img src="images/H67577186139a4339bc8e804fb22dd0b3Q.webp" width="300">
-  
-  <h1>Item 2: Lifestyle?</h1>
-  <img src="images/He230ba1948a54beab8e75a8c1c2daf44b.webp" width="300">
-  <img src="images/H7ff22531d8644cfd8744183fb72f35acp.webp" width="300">
-  <img src="images/A604801a3a40d499894611fc09ec24ed8N.webp" width="300">
-  
-  <h1>Item 3: Collection?</h1>
-  <img src="images/Heae9649cb7a1473fbb8de9283986cc60b.webp" width="300">
-  <img src="images/H8d806a0865c2447699476e0c7f96b476Y.webp" width="300">
+import os
+import re
 
-  <!-- WHATSAPP WIDGET -->
-  
-
-  <!-- FLOATING QUOTE BUTTON -->
-  <a href="javascript:void(0);" onclick="toggleModal()"  class="floating-quote-container">
-    <div class="quote-tooltip">Create Your Own Package Now!</div>
-    <div class="floating-quote">
-      <svg viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
-    </div>
-  </a>
-
-
-    <!-- MODAL INQUIRY -->
+new_modal = """  <!-- MODAL INQUIRY -->
   <div id="inquiryModal" class="modal">
     <div class="modal-content">
       <span class="close-modal" >&times;</span>
@@ -99,22 +75,30 @@
         </form>
       </div>
     </div>
-  </div>
+  </div>"""
 
-  <script>
-    function updateFileName(input) {
-      const fileName = input.files[0] ? input.files[0].name : 'No file selected';
-      document.getElementById('file-name-modal').textContent = fileName;
-    }
+modal_re = re.compile(r'<!-- MODAL INQUIRY -->.*?<div id="inquiryModal" class="modal">.*?</div>\s*</div>\s*</div>', re.DOTALL)
+# Fallback for when comments are missing or slightly different
+modal_re_alt = re.compile(r'<div id="inquiryModal" class="modal">.*?</div>\s*</div>\s*</div>', re.DOTALL)
 
-    function toggleModal() { 
-      const modal = document.getElementById('inquiryModal');
-      modal.classList.toggle('active');
-    }
-    window.onclick = function(event) { 
-      const modal = document.getElementById('inquiryModal');
-      if (event.target == modal) toggleModal(); 
-    }
-  </script>
-</body>
-</html>
+def update_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    new_content = modal_re.sub(new_modal, content)
+    if new_content == content:
+        new_content = modal_re_alt.sub(new_modal, content)
+    
+    if new_content != content:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"Updated: {filepath}")
+
+for root, dirs, files in os.walk('.'):
+    if 'node_modules' in dirs:
+        dirs.remove('node_modules')
+    if '.git' in dirs:
+        dirs.remove('.git')
+    for file in files:
+        if file.endswith('.html'):
+            update_file(os.path.join(root, file))
