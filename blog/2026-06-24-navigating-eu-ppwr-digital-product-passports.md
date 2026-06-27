@@ -8,7 +8,7 @@ The regulatory countdown for global brands selling into the European Union has r
 
 For high-end consumer brands—spanning luxury cosmetics, premium electronics, and gourmet confectionery—this regulation completely transforms the structural and visual requirements of your unboxing experience. Under these new frameworks, every piece of packaging placed on the EU market must carry a standardized, machine-readable digital data carrier (such as a secure QR code or embedded NFC tag) that provides instant access to a **Digital Product Passport (DPP)** detailing material composition, supply chain origin, and recycling instructions.
 
-At **iColorPack**, we combine our signature luxury aesthetic with cutting-edge compliance engineering. Here is how we integrate smart technology into our custom **luxury rigid gift boxes** and **specialty paper bags** to keep your global supply chain moving seamlessly beyond August 2026.
+At **iColorPack**, we combine our signature luxury aesthetic with cutting-edge compliance engineering. Here is how we integrate smart technology into our custom **luxury [rigid gift boxes](../product-rigid-boxes.html)** and **specialty [paper bags](../product-paper-bags.html)** to keep your global supply chain moving seamlessly beyond August 2026.
 
 ---
 

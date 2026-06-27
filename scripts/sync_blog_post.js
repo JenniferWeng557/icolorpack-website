@@ -38,37 +38,67 @@ let bodyHtml = content
 const template = `<!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQY10GFCR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MQY10GFCR8');
+  </script>
+
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>${title} — iColorPack</title>
+  <title>${title} | iColorPacks Insights</title>
   <meta name="description" content="${description}">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    :root{
-      --gold:#C9A84C; --gold2:#E8C97A; --dark:#0D0D0D; --dark2:#161412; --white:#FFFDF8; --text:#1A1612; --muted:#8A7D6A;
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --dark-bg: #0D0D0D;
+      --card-bg: #151515;
+      --white: #F5F5F5;
+      --text-muted: #999999;
+      --border: rgba(201, 168, 76, 0.15);
     }
-    body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);line-height:1.7}
-    nav{
-      position:fixed;top:0;left:0;right:0;z-index:200; padding:22px 64px;
-      display:flex;align-items:center;justify-content:space-between;
-      background:rgba(13,13,13,.97);box-shadow:0 1px 0 rgba(201,168,76,.15);
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--dark-bg); color: var(--white); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      padding: 20px 8%; display: flex; align-items: center; justify-content: space-between;
+      background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
-    .logo{ font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600; color:var(--white);text-decoration:none; }
-    .logo .logo-i{color:var(--gold2);font-style:italic;font-weight:700;font-size:32px}
-    .logo .logo-color{color:var(--gold);font-weight:700}
-    nav ul{list-style:none;display:flex;gap:40px}
-    nav ul a{color:rgba(255,255,255,.7);text-decoration:none;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;transition:color .2s}
-    nav ul a:hover{color:var(--gold2)}
-    .post-hero{ padding:180px 64px 80px; background:var(--dark2); text-align:center; }
-    .post-hero h1{ font-family:'Playfair Display',serif; font-size:clamp(32px,5vw,56px); color:var(--white); margin-bottom:24px; line-height:1.2; }
-    .post-date{ color:var(--gold); font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:600; margin-bottom:16px; display:block; }
-    article{ max-width:800px; margin:80px auto; padding:0 32px; font-size:18px; }
-    article h3{ font-family:'Playfair Display',serif; font-size:28px; margin:48px 0 24px; color:var(--dark); }
-    article p{ margin-bottom:24px; }
-    article li{ margin-left:24px; margin-bottom:12px; }
-    footer{background:var(--dark);padding:60px 64px; text-align:center; color:rgba(255,255,255,.2); font-size:12px;}
-    @media(max-width:768px){ nav{padding:20px} nav ul{display:none} .post-hero{padding:140px 24px 60px} article{margin:40px auto} }
+    .logo { text-decoration: none; display: flex; align-items: center; gap: 10px; }
+    .nav-links { display: flex; gap: 30px; list-style: none; align-items: center; }
+    .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+    .nav-links a:hover { color: var(--gold); }
+    .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 8px 18px; font-size: 10px; font-weight: 700; transition: 0.3s; cursor: pointer; }
+    .btn-quote-nav:hover { background: var(--gold); color: var(--dark-bg); }
+
+    /* CONTENT */
+    .post-hero { padding: 150px 8% 60px; background: #050508; text-align: center; border-bottom: 1px solid var(--border); }
+    .post-hero h1 { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--white); line-height: 1.2; margin-bottom: 20px; }
+    .post-date { color: var(--gold); font-size: 12px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+    
+    article { max-width: 850px; margin: 60px auto; padding: 0 20px; font-size: 17px; color: #CCC; }
+    article h3 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--white); margin: 40px 0 20px; }
+    article p { margin-bottom: 25px; }
+    article li { margin-left: 20px; margin-bottom: 12px; }
+    article a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px; transition: 0.3s; }
+    article a:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+    /* FOOTER */
+    footer { padding: 80px 10% 40px; background: #050508; border-top: 1px solid rgba(255,255,255,0.05); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
+    .footer-col h4 { color: var(--gold); font-size: 12px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 15px; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; transition: 0.3s; }
+    .footer-links a:hover { color: var(--gold); }
 
     /* WIDGETS */
     .floating-whatsapp {
@@ -77,41 +107,28 @@ const template = `<!DOCTYPE html>
       display: flex; align-items: center; justify-content: center;
       box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3); transition: 0.3s ease;
     }
-    .floating-whatsapp:hover { transform: scale(1.1); }
-
-    .floating-quote-container {
-      position: fixed; bottom: 40px; right: 40px; z-index: 2000;
-      display: flex; align-items: center; flex-direction: row-reverse;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .floating-quote {
-      width: 55px; height: 55px; 
-      background: linear-gradient(135deg, #C9A84C 0%, #E8C97A 100%);
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 25px rgba(201, 168, 76, 0.3);
-      transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .floating-quote svg { width: 28px; height: 28px; fill: #0D0D0D; }
-    .quote-tooltip {
-      position: absolute; right: 70px; background: #FFFFFF; color: #0D0D0D;
-      padding: 10px 20px; border-radius: 30px; font-size: 13px; font-weight: 700;
-      white-space: nowrap; opacity: 0; transform: translateX(20px);
-      pointer-events: none; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    }
-    .floating-quote-container:hover .quote-tooltip { opacity: 1; transform: translateX(0); }
-    .floating-quote-container:hover .floating-quote { transform: scale(1.1) rotate(90deg); }
   </style>
-
 </head>
 <body>
   <nav>
-    <a href="../index.html" class="logo"><span class="logo-i">i</span><span class="logo-color">Color</span><span class="logo-pack">Pack</span></a>
-    <ul>
-      <li><a href="../index.html#products">Products</a></li>
-      <li><a href="../blog.html">Blog</a></li>
-      <li><a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank">Get a Quote</a></li>
+    <a href="../index.html" class="logo">
+      <svg width="30" height="30" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 35 L95 20 L60 5 L25 20 Z" fill="#C9A84C" opacity="0.8"/>
+        <path d="M25 20 L10 45 L45 60 L60 35 Z" fill="#E8C97A"/>
+        <path d="M95 20 L110 45 L75 60 L60 35 Z" fill="#E8C97A"/>
+        <path d="M60 35 L45 60 L60 85 L75 60 Z" fill="#000000"/>
+        <path d="M25 55 V95 L60 115 V75 L45 60 Z" fill="#C9A84C"/>
+        <path d="M95 55 V95 L60 115 V75 L75 60 Z" fill="#A6893A"/>
+        <text x="32" y="98" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#000" style="letter-spacing:-1px; opacity:0.8;">iCP</text>
+      </svg>
+      <span style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #C9A84C;">iColorPacks</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../product-rigid-boxes.html">Products</a></li>
+      <li><a href="../industry-solutions.html">Solutions</a></li>
+      <li><a href="../blog.html">Insights</a></li>
+      <li><a href="https://wa.me/8618058355198" class="btn-quote-nav">Get Quote</a></li>
     </ul>
   </nav>
 
@@ -122,26 +139,45 @@ const template = `<!DOCTYPE html>
 
   <article>
     ${bodyHtml}
+    
+    <div style="margin-top: 80px; padding: 40px; background: #12121A; border: 1px solid var(--border); border-radius: 12px; text-align: center;">
+      <h3 style="margin-top: 0; margin-bottom: 20px;">Ready to elevate your packaging?</h3>
+      <p>Get a free structural design consultation and quote from our Wenzhou facility within 24 hours.</p>
+      <a href="https://wa.me/8618058355198" style="display: inline-block; background: var(--gold); color: #000; padding: 15px 35px; border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: none; margin-top: 20px;">Contact Our Experts</a>
+    </div>
   </article>
 
   <footer>
-    &copy; 2026 iColorPack. All rights reserved.
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 style="color: var(--gold); margin-bottom: 20px;">iColorPacks</h4>
+        <p style="font-size: 13px; color: var(--text-muted);">Premium B2B packaging solutions direct from China. Specializing in luxury rigid boxes and high-end shopping bags.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="../product-rigid-boxes.html">Rigid Boxes</a></li>
+          <li><a href="../product-paper-bags.html">Paper Bags</a></li>
+          <li><a href="../blog.html">Latest Insights</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:Jennifer@wzicolor.com">Jennifer@wzicolor.com</a></li>
+          <li><a href="https://wa.me/8618058355198">WhatsApp Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.03); font-size: 11px; color: var(--text-muted);">
+      © 2026 iColorPacks. All Rights Reserved.
+    </div>
   </footer>
 
-  <!-- WHATSAPP WIDGET -->
-  <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" class="floating-whatsapp" target="_blank">
+  <a href="https://wa.me/8618058355198" class="floating-whatsapp" target="_blank">
     <svg viewBox="0 0 32 32" style="width: 32px; height: 32px; fill: white;"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.032 7.787l-2.032 7.413 7.585-1.99c2.21 1.22 4.745 1.923 7.415 1.923 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.35 0-4.577-.617-6.525-1.698l-.468-.26-4.475 1.175 1.2-4.38-.288-.458c-1.185-1.89-1.812-4.095-1.812-6.378 0-6.617 5.383-12 12-12s12 5.383 12 12-5.383 12-12 12zM22.587 18.96c-.36-.18-2.127-1.047-2.457-1.167s-.57-.18-.81.18c-.24.36-.927 1.167-1.137 1.407s-.42.27-.78.09c-.36-.18-1.52-.56-2.893-1.787-1.067-.953-1.787-2.13-1.997-2.49s-.023-.557.157-.733c.163-.16.36-.42.54-.63s.24-.36.36-.6.06-.45-.03-.63c-.09-.18-.81-1.95-1.11-2.67-.293-.703-.593-.607-.81-.62-.21-.013-.45-.013-.69-.013s-.63.09-.96.45c-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.537 3.873 6.147 5.43.857.37 1.527.59 2.05.757.86.273 1.643.233 2.26.143.69-.103 2.127-.87 2.427-1.71.3-.84.3-1.56.21-1.71s-.33-.24-.69-.42z"/></svg>
   </a>
-
-  <!-- FLOATING QUOTE BUTTON -->
-  <a href="https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F" target="_blank" class="floating-quote-container">
-    <div class="quote-tooltip">Create Your Own Package Now!</div>
-    <div class="floating-quote">
-      <svg viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>
-    </div>
-  </a>
 </body>
-
 </html>`;
 
 fs.writeFileSync(htmlFile, template);
@@ -151,58 +187,3 @@ console.log(`Generated: ${htmlFile}`);
 const publicHtmlFile = `public/blog/${slug}.html`;
 fs.writeFileSync(publicHtmlFile, template);
 console.log(`Generated: ${publicHtmlFile}`);
-
-// Update blog.html
-let blogIndex = fs.readFileSync('blog.html', 'utf-8');
-const newCard = `
-    <article class="blog-card">
-      <div class="post-date">${formattedDate}</div>
-      <h2>${title}</h2>
-      <p>${description}</p>
-      <a href="blog/${slug}.html" class="read-more">Read Article</a>
-    </article>
-`;
-
-// Insert after <!-- Posts will be listed here -->
-if (blogIndex.includes(title)) {
-    console.log('Post already in blog.html.');
-} else {
-    blogIndex = blogIndex.replace('<!-- Posts will be listed here -->', `<!-- Posts will be listed here -->${newCard}`);
-    fs.writeFileSync('blog.html', blogIndex);
-    console.log('Updated: blog.html');
-}
-
-// Update public/blog.html
-if (fs.existsSync('public/blog.html')) {
-    let publicBlogIndex = fs.readFileSync('public/blog.html', 'utf-8');
-    if (publicBlogIndex.includes(title)) {
-        console.log('Post already in public/blog.html.');
-    } else {
-        publicBlogIndex = publicBlogIndex.replace('<!-- Posts will be listed here -->', `<!-- Posts will be listed here -->${newCard}`);
-        fs.writeFileSync('public/blog.html', publicBlogIndex);
-        console.log('Updated: public/blog.html');
-    }
-}
-
-// Automatically update sitemaps with the new blog URL
-updateSitemaps(slug);
-
-function updateSitemaps(slug) {
-    const todayDate = new Date().toISOString().split('T')[0];
-    const sitemapEntry = `  <url><loc>https://www.icolorpacks.com/blog/${slug}.html</loc><lastmod>${todayDate}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n</urlset>`;
-    const targetUrl = `https://www.icolorpacks.com/blog/${slug}.html`;
-
-    const sitemapPaths = ['sitemap.xml', 'public/sitemap.xml'];
-    sitemapPaths.forEach(filePath => {
-        if (fs.existsSync(filePath)) {
-            let sitemapContent = fs.readFileSync(filePath, 'utf-8');
-            if (sitemapContent.includes(targetUrl)) {
-                console.log(`URL already in ${filePath}.`);
-            } else {
-                sitemapContent = sitemapContent.replace('</urlset>', sitemapEntry);
-                fs.writeFileSync(filePath, sitemapContent);
-                console.log(`Updated sitemap: ${filePath}`);
-            }
-        }
-    });
-}

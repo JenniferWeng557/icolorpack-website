@@ -26,11 +26,11 @@ A well-constructed **paper gift box** utilizing 1200gsm to 1800gsm greyboard pro
 
 The final layer of the multi-sensory experience is the "hand feel." Modern finishing techniques allow brands to go beyond simple gloss or matte. Soft-touch lamination, velvet coatings, and raised UV textures invite the customer to linger on the surface of the **paper gift box**.
 
-Tactile elements like embossing or debossing create a physical map of the brand’s logo, making the branding literally felt as much as seen. These coatings also serve functional purposes, similar to the innovations found in [Moisture-Resistant Luxury Cake Boxes](blog/2026-moisture-resistant-luxury-cake-boxes.html), providing a protective barrier while enhancing the premium feel.
+Tactile elements like embossing or debossing create a physical map of the brand’s logo, making the branding literally felt as much as seen. These coatings also serve functional purposes, similar to the innovations found in [Moisture-Resistant Luxury [Cake Boxes](../product-cake-boxes.html)](blog/2026-moisture-resistant-luxury-cake-boxes.html), providing a protective barrier while enhancing the premium feel.
 
 ## Ergonomics and Practical Luxury
 
-The sensory journey doesn't end with the unboxing. How the package is carried and handled matters. Just as we analyze the [Ergonomics of Carrying Shopping Bags](blog/2026-ergonomics-carrying-paper-shopping-bags.html), the way a gift box sits in the hand or fits into a larger retail bag contributes to the overall brand perception.
+The sensory journey doesn't end with the unboxing. How the package is carried and handled matters. Just as we analyze the [Ergonomics of Carrying [Shopping Bags](../product-paper-bags.html)](blog/2026-ergonomics-carrying-paper-shopping-bags.html), the way a gift box sits in the hand or fits into a larger retail bag contributes to the overall brand perception.
 
 ### Conclusion
 

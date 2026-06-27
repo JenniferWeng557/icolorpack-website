@@ -6,7 +6,7 @@
 
 As we approach the mid-point of 2026, the global luxury packaging landscape has undergone a definitive shift. The era of "disposable opulence" has been replaced by a more profound philosophy: **Tactile Circularity**. For B2B distributors and premium brand owners, the challenge is no longer just standing out on a shelf; it is about creating a physical legacy that resonates with a carbon-conscious, sensory-driven consumer base.
 
-At **iColorPack**, we have integrated these 2026 benchmarks into our core manufacturing processes. From our high-end specialty paper bags to our precision-engineered rigid boxes, we are helping global partners bridge the gap between uncompromising luxury and evidence-based sustainability.
+At **iColorPack**, we have integrated these 2026 benchmarks into our core manufacturing processes. From our high-end specialty [paper bags](../product-paper-bags.html) to our precision-engineered [rigid boxes](../product-rigid-boxes.html), we are helping global partners bridge the gap between uncompromising luxury and evidence-based sustainability.
 
 ## 1. Sensory Branding: The Power of Tactile Prestige
 In 2026, visual impact alone is insufficient. Luxury is now communicated through the fingertips. "Tactile Prestige" involves the strategic use of texture to anchor a brand in the consumer's memory.

@@ -15,7 +15,7 @@ At **iColorPack**, we design and manufacture high-performance **wholesale collap
 ## 1. The Anatomy of a High-End Collapsible Rigid Box
 A foldable box must be engineered with absolute precision. If the folding joints are weak or the board is too light, the box will look cheap and sag. 
 
-Our **custom folding gift boxes** are built using high-density **1200gsm grayboard** (industrial-grade cardboard) to ensure robust wall thickness. The core features of our design include:
+Our **custom folding [gift boxes](../product-rigid-boxes.html)** are built using high-density **1200gsm grayboard** (industrial-grade cardboard) to ensure robust wall thickness. The core features of our design include:
 
 *   **Integrated Magnetic Closures:** Hidden, strong N52 neodymium magnets are embedded inside the front flap, providing a highly satisfying, premium "click" when the lid is closed.
 *   **Self-Adhesive Corner Tape:** High-strength, double-sided 3M adhesive tapes are pre-applied to the inner folding corners. When assembled, they lock the box into a permanent, rock-solid 3D shape.

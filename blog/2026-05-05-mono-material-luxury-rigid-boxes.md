@@ -16,7 +16,7 @@ The mono-material rigid box eliminates the need for consumers or waste managemen
 ## 2. Engineering the "Premium Click" without Magnets
 One of the greatest challenges in the mono-material movement has been replicating the sensory feedback of traditional luxury—specifically the secure, magnetic closure of a rigid box. 
 
-In 2026, we have solved this through precision structural engineering. By utilizing friction-fit geometries and paper-based tension locks, our rigid boxes provide that same satisfying, muted "click" upon closing. This is "Quiet Luxury" at its most technical: achieving a high-end sensory experience through the inherent properties of the paper itself.
+In 2026, we have solved this through precision structural engineering. By utilizing friction-fit geometries and paper-based tension locks, our [rigid boxes](../product-rigid-boxes.html) provide that same satisfying, muted "click" upon closing. This is "Quiet Luxury" at its most technical: achieving a high-end sensory experience through the inherent properties of the paper itself.
 
 ## 3. Aesthetic Purity: The Power of Single-Source Finishes
 Mono-material design does not mean a lack of visual drama. In fact, it forces a focus on the exquisite quality of specialty papers and printing techniques.
@@ -30,7 +30,7 @@ For international distributors and high-end retailers, the shift to mono-materia
 *   **Enhanced Brand Story:** Providing a clear, transparent sustainability message that resonates with the eco-conscious "Gen Alpha" and Millennial luxury consumer.
 
 **iColorPack: Crafting the Future of Circular Luxury**
-*   **Precision Engineering:** Specialists in mono-material structural design for rigid gift boxes and specialty paper bags.
+*   **Precision Engineering:** Specialists in mono-material structural design for rigid gift boxes and specialty [paper bags](../product-paper-bags.html).
 *   **Material Innovation:** Access to the latest 2026 bio-based fibers and recycled specialty papers.
 *   **B2B Agility:** Offering these cutting-edge circular solutions with a low MOQ of **500pcs**, allowing brands to pivot quickly to meet new market standards.
 *   **Global Vision:** Tailored production and logistics for luxury markets in the US, UK, and beyond.

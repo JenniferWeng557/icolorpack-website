@@ -11,7 +11,7 @@ Consumer expectations for circularity are at an all-time high. In the B2B packag
 Achieving "Sustainable Grandeur" means moving beyond basic recycled materials. At iColorPack, we use advanced FSC-certified fibers and water-based inks to create vibrant, luxury carriers that are 100% recyclable. We prove that eco-friendly doesn't have to mean "plain."
 
 ### The Circular Loop: Reusability as a Metric
-Why reusable and biodegradable paper bags are the gold standard for modern distributors. A bag that is durable enough to be used multiple times before being recycled provides a higher ROI for brands and a lower impact on the planet.
+Why reusable and biodegradable [paper bags](../product-paper-bags.html) are the gold standard for modern distributors. A bag that is durable enough to be used multiple times before being recycled provides a higher ROI for brands and a lower impact on the planet.
 
 ### The iColorPack Promise
 Factory-direct sustainable solutions from Wenzhou's leading manufacturer. We provide full transparency in our supply chain, from raw material sourcing to the final delivery of your custom paper shopping bags.

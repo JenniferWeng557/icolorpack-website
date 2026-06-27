@@ -21,4 +21,4 @@ We believe that technical performance should enhance, not detract from, the [psy
 ### Sustainable Resilience: The 2026 Standard
 As part of our [sustainability commitment](sustainable-paper-shopping-bags-loyalty.html), all thermal and ventilation components are made from 100% recyclable, bio-based materials. We help you deliver "Freshness Without Footprint."
 
-[Explore Our High-Performance Cake Boxes](https://www.icolorpacks.com/#products) | [Request a Technical Sample](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F
+[Explore Our High-Performance [Cake Boxes](../product-cake-boxes.html)](https://www.icolorpacks.com/#products) | [Request a Technical Sample](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

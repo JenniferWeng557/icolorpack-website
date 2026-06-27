@@ -24,7 +24,7 @@ Traditional packaging factories often treat samples as low-priority interruption
 We have bridged the gap between digital design and factory production. Our integrated workflow is designed for the agility required in 2026:
 
 *   **Digital-Physical Sync:** Our design team works directly with our Wenzhou production floor. Before a single sheet of paper is cut, we provide high-fidelity 3D renderings to catch structural issues.
-*   **72-Hour Production:** For standard **ivory board shopping bags** and **magnetic rigid boxes**, we can produce technical samples in as little as 3 business days.
+*   **72-Hour Production:** For standard **ivory board [shopping bags](../product-paper-bags.html)** and **magnetic [rigid boxes](../product-rigid-boxes.html)**, we can produce technical samples in as little as 3 business days.
 *   **Precision Finishing:** Unlike many "quick-sample" shops that use digital printing for prototypes, we use actual production-grade hot foil stamping and matte lamination on our samples. When you see our **Champagne Gold** foil on **Charcoal Black** cardstock, you are seeing exactly what your customers will receive.
 
 ---

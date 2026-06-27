@@ -8,13 +8,13 @@ For brands aiming for "B2B Success," sourcing is no longer just about price; it 
 
 ## The Luxury-Sustainability Paradox
 
-Historically, "luxury" was often associated with heavy lamination and metallic foils that hindered recyclability. Today, innovation allows for the same premium feel without the ecological footprint. Whether you are inspired by [Material Innovation in Gift Boxes](material-innovation-paper-gift-boxes.html) or looking to replicate a [Premium Jewelry Success Story](premium-jewelry-success-paper-gift-boxes.html), the foundation starts with the material.
+Historically, "luxury" was often associated with heavy lamination and metallic foils that hindered recyclability. Today, innovation allows for the same premium feel without the ecological footprint. Whether you are inspired by [Material Innovation in [Gift Boxes](../product-rigid-boxes.html)](material-innovation-paper-gift-boxes.html) or looking to replicate a [Premium Jewelry Success Story](premium-jewelry-success-paper-gift-boxes.html), the foundation starts with the material.
 
 ---
 
 ## 2026 Technical Sustainability Checklist
 
-When evaluating your next bulk order of paper shopping bags, ensure your supplier meets these four critical technical pillars:
+When evaluating your next bulk order of paper [shopping bags](../product-paper-bags.html), ensure your supplier meets these four critical technical pillars:
 
 ### 1. FSC Certification (Forest Stewardship Council)
 Ensure the paper pulp originates from responsibly managed forests. FSC-certified paper guarantees biodiversity protection and respects the rights of workers and indigenous communities. 

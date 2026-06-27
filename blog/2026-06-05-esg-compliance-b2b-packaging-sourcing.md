@@ -15,7 +15,7 @@ At **iColorPack**, we recognize that for our global partners, "transparency" is 
 ## 1. The Certification Gap: Why "Eco-Friendly" Claims are No Longer Enough
 In 2026, general claims of being "green" are being treated as greenwashing by regulators. B2B buyers now require hard documentation to satisfy their internal audits and external ESG disclosures.
 
-*   **FSC Chain of Custody:** It is no longer enough for paper to be "recyclable." It must be traceable. iColorPack provides full FSC-certified substrates for our **luxury specialty paper bags** and **rigid gift boxes**, ensuring that every fiber in your packaging is sourced from responsibly managed forests.
+*   **FSC Chain of Custody:** It is no longer enough for paper to be "recyclable." It must be traceable. iColorPack provides full FSC-certified substrates for our **luxury specialty [paper bags](../product-paper-bags.html)** and **[rigid gift boxes](../product-rigid-boxes.html)**, ensuring that every fiber in your packaging is sourced from responsibly managed forests.
 *   **Carbon Footprint Data:** Many B2B contracts now require "Scope 3" emissions reporting. We work with our clients to provide material-specific carbon data, allowing you to accurately calculate the environmental impact of your packaging spend.
 
 ---

@@ -6,7 +6,7 @@
 
 In the global trade environment of 2026, customs clearance is no longer a routine back-office task—it is a critical variable that directly impacts your product's profitability. 
 
-With the average effective US tariff rate hitting historic highs of over 11% this year, and European customs tightening compliance on finished paper products, B2B packaging buyers face a severe double-threat: **exorbitant import duties and lengthy customs hold-ups**. If your packaging is classified incorrectly by your broker, or if your supplier provides vague documentation, you could find your custom **rigid gift boxes** or **specialty paper bags** hit with unexpected penalty taxes or stuck in a port warehouse accruing thousands of dollars in demurrage (storage) fees.
+With the average effective US tariff rate hitting historic highs of over 11% this year, and European customs tightening compliance on finished paper products, B2B packaging buyers face a severe double-threat: **exorbitant import duties and lengthy customs hold-ups**. If your packaging is classified incorrectly by your broker, or if your supplier provides vague documentation, you could find your custom **[rigid gift boxes](../product-rigid-boxes.html)** or **specialty [paper bags](../product-paper-bags.html)** hit with unexpected penalty taxes or stuck in a port warehouse accruing thousands of dollars in demurrage (storage) fees.
 
 At **iColorPack**, we recognize that international sourcing requires logistical precision as much as structural engineering. Here is how we help our global partners navigate the complexities of 2026 tariffs and customs compliance to protect their landed margins.
 

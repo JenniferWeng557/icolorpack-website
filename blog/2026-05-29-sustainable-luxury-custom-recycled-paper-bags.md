@@ -6,10 +6,10 @@
 
 As global retail trends shift toward circular economies, the B2B packaging sector is undergoing a profound transformation. For brand managers and distributors, the challenge is no longer just about aesthetics—it’s about balancing **premium hand-feel** with **environmental responsibility**. 
 
-At **iColorPack**, we are leading this shift by specializing in **custom recycled paper bags wholesale**, proving that luxury and sustainability are not mutually exclusive.
+At **iColorPack**, we are leading this shift by specializing in **custom recycled [paper bags](../product-paper-bags.html) wholesale**, proving that luxury and sustainability are not mutually exclusive.
 
 ## 1. The Aesthetic of Responsibility: Premium Kraft and Recycled White Cardboard
-In 2026, the "recycled" look has moved beyond the rustic brown aesthetic. Today’s **premium kraft paper bags** offer a sophisticated, muted elegance that appeals to modern consumers. 
+In 2026, the "recycled" look has moved beyond the rustic brown aesthetic. Today’s **premium [kraft paper bags](../product-kraft-bags.html)** offer a sophisticated, muted elegance that appeals to modern consumers. 
 
 *   **Recycled White Cardboard:** Offers a smooth, high-brightness surface perfect for vibrant CMYK printing or delicate pastel palettes.
 *   **Natural Brown Kraft:** Provides a tactile, organic soul that pairs beautifully with our signature Charcoal Black and Champagne Gold accents.

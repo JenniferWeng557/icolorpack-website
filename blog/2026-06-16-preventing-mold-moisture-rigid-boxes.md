@@ -4,7 +4,7 @@
 
 ---
 
-For international packaging buyers, there is no greater nightmare than opening a shipping container at your destination warehouse and finding a $50,000 order of **custom rigid gift boxes** completely covered in mold, mildew, or suffering from severe structural warping.
+For international packaging buyers, there is no greater nightmare than opening a shipping container at your destination warehouse and finding a $50,000 order of **custom [rigid gift boxes](../product-rigid-boxes.html)** completely covered in mold, mildew, or suffering from severe structural warping.
 
 Unfortunately, this is an incredibly common supply chain disaster. Rigid boxes are constructed by wrapping premium decorative paper around dense grayboard using water-based adhesives. During a 30-to-45-day ocean voyage—where cargo containers cross the equator and experience extreme temperature swings—trapped moisture turns containers into industrial-scale incubators for fungal growth. This phenomenon, known as **"container rain"** or **"cargo sweat,"** can render entire shipments a total loss before they ever reach retail shelves.
 

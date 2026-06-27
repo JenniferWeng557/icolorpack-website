@@ -17,7 +17,7 @@ The psychology of luxury is rooted in the "reveal." Standard top-opening boxes a
 - **Sliding Drawers**: Ideal for smaller pastries or macarons, the drawer-style **cake box** creates a smooth, horizontal reveal that feels sophisticated and intentional.
 - **Handle-Integrated Lids**: By merging the handle with the lid structure, the box maintains a seamless silhouette while offering superior carry stability. This design ensures that the "reveal" remains intact from the display counter to the customer's home.
 
-For more on the technical side of box integrity, explore our guide on [The Architecture of Stackability in Custom Cake Boxes](blog/2026-stackability-engineering-custom-cake-boxes.html).
+For more on the technical side of box integrity, explore our guide on [The Architecture of Stackability in Custom [Cake Boxes](../product-cake-boxes.html)](blog/2026-stackability-engineering-custom-cake-boxes.html).
 
 ## Justifying Premium Pricing through Packaging
 
@@ -29,9 +29,9 @@ Furthermore, ensuring your cakes arrive in pristine condition is vital. Our [Moi
 
 ## Strategic B2B Sourcing for Global Brands
 
-For international bakery chains, the challenge lies in balancing luxury aesthetics with operational efficiency. While the **cake box** handles the primary product, the secondary packaging—the shopping bag—must be equally optimized. We recommend reviewing our insights on [Global Shipping Optimization for Paper Shopping Bags](blog/2026-global-shipping-optimization-paper-shopping-bags.html) to see how nested packaging can reduce freight costs without sacrificing the premium feel.
+For international bakery chains, the challenge lies in balancing luxury aesthetics with operational efficiency. While the **cake box** handles the primary product, the secondary packaging—the shopping bag—must be equally optimized. We recommend reviewing our insights on [Global Shipping Optimization for Paper [Shopping Bags](../product-paper-bags.html)](blog/2026-global-shipping-optimization-paper-shopping-bags.html) to see how nested packaging can reduce freight costs without sacrificing the premium feel.
 
-Additionally, for gift-oriented bakery items, consider the [Strategic Advantage of Custom Inserts in Paper Gift Boxes](blog/2026-strategic-advantage-custom-inserts-paper-gift-boxes.html), which ensure that delicate items like chocolates or cookies remain perfectly positioned during transit.
+Additionally, for gift-oriented bakery items, consider the [Strategic Advantage of Custom Inserts in Paper [Gift Boxes](../product-rigid-boxes.html)](blog/2026-strategic-advantage-custom-inserts-paper-gift-boxes.html), which ensure that delicate items like chocolates or cookies remain perfectly positioned during transit.
 
 ## Conclusion
 

@@ -9,12 +9,12 @@ As we move into 2026, the definition of "luxury" in the packaging world is under
 At **iColorPack**, we are leading this transition, proving that eco-consciousness and premium design are not mutually exclusive. Here is a deep dive into the trending packaging themes for 2026 and how your brand can stay ahead of the curve.
 
 ## 1. The Rise of "Lightweight Luxury"
-Historically, luxury was synonymous with heavy, bulky packaging. In 2026, the trend has pivoted toward **Lightweight Luxury**. Brands are opting for high-tensile specialty paper bags that offer the strength of traditional materials but with a significantly lower carbon footprint.
+Historically, luxury was synonymous with heavy, bulky packaging. In 2026, the trend has pivoted toward **Lightweight Luxury**. Brands are opting for high-tensile specialty [paper bags](../product-paper-bags.html) that offer the strength of traditional materials but with a significantly lower carbon footprint.
 
 Specialty papers with unique textures—ranging from linen finishes to soft-touch coatings—provide a tactile experience that resonates with high-end shoppers. These bags aren't just carriers; they are brand statements.
 
 ## 2. Fiber-First: The Mono-Material Revolution in Rigid Boxes
-Recyclability is the cornerstone of 2026 packaging regulations. The "Fiber-First" movement focuses on creating **rigid gift boxes** made entirely from paper-based fibers, eliminating the need for plastic inserts or non-recyclable laminates.
+Recyclability is the cornerstone of 2026 packaging regulations. The "Fiber-First" movement focuses on creating **[rigid gift boxes](../product-rigid-boxes.html)** made entirely from paper-based fibers, eliminating the need for plastic inserts or non-recyclable laminates.
 
 By using innovative folding techniques and structural design, iColorPack’s rigid boxes maintain their structural integrity and premium "click" when closed, while remaining 100% recyclable.
 

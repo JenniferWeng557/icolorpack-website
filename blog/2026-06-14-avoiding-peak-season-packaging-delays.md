@@ -6,7 +6,7 @@
 
 In the global supply chain landscape of 2026, timing is everything. For B2B buyers, brand managers, and e-commerce retailers, the Q3 and Q4 holiday surge represents both the highest sales potential of the year and the greatest threat to operational margins. 
 
-The **"Peak Season Squeeze"**—the period from August to November when global factories clog with holiday orders and shipping container rates skyrocket—is a massive supply chain bottleneck. If you are sourcing custom **rigid gift boxes** or **specialty paper shopping bags** during this period, a standard 20-day production run can easily balloon to 45+ days. Combined with rolled cargo at ports and skyrocketing shipping rates, a delayed packaging delivery can miss your Black Friday or Christmas launch entirely.
+The **"Peak Season Squeeze"**—the period from August to November when global factories clog with holiday orders and shipping container rates skyrocket—is a massive supply chain bottleneck. If you are sourcing custom **[rigid gift boxes](../product-rigid-boxes.html)** or **specialty paper [shopping bags](../product-paper-bags.html)** during this period, a standard 20-day production run can easily balloon to 45+ days. Combined with rolled cargo at ports and skyrocketing shipping rates, a delayed packaging delivery can miss your Black Friday or Christmas launch entirely.
 
 At **iColorPack**, we have re-engineered our manufacturing and logistics pipeline to provide agile, peak-season relief. Here is how we help you bypass the holiday bottlenecks to protect your retail calendar and cash flow.
 

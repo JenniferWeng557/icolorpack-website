@@ -11,7 +11,7 @@ At **iColorPack**, we have spearheaded this movement, proving that premium packa
 ## 1. Moving Beyond the Earthy Cliché
 For years, sustainable packaging was synonymous with raw, brown kraft textures—a look that often clashed with high-end brand identities. In 2026, that compromise is over. The current trend favors **Eco-Minimalism**, where refined textures and high-end recycled papers replace the rustic aesthetics of the past.
 
-Our signature **Champagne Gold & Charcoal Black** aesthetic remains the benchmark for this "New Luxury." By utilizing biodegradable foils and soy-based inks on high-density recycled fibers, iColorPack creates rigid gift boxes and paper bags that exude opulence while maintaining a carbon-neutral footprint.
+Our signature **Champagne Gold & Charcoal Black** aesthetic remains the benchmark for this "New Luxury." By utilizing biodegradable foils and soy-based inks on high-density recycled fibers, iColorPack creates [rigid gift boxes](../product-rigid-boxes.html) and [paper bags](../product-paper-bags.html) that exude opulence while maintaining a carbon-neutral footprint.
 
 ## 2. Sensory Sophistication: The Tactile Unboxing
 In a digital-first world, the physical unboxing remains the most potent moment of brand-customer connection. The 2026 trend focuses on **Sensory Sophistication**—the use of texture to communicate value.

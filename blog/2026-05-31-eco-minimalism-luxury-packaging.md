@@ -16,7 +16,7 @@ The current trend favors **Sustainable Grandeur**, where refined textures and hi
 ## 2. Sensory Sophistication: Texture as the New Luxury
 If color sets the mood, texture tells the story. 2026 is the year of **Sensory Sophistication**. In a digital-first world, the physical unboxing remains the most potent moment of brand-customer connection.
 
-iColorPack specializes in specialty papers that offer a unique tactile experience. Whether it is a linen-textured finish, a soft-touch velvet coating, or deep-embossed grains, these sensory details create an immediate emotional connection. For high-end **rigid gift boxes** and **specialty paper bags**, the hand-feel is now as important as the visual design.
+iColorPack specializes in specialty papers that offer a unique tactile experience. Whether it is a linen-textured finish, a soft-touch velvet coating, or deep-embossed grains, these sensory details create an immediate emotional connection. For high-end **[rigid gift boxes](../product-rigid-boxes.html)** and **specialty [paper bags](../product-paper-bags.html)**, the hand-feel is now as important as the visual design.
 
 ## 3. Circularity 2.0: The "Permanent Unboxing" Experience
 The most successful packaging designs in 2026 are those that demand to be kept. **Secondary-Use Design** has moved from a niche concept to a B2B requirement. 

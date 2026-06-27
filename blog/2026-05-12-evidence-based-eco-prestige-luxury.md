@@ -9,7 +9,7 @@ As we move deeper into 2026, the global luxury packaging market has moved past t
 At **iColorPack**, we have seen a fundamental shift: our global clients are no longer asking if the packaging *looks* green; they are asking for the data that *proves* it. As international regulations like the Digital Product Passport (DPP) and strict Extended Producer Responsibility (EPR) laws take effect, transparency has become the ultimate luxury.
 
 ## 1. Beyond the Surface: Verifiable Sustainability
-In 2026, a high-end brand's reputation is only as strong as its supply chain. This is why **FSC (Forest Stewardship Council) certification** has transitioned from a "nice-to-have" to a mandatory requirement for premium specialty paper bags and rigid boxes.
+In 2026, a high-end brand's reputation is only as strong as its supply chain. This is why **FSC (Forest Stewardship Council) certification** has transitioned from a "nice-to-have" to a mandatory requirement for premium specialty [paper bags](../product-paper-bags.html) and [rigid boxes](../product-rigid-boxes.html).
 
 iColorPack’s commitment to evidence-based luxury starts with the fiber. Every specialty paper we use is 100% traceable, ensuring that the elegance of our **Champagne Gold and Charcoal Black** aesthetic is built on a foundation of responsible forestry. For our B2B partners, this means peace of mind in a landscape of increasing environmental scrutiny.
 

@@ -14,7 +14,7 @@ The dominant trend this year is **Structural Minimalism**. We are moving away fr
 Why "Wholesale" doesn't have to mean "Generic." iColorPack specializes in bridging the gap between high-volume production and bespoke quality. Whether you need 500 or 50,000 units, our factory in Wenzhou ensures every single paper gift box meets the rigorous standards of global luxury brands.
 
 ### Sustainable Prestige
-The 2026 mandate is clear: Luxury must be circular. Our gift boxes use 100% recycled greyboard cores wrapped in FSC-certified specialty papers. We've eliminated plastic laminations where possible, replacing them with biodegradable aqueous coatings that provide a soft-touch feel without the environmental footprint.
+The 2026 mandate is clear: Luxury must be circular. Our [gift boxes](../product-rigid-boxes.html) use 100% recycled greyboard cores wrapped in FSC-certified specialty papers. We've eliminated plastic laminations where possible, replacing them with biodegradable aqueous coatings that provide a soft-touch feel without the environmental footprint.
 
 ### Conclusion: Your Brand, Delivered
 Choosing the right paper gift box partner is a strategic decision. With iColorPack's 15+ years of expertise, you are not just buying a box; you are investing in a partnership that understands the nuances of global luxury retail.

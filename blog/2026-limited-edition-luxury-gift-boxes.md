@@ -12,7 +12,7 @@ A limited-run **paper gift box** signals to the customer that the product inside
 
 ### 1. Specialized Textural Coatings
 Exclusive finishes often involve sensory dimensions that are not available in mass-market lines.
-*   **Velvet-Touch Soft Matte**: A proprietary coating that provides a deep, non-reflective black surface with a tactile feel similar to luxury fabric. This is a favorite for high-end watch and jewelry **paper gift boxes**.
+*   **Velvet-Touch Soft Matte**: A proprietary coating that provides a deep, non-reflective black surface with a tactile feel similar to luxury fabric. This is a favorite for high-end watch and jewelry **paper [gift boxes](../product-rigid-boxes.html)**.
 *   **Iridescent and Color-Shift Foils**: Utilizing advanced interference pigments, these foils change color based on the angle of light, creating a dynamic, "living" surface on the **custom paper gift box** that is impossible to replicate with standard printing.
 
 ### 2. Numbered and Personalized Inserts

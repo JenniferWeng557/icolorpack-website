@@ -45,7 +45,7 @@ Our signature design—and the favorite of our global luxury partners—is the c
 ## 4. Agility for Global Brands: MOQ 500pcs
 Achieving hot-stamping perfection should not require a massive investment. 
 
-*   **Low MOQ of 500pcs:** We support independent designers, luxury boutiques, and seasonal product lines by offering custom hot-stamped rigid boxes and paper shopping bags starting at just 500 units.
+*   **Low MOQ of 500pcs:** We support independent designers, luxury boutiques, and seasonal product lines by offering custom hot-stamped [rigid boxes](../product-rigid-boxes.html) and paper [shopping bags](../product-paper-bags.html) starting at just 500 units.
 *   **Technical Sample Verification:** Before mass production, we provide physical pre-production samples so you can inspect the sharp edges and test the scratch-resistance of the foil in your own hands.
 *   **FSC Certified Substrates:** We combine high-performance metallic engineering with sustainably sourced materials, ensuring your premium branding is environmentally compliant.
 

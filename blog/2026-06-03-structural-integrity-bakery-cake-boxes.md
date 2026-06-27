@@ -6,7 +6,7 @@
 
 In the high-end patisserie and artisan bakery sector, the packaging is the final stage of the culinary craft. A masterpiece cake or a delicate set of macarons requires more than just a beautiful box—it requires an engineered environment that maintains structural integrity, food safety, and brand prestige from the kitchen to the customer’s table.
 
-As we move into 2026, the trend in bakery packaging has shifted from over-embellishment to **Technical Precision**. At **iColorPack**, we specialize in **wholesale custom bakery boxes** that serve as a high-performance protective shell for your most delicate creations.
+As we move into 2026, the trend in bakery packaging has shifted from over-embellishment to **Technical Precision**. At **iColorPack**, we specialize in **wholesale custom [bakery boxes](../product-cake-boxes.html)** that serve as a high-performance protective shell for your most delicate creations.
 
 ---
 

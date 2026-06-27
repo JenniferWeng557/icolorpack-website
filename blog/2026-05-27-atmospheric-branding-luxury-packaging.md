@@ -17,7 +17,7 @@ Black provides a canvas of mystery and authority, while the gold accents offer a
 If color sets the mood, texture tells the story. 2026 is the year of **Tactile Intelligence**. We are moving away from smooth, plastic-laminated surfaces toward natural, uncoated textures that invite human interaction.
 
 iColorPack specializes in specialty papers that offer a "hand-rendered" feel:
-*   **Linen and Grain Finishes:** These provide a classic, artisanal soul to **rigid gift boxes**, echoing the quality of vintage bookplates and certificates.
+*   **Linen and Grain Finishes:** These provide a classic, artisanal soul to **[rigid gift boxes](../product-rigid-boxes.html)**, echoing the quality of vintage bookplates and certificates.
 *   **Uncoated Specialty Kraft:** Offering a warm, organic touch that balances the precision of luxury branding with the authenticity of natural materials.
 *   **Deep Embossing:** By manipulating the material itself, we create a 3D landscape that consumers can "read" with their fingertips.
 
@@ -39,4 +39,4 @@ Navigating the psychology of packaging requires a partner who understands that "
 Elevate your brand with atmospheric branding. Visit [www.icolorpacks.com](https://www.icolorpacks.com) to request a custom B2B consultation and explore our 2026 "Tactile Prestige" collection.
 
 ---
-*Keywords: Luxury Packaging Trends 2026, Atmospheric Branding, Tactile Intelligence, Custom Rigid Gift Boxes, Specialty Paper Bags, iColorPack, B2B Packaging Psychology.*
+*Keywords: Luxury Packaging Trends 2026, Atmospheric Branding, Tactile Intelligence, Custom Rigid Gift Boxes, Specialty [Paper Bags](../product-paper-bags.html), iColorPack, B2B Packaging Psychology.*

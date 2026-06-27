@@ -23,8 +23,8 @@ In 2026, the cost of a damaged package extends far beyond the unit price of the 
 ## 2. Engineering for the Courier, Not Just the Shelf
 Traditional luxury packaging was designed for the boutique shelf. In 2026, it must be engineered for the courier’s sorting belt. We solve this through **Structural Reinforcement**:
 
-*   **1200gsm High-Density Grayboard:** Our **rigid gift boxes** utilize industrial-grade board that provides superior vertical compression strength, preventing "lid-crush" during stacking in delivery vans.
-*   **Burst-Resistant Ivory Board:** For our **specialty paper shopping bags**, we use 250gsm+ C1S board with long-fiber integrity. This ensures the bag retains its architectural form and resists corner-bursting even when carrying heavy luxury sets. (To read more about paper bag durability, see our guide on [Tear-Resistant Luxury Paper Bags](tear-resistant-luxury-paper-bags.html)).
+*   **1200gsm High-Density Grayboard:** Our **[rigid gift boxes](../product-rigid-boxes.html)** utilize industrial-grade board that provides superior vertical compression strength, preventing "lid-crush" during stacking in delivery vans.
+*   **Burst-Resistant Ivory Board:** For our **specialty paper shopping bags**, we use 250gsm+ C1S board with long-fiber integrity. This ensures the bag retains its architectural form and resists corner-bursting even when carrying heavy luxury sets. (To read more about paper bag durability, see our guide on [Tear-Resistant Luxury [Paper Bags](../product-paper-bags.html)](tear-resistant-luxury-paper-bags.html)).
 *   **Reinforced Hinges:** Our **collapsible rigid boxes** feature double-layered folding seams, preventing the surface paper from splitting under the vibration and temperature fluctuations of international sea and air freight.
 
 ---

@@ -10,7 +10,7 @@ In the world of high-end retail, a **paper shopping bag** is subjected to more p
 
 The "luxury feel" begins with the weight of the substrate. While standard retail bags often use 120-150GSM paper, a premium **paper shopping bag** requires a minimum of 210GSM, with 250GSM being the gold standard for high-volume boutiques. 
 
-*   **Tensile Strength**: Higher GSM paper provides the necessary tensile strength to resist tearing under the weight of heavier items like winter coats, shoes, or multiple gift boxes.
+*   **Tensile Strength**: Higher GSM paper provides the necessary tensile strength to resist tearing under the weight of heavier items like winter coats, shoes, or multiple [gift boxes](../product-rigid-boxes.html).
 *   **Crease Integrity**: Thick, high-density paper allows for sharp, precise scoring and folding, ensuring the bag maintains its rigid, architectural shape even when empty.
 
 ## Engineering the Pressure Points: Reinforced Turn-Tops

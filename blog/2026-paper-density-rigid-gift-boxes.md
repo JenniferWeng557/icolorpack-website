@@ -4,7 +4,7 @@ In the sphere of high-end B2B retail, the first physical touchpoint between a br
 
 ## The Science of GSM: Understanding Board Weight (1200gsm - 1800gsm)
 
-The foundation of any premium **paper gift box** is the greyboard or chipboard used for its skeleton. Unlike standard folding cartons, luxury rigid boxes utilize high-density boards ranging from **1200gsm to 1800gsm**.
+The foundation of any premium **paper gift box** is the greyboard or chipboard used for its skeleton. Unlike standard folding cartons, luxury [rigid boxes](../product-rigid-boxes.html) utilize high-density boards ranging from **1200gsm to 1800gsm**.
 
 - **1200gsm:** The standard for quality gift boxes, providing a solid feel and excellent structural memory.
 - **1500gsm:** The "sweet spot" for luxury electronics or jewelry packaging, offering a significant weight that feels substantial in the hand.
@@ -22,7 +22,7 @@ When a retailer chooses a rigid construction, they are investing in the longevit
 
 In B2B retail psychology, there is a direct correlation between the weight of a package and its perceived market price. A heavier **paper gift box** suggests that the contents are precious, authentic, and worth the investment. 
 
-While [The Psychology of Color in Shopping Bags](blog/2026-psychology-of-color-paper-shopping-bags.html) handles the emotional lure, the weight handles the rational justification of price. For high-end retailers, upgrading from a 1000gsm to a 1400gsm board can allow for a significantly higher retail markup because the customer *feels* the quality before they even see the product.
+While [The Psychology of Color in [Shopping Bags](../product-paper-bags.html)](blog/2026-psychology-of-color-paper-shopping-bags.html) handles the emotional lure, the weight handles the rational justification of price. For high-end retailers, upgrading from a 1000gsm to a 1400gsm board can allow for a significantly higher retail markup because the customer *feels* the quality before they even see the product.
 
 ## Engineering for Durability: Reducing Shipping Damage
 
@@ -34,6 +34,6 @@ Beyond aesthetics, high paper density is a functional necessity in the global su
 
 ## Conclusion: Setting the Standard with iColorPack
 
-For brands that demand the best, icolorpacks.com provides the engineering expertise to match luxury design. Whether it is [Visual Branding in Custom Cake Boxes](blog/2026-visual-branding-custom-cake-boxes.html) or heavy-duty gift sets, the density of the paper is where true quality begins.
+For brands that demand the best, icolorpacks.com provides the engineering expertise to match luxury design. Whether it is [Visual Branding in Custom [Cake Boxes](../product-cake-boxes.html)](blog/2026-visual-branding-custom-cake-boxes.html) or heavy-duty gift sets, the density of the paper is where true quality begins.
 
 By selecting the right board weight—from 1200gsm to 1800gsm—you ensure that your **paper gift box** is not just a container, but a durable, high-value asset that protects your product and elevates your brand.

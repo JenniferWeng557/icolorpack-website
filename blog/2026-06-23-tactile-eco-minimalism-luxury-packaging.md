@@ -14,7 +14,7 @@ At **iColorPack**, we have spent the last year engineering solutions that bridge
 In 2026, luxury is no longer just about what you see; it’s about what you *feel*. Consumers are moving away from high-gloss plastic laminates toward natural, haptic textures. 
 
 *   **Textured Specialty Papers:** Unbleached, FSC-certified specialty papers with deep grain textures are now perceived as higher quality than traditional virgin fibers. 
-*   **Weight without Waste:** Our latest **custom rigid gift boxes** utilize high-density recycled grayboard, providing that signature "luxury weight" and structural integrity while being 100% circular.
+*   **Weight without Waste:** Our latest **custom [rigid gift boxes](../product-rigid-boxes.html)** utilize high-density recycled grayboard, providing that signature "luxury weight" and structural integrity while being 100% circular.
 *   **Mono-material Engineering:** By using a single material type for both the box and the insert (removing foam or plastic), we ensure the entire package is easily recyclable in standard paper streams without compromising protection.
 
 ---
@@ -22,7 +22,7 @@ In 2026, luxury is no longer just about what you see; it’s about what you *fee
 ## 2. The Golden Ratio: Sustainability Meets High-End Aesthetics
 Can a sustainable box still feel expensive? The answer lies in the execution. Our signature **Charcoal Black and Champagne Gold** palette remains a cornerstone of luxury branding, but the technical execution has evolved.
 
-*   **Eco-Friendly Foil Stamping:** We utilize Kurz non-toxic foils that are fully de-inkable, ensuring that your gold-embossed logo doesn't interfere with the recyclability of your **specialty paper bags**.
+*   **Eco-Friendly Foil Stamping:** We utilize Kurz non-toxic foils that are fully de-inkable, ensuring that your gold-embossed logo doesn't interfere with the recyclability of your **specialty [paper bags](../product-paper-bags.html)**.
 *   **Odorless, Starch-Based Adhesives:** We have eliminated toxic scents by using high-performance, plant-based glues that maintain a perfect bond without the off-gassing common in lower-tier manufacturing.
 *   **Matte Textures & Depth:** By combining deep charcoal matte finishes with subtle gold accents, we create a visual depth that communicates authority and quality.
 
@@ -32,7 +32,7 @@ Can a sustainable box still feel expensive? The answer lies in the execution. Ou
 For procurement managers and brand owners, the move to sustainable packaging is often hampered by high MOQs and slow prototyping. iColorPack solves these bottlenecks.
 
 *   **MOQ of 500pcs:** We support boutique luxury brands and product launches with a low minimum order quantity of 500 units. This allows you to test 2026 trends like Tactile Eco-Minimalism without overcommitting capital.
-*   **3-7 Day Technical Prototyping:** Our Wenzhou facility offers rapid 3D modeling and physical prototyping, ensuring your structural bakery boxes or rigid gift sets are technically sound before mass production.
+*   **3-7 Day Technical Prototyping:** Our Wenzhou facility offers rapid 3D modeling and physical prototyping, ensuring your structural [bakery boxes](../product-cake-boxes.html) or rigid gift sets are technically sound before mass production.
 *   **15-Day Mass Production:** In a world of peak-season delays, our streamlined production pipeline ensures a 15-day turnaround for most custom orders.
 
 ---

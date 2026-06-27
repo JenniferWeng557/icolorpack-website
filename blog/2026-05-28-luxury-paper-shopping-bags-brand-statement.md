@@ -14,6 +14,6 @@ Why Charcoal Black and Champagne Gold are the dominant palettes for 2026. At iCo
 A deep dive into iColorPack's specialty paper selection and foil stamping techniques. We use premium 250gsm art paper with soft-touch lamination and precision foil stamping to ensure your brand stands out in the crowded retail landscape.
 
 ### Conclusion
-Elevating the unboxing experience begins at the storefront. With custom paper shopping bags from iColorPack, your brand makes a statement before the customer even gets home.
+Elevating the unboxing experience begins at the storefront. With custom paper [shopping bags](../product-paper-bags.html) from iColorPack, your brand makes a statement before the customer even gets home.
 
 [Contact us today](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

@@ -11,7 +11,7 @@ In the world of high-end pastry, the box is the foundation. It must be more than
 Why "Atmospheric Branding" is taking over the bakery world. In 2026, we are seeing a shift toward deep, saturated colors like Midnight Navy and Champagne Gold. iColorPack uses food-safe inks and grease-resistant coatings to ensure your branding remains as fresh as your cakes.
 
 ### Sustainable Grandeur for Bakeries
-Sustainability shouldn't mean a sacrifice in style. Our eco-friendly cake boxes are made from FSC-certified materials and are 100% recyclable. We help bakeries align with consumer values without losing the luxury feel that justifies a premium price point.
+Sustainability shouldn't mean a sacrifice in style. Our eco-friendly [cake boxes](../product-cake-boxes.html) are made from FSC-certified materials and are 100% recyclable. We help bakeries align with consumer values without losing the luxury feel that justifies a premium price point.
 
 ### The iColorPack Advantage
 From small-batch artisanal boutiques to global bakery franchises, iColorPack provides factory-direct solutions with low MOQs. Our structural designers work with you to create a box that is uniquely yours.

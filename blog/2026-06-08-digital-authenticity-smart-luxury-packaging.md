@@ -22,10 +22,10 @@ For distributors and boutique owners, the presence of fakes in the marketplace l
 ---
 
 ## 2. Integrated Smart Packaging: The "Digital Birth Certificate"
-In 2026, the box is no longer just a container; it is a secure data portal. iColorPack specializes in integrating smart technology directly into the structural layers of our **luxury rigid boxes**:
+In 2026, the box is no longer just a container; it is a secure data portal. iColorPack specializes in integrating smart technology directly into the structural layers of our **luxury [rigid boxes](../product-rigid-boxes.html)**:
 
 *   **Discrete NFC Integration:** We can embed ultra-thin NFC (Near Field Communication) tags between the high-density grayboard and the premium wrap paper. A customer simply taps their phone to the box to receive an instant, blockchain-verified confirmation of authenticity. No apps required, and no visual clutter on your **Charcoal Black and Champagne Gold** design.
-*   **Encrypted QR Silhouettes:** For brands preferring visual cues, we offer secure, micro-printed QR codes that are integrated into the design patterns of your **specialty paper bags**. These codes are unique to every single unit, making bulk duplication of packaging impossible.
+*   **Encrypted QR Silhouettes:** For brands preferring visual cues, we offer secure, micro-printed QR codes that are integrated into the design patterns of your **specialty [paper bags](../product-paper-bags.html)**. These codes are unique to every single unit, making bulk duplication of packaging impossible.
 *   **TAMPER-EVIDENT Seals:** Our smart boxes can include sensors that notify a brand’s backend system if the seal has been broken before it reaches the end customer, ensuring the "chain of custody" remains intact.
 
 ---

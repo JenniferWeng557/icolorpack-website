@@ -17,7 +17,7 @@ For B2B buyers, durability is paramount.
 - **Matte Lamination:** While incredibly elegant, standard matte finishes can sometimes be prone to scuffing and fingerprints, especially on dark colors like deep black. However, high-quality "anti-scuff" matte laminations are available to mitigate this.
 - **Glossy Lamination:** Generally more resistant to moisture and minor scratches. While fingerprints are visible under direct light, they are often easier to wipe clean compared to traditional matte surfaces.
 
-The durability of the bag is also closely tied to the base material. Understanding [the impact of paper density in gift boxes](blog/2026-paper-density-rigid-gift-boxes.html) and bags is essential for ensuring your packaging stands the test of time.
+The durability of the bag is also closely tied to the base material. Understanding [the impact of paper density in [gift boxes](../product-rigid-boxes.html)](blog/2026-paper-density-rigid-gift-boxes.html) and bags is essential for ensuring your packaging stands the test of time.
 
 ## Visual Impact on Brand Perception
 
@@ -25,11 +25,11 @@ The "Black & Gold" aesthetic is a staple of luxury.
 
 A **Matte Black** bag with **Gold Foil Stamping** is the epitome of timeless elegance. The contrast between the light-absorbing matte surface and the reflective gold foil creates a striking visual hierarchy. This approach is often favored by high-end fashion houses and boutique jewelers who want to emphasize a sense of heritage and exclusivity.
 
-On the other hand, a **Glossy Black** bag with gold accents feels contemporary, bold, and high-tech. It demands attention. This is similar to the strategies used in [visual branding for custom cake boxes](blog/2026-visual-branding-custom-cake-boxes.html), where the finish must align with the product's perceived value and the brand's personality.
+On the other hand, a **Glossy Black** bag with gold accents feels contemporary, bold, and high-tech. It demands attention. This is similar to the strategies used in [visual branding for custom [cake boxes](../product-cake-boxes.html)](blog/2026-visual-branding-custom-cake-boxes.html), where the finish must align with the product's perceived value and the brand's personality.
 
 ## Choosing the Right Finish for Your Sector
 
-Choosing the right finish depends heavily on your target market and the psychology you wish to evoke. As we've explored in [the psychology of color in shopping bags](blog/2026-psychology-of-color-paper-shopping-bags.html), the surface texture acts as a filter for that color.
+Choosing the right finish depends heavily on your target market and the psychology you wish to evoke. As we've explored in [the psychology of color in [shopping bags](../product-paper-bags.html)](blog/2026-psychology-of-color-paper-shopping-bags.html), the surface texture acts as a filter for that color.
 
 | Retail Sector | Recommended Finish | Reasoning |
 | :--- | :--- | :--- |

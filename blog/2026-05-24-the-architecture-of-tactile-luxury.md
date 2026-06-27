@@ -16,7 +16,7 @@ We utilize FSC-certified specialty papers with linen-textured finishes, soft-tou
 ## 2. Structural Minimalism: The Power of the Rigid Gift Box
 The **rigid box** remains the cornerstone of luxury presentation, but in 2026, the focus has shifted toward **Sculptural Precision**. It is no longer just a container; it is a structural asset.
 
-iColorPack’s rigid boxes are engineered for more than just aesthetics. We focus on:
+iColorPack’s [rigid boxes](../product-rigid-boxes.html) are engineered for more than just aesthetics. We focus on:
 *   **The "Premium Click":** Our precision friction-fit lids produce a satisfying, muted sound upon closing—a subtle but powerful auditory cue of quality.
 *   **Keepsake Utility:** Designed with reinforced, high-density grayboard, our boxes are built to be reused as elegant storage solutions, ensuring your brand stays in the customer’s life long after the initial purchase.
 
@@ -36,4 +36,4 @@ From our BSCI-audited production facilities to our mastery of 2026’s latest bi
 Elevate your brand’s unboxing experience today. Visit [www.icolorpacks.com](https://www.icolorpacks.com) to request a custom B2B consultation.
 
 ---
-*Keywords: Luxury Packaging Trends 2026, Tactile Luxury, Specialty Paper Bags, Custom Rigid Gift Boxes, Sustainable B2B Packaging, iColorPack, High-End Unboxing Experience.*
+*Keywords: Luxury Packaging Trends 2026, Tactile Luxury, Specialty [Paper Bags](../product-paper-bags.html), Custom Rigid Gift Boxes, Sustainable B2B Packaging, iColorPack, High-End Unboxing Experience.*

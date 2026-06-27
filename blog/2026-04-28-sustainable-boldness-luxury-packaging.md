@@ -30,7 +30,7 @@ We specialize in specialty papers that offer unique textures:
 For distributors and brand owners, adopting this trend is not just about aesthetics—它 is about future-proofing. International regulations are increasingly penalizing "over-packaging" and non-recyclable materials. By choosing iColorPack’s "Sustainable Boldness" approach, brands can meet global compliance standards while simultaneously elevating their perceived market value.
 
 **iColorPack: Your Partner in 2026 Luxury**
-*   **Expertise:** Deep specialization in high-end specialty paper bags and rigid gift boxes.
+*   **Expertise:** Deep specialization in high-end specialty [paper bags](../product-paper-bags.html) and [rigid gift boxes](../product-rigid-boxes.html).
 *   **Design-Led:** Mastery of the luxury aesthetic, including bespoke color matching and advanced finishing techniques.
 *   **Accessible Quality:** A strategic low MOQ of **500pcs**, allowing brands to test high-end seasonal designs without massive inventory risk.
 *   **Global Vision:** Tailored solutions for the US and European B2B packaging markets.

@@ -11,7 +11,7 @@ In the digital-first retail landscape of 2026, the physical touchpoint is the ul
 At iColorPack, we believe that luxury is a multi-sensory experience. Our 2026 collection focuses on tactile branding—using raised textures, soft-touch finishes, and precision-engineered closures. This philosophy aligns with our approach to [structural cake box design](luxury-cake-boxes-structural-branding.html), where functionality meets aesthetic depth.
 
 ### The Unboxing Ritual
-Social media has transformed unboxing into a global ritual. To capture this momentum, brands must invest in packaging that is "camera-ready." Our premium gift boxes feature high-contrast interiors and integrated brand messaging that surprises and delights the recipient. Pair these with our [sustainable paper shopping bags](sustainable-paper-shopping-bags-loyalty.html) to create a seamless, high-end unboxing journey.
+Social media has transformed unboxing into a global ritual. To capture this momentum, brands must invest in packaging that is "camera-ready." Our premium [gift boxes](../product-rigid-boxes.html) feature high-contrast interiors and integrated brand messaging that surprises and delights the recipient. Pair these with our [sustainable paper [shopping bags](../product-paper-bags.html)](sustainable-paper-shopping-bags-loyalty.html) to create a seamless, high-end unboxing journey.
 
 ### Engineering Sustainable Desire
 Sustainability is the core of 2026 luxury. We use bio-based coatings and FSC-certified materials to ensure that "desire" doesn't come at the cost of the environment. Our "Conscious Luxury" framework allows brands to deliver prestige while maintaining a zero-waste commitment.

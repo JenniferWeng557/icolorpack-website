@@ -19,7 +19,7 @@ One of the most significant trends in 2026 is the rise of **Tactile Sustainabili
 ---
 
 ## 2. Restrained Luxury: Minimalism as a Statement
-The "New Luxury" of 2026 is defined by restraint. Brands are moving away from oversized boxes and excessive internal fillers toward **Lightweight Luxury**. This minimalist approach focuses on structural precision—creating **custom rigid gift boxes** that are slim, strong, and perfectly tailored to the product.
+The "New Luxury" of 2026 is defined by restraint. Brands are moving away from oversized boxes and excessive internal fillers toward **Lightweight Luxury**. This minimalist approach focuses on structural precision—creating **custom [rigid gift boxes](../product-rigid-boxes.html)** that are slim, strong, and perfectly tailored to the product.
 
 *   **Precision Engineering:** Our design team focuses on reducing material waste while maintaining the structural integrity required to protect luxury goods during global transit.
 *   **Circular Design:** We prioritize mono-materiality, making it easier for consumers to recycle the entire package without the need for complex disassembly.
@@ -46,7 +46,7 @@ As we move through 2026, integrated digital experiences are becoming a standard 
 The 2026 luxury landscape belongs to brands that can master the balance between prestige and purpose. At iColorPack, we believe that the most powerful packaging is one that tells a story of care—care for the product, the customer, and the earth.
 
 **Partner with iColorPack for 2026**
-Ready to elevate your brand with the latest in Eco-Luxury? Visit [www.icolorpacks.com](https://www.icolorpacks.com) to consult with our design experts and discover how our custom luxury paper bags and rigid gift boxes can redefine your brand’s presentation.
+Ready to elevate your brand with the latest in Eco-Luxury? Visit [www.icolorpacks.com](https://www.icolorpacks.com) to consult with our design experts and discover how our custom luxury [paper bags](../product-paper-bags.html) and rigid gift boxes can redefine your brand’s presentation.
 
 "Package Colors Your Life!" — We bring the future of luxury to your doorstep today.
 

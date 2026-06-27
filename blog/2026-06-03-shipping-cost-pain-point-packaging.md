@@ -6,7 +6,7 @@
 
 For B2B buyers and brand managers in the US and Europe, the hidden killer of luxury packaging margins isn't the unit price—it's the **shipping cost**. 
 
-If you are purchasing traditional, pre-assembled rigid gift boxes, you are effectively paying to ship air across the ocean. Because international freight (both sea and air) is calculated based on **volumetric weight (CBM)** rather than actual weight, a hollow luxury box can often cost more to transport than it does to manufacture.
+If you are purchasing traditional, pre-assembled [rigid gift boxes](../product-rigid-boxes.html), you are effectively paying to ship air across the ocean. Because international freight (both sea and air) is calculated based on **volumetric weight (CBM)** rather than actual weight, a hollow luxury box can often cost more to transport than it does to manufacture.
 
 At **iColorPack**, we recognize this as one of the single biggest pain points for our global clients. Here is how we engineer out the waste to protect your bottom line.
 

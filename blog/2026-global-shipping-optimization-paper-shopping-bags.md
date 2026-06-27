@@ -8,13 +8,13 @@ In the competitive landscape of global B2B trade, the **paper shopping bag** has
 
 The most common point of failure for a low-quality **paper shopping bag** is the base. In a B2B context, where bags are often shipped in bulk containers across oceans, the bags at the bottom of a carton must withstand significant vertical pressure. 
 
-By integrating a heavy-duty, reinforced bottom board (often 350gsm to 600gsm), the bag maintains its structural integrity. This prevents the "bowing" effect that occurs when weight is applied, allowing for taller stacks in shipping cartons without damaging the product. This structural stability is a cousin to the engineering found in [the architecture of stackability for cake boxes](blog/2026-stackability-engineering-custom-cake-boxes.html), where vertical strength is paramount.
+By integrating a heavy-duty, reinforced bottom board (often 350gsm to 600gsm), the bag maintains its structural integrity. This prevents the "bowing" effect that occurs when weight is applied, allowing for taller stacks in shipping cartons without damaging the product. This structural stability is a cousin to the engineering found in [the architecture of stackability for [cake boxes](../product-cake-boxes.html)](blog/2026-stackability-engineering-custom-cake-boxes.html), where vertical strength is paramount.
 
 ## Top-Fold Engineering and High-Tensile Handles
 
 A luxury bag's strength isn't just at the bottom; it begins at the top. Top-fold engineering involves folding the paper inward at the rim to create a double-layered support system where the handles are attached. 
 
-When paired with high-tensile handles—such as grosgrain ribbon, cotton cord, or PP rope—this architecture ensures that the bag can carry heavy luxury items without tearing. This durability is critical during the final leg of global shipping and retail handling. Just as we analyze [the impact of paper density in rigid gift boxes](blog/2026-paper-density-rigid-gift-boxes.html), the density and fold-strength of a shopping bag determine its ability to survive the rigors of international logistics.
+When paired with high-tensile handles—such as grosgrain ribbon, cotton cord, or PP rope—this architecture ensures that the bag can carry heavy luxury items without tearing. This durability is critical during the final leg of global shipping and retail handling. Just as we analyze [the impact of paper density in [rigid gift boxes](../product-rigid-boxes.html)](blog/2026-paper-density-rigid-gift-boxes.html), the density and fold-strength of a shopping bag determine its ability to survive the rigors of international logistics.
 
 ## High-Density Packing: Reducing Global Freight Costs
 
@@ -24,7 +24,7 @@ Durable, reinforced construction allows for **high-density packing**. Because th
 
 ## Aesthetic vs. Utility: The Black & Gold Balance
 
-Luxury brands shouldn't have to choose between beauty and strength. A reinforced bag can still feature the most delicate finishes. Whether you are choosing between [matte vs. glossy finishes for your shopping bags](blog/2026-matte-vs-glossy-paper-shopping-bags.html), the underlying architecture remains the same. 
+Luxury brands shouldn't have to choose between beauty and strength. A reinforced bag can still feature the most delicate finishes. Whether you are choosing between [matte vs. glossy finishes for your [shopping bags](../product-paper-bags.html)](blog/2026-matte-vs-glossy-paper-shopping-bags.html), the underlying architecture remains the same. 
 
 The "Black & Gold" theme—often achieved with deep-dyed black paper and hot-stamped gold foil—is protected by the bag's structural rigidity. By preventing creases and dents during transit, the reinforced architecture ensures that the brand's visual promise is delivered intact to the end consumer.
 

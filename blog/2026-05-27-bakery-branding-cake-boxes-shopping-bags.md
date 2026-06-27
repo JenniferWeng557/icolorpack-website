@@ -11,14 +11,14 @@ At **iColorPack**, we specialize in bridging the gap between artisan craftsmansh
 ## 1. The Cake Box as a Stage
 A cake is an architectural feat. Whether it is a minimalist tiered wedding cake or a collection of delicate pastries, the **cake box** serves as its stage. In 2026, "standard" is no longer enough.
 
-*   **Structural Integrity:** Our cake boxes are engineered with high-density paperboard to ensure that even the most delicate buttercream designs remain pristine during transit.
+*   **Structural Integrity:** Our [cake boxes](../product-cake-boxes.html) are engineered with high-density paperboard to ensure that even the most delicate buttercream designs remain pristine during transit.
 *   **Visual Clarity:** Integrated window designs allow the craftsmanship to be seen before the box is even opened, creating anticipation.
 *   **Branding Real Estate:** Using our signature Charcoal Black and Champagne Gold palette, we transform a functional item into a luxury gift.
 
 ## 2. The Paper Shopping Bag: A Walking Billboard
 Once a customer leaves your shop, their **paper shopping bag** becomes your brand's most visible advertisement. A flimsy bag suggests a flimsy product; a premium, weighted bag suggests luxury.
 
-iColorPack’s **paper shopping bags** are designed with:
+iColorPack’s **paper [shopping bags](../product-paper-bags.html)** are designed with:
 *   **Reinforced Handles:** Cotton or ribbon handles that feel comfortable and secure in the hand.
 *   **Eco-Friendly Durability:** Made from FSC-certified specialty papers that are fully recyclable yet strong enough for multiple uses.
 *   **Artisanal Finishes:** Blind embossing and spot UV treatments that make your logo catch the light on a busy street.

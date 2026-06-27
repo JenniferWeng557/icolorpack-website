@@ -14,12 +14,12 @@ Why factory-direct engineering matters.
 - **Crease Resistance:** Our latest [material innovations](material-innovation-paper-gift-boxes.html) include bio-polymer treatments that prevent the "cracking" often seen on dark-colored bags, maintaining a crisp, architectural look throughout the customer's journey.
 
 ### Engineering for the Modern User
-Our design philosophy bridges the gap between our [reinforced cake boxes](marketing-power-custom-cake-boxes.html) and our retail carriers. We apply the same structural physics to ensure that even a simple shopping bag feels like a precision-engineered asset.
+Our design philosophy bridges the gap between our [reinforced [cake boxes](../product-cake-boxes.html)](marketing-power-custom-cake-boxes.html) and our retail carriers. We apply the same structural physics to ensure that even a simple shopping bag feels like a precision-engineered asset.
 
 ### Sustainable Resilience
 In 2026, durability is the highest form of sustainability. A bag that lasts is a bag that can be reused, reducing the total environmental footprint of your brand. Our recyclable solutions prove that "eco-friendly" doesn't have to mean "fragile."
 
 ### Factory-Direct Assurance
-By [sourcing directly from our Wenzhou facility](factory-direct-paper-gift-boxes-sourcing.html), you gain access to our rigorous internal stress-testing lab. Every batch of paper shopping bags is verified for tear resistance, handle strength, and ink adhesion before it leaves our floor.
+By [sourcing directly from our Wenzhou facility](factory-direct-paper-gift-boxes-sourcing.html), you gain access to our rigorous internal stress-testing lab. Every batch of paper [shopping bags](../product-paper-bags.html) is verified for tear resistance, handle strength, and ink adhesion before it leaves our floor.
 
 [See our Performance Test Results](https://www.icolorpacks.com/#products) | [Talk to a Structural Expert](https://wa.me/8618058355198?text=Hello%20iColorPack%2C%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat%3F

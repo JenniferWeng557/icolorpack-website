@@ -4,9 +4,9 @@ In the world of high-end patisserie, the delivery experience is as critical as t
 
 ## Load-Bearing Structural Engineering
 
-The foundation of a premium delivery experience starts with material integrity. High-volume delivery often involves stacking multiple tiers of products, putting immense pressure on the bottom-most units. Our custom cake boxes are engineered using high-density paperboards that offer superior compression strength.
+The foundation of a premium delivery experience starts with material integrity. High-volume delivery often involves stacking multiple tiers of products, putting immense pressure on the bottom-most units. Our custom [cake boxes](../product-cake-boxes.html) are engineered using high-density paperboards that offer superior compression strength.
 
-Understanding the [Impact of Paper Density in Gift Boxes](blog/2026-paper-density-rigid-gift-boxes.html) is essential when selecting materials. For large cakes, we utilize double-walled corrugated inserts or reinforced rigid walls to ensure the box maintains its form even when subjected to vertical loads during transport.
+Understanding the [Impact of Paper Density in [Gift Boxes](../product-rigid-boxes.html)](blog/2026-paper-density-rigid-gift-boxes.html) is essential when selecting materials. For large cakes, we utilize double-walled corrugated inserts or reinforced rigid walls to ensure the box maintains its form even when subjected to vertical loads during transport.
 
 ## Interlocking Lid Designs for Stability
 

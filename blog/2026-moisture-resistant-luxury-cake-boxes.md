@@ -15,13 +15,13 @@ A high-density **cake box** must do more than just stand tall; it must resist th
 1.  **PE (Polyethylene) Coating:** Often used for the interior of the box, PE creates an impermeable barrier that prevents oils and moisture from seeping into the paper fibers.
 2.  **Aqueous Coating:** A water-based, fast-drying coating that provides a high-quality finish (matte or glossy) while offering significant resistance to finger prints and minor moisture contact during handling.
 
-These coatings ensure that the box retains its "Luxury Black" depth and "Metallic Gold" shine even in refrigeration or humid climates. Understanding [Temperature Stability in Cake Boxes](blog/2026-temperature-stability-custom-cake-boxes.html) is essential for maintaining this balance between aesthetics and functionality.
+These coatings ensure that the box retains its "Luxury Black" depth and "Metallic Gold" shine even in refrigeration or humid climates. Understanding [Temperature Stability in [Cake Boxes](../product-cake-boxes.html)](blog/2026-temperature-stability-custom-cake-boxes.html) is essential for maintaining this balance between aesthetics and functionality.
 
 ## Structural Stability for Tiered Cakes
 
 For B2B clients specializing in wedding and event cakes, structural stability is non-negotiable. A 450 GSM high-density board ensures that the base of the **cake box** does not bow under pressure. This stability is enhanced through precision die-cutting and reinforced corners, allowing for safe stacking during delivery.
 
-Furthermore, the [Ergonomics of Carrying Shopping Bags](blog/2026-ergonomics-carrying-paper-shopping-bags.html) and cake boxes plays a role in the "last mile" of luxury service. A box that is difficult to hold increases the risk of tilting, which can be catastrophic for tiered structures.
+Furthermore, the [Ergonomics of Carrying [Shopping Bags](../product-paper-bags.html)](blog/2026-ergonomics-carrying-paper-shopping-bags.html) and cake boxes plays a role in the "last mile" of luxury service. A box that is difficult to hold increases the risk of tilting, which can be catastrophic for tiered structures.
 
 ## Branding with Premium Finishing
 

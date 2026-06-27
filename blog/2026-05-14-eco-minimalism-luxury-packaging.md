@@ -16,7 +16,7 @@ Our signature **Champagne Gold (#C9A84C)** and **Charcoal Black (#0D0D0D)** aest
 ## 2. Tactile Minimalism: Why Texture is the New Logo
 In a digital-first world, the physical touchpoint has become more precious. 2026 is the year of **Sensory Sophistication**. Instead of loud graphics and large logos, luxury brands are turning to subtle textures to communicate their value.
 
-iColorPack’s expertise in **specialty paper bags** and **rigid gift boxes** focuses on the tactile experience. We utilize:
+iColorPack’s expertise in **specialty [paper bags](../product-paper-bags.html)** and **[rigid gift boxes](../product-rigid-boxes.html)** focuses on the tactile experience. We utilize:
 *   **Linen-Textured Papers:** For an artisanal, organic feel.
 *   **Soft-Touch Coatings:** For a velvet-like sensation that resists fingerprints.
 *   **Deep Embossing:** Creating a 3D effect that invites the consumer to "feel" the brand, rather than just see it.
