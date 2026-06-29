@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | iColorPacks</title>
+  <link rel="stylesheet" href="assets/rollback_main.css">
+</head>
+<body style="background:#0A0A0F;color:#fff;font-family:Montserrat,Arial,sans-serif;">
+  <main style="max-width:900px;margin:120px auto;padding:40px 24px;">
+    <a href="index.html" style="color:#C9A84C;text-decoration:none;">iColorPacks</a>
+    <h1 style="margin-top:30px;color:#C9A84C;">Terms of Service</h1>
+    <p style="color:#bbb;line-height:1.8;font-size:16px;">All quotations, samples, production timelines, and shipping arrangements are confirmed case by case according to product specifications, quantity, artwork, and destination.</p>
+    <p style="margin-top:30px;"><a href="index.html" style="color:#C9A84C;">Back to homepage</a></p>
+  </main>
+<style>
+.rollback-floating-quote { position: fixed; right: 24px; bottom: 26px; width: 54px; height: 54px; border-radius: 50%; background: #C9A84C; color: #0A0A0F; z-index: 2000; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 800; }
+.rollback-modal { display: none; position: fixed; inset: 0; z-index: 3000; background: rgba(0,0,0,0.78); align-items: center; justify-content: center; padding: 20px; }
+.rollback-modal.active { display: flex; }
+.rollback-modal-content { width: min(720px, 100%); background: #111118; border: 1px solid rgba(201,168,76,0.35); padding: 34px; position: relative; }
+.rollback-close-modal { position: absolute; top: 14px; right: 20px; color: #C9A84C; font-size: 30px; cursor: pointer; }
+.rollback-modal-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.rollback-modal-form .full, .rollback-modal-form button { grid-column: 1 / -1; }
+.rollback-modal-form input, .rollback-modal-form textarea, .rollback-modal-form select { width: 100%; background: #0A0A0F; border: 1px solid rgba(255,255,255,0.14); color: #fff; padding: 13px; }
+.rollback-modal-form button { border: 0; background: #C9A84C; color: #0A0A0F; padding: 15px; font-weight: 800; cursor: pointer; }
+</style>
+<a href="javascript:void(0);" onclick="toggleModal()" class="rollback-floating-quote" aria-label="Open inquiry form">RFQ</a>
+<div id="inquiryModal" class="rollback-modal" onclick="if(event.target === this) toggleModal();"><div class="rollback-modal-content"><span class="rollback-close-modal" onclick="toggleModal()">&times;</span><h3 style="color:#C9A84C;">Request a Quote</h3><p style="color:#aaa;">Jennifer will review your packaging request and reply with practical production details.</p><form name="iColorPacks Jennifer Inquiry" class="rollback-modal-form" action="https://formspree.io/f/mkoeljdw" method="POST"><div><input type="text" name="name" placeholder="Name *" required></div><div><input type="email" name="email" placeholder="Email *" required></div><div><input type="text" name="whatsapp" placeholder="WhatsApp"></div><div><select name="product_type"><option>Rigid Gift Boxes</option><option>Luxury Paper Bags</option><option>Cake Boxes</option><option>Mailer Boxes</option><option>Kraft Paper Bags</option></select></div><div class="full"><textarea name="message" rows="5" placeholder="Tell us size, quantity, material, logo finish, destination country..."></textarea></div><button type="submit">Send Inquiry to Jennifer</button></form></div></div><script>function toggleModal(){var modal=document.getElementById('inquiryModal');if(modal) modal.classList.toggle('active');}</script>
+</body>
+</html>
