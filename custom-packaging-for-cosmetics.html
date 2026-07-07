@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Packaging Solutions | iColorPacks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #C9A84C; --dark: #0A0A0F; --card-bg: #0D0D14; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: #FFF; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        
+        /* NAVIGATION */
+        nav { 
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            padding: 20px 8%; display: flex; align-items: center; justify-content: space-between;
+            background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; color: #FFF; font-weight: 700; font-size: 22px; letter-spacing: 1px; }
+        .logo img { height: 32px; margin-right: 12px; }
+        .nav-links { display: flex; gap: 35px; list-style: none; align-items: center; }
+        .nav-links a { text-decoration: none; color: #8A8A9A; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+        .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 10px 22px; font-size: 11px; font-weight: 700; text-decoration: none; transition: 0.3s; }
+        .btn-quote-nav:hover { background: var(--gold); color: #000; }
+
+        /* HERO */
+        .hero { 
+            height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Acb25be062a874fd7a7fc4b77a51f0790Z.webp') center/cover; 
+            display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px;
+        }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 64px); font-weight: 700; letter-spacing: 1px; }
+
+        /* CONTENT GRID */
+        .section { padding: 100px 8%; }
+        .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 1400px; margin: 0 auto; }
+        .p-card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; height: 500px; }
+        .p-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: 0.5s; }
+        .p-card:hover .p-img { opacity: 0.6; transform: scale(1.05); }
+        .p-overlay { position: absolute; bottom: 40px; left: 40px; text-align: left; }
+        .p-title { color: var(--gold); font-size: 14px; font-weight: 700; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
+        .p-desc { font-size: 16px; font-weight: 400; color: #FFF; letter-spacing: 0.5px; }
+
+        /* INQUIRY SECTION */
+        .inquiry-section { background: #050508; padding: 100px 8%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
+        .inquiry-header h2 { font-size: 32px; font-family: 'Playfair Display', serif; margin-bottom: 20px; }
+        .inquiry-header p { color: #888; font-size: 14px; margin-bottom: 50px; }
+
+        footer { padding: 60px 8%; background: #030305; text-align: center; color: #555; font-size: 11px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+        /* FLOATING ICONS */
+        .wa-float { position: fixed; bottom: 30px; left: 30px; background: #25D366; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 2000; text-decoration: none; }
+        .wa-float svg { width: 28px; fill: #FFF; }
+
+        @media (max-width: 900px) { .product-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp" alt="iColorPacks Logo">
+            iColorPacks
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="product-rigid-boxes.html">PRODUCTS</a></li>
+            <li><a href="custom-packaging-for-cosmetics.html" style="color: var(--gold);">INDUSTRIES</a></li>
+            <li><a href="index.html#factory">FACTORY</a></li>
+            <li><a href="blog.html">INSIGHTS</a></li>
+        </ul>
+        <a href="index.html#inquiry" class="btn-quote-nav">Get Factory Quote</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Cosmetics Packaging Solutions</h1>
+    </section>
+
+    <section class="section">
+        <div class="product-grid">
+            <div class="p-card">
+                <img src="https://sc02.alicdn.com/kf/A8112e913dc724ef588fb9e98bbe04495B.png" class="p-img" alt="Luxe Cream Box">
+                <div class="p-overlay">
+                    <div class="p-title">LUXE CREAM BOX</div>
+                    <div class="p-desc">Rigid Construction | Gold Foil</div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="https://sc02.alicdn.com/kf/Ac5ea6ed7481f462681673a35c60d1bb3I.png" class="p-img" alt="Serum Bottle Box">
+                <div class="p-overlay">
+                    <div class="p-title">SERUM BOTTLE BOX</div>
+                    <div class="p-desc">Soft Touch | UV Spot</div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="https://sc02.alicdn.com/kf/A7da0b87976a14babbd19fa1f61b7b173y.png" class="p-img" alt="Palette Collection">
+                <div class="p-overlay">
+                    <div class="p-title">PALETTE COLLECTION</div>
+                    <div class="p-desc">Textured Paper | Precise Fit</div>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="https://sc02.alicdn.com/kf/A5c422ba3c67c4da1a7c451d822aa1f139.png" class="p-img" alt="Cosmetic Set">
+                <div class="p-overlay">
+                    <div class="p-title">COSMETIC SET</div>
+                    <div class="p-desc">Magnetic Closure | Ribbon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry-section">
+        <div class="inquiry-header">
+            <h2>Direct Factory Inquiry</h2>
+            <p>Reply within 2 hours &middot; Free 3D mockups for Cosmetics brands.</p>
+            <a href="index.html#inquiry" class="btn-quote-nav" style="padding: 18px 45px; background: var(--gold); color: #000; font-size: 14px;">GET MY QUOTE NOW</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 iColorPacks &mdash; All Rights Reserved.
+    </footer>
+
+    <a href="https://wa.me/8618058355198" class="wa-float" target="_blank">
+        <svg viewBox="0 0 32 32"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.032 7.787l-2.032 7.413 7.585-1.99c2.21 1.22 4.745 1.923 7.415 1.923 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.35 0-4.577-.617-6.525-1.698l-.468-.26-4.475 1.175 1.2-4.38-.288-.458c-1.185-1.89-1.812-4.095-1.812-6.378 0-6.617 5.383-12 12-12s12 5.383 12 12-5.383 12-12 12zM22.587 18.96c-.36-.18-2.127-1.047-2.457-1.167s-.57-.18-.81.18c-.24.36-.927 1.167-1.137 1.407s-.42.27-.78.09c-.36-.18-1.52-.56-2.893-1.787-1.067-.953-1.787-2.13-1.997-2.49s-.023-.557.157-.733c.163-.16.36-.42.54-.63s.24-.36.36-.6.06-.45-.03-.63c-.09-.18-.81-1.95-1.11-2.67-.293-.703-.593-.607-.81-.62-.21-.013-.45-.013-.69-.013s-.63.09-.96.45c-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.537 3.873 6.147 5.43.857.37 1.527.59 2.05.757.86.273 1.643.233 2.26.143.69-.103 2.127-.87 2.427-1.71.3-.84.3-1.56.21-1.71s-.33-.24-.69-.42z"/></svg>
+    </a>
+
+<script src="https://www.icolorpacks.com/icp-fix-706.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "cron-1777359481591-w2uu66zy",
+      "name": "Daily Blog Post Generator",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1777359481591,
+      "updatedAtMs": 1782874314899,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "Research a trending topic in luxury packaging, sustainable B2B packaging, or custom gift box trends for 2026. \n1. Write a SEO-optimized blog post in English for iColorPack (www.icolorpacks.com) in a high-end, professional tone. Include title, meta description, and body. \n2. Save it as a markdown file in the `blog/` directory with the date prefix (YYYY-MM-DD-slug.md). \n3. SYNCHRONIZE TO WEBSITE: Run `node scripts/sync_blog_post.js <path_to_markdown>` using the bash tool to update the HTML files and blog index. \n4. Ensure the content highlights iColorPack's expertise in luxury specialty paper bags and rigid gift boxes (Gold/Black aesthetic, MOQ 500pcs).",
+        "agent": "general"
+      },
+      "state": {
+        "lastRunAtMs": 1782867603621,
+        "lastStatus": "ok",
+        "lastDurationMs": 3312
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-55554937U1777359-94B1A4-4089-C51374"
+      },
+      "workspacePath": "C:\\Users\\uu\\.accio\\accounts\\1747554937\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    },
+    {
+      "id": "cron-1779759884198-c7a65dl2",
+      "name": "独立站SEO优化与推广",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1779759884198,
+      "updatedAtMs": 1780147857981,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1,2,3,4,5"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "每天帮我做SEO推广，围绕paper gift box/ cake box/ paper shopping bag这三个关键词，并且检查网站的推广效果。",
+        "agent": "DID-F456DA-2B0D4C"
+      },
+      "state": {
+        "lastRunAtMs": 1780016400367,
+        "lastStatus": "ok",
+        "lastDurationMs": 262
+      },
+      "target": {
+        "type": "agent_sticky",
+        "agentId": "DID-F456DA-2B0D4C"
+      },
+      "workspacePath": "C:\\Users\\uu\\.accio\\accounts\\1747554937\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "ui"
+      }
+    },
+    {
+      "id": "cron-1779843862469-99dca110",
+      "name": "Daily SEO Promotion & Monitoring",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1779843862469,
+      "updatedAtMs": 1780147831825,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "针对 paper shopping bag 重点围绕 B2B 批发场景的长尾词进行优化（如：Wholesale luxury paper bags with custom logo, FSC certified paper shopping bags manufacturer, Bulk premium paper bags for high-end boutiques）。生成并发布一篇高质量的 SEO 博客文章（参考 scripts/sync_blog_post.js 的同步逻辑），并检查网站的 Google 搜索排名效果，生成一份报告保存到项目中。完成后向用户汇报。",
+        "agent": "general"
+      },
+      "state": {
+        "lastRunAtMs": 1780102800940,
+        "lastStatus": "ok",
+        "lastDurationMs": 863
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-18554937U1779843-94B1A4-6001-D2515B"
+      },
+      "workspacePath": "C:\\Users\\uu\\.accio\\accounts\\1747554937\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    },
+    {
+      "id": "cron-1779930432168-9wkeo5xs",
+      "name": "Daily SEO Automation iColorPack",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1779930432168,
+      "updatedAtMs": 1780147828381,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "Perform the daily SEO promotion and effectiveness check for iColorPack. \n1. Rotate keywords: 'paper gift box', 'cake box', 'paper shopping bag'. \n2. Generate a new SEO blog post for the today's keyword.\n3. Sync the blog post to the website using scripts/sync_blog_post.js.\n4. Check current Google search rankings for all three keywords.\n5. Create a daily SEO report in the project root.\n6. Post a summary to Twitter and Instagram about the new content.",
+        "agent": "general"
+      },
+      "state": {
+        "lastRunAtMs": 1780147728422,
+        "lastStatus": "error",
+        "lastDurationMs": 0,
+        "lastError": "cron agent runner is not initialized"
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-97554937U1779930-94B1A4-0000-19E6AC"
+      },
+      "workspacePath": "C:\\Users\\uu\\.accio\\accounts\\1747554937\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    },
+    {
+      "id": "cron-1780016686209-dlwcspry",
+      "name": "Daily SEO Promotion",
+      "description": "Daily SEO promotion and ranking check for icolorpacks.com focusing on paper gift box, cake box, and paper shopping bag.",
+      "enabled": false,
+      "deleteAfterRun": false,
+      "createdAtMs": 1780016686209,
+      "updatedAtMs": 1780147829283,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "执行每日 SEO 推广任务：围绕 paper gift box, cake box, paper shopping bag 三个关键词生成/发布博文，同步网站，并检查排名效果。生成一份报告存放在 scripts/ 目录下。",
+        "agent": "main"
+      },
+      "state": {
+        "lastRunAtMs": 1780102811073,
+        "lastStatus": "ok",
+        "lastDurationMs": 10972
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-89554937U1780016-94B1A4-4000-6325B8"
+      },
+      "workspacePath": "C:\\Users\\uu\\.accio\\accounts\\1747554937\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    }
+  ]
+}

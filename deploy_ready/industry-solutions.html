@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Industry Specific Packaging Solutions | iColorPacks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C9A84C; --gold-light: #E8C97A; --dark-bg: #0A0A0F; --card-bg: #12121A; --white: #FFFFFF; --text-muted: #8A8A9A;
+            --border: rgba(255, 255, 255, 0.12);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--dark-bg); color: var(--white); line-height: 1.6; }
+        
+        nav {
+            padding: 25px 8%; display: flex; align-items: center; justify-content: space-between;
+            background: #000; border-bottom: 1px solid var(--border);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-size: 22px; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: 3px; }
+        
+        .section-header { padding: 80px 8% 40px; text-align: center; }
+        .section-header p { color: var(--gold); font-size: 13px; letter-spacing: 5px; text-transform: uppercase; font-weight: 600; margin-bottom: 15px; }
+        .section-header h1 { font-family: 'Playfair Display', serif; font-size: 42px; letter-spacing: 2px; }
+
+        .gallery-container { padding: 0 8% 100px; }
+        .industry-block { margin-bottom: 120px; }
+        .industry-info { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid var(--border); padding-bottom: 15px; }
+        .industry-info h2 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); }
+        .industry-info span { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); }
+
+        .visual-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        .grid-item { position: relative; overflow: hidden; background: var(--card-bg); border: 1px solid var(--border); aspect-ratio: 1/1; }
+        .grid-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .grid-item:hover img { transform: scale(1.05); }
+        
+        .item-label {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            padding: 25px; background: rgba(0,0,0,0.85);
+            text-align: left;
+        }
+        .item-label h3 { font-size: 14px; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        .item-label p { font-size: 11px; color: var(--white); text-transform: uppercase; opacity: 0.8; }
+
+        .cta-box {
+            background: #12121A; border: 1px solid var(--gold); padding: 80px 40px;
+            text-align: center; margin: 0 8% 100px;
+        }
+        .btn-gold {
+            background: var(--gold); color: #000; padding: 20px 50px;
+            text-decoration: none; font-weight: 700; font-size: 13px;
+            letter-spacing: 3px; text-transform: uppercase; display: inline-block;
+            transition: 0.3s; cursor: pointer; border: none;
+        }
+        .btn-gold:hover { background: var(--gold-light); transform: translateY(-3px); }
+
+        @media (max-width: 768px) {
+            .visual-grid { grid-template-columns: 1fr; }
+            .section-header h1 { font-size: 32px; }
+        }
+    
+        /* Navigation Dropdowns */
+        .nav-links { display: flex; gap: 40px; list-style: none; margin: 0; padding: 0; align-items: center; }
+        .nav-links a { text-decoration: none; color: #8A8A9A; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .nav-links a:hover { color: #C9A84C; }
+        .nav-links li.dropdown { position: relative; }
+        .btn-quote-nav { 
+            border: 1px solid #C9A84C; color: #C9A84C; padding: 8px 18px; 
+            font-size: 10px; font-weight: 700; transition: 0.3s; text-decoration: none; 
+            letter-spacing: 2px; display: inline-block; cursor: pointer;
+        }
+        .btn-quote-nav:hover { background: #C9A84C; color: #0A0A0F; }
+        
+        .dropdown-content {
+            display: none; position: absolute; background: #0D0D14;
+            min-width: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            z-index: 1001; top: 100%; left: 0; border: 1px solid rgba(255,255,255,0.08);
+            padding: 10px 0;
+        }
+        .dropdown-content a {
+            color: #8A8A9A !important; padding: 12px 25px !important; text-decoration: none !important;
+            display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1.5px !important;
+            border-bottom: 1px solid rgba(255,255,255,0.03) !important; transition: 0.3s !important;
+            text-align: left !important; line-height: 1.2 !important;
+        }
+        .dropdown-content a:last-child { border-bottom: none !important; }
+        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: #C9A84C !important; padding-left: 30px !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .arrow { font-size: 8px; margin-left: 8px; vertical-align: middle; opacity: 0.7; }
+
+        .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; }
+        
+        @media (max-width: 992px) {
+            .menu-toggle { display: block !important; }
+            .nav-links { 
+                display: none; position: absolute; top: 100%; left: 0; width: 100%; 
+                background: #0A0A0F; flex-direction: column; padding: 20px; 
+                border-bottom: 1px solid rgba(255,255,255,0.1); 
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links li { margin: 10px 0; width: 100%; }
+            .dropdown-content { position: static; box-shadow: none; border: none; padding-left: 20px; display: none; background: transparent; }
+            .dropdown.active .dropdown-content { display: block; }
+        }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    </style>
+</head>
+<body>
+
+    
+    
+    
+    
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp" alt="iColorPacks Logo" style="height: 40px; width: auto; vertical-align: middle;">
+            <span style="vertical-align: middle; margin-left: 10px;">iColorPacks</span>
+        </a>
+        <div class="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">?</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0).html" class="dropbtn">Products <span class="arrow">?</span></a>
+                <div class="dropdown-content">
+                    <a href="product-rigid-boxes.html">Rigid Boxes</a>
+                    <a href="product-paper-bags.html">Paper Bags</a>
+                    <a href="product-cake-boxes.html">Cake Boxes</a>
+                    <a href="product-mailer-boxes.html">Mailer Boxes</a>
+                    <a href="custom-kraft-paper-bags.html">Kraft Bags</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="industry-cases-2026.html" class="dropbtn">Industries <span class="arrow">?</span></a>
+                <div class="dropdown-content">
+                    <a href="industry-cases-2026.html" style="font-weight: 700; color: #C9A84C !important;">View All Industries</a>
+                    <a href="custom-packaging-for-cosmetics.html">Cosmetics</a>
+                    <a href="custom-packaging-for-jewelry.html">Jewelry</a>
+                    <a href="packaging-for-bakeries.html">Bakery</a>
+                    <a href="custom-packaging-for-clothing-brands.html">Clothing</a>
+                    <a href="packaging-for-candle-brands.html">Candle</a>
+                    <a href="custom-packaging-for-perfume.html">Perfume</a>
+                    <a href="ddp-custom-packaging-supplier-china.html">E-commerce</a>
+                    <a href="luxury-gift-boxes-with-logo.html">Gift Shop</a>
+                </div>
+            </li>
+            <li><a href="index#factory">Factory</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
+    </nav>
+
+
+
+
+
+    <div class="section-header">
+        <p>Comprehensive Industry Solutions</p>
+        <h1>Professional Packaging Portfolio</h1>
+    </div>
+
+    <div class="gallery-container">
+        
+        <!-- 1. BAKERY & CONFECTIONERY -->
+        <div class="industry-block">
+            <div class="industry-info">
+                <h2>Bakery & Confectionery</h2>
+                <span>Structural Design | Premium Windows & Handles</span>
+            </div>
+            <div class="visual-grid">
+                <div class="grid-item">
+                    <img src="images/A7f3536f52b594e88909e095717803d217.webp" alt="Cupcake Handle Box">
+                    <div class="item-label">
+                        <h3>Cupcake Carrier</h3>
+                        <p>Integrated Carry Handle | Protective PET Window</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A8f615b0e3b664c0d800d84890925f16eZ.webp" alt="Panoramic Cake Box">
+                    <div class="item-label">
+                        <h3>Panoramic Cake Box</h3>
+                        <p>Luxury Ribbon Handle | 360бу Visual PET</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A641e4ffea7b64bfab9278be346c0ea89n.webp" alt="Custom Macaron Box">
+                    <div class="item-label">
+                        <h3>Premium Macaron Box</h3>
+                        <p>Black Spot UV & Debossed 'MACARON' Text</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A9395f597fe2e46c78ce01f85e2c3464aW.webp" alt="Artisan Pastry Box">
+                    <div class="item-label">
+                        <h3>Artisan Pastry Box</h3>
+                        <p>Auto-Lock Bottom | Food-Safe Structural Board</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. GIFTS & COSMETICS -->
+        <div class="industry-block">
+            <div class="industry-info">
+                <h2>Gifts & Cosmetics</h2>
+                <span>Advanced Finishes | UV & Debossed Branding</span>
+            </div>
+            <div class="visual-grid">
+                <div class="grid-item">
+                    <img src="images/A6cfe4caef50e47c59fb90ae6ca17c5faM.webp" alt="Emerald UV Box">
+                    <div class="item-label">
+                        <h3>Luxury Emerald Rigid Box</h3>
+                        <p>Glossy Spot UV Logo | Premium Matte Finish</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A5b3772eb53c84424b742376be70c8bef9.webp" alt="Terracotta Debossed Box">
+                    <div class="item-label">
+                        <h3>Terracotta Collection</h3>
+                        <p>Deep Debossed Logo | High-Density Rigid Board</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Ab09fb441f2cf4910a2021dc03276a675h.webp" alt="Perfume Drawer Box">
+                    <div class="item-label">
+                        <h3>Perfume Drawer Box</h3>
+                        <p>Minimalist Grey | Ribbon Pull Sliding Mechanism</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A31bead8e63764f2783fa2d0334edfeac8.webp" alt="Velvet Jewelry Box">
+                    <div class="item-label">
+                        <h3>High-End Jewelry Box</h3>
+                        <p>Midnight Blue Velvet Interior | Hand-Wrapped Rigid Board</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. ADVANCED AIRPLANE BOXES -->
+        <div class="industry-block">
+            <div class="industry-info">
+                <h2>Advanced Airplane Boxes</h2>
+                <span>Functional Innovations | Tear-Strip & Marketing Print</span>
+            </div>
+            <div class="visual-grid">
+                <div class="grid-item">
+                    <img src="images/A42b5da3405274fd29e44c26fd49ae8b9g.webp" alt="Tear-Strip Mailer">
+                    <div class="item-label">
+                        <h3>Zip Tear-Strip Mailer</h3>
+                        <p>Integrated Easy-Open Strip | Tamper-Evident Seal</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A54f7f588063840e69fc78b18911bb8c8j.webp" alt="Interior Printed Mailer">
+                    <div class="item-label">
+                        <h3>Marketing Interior Print</h3>
+                        <p>Vibrant Full-Color Interior Branding | High Impact Unboxing</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Acc3877deb2fd44c19a35ec7eec5f4b64c.webp" alt="Navy Mailer">
+                    <div class="item-label">
+                        <h3>Designer Mailer Box</h3>
+                        <p>Geometric Navy Pattern | High-Strength E-Flute Corrugated</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A4404b64eb28548ed9b2f5378c2a76b6bv.webp" alt="Eco Mailer">
+                    <div class="item-label">
+                        <h3>Eco-Minimalist Mailer</h3>
+                        <p>Recycled Grey Cardboard | White Silk-Screen Minimalist Pattern</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. LUXURY BOUTIQUE BAGS -->
+        <div class="industry-block">
+            <div class="industry-info">
+                <h2>Luxury Boutique Bags</h2>
+                <span>Retail & Gift Sets | Premium Silk & Cotton Handles</span>
+            </div>
+            <div class="visual-grid">
+                <div class="grid-item">
+                    <img src="images/Abb1f563a20e5403e88a861c2c23b2b70Q.webp" alt="Fashion Boutique Bag">
+                    <div class="item-label">
+                        <h3>Fashion Boutique Bag</h3>
+                        <p>Charcoal Grey Matte | Thick Cotton Ribbon Handles</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Afdf4bc58bd3f45b6930ef67ba66e796aW.webp" alt="Jewelry Set Bag + Box">
+                    <div class="item-label">
+                        <h3>Jewelry Set (Bag & Box)</h3>
+                        <p>Lavender Soft-Touch | Matching Rigid Box | Silk Handles</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Aa5fee7017f784ba3826155c4c695145bs.webp" alt="Champagne Shopping Bag">
+                    <div class="item-label">
+                        <h3>Luxury Retail Shopping Bag</h3>
+                        <p>Champagne Metallic Paper | Reinforced Silk Handles</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A4fe4cd30ae2b44d3b95674ccbcf4c97cg.webp" alt="Emerald Gift Set">
+                    <div class="item-label">
+                        <h3>Premium Gift Set</h3>
+                        <p>Emerald Green Paper | Coordinated Rigid Box & Bag</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. ECO-FRIENDLY KRAFT BAGS -->
+        <div class="industry-block">
+            <div class="industry-info">
+                <h2>Eco-Friendly Kraft Bags</h2>
+                <span>Sustainable Retail | Bakery & Food Takeaway</span>
+            </div>
+            <div class="visual-grid">
+                <div class="grid-item">
+                    <img src="images/A46015efd67ab482492054164f090af48S.webp" alt="White Kraft Flat Handle">
+                    <div class="item-label">
+                        <h3>Boutique White Kraft</h3>
+                        <p>White Kraft Paper | Flat Paper Eco-Handles</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A57e5d62991f34b209522fa78e4253698n.webp" alt="Brown Kraft Twisted Handle">
+                    <div class="item-label">
+                        <h3>Bakery Brown Kraft</h3>
+                        <p>Natural Brown Kraft | Twisted Paper Handles</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Acdce0438b2c84e91baa9b1fa9626a410a.webp" alt="Fashion White Kraft">
+                    <div class="item-label">
+                        <h3>Fashion Retail Kraft</h3>
+                        <p>Large White Kraft | Heavy Duty Twisted Handles</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/A0c1e5554d05e4552a1d33376572d4b93Z.webp" alt="Food Takeaway Set">
+                    <div class="item-label">
+                        <h3>Food Takeaway Set</h3>
+                        <p>Brown Kraft Bundle | Various Sizes | Reinforced Bottom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cta-box">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 20px;">Protect Your Brand Identity</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">We specialize in structural dielines and unique branding engineering. All mockups are unbranded for reference.</p>
+        <button class="btn-gold">Request Factory Consultation</button>
+    </div>
+
+    <footer style="padding: 60px 8%; text-align: center; border-top: 1px solid var(--border);">
+        <p style="font-size: 10px; color: var(--text-muted); letter-spacing: 3px; text-transform: uppercase;">? 2026 iColorPacks | Professional Packaging Factory | VER: 20260626-FORCE-SYNC</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const dropdowns = document.querySelectorAll('.nav-links .dropdown');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+
+            dropdowns.forEach(dropdown => {
+                const btn = dropdown.querySelector('.dropbtn');
+                btn.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 992) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            });
+
+            // Close menu on click outside
+            document.addEventListener('click', function(e) {
+                if (navLinks && navLinks.classList.contains('active') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

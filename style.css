@@ -1,0 +1,189 @@
+/* Main Style for iColorPacks Rollback */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.hero {
+    background: #eee;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* THE CRITICAL FIX */
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background: #f4f4f4;
+}
+
+/* ============================================
+   应急修复:悬浮图标尺寸失控问题
+   问题:WhatsApp按钮 / "+" 打开表单按钮 / 弹窗上传图标
+        没有被限制大小,铺满整个页面
+   用法:加在全局 CSS 文件最底部即可,
+        !important 保证能覆盖掉原来失效的样式
+   ============================================ */
+
+/* 1. WhatsApp 悬浮按钮 —— 通常是页面右下角固定定位的一个 <a> 包着 <svg> */
+a[href*="wa.me"] {
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 90px !important;
+  width: 56px !important;
+  height: 56px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  background: #25D366;
+  z-index: 999 !important;
+  overflow: hidden !important;
+}
+a[href*="wa.me"] svg,
+a[href*="wa.me"] img {
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+}
+
+/* 2. "+" 打开表单按钮 —— 通常是 onclick 绑定弹窗的按钮 */
+[onclick*="void(0)"],
+.fab-button,
+.create-package-btn {
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  width: 56px !important;
+  height: 56px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  z-index: 999 !important;
+}
+[onclick*="void(0)"] svg,
+.fab-button svg,
+.create-package-btn svg {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+}
+
+/* 3. 弹窗内的上传/回形针图标 */
+.upload-icon,
+label[for*="upload"] svg,
+input[type="file"] + svg,
+input[type="file"] ~ svg {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  display: inline-block !important;
+}
+
+/* 4. 兜底规则:任何没有明确设置宽高的 svg,禁止超过 64px
+   （防止同类问题在其他地方复发，风险较低，可按需删除这条） */
+svg:not([width]):not([height]) {
+  max-width: 64px;
+  max-height: 64px;
+}

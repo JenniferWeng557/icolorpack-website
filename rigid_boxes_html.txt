@@ -1,0 +1,251 @@
+HTML Extraction Report
+URL: https://6b2c2f4e-icolorpack-website.daisywong557.workers.dev/product-rigid-boxes
+
+[PRODUCTS_SECTION_OR_BODY]
+<div id="main-linkfox-extension-cn" style="width: 0px; position: absolute;"></div>
+  
+    
+    
+    
+    
+    
+    <nav>
+        <a href="index" class="logo">
+            <img src="images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp" alt="iColorPacks Logo" style="height: 40px; width: auto; vertical-align: middle;">
+            <span style="vertical-align: middle; margin-left: 10px;">iColorPacks</span>
+        </a>
+        <div class="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
+        <ul class="nav-links">
+            <li><a href="index">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Products <span class="arrow">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="product-rigid-boxes">Rigid Boxes</a>
+                    <a href="product-paper-bags">Paper Bags</a>
+                    <a href="product-cake-boxes">Cake Boxes</a>
+                    <a href="product-mailer-boxes">Mailer Boxes</a>
+                    <a href="custom-kraft-paper-bags">Kraft Bags</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="industry-cases-2026" class="dropbtn">Industries <span class="arrow">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="industry-cases-2026" style="font-weight: 700; color: #C9A84C !important;">View All Industries</a>
+                    <a href="custom-packaging-for-cosmetics">Cosmetics</a>
+                    <a href="custom-packaging-for-jewelry">Jewelry</a>
+                    <a href="packaging-for-bakeries">Bakery</a>
+                    <a href="custom-packaging-for-clothing-brands">Clothing</a>
+                    <a href="packaging-for-candle-brands">Candle</a>
+                    <a href="custom-packaging-for-perfume">Perfume</a>
+                    <a href="ddp-custom-packaging-supplier-china">E-commerce</a>
+                    <a href="luxury-gift-boxes-with-logo">Gift Shop</a>
+                </div>
+            </li>
+            <li><a href="index#factory">Factory</a></li>
+            <li><a href="blog">Blog</a></li>
+        </ul>
+        <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
+    </nav>
+
+  <header class="category-banner">
+    <div class="banner-content">
+      <p>Master Craftsmanship</p>
+      <h1>Custom Luxury Rigid Gift Boxes <em>Wholesale</em></h1>
+    </div>
+  </header>
+  <section class="catalog-section">
+    <div class="section-header">
+      <h2>Engineered for Excellence</h2>
+      <p>High-precision rigid packaging solutions for premium jewelry, cosmetics, and luxury goods.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-badge">Bestseller</div>
+        <div class="product-image"><img src="images/Aebe742b7689d4074a1d6f9925f107ce3X.webp" alt="Magnetic Rigid Box"></div>
+        <div class="product-info">
+          <h3>Signature Magnetic</h3>
+          <div class="product-specs">
+            <div class="spec-row"><span class="spec-label">Material</span><span class="spec-value">1200g Greyboard + Art Paper</span></div>
+            <div class="spec-row"><span class="spec-label">Style</span><span class="spec-value">Magnetic Closure</span></div>
+            <div class="spec-row"><span class="spec-label">Process</span><span class="spec-value">Matte Finish + Gold Foil</span></div>
+            <div class="spec-row"><span class="spec-label">MOQ</span><span class="spec-value">500 Units</span></div>
+          </div>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPacks,%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat?" class="btn-card-inquiry">Inquire Now →</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-badge">New Design</div>
+        <div class="product-image"><img src="images/A4b547f95ec0144a3a53d7e3e2fed8c542.webp" alt="Sliding Drawer Box"></div>
+        <div class="product-info">
+          <h3>Modern Drawer Box</h3>
+          <div class="product-specs">
+            <div class="spec-row"><span class="spec-label">Material</span><span class="spec-value">Textured Specialty Paper</span></div>
+            <div class="spec-row"><span class="spec-label">Style</span><span class="spec-value">Sliding Matchbox Style</span></div>
+            <div class="spec-row"><span class="spec-label">Process</span><span class="spec-value">Custom Foam / Velvet Insert</span></div>
+            <div class="spec-row"><span class="spec-label">MOQ</span><span class="spec-value">500pcs</span></div>
+          </div>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPacks,%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat?" class="btn-card-inquiry">Inquire Now →</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-badge">Classical</div>
+        <div class="product-image"><img src="images/Acb4f575a8b96448f80d24728daf0a6cbS.webp" alt="Top and Bottom Box"></div>
+        <div class="product-info">
+          <h3>Traditional Two-Piece</h3>
+          <div class="product-specs">
+            <div class="spec-row"><span class="spec-label">Material</span><span class="spec-value">Linen Textured Board</span></div>
+            <div class="spec-row"><span class="spec-label">Style</span><span class="spec-value">Top &amp; Bottom Lid</span></div>
+            <div class="spec-row"><span class="spec-label">Process</span><span class="spec-value">Silver Foil Minimalist</span></div>
+            <div class="spec-row"><span class="spec-label">MOQ</span><span class="spec-value">500 Units</span></div>
+          </div>
+          <a href="https://wa.me/8618058355198?text=Hello%20iColorPacks,%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat?" class="btn-card-inquiry">Inquire Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="super-landing-content">
+    <div class="content-container">
+      <h2>Professional Custom Rigid Box Styles</h2>
+      <p class="section-intro">Choosing the right box structure is critical for unboxing experience and shipping efficiency. We offer 4 main rigid box types for global B2B procurement.</p>
+      
+      <div class="style-grid">
+        <div class="style-card">
+          <img src="images/style-lid-base.webp" alt="Lid and Base Rigid Box">
+          <h3>Lid &amp; Base Box</h3>
+          <p>The classic luxury standard. Top and bottom separate completely. Ideal for iPhones, high-end electronics, and gift sets.</p>
+        </div>
+        <div class="style-card">
+          <img src="images/style-magnetic.webp" alt="Magnetic Closure Rigid Box">
+          <h3>Magnetic Closure</h3>
+          <p>Features hidden magnets for a satisfying 'click'. Premium choice for jewelry, perfume, and cosmetics.</p>
+        </div>
+        <div class="style-card">
+          <img src="images/style-drawer.webp" alt="Sliding Drawer Box">
+          <h3>Sliding Drawer</h3>
+          <p>A modern, sleek opening mechanism. Perfect for boutique items, stationery, and small luxury goods.</p>
+        </div>
+        <div class="style-card">
+          <img src="images/style-shoulder.webp" alt="Shoulder Neck Rigid Box">
+          <h3>Shoulder &amp; Neck</h3>
+          <p>Includes an internal 'neck' that holds the lid slightly apart for a layered, high-contrast look.</p>
+        </div>
+      </div>
+
+      <div class="specs-table-container">
+        <h3>Technical Specifications &amp; B2B Sourcing Data</h3>
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Options / Standard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Board Thickness</strong></td>
+              <td>800g, 1000g, 1200g (Standard), 1400g Greyboard</td>
+            </tr>
+            <tr>
+              <td><strong>Wrap Paper</strong></td>
+              <td>Art paper, Kraft paper, Specialty textured paper, Leatherette</td>
+            </tr>
+            <tr>
+              <td><strong>Finishing</strong></td>
+              <td>Gold/Silver Foil, Spot UV, Soft-touch Matte, Gloss Lamination, Debossing</td>
+            </tr>
+            <tr>
+              <td><strong>Inserts</strong></td>
+              <td>EVA foam, Velvet, Satin, Molded Pulp, Cardboard dividers</td>
+            </tr>
+            <tr>
+              <td><strong>MOQ</strong></td>
+              <td>500 units (Low MOQ support)</td>
+            </tr>
+            <tr>
+              <td><strong>Price Range</strong></td>
+              <td>Est. $0.65 - $4.50 (Depends on size, quantity &amp; finishing)</td>
+            </tr>
+            <tr>
+              <td><strong>Lead Time</strong></td>
+              <td>Sample: 3-5 days | Mass Production: 12-18 days</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="industry-grid">
+        <h3>Industry-Specific Packaging Solutions</h3>
+        <div class="industry-list">
+          <div class="industry-item">
+            <span>Perfume &amp; Fragrance</span>
+            <p>Aroma-locking coatings and secure inserts.</p>
+          </div>
+          <div class="industry-item">
+            <span>Jewelry &amp; Watches</span>
+            <p>Anti-tarnish linings and high-end velvet finishes.</p>
+          </div>
+          <div class="industry-item">
+            <span>Corporate Gifting</span>
+            <p>Bulk wholesale pricing for year-end appreciation events.</p>
+          </div>
+          <div class="industry-item">
+            <span>Electronics</span>
+            <p>Heavy-duty board protection for fragile components.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-list">
+          <div class="faq-item">
+            <strong>What is the typical lead time for custom rigid boxes?</strong>
+            <p>Our standard production time is 12-18 business days after sample approval. Air shipping takes 5-7 days, while DDP ocean shipping takes 25-35 days.</p>
+          </div>
+          <div class="faq-item">
+            <strong>Can I get a physical sample before placing a bulk order?</strong>
+            <p>Yes. We provide 48h physical sampling. If you provide your artwork, we can ship a production-grade sample within 3-5 days.</p>
+          </div>
+          <div class="faq-item">
+            <strong>Do you offer design support?</strong>
+            <p>Absolutely. We provide free 3D mockups and structural design support for all wholesale orders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="text-align: left;">
+                <a href="index" class="logo">iColorPacks</a>
+                <p style="margin-top: 20px; color: #8A8A9A; font-size: 13px;">Premium luxury packaging manufacturer based in Wenzhou, China. Specializing in custom gift boxes, shopping bags, and bakery packaging.</p>
+            </div>
+            <div class="footer-col" style="text-align: left;">
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Products</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li><a href="product-rigid-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Rigid Gift Boxes</a></li>
+                    <li><a href="product-paper-bags" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Luxury Paper Bags</a></li>
+                    <li><a href="product-cake-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Custom Cake Boxes</a></li>
+                    <li><a href="product-mailer-boxes" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Mailer Boxes</a></li>
+                    <li><a href="custom-kraft-paper-bags" style="color: #8A8A9A; text-decoration: none; font-size: 13px; line-height: 2;">Kraft Paper Bags</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" style="text-align: left;">
+                <h4 style="color: #C9A84C; font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Email: <a href="mailto:icolorpacks@gmail.com" style="color: #C9A84C; text-decoration: none;">icolorpacks@gmail.com</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">WhatsApp: <a href="https://wa.me/8618058355198" style="color: #C9A84C; text-decoration: none;">+86-18058355198</a></li>
+                    <li style="color: #8A8A9A; font-size: 13px; line-height: 2;">Address: Wenzhou, Zhejiang, China</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: #555;">
+            <p>© 2026 iColorPacks Packaging Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+[BANNER_SECTION]
+Hero section not found.
+Note: A <header class="category-banner"> was found in the body HTML.
