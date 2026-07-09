@@ -6,3 +6,10 @@ inject_widgets.py
 # Ignore other potentially large or temporary files
 *.zip
 *.log
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
