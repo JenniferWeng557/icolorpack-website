@@ -1,0 +1,10 @@
+.product-card img,
+.collection-card img,
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 18px;
+}
