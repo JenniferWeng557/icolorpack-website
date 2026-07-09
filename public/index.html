@@ -540,6 +540,23 @@
       .icp-mobile-header, .icp-mobile-hero, .icp-mobile-nav-overlay, .icp-mobile-sticky-cta { display: none !important; }
     }
 </style>
+<style>
+  /* STRETCH: FORCE HIDE MOBILE ELEMENTS ON DESKTOP */
+  @media (min-width: 769px) {
+    .icp-mobile-sticky-cta,
+    .icp-m-footer,
+    .floating-email,
+    .email-float,
+    .email-floating,
+    #icpFE,
+    a[href^="mailto:"].floating-email,
+    a[href^="mailto:"].email-float,
+    .icp-mobile-sticky-cta a[href^="mailto:"],
+    .icp-m-footer a[href^="mailto:"] {
+      display: none !important;
+    }
+  }
+</style>
 </head>
 <body>
 
