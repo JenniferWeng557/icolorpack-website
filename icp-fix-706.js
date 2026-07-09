@@ -1,6 +1,6 @@
 (function () {
-  var VER = 'v6-clean';
-  console.log('%c[iColorPacks] icp-fix ' + VER + ' loaded - Email Icon Removed', 'color:#C9A84C;font-weight:bold');
+  var VER = 'v6.1-pure';
+  console.log('%c[iColorPacks] icp-fix ' + VER + ' loaded - Email Icon PURGED', 'color:#C9A84C;font-weight:bold');
 
   var GOLD = '#C9A84C', DARK = '#0D0D14';
   var B = 'https://www.icolorpacks.com/';
@@ -37,10 +37,10 @@
     + 'img,video,iframe{max-width:100%!important;}'
     + '}'
     + '/* 强制隐藏任何可能的旧邮箱按钮残留 */'
-    + '#icpFE,.icp-mobile-sticky-cta,.icp-m-footer,.floating-email,.email-float{display:none!important;}';
+    + '#icpFE,.icp-mobile-sticky-cta,.icp-m-footer,.floating-email,.email-float,.email-floating{display:none!important;}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
-  /* ---------- 2. 注入汉堡菜单 (仅保留核心导航) ---------- */
+  /* ---------- 2. 注入汉堡菜单 ---------- */
   var navContainer = document.createElement('div');
   navContainer.innerHTML =
     '<div id="icpSB">&#9776;</div>'
@@ -82,7 +82,7 @@
     });
   }
 
-  /* ---------- 3. 图片兜底 (CDN 级联) ---------- */
+  /* ---------- 3. 图片兜底 ---------- */
   var HOSTS = ['https://sc01.alicdn.com/kf/', 'https://sc02.alicdn.com/kf/', 'https://sc04.alicdn.com/kf/'];
   function fileOf(src) { var m = (src || '').split('?')[0].match(/(A[A-Za-z0-9]{10,}\.(?:webp|png|jpg))$/); return m ? m[1] : null; }
   document.addEventListener('error', function (e) {

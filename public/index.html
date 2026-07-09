@@ -288,12 +288,7 @@
     .floating-whatsapp:hover { transform: scale(1.1); }
 
     /* FLOATING EMAIL BUTTON (between WhatsApp and plus) */
-    .floating-email {
-      position: fixed; bottom: 40px; left: 108px; z-index: 2000;
-      width: 55px; height: 55px; background: #C9A84C; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 25px rgba(201, 168, 76, 0.35); transition: 0.3s ease;
-    }
+    
     .floating-email:hover { transform: scale(1.1); }
     .floating-email svg { width: 26px; height: 26px; }
 
@@ -436,7 +431,7 @@
       /* Mobile bottom: hide sticky bar, use three floating round buttons */
       .icp-mobile-sticky-cta { display: none !important; }
       .floating-whatsapp { bottom: 22px !important; left: 20px !important; width: 52px !important; height: 52px !important; }
-      .floating-email    { bottom: 22px !important; left: 50% !important; transform: translateX(-50%); width: 52px !important; height: 52px !important; }
+      
       .floating-quote-container { bottom: 22px !important; right: 20px !important; }
       .floating-quote { width: 52px !important; height: 52px !important; }
       .quote-tooltip { display: none !important; }
@@ -1173,9 +1168,7 @@
   </a>
 
   <!-- FLOATING EMAIL BUTTON -->
-  <a href="mailto:icolorpacks@gmail.com" onclick="icpCopyEmail()" class="floating-email" aria-label="Email Us">
-    <svg viewBox="0 0 24 24"><path fill="#0D0D14" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-  </a>
+  
 
   <!-- FLOATING QUOTE BUTTON -->
   <a href="javascript:void(0);.html" onclick="toggleModal()"  class="floating-quote-container">
