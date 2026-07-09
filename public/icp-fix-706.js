@@ -1,12 +1,11 @@
 (function () {
-  var VER = 'v5.2-final';
-  console.log('%c[iColorPacks] icp-fix ' + VER + ' loaded', 'color:#C9A84C;font-weight:bold');
+  var VER = 'v6-clean';
+  console.log('%c[iColorPacks] icp-fix ' + VER + ' loaded - Email Icon Removed', 'color:#C9A84C;font-weight:bold');
 
   var GOLD = '#C9A84C', DARK = '#0D0D14';
-  var MAIL = 'icolorpacks@gmail.com';
   var B = 'https://www.icolorpacks.com/';
 
-  /* ---------- 1. 注入样式 (包含电脑端强力隐藏) ---------- */
+  /* ---------- 1. 注入样式 (移除所有邮箱图标样式) ---------- */
   var css = ''
     + '.icp-mobile-nav-overlay,.icp-mobile-header,.icp-mobile-hero,'
     + '.icp-mobile-sticky-cta,.icp-sub-toggle,.icp-sub-menu{display:none!important;}'
@@ -37,15 +36,11 @@
     + 'html,body{overflow-x:hidden!important;max-width:100vw!important;}'
     + 'img,video,iframe{max-width:100%!important;}'
     + '}'
-    + '#icpFE{position:fixed;bottom:22px;left:20px;z-index:99997;'
-    + 'width:52px;height:52px;background:' + GOLD + ';border-radius:50%;display:flex;'
-    + 'align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(201,168,76,.35);}'
-    + '@media(min-width:769px){'
-    + '  #icpFE,.icp-mobile-sticky-cta,.icp-m-footer,.floating-email,.email-float,.email-floating{display:none!important;}'
-    + '}';
+    + '/* 强制隐藏任何可能的旧邮箱按钮残留 */'
+    + '#icpFE,.icp-mobile-sticky-cta,.icp-m-footer,.floating-email,.email-float{display:none!important;}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
-  /* ---------- 2. 注入汉堡菜单 ---------- */
+  /* ---------- 2. 注入汉堡菜单 (仅保留核心导航) ---------- */
   var navContainer = document.createElement('div');
   navContainer.innerHTML =
     '<div id="icpSB">&#9776;</div>'
@@ -71,39 +66,23 @@
   document.body.appendChild(navContainer);
 
   var SB = document.getElementById('icpSB'), SN = document.getElementById('icpSN');
-  function toggle() {
-    SN.classList.toggle('on');
-    if (!SN.classList.contains('on')) SN.querySelectorAll('li.op').forEach(function (l) { l.classList.remove('op'); });
-  }
-  SB.onclick = toggle;
-  SN.querySelector('.x').onclick = toggle;
-  SN.querySelectorAll('.tg').forEach(function (btn) {
-    btn.onclick = function () {
-      var li = btn.parentElement, was = li.classList.contains('op');
-      SN.querySelectorAll('li.op').forEach(function (l) { l.classList.remove('op'); });
-      if (!was) li.classList.add('op');
-    };
-  });
-
-  /* ---------- 3. 邮箱浮动按钮 (严防电脑端) ---------- */
-  if (window.innerWidth <= 768) {
-    var fe = document.createElement('a');
-    fe.id = 'icpFE'; fe.href = 'mailto:' + MAIL; fe.setAttribute('aria-label', 'Email Us');
-    fe.innerHTML = '<svg viewBox="0 0 24 24" width="26" height="26"><path fill="' + DARK
-      + '" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>';
-    fe.onclick = function () {
-      try { if (navigator.clipboard) navigator.clipboard.writeText(MAIL); } catch (e) {}
-      var t = document.createElement('div');
-      t.textContent = 'Email copied: ' + MAIL;
-      t.style.cssText = 'position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:'
-        + GOLD + ';color:#111;padding:10px 18px;border-radius:24px;font-size:14px;font-weight:600;'
-        + 'z-index:100000;box-shadow:0 4px 16px rgba(0,0,0,.4);max-width:90vw;text-align:center;';
-      document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2500);
-    };
-    document.body.appendChild(fe);
+  if (SB && SN) {
+    function toggle() {
+      SN.classList.toggle('on');
+      if (!SN.classList.contains('on')) SN.querySelectorAll('li.op').forEach(function (l) { l.classList.remove('op'); });
+    }
+    SB.onclick = toggle;
+    SN.querySelector('.x').onclick = toggle;
+    SN.querySelectorAll('.tg').forEach(function (btn) {
+      btn.onclick = function () {
+        var li = btn.parentElement, was = li.classList.contains('op');
+        SN.querySelectorAll('li.op').forEach(function (l) { l.classList.remove('op'); });
+        if (!was) li.classList.add('op');
+      };
+    });
   }
 
-  /* ---------- 4. 图片兜底 ---------- */
+  /* ---------- 3. 图片兜底 (CDN 级联) ---------- */
   var HOSTS = ['https://sc01.alicdn.com/kf/', 'https://sc02.alicdn.com/kf/', 'https://sc04.alicdn.com/kf/'];
   function fileOf(src) { var m = (src || '').split('?')[0].match(/(A[A-Za-z0-9]{10,}\.(?:webp|png|jpg))$/); return m ? m[1] : null; }
   document.addEventListener('error', function (e) {
@@ -114,4 +93,39 @@
     if (n < HOSTS.length) { el.dataset.t = (n + 1) + ''; el.src = HOSTS[n] + f; }
     else { el.dataset.d = '1'; }
   }, true);
+
+  /* ---------- 4. 修复问号图标 ---------- */
+  var ICONS = {
+    'FOOD GRADE SAFETY': 'cake', 'STRUCTURAL STRENGTH': 'shield', 'EASY ASSEMBLY': 'box',
+    'PREMIUM UNBOXING': 'gift', 'CRUSH RESISTANCE': 'shield', 'BRAND PRECISION': 'target',
+    'LUXURY PERCEPTION': 'gift', 'STRUCTURAL INTEGRITY': 'shield', 'FULL CUSTOMIZATION': 'box'
+  };
+  function featureSVG(name) {
+    var p = {
+      cake: '<path d="M12 6V3m-3 3V4m6 2V4"/><path d="M5 10c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v2H5z"/><path d="M4 12h16v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M4 15c1.5 0 1.5 1.5 3 1.5s1.5-1.5 3-1.5 1.5 1.5 3 1.5 1.5-1.5 3-1.5"/>',
+      shield: '<path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/>',
+      box: '<path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/>'
+    };
+    return '<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="' + GOLD
+      + '" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + (p[name] || p.box) + '</svg>';
+  }
+  function fixQ() {
+    var walk = document.createTreeWalker(document.body || document.documentElement, NodeFilter.SHOW_TEXT, null, false);
+    var node;
+    while (node = walk.nextNode()) {
+      var t = node.textContent;
+      if (/^[?\uFFFD]+$/.test(t.trim())) {
+        var el = node.parentElement; if (!el || el.tagName === 'SCRIPT' || el.tagName === 'STYLE') continue;
+        var fs = parseInt(window.getComputedStyle(el).fontSize, 10);
+        if (fs >= 28) {
+          var title = ''; var next = el.nextElementSibling;
+          if (next && /^H[1-6]$/.test(next.tagName)) title = next.textContent.trim().toUpperCase();
+          el.innerHTML = featureSVG(ICONS[title] || 'box');
+        }
+      }
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fixQ);
+  else fixQ();
+  setTimeout(fixQ, 500);
 })();
