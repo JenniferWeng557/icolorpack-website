@@ -64,7 +64,15 @@
     + '#icpFE{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:99997;'
     + 'width:52px;height:52px;background:' + GOLD + ';border-radius:50%;display:flex;'
     + 'align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(201,168,76,.35);}'
-    + '}'; /* end media */
+    + '}'
+    /* 桌面端显式隐藏:确保浮动邮箱/mobile-CTA不出现在桌面视图 */
+    + '@media(min-width:769px){'
+    + '#icpFE,.icp-mobile-sticky-cta,.icp-m-footer,'
+    + '.floating-email,.email-float,.email-floating,'
+    + 'a[href^="mailto:"].floating-email,a[href^="mailto:"].email-float,'
+    + '.icp-mobile-sticky-cta a[href^="mailto:"],'
+    + '.icp-m-footer a[href^="mailto:"]{display:none!important}'
+    + '}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   /* ---------- 2. 注入汉堡按钮 + 菜单 ---------- */
