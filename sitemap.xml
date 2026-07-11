@@ -2,11 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
   <url><loc>https://www.icolorpacks.com/</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.icolorpacks.com/factory</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.icolorpacks.com/case-studies</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
   <url><loc>https://www.icolorpacks.com/blog</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.icolorpacks.com/faq</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/certifications</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
   
   <!-- Product Pages -->
   <url><loc>https://www.icolorpacks.com/product-rigid-boxes</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -34,7 +32,5 @@
 
   <!-- Technical -->
   <url><loc>https://www.icolorpacks.com/custom-packaging-manufacturer-china</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.icolorpacks.com/custom-rigid-boxes-for-perfume-brands</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.icolorpacks.com/low-moq-custom-packaging-wholesale</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.icolorpacks.com/llms.txt</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>
