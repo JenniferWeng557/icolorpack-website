@@ -34,6 +34,7 @@
         .wa-float { position: fixed; bottom: 30px; left: 30px; background: #25D366; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 2000; text-decoration: none; }
         .wa-float svg { width: 28px; fill: #FFF; }
         @media (max-width: 900px) { .product-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
+        .dropdown { position: relative; } .dropdown-content { display: none; position: absolute; background: #0D0D14; min-width: 220px; z-index: 1001; top: 100%; left: 0; border: 1px solid rgba(255,255,255,0.08); padding: 10px 0; } .dropdown-content a { color: #8A8A9A !important; padding: 12px 25px !important; display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1.5px !important; border-bottom: 1px solid rgba(255,255,255,0.03) !important; text-decoration: none !important; } .dropdown:hover .dropdown-content { display: block !important; }
     </style>
 <style>
   /* STRETCH: FORCE HIDE MOBILE ELEMENTS ON DESKTOP */
@@ -61,10 +62,30 @@
         <a href="index.html" class="logo"><img src="images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp" alt="iColorPacks Logo">iColorPacks</a>
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="product-rigid-boxes.html">PRODUCTS <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">▼</span></a></li>
-            <li><a href="custom-packaging-for-cosmetics.html" style="color: var(--gold);">INDUSTRIES <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">▼</span></a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">PRODUCTS <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="product-rigid-boxes.html">Rigid Boxes</a>
+                    <a href="product-paper-bags.html">Paper Bags</a>
+                    <a href="product-cake-boxes.html">Cake Boxes</a>
+                    <a href="product-mailer-boxes.html">Mailer Boxes</a>
+                    <a href="product-kraft-bags.html">Kraft Bags</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="industry-cases-2026.html" class="dropbtn" style="color: var(--gold);">INDUSTRIES <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="packaging-for-cosmetics-brands.html">Cosmetics</a>
+                    <a href="packaging-for-jewelry-brands.html">Jewelry</a>
+                    <a href="packaging-for-bakeries.html">Bakery</a>
+                    <a href="packaging-for-clothing-boutiques.html">Clothing</a>
+                    <a href="packaging-for-candle-brands.html">Candle</a>
+                    <a href="packaging-for-perfume-brands.html">Perfume</a>
+                </div>
+            </li>
             <li><a href="index.html#factory">FACTORY</a></li>
             <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
         </ul>
         <a href="index.html#inquiry" class="btn-quote-nav">Get Factory Quote</a>
     </nav>
@@ -98,7 +119,7 @@
     </section>
     <footer>&copy; 2026 iColorPacks &mdash; All Rights Reserved.</footer>
 <script src="https://www.icolorpacks.com/icp-fix-706.js"></script>
-<script src="/icp-final-floating-fix.js?v=20260709"></script>
+<script src="icp-final-floating-fix.js?v=20260709"></script>
 
 </body>
 </html>
