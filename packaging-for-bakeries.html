@@ -6,30 +6,27 @@
     <title>Bakery & Cake Packaging Solutions | iColorPacks</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
-        .dropdown:hover .dropdown-content { display: block !important; }
         :root { --gold: #C9A84C; --dark: #0A0A0F; --card-bg: #0D0D14; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: #FFF; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-        nav { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 20px 8%; display: flex; align-items: center; justify-content: space-between; background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
-        .logo { display: flex; align-items: center; text-decoration: none; color: #FFF; font-weight: 700; font-size: 22px; }
+        
+        /* NAVIGATION DROPDOWN CSS */
+        nav { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 22px 8%; display: flex; align-items: center; justify-content: space-between; background: rgba(10, 10, 15, 0.97); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .logo { display: flex; align-items: center; text-decoration: none; color: #FFF; font-weight: 700; font-size: 22px; font-family: 'Playfair Display'; }
         .logo img { height: 32px; margin-right: 12px; }
         .nav-links { display: flex; gap: 35px; list-style: none; align-items: center; }
-        .nav-links a { text-decoration: none; color: #8A8A9A; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links a { text-decoration: none; color: #8A8A9A; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
         .nav-links a:hover { color: var(--gold); }
+        
         .dropdown { position: relative; }
         .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #0D0D14; min-width: 220px; border: 1px solid rgba(255,255,255,0.08); padding: 10px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); z-index: 1001; }
         .dropdown-content a { color: #8A8A9A !important; padding: 12px 25px !important; display: block !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1.5px !important; border-bottom: 1px solid rgba(255,255,255,0.03) !important; text-decoration: none !important; transition: 0.3s !important; }
         .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1) !important; color: var(--gold) !important; padding-left: 30px !important; }
-        .dropdown:hover .dropdown-content { display: block; }
-        .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 10px 22px; font-size: 11px; font-weight: 700; text-decoration: none; }
+        .dropdown:hover .dropdown-content { display: block !important; }
         
-        /* UPDATED BAKERY HERO BACKGROUND */
-        .hero { 
-            height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.icolorpacks.com/images/Ad0e285c6c65b45c89ff12c12f3581396V.webp') center/cover; 
-            display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px;
-        }
+        .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 8px 20px; font-size: 10px; font-weight: 700; text-decoration: none; cursor: pointer; letter-spacing: 2px; }
+        .hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.icolorpacks.com/images/Ad0e285c6c65b45c89ff12c12f3581396V.webp') center/cover; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px; }
         .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 64px); font-weight: 700; }
-
         .section { padding: 100px 8%; }
         .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 1400px; margin: 0 auto; }
         .p-card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; height: 500px; }
@@ -40,29 +37,7 @@
         .p-desc { font-size: 16px; color: #FFF; }
         .inquiry-section { background: #050508; padding: 100px 8%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
         footer { padding: 60px 8%; background: #030305; text-align: center; color: #555; font-size: 11px; border-top: 1px solid rgba(255,255,255,0.05); }
-        @media (max-width: 900px) { .product-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
     </style>
-<style>
-        .dropdown:hover .dropdown-content { display: block !important; }
-  /* STRETCH: FORCE HIDE MOBILE ELEMENTS ON DESKTOP */
-  @media (min-width: 769px) {
-    .icp-mobile-sticky-cta,
-    .icp-m-footer,
-    .floating-email,
-    .email-float,
-    .email-floating,
-    #icpFE,
-    a[href^="mailto:"].floating-email,
-    a[href^="mailto:"].email-float,
-    .icp-mobile-sticky-cta a[href^="mailto:"],
-    .icp-m-footer a[href^="mailto:"] {
-      display: none !important;
-    }
-  }
-</style>
-<link rel="stylesheet" href="/icp-final-floating-fix.css?v=20260709">
-
-    <link rel="canonical" href="https://www.icolorpacks.com/packaging-for-bakeries">
 </head>
 <body>
     <nav>
@@ -91,39 +66,19 @@
                 </div>
             </li>
             <li><a href="index.html#factory">FACTORY</a></li>
-            <li><a href="blog.html">BLOG</a></li>`n            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
         </ul>
-        <a href="index.html#inquiry" class="btn-quote-nav">Get Factory Quote</a>
+        <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
     </nav>
     <section class="hero"><h1>Artisanal Bakery Packaging</h1></section>
-    <section class="section">
-        <div class="product-grid">
-            <div class="p-card">
-                <img src="https://sc02.alicdn.com/kf/Af60ab40f87bf4d16bed24dbbf1cae568Y.png" class="p-img">
-                <div class="p-overlay"><div class="p-title">PREMIUM CAKE BOX</div><div class="p-desc">Food Grade | Clear Window</div></div>
-            </div>
-            <div class="p-card">
-                <img src="https://sc02.alicdn.com/kf/Af3242e9c7e214b9aa94211f96eb41e89v.png" class="p-img">
-                <div class="p-overlay"><div class="p-title">MACARON DRAWER BOX</div><div class="p-desc">Elegant Divider | Gold Stamp</div></div>
-            </div>
-            <div class="p-card">
-                <img src="https://sc02.alicdn.com/kf/Af54194d49a304e789e7c5aced4e27ee3G.png" class="p-img">
-                <div class="p-overlay"><div class="p-title">COOKIE COLLECTION</div><div class="p-desc">Kraft Style | Eco-friendly</div></div>
-            </div>
-            <div class="p-card">
-                <img src="https://sc02.alicdn.com/kf/A8f8f62e76dbb4bc8997150837c947ab4L.png" class="p-img">
-                <div class="p-overlay"><div class="p-title">BREAD PACKAGING</div><div class="p-desc">Breathable | Custom Print</div></div>
-            </div>
-        </div>
-    </section>
+    <section class="section"><div class="product-grid"><div class="p-card"><img src="https://sc02.alicdn.com/kf/Af60ab40f87bf4d16bed24dbbf1cae568Y.png" class="p-img"><div class="p-overlay"><div class="p-title">PREMIUM CAKE BOX</div><div class="p-desc">Food Grade | Clear Window</div></div></div><div class="p-card"><img src="https://sc02.alicdn.com/kf/Af3242e9c7e214b9aa94211f96eb41e89v.png" class="p-img"><div class="p-overlay"><div class="p-title">MACARON DRAWER BOX</div><div class="p-desc">Elegant Divider | Gold Stamp</div></div></div><div class="p-card"><img src="https://sc02.alicdn.com/kf/Af54194d49a304e789e7c5aced4e27ee3G.png" class="p-img"><div class="p-overlay"><div class="p-title">COOKIE COLLECTION</div><div class="p-desc">Kraft Style | Eco-friendly</div></div></div><div class="p-card"><img src="https://sc02.alicdn.com/kf/A8f8f62e76dbb4bc8997150837c947ab4L.png" class="p-img"><div class="p-overlay"><div class="p-title">BREAD PACKAGING</div><div class="p-desc">Breathable | Custom Print</div></div></div></div></section>
     <section class="inquiry-section">
         <h2 style="font-family:'Playfair Display'; font-size:32px; margin-bottom:20px;">Direct Factory Inquiry</h2>
         <p style="color:#888; margin-bottom:40px;">Reply within 2 hours &middot; Free 3D mockups for Bakery brands.</p>
-        <a href="index.html#inquiry" class="btn-quote-nav" style="padding: 18px 45px; background: var(--gold); color: #000; font-size: 14px;">GET MY QUOTE NOW</a>
+        <a href="https://wa.me/8618058355198" class="btn-quote-nav" style="padding: 18px 45px; background: var(--gold); color: #000; font-size: 14px;">GET MY QUOTE NOW</a>
     </section>
     <footer>&copy; 2026 iColorPacks &mdash; All Rights Reserved.</footer>
-<script src="https://www.icolorpacks.com/icp-fix-706.js"></script>
-<div id="icpFE"></div><script src="icp-final-floating-fix.js?v=20260709"></script>
-
+    <div id="icpFE"></div><script src="icp-final-floating-fix.js?v=20260709"></script>
 </body>
 </html>
