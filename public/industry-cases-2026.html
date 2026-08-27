@@ -21,6 +21,13 @@
   }
 </style>
 <link rel="stylesheet" href="/icp-final-floating-fix.css?v=20260709">
+<style>
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content { display: none; position: absolute; background: #0D0D14; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); z-index: 1000; top: 100%; left: 0; padding: 10px 0; border: 1px solid rgba(255,255,255,0.05); }
+.dropdown-content a { color: #8A8A9A !important; padding: 12px 20px !important; text-decoration: none; display: block !important; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.03) !important; }
+.dropdown-content a:hover { background: rgba(201,168,76,0.1) !important; color: #C9A84C !important; }
+.dropdown:hover .dropdown-content { display: block !important; }
+</style>
 </head><body>    <nav>        <a href="index.html" class="logo-wrapper">            <svg width="40" height="40" viewBox="0 0 120 120" fill="none" style="width:40px !important; height:40px !important;"><path d="M60 35 L95 20 L60 5 L25 20 Z" fill="#C9A84C" opacity="0.8"/><path d="M25 20 L10 45 L45 60 L60 35 Z" fill="#E8C97A"/><path d="M95 20 L110 45 L75 60 L60 35 Z" fill="#E8C97A"/><path d="M60 35 L45 60 L60 85 L75 60 Z" fill="#000000"/><path d="M25 55 V95 L60 115 V75 L45 60 Z" fill="#C9A84C"/><path d="M95 55 V95 L60 115 V75 L75 60 Z" fill="#A6893A"/><text x="32" y="98" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#000" style="letter-spacing:-1px; opacity:0.8;">iCP</text></svg>            <span style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: #C9A84C; letter-spacing: 1px;">iColorPacks</span>        </a>        <ul class="nav-links">
             <li><a href="/">HOME</a></li>
             <li class="dropdown">
