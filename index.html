@@ -170,19 +170,19 @@
     .reviewer-info p { font-size: 10px; color: var(--text-muted); }
 
     
-    .faq { background: #07070a; padding: 100px 10%; border-top: 1px solid rgba(255,255,255,0.05); }
-    .faq-container { max-width: 1000px; margin: 0 auto; }
-    .faq-item { border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; margin-bottom: 20px; background: #0d0d14; transition: 0.3s; }
-    .faq-item:hover { border-color: var(--gold); }
+    
+    .faq { background: #07070a; padding: 120px 10%; border-top: 1px solid rgba(255,255,255,0.08); }
+    .faq-container { max-width: 1100px; margin: 0 auto; }
+    .faq-item { border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; margin-bottom: 25px; background: #0d0d14; transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .faq-item:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
     .faq-item summary { 
         list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; 
-        color: #FFF; font-size: 20px; font-weight: 600; padding: 30px; letter-spacing: 0.5px;
+        color: #FFF; font-size: 24px; font-weight: 700; padding: 35px; letter-spacing: 0.5px;
     }
-    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 28px; transition: 0.3s; }
-    .faq-item details[open] summary::after { transform: rotate(45deg); }
-    .faq-content { padding: 0 30px 30px; color: #BBB; font-size: 17px; line-height: 1.8; border-top: 1px solid rgba(255,255,255,0.03); padding-top: 20px; }
+    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 36px; font-weight: 300; transition: 0.4s; }
+    .faq-item details[open] summary::after { transform: rotate(45deg); color: #FFF; }
+    .faq-content { padding: 0 35px 40px; color: #CCC; font-size: 19px; line-height: 1.8; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 25px; }
 
-    /* OLD FAQ REMOVED */
     .faq { background: #07070a; padding: 60px 10%; border-top: 1px solid rgba(255,255,255,0.02); }
     .faq-container { max-width: 900px; margin: 0 auto; }
     .faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); padding: 20px 0; }
