@@ -169,7 +169,20 @@
     .reviewer-info h4 { font-size: 12px; color: var(--white); margin-bottom: 2px; }
     .reviewer-info p { font-size: 10px; color: var(--text-muted); }
 
-    /* FAQ */
+    
+    .faq { background: #07070a; padding: 100px 10%; border-top: 1px solid rgba(255,255,255,0.05); }
+    .faq-container { max-width: 1000px; margin: 0 auto; }
+    .faq-item { border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; margin-bottom: 20px; background: #0d0d14; transition: 0.3s; }
+    .faq-item:hover { border-color: var(--gold); }
+    .faq-item summary { 
+        list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; 
+        color: #FFF; font-size: 20px; font-weight: 600; padding: 30px; letter-spacing: 0.5px;
+    }
+    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 28px; transition: 0.3s; }
+    .faq-item details[open] summary::after { transform: rotate(45deg); }
+    .faq-content { padding: 0 30px 30px; color: #BBB; font-size: 17px; line-height: 1.8; border-top: 1px solid rgba(255,255,255,0.03); padding-top: 20px; }
+
+    /* OLD FAQ REMOVED */
     .faq { background: #07070a; padding: 60px 10%; border-top: 1px solid rgba(255,255,255,0.02); }
     .faq-container { max-width: 900px; margin: 0 auto; }
     .faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); padding: 20px 0; }
@@ -1248,34 +1261,34 @@
   
     <section id="faq" class="faq">
     <div class="faq-container">
-      <span class="section-label" style="text-align: center;">FAQ</span>
-      <h2 class="section-title">Common <em>Questions.</em></h2>
+      <span class="section-label" style="text-align: center;">Packaging Intelligence</span>
+      <h2 class="section-title" style="font-size: 42px; margin-bottom: 60px;">Common <em>Questions.</em></h2>
       
       <div class="faq-item">
         <details>
           <summary>What is your Minimum Order Quantity (MOQ)?</summary>
-          <div class="faq-content">We offer agile MOQ starting at 100-500 units for custom gift boxes and shopping bags, providing flexibility for brands at all stages.</div>
+          <div class="faq-content">We offer agile MOQ starting at 100-500 units for custom gift boxes and shopping bags, providing flexibility for brands at all stages. Ordering 1,000+ units can significantly reduce your unit cost by up to 40%.</div>
         </details>
       </div>
 
       <div class="faq-item">
         <details>
           <summary>Where is the iColorPacks luxury packaging factory located?</summary>
-          <div class="faq-content">Our facility is located in Wenzhou, China, known globally as the hub for premium B2B packaging and printing excellence.</div>
+          <div class="faq-content">Our facility is located in Wenzhou, China, known globally as the hub for premium B2B packaging and printing excellence. We welcome clients for video factory tours.</div>
         </details>
       </div>
 
       <div class="faq-item">
         <details>
           <summary>Do you provide free packaging design support?</summary>
-          <div class="faq-content">Yes, our in-house team assists with structural design, technical file optimization, and provides free 3D mockups within 24 hours.</div>
+          <div class="faq-content">Yes, our in-house team assists with structural design, technical file optimization, and provides free 3D mockups within 24 hours to ensure your brand looks perfect.</div>
         </details>
       </div>
 
       <div class="faq-item">
         <details>
           <summary>Can you ship directly to Amazon FBA warehouses?</summary>
-          <div class="faq-content">Absolutely. We handle all labeling, DDP logistics, and documentation required for direct-to-warehouse delivery globally.</div>
+          <div class="faq-content">Absolutely. We handle all labeling, DDP logistics, and documentation required for direct-to-warehouse delivery globally, including US, EU, and UK destinations.</div>
         </details>
       </div>
     </div>
