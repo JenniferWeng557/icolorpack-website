@@ -1,12 +1,12 @@
-/* iColorPacks unified floating actions */
+/* iColorPacks unified floating actions - VERIFIED FIX */
 .icp-floating-actions {
   position: fixed;
-  left: 42px;
-  bottom: 34px;
-  z-index: 9000;
+  right: 40px;
+  bottom: 40px;
+  z-index: 99999;
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-direction: column-reverse;
+  gap: 15px;
   pointer-events: none;
 }
 
@@ -17,73 +17,88 @@
 
 .icp-float-whatsapp,
 .icp-float-plus {
-  width: 62px;
-  height: 62px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 0;
+  border: none;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
-  transition: transform 0.2s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.icp-float-whatsapp:hover, .icp-float-plus:hover { transform: scale(1.1) translateY(-5px); }
 .icp-float-whatsapp:active, .icp-float-plus:active { transform: scale(0.9); }
 
 .icp-float-whatsapp {
   background: #25d366;
+  position: relative;
 }
 
 .icp-float-whatsapp svg {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   fill: #ffffff;
 }
 
+/* Tooltip for WhatsApp */
+.icp-float-whatsapp::after {
+  content: "WhatsApp";
+  position: absolute;
+  right: 75px;
+  background: #25d366;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.icp-float-whatsapp:hover::after { opacity: 1; transform: translateX(0); }
+
 .icp-float-plus {
-  position: fixed;
-  right: 44px;
-  bottom: 34px;
-  background: #d9b957;
-  color: #050508;
-  font-size: 42px;
+  background: #C9A84C;
+  color: #000;
+  font-size: 38px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 600;
+  position: relative;
 }
 
-/* Force hide all old floating elements */
-.floating-email, .email-float, .email-floating, .icp-email, .icp-float-email,
-.icp-mobile-sticky-cta, .icp-m-footer, .floating-whatsapp, .floating-quote-container,
-.floating-quote, .wa-float, .rollback-floating-quote,
-a[href^="mailto:"].floating-email, a[href^="mailto:"].email-float,
-a[href^="mailto:"].email-floating, .icp-mobile-sticky-cta a[href^="mailto:"],
-.icp-m-footer a[href^="mailto:"] {
+.icp-float-plus::after {
+  content: "Inquiry";
+  position: absolute;
+  right: 75px;
+  background: #C9A84C;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.icp-float-plus:hover::after { opacity: 1; transform: translateX(0); }
+
+/* Hide all previous/broken floating elements */
+.floating-whatsapp, .floating-quote, .wa-float, .floating-quote-container,
+.icp-mobile-sticky-cta, .icp-m-footer, .email-float, .icp-email, #icpFE-old,
+.rollback-floating-quote, .icp-floating-actions-left {
   display: none !important;
 }
 
 @media (max-width: 768px) {
-  .icp-floating-actions {
-    left: 22px;
-    bottom: 22px;
-    gap: 12px;
-  }
-
-  .icp-float-whatsapp,
-  .icp-float-plus {
-    width: 58px;
-    height: 58px;
-  }
-
-  .icp-float-whatsapp svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  .icp-float-plus {
-    right: 24px;
-    bottom: 22px;
-    font-size: 40px;
-  }
+  .icp-floating-actions { right: 20px; bottom: 20px; }
+  .icp-float-whatsapp, .icp-float-plus { width: 55px; height: 55px; }
+  .icp-float-whatsapp::after, .icp-float-plus::after { display: none; }
 }
