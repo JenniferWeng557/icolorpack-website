@@ -36,11 +36,11 @@
     .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
     .category-banner {
-      height: 60vh; background: url('https://www.icolorpacks.com/images/Ac90d6a07b32743848f90b02d1eca2985z.webp') center/cover no-repeat;
-      display: flex; align-items: center; justify-content: center; text-align: center; position: relative; margin-top: 80px;
+      height: 60vh; min-height: 500px; background: url('/images/cake-boxes-banner-v2.jpg') center/cover no-repeat;
+      display: flex; align-items: center; justify-content: flex-start; text-align: left; position: relative; margin-top: 80px;
     }
-    .category-banner::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
-    .banner-content { position: relative; z-index: 1; max-width: 800px; padding: 0 20px; }
+    .category-banner::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,4,7,.78) 0%, rgba(4,4,7,.52) 38%, rgba(4,4,7,.12) 72%, rgba(4,4,7,.22) 100%); }
+    .banner-content { position: relative; z-index: 1; width: min(620px, 84%); margin-left: 8%; padding: 0 20px; }
     .banner-content h1 { font-family: 'Montserrat', sans-serif; font-size: 48px; letter-spacing: 4px; margin-bottom: 15px; }
     .banner-content h1 em { font-family: 'Playfair Display', serif; font-style: italic; text-transform: none; letter-spacing: 0; }
     .banner-content p { color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; }
@@ -180,7 +180,15 @@
     .floating-quote-container:hover .quote-tooltip { opacity: 1; transform: translateX(0); }
     .floating-quote-container:hover .floating-quote { transform: scale(1.1) rotate(90deg); }
 
-    @media (max-width: 768px) { .product-grid { grid-template-columns: 1fr; } .category-banner { height: 40vh; } .banner-content h1 { font-size: 32px; } .nav-links { display: none; } }
+    @media (max-width: 768px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .category-banner { height: 64vh; min-height: 520px; margin-top: 68px; background-position: 64% center; align-items: flex-end; }
+      .category-banner::before { background: linear-gradient(180deg, rgba(4,4,7,.08) 12%, rgba(4,4,7,.34) 48%, rgba(4,4,7,.88) 100%); }
+      .banner-content { width: 100%; margin: 0; padding: 0 24px 54px; }
+      .banner-content h1 { font-size: 34px; line-height: 1.15; letter-spacing: 2px; }
+      .banner-content p { font-size: 11px; letter-spacing: 1.6px; }
+      .nav-links { display: none; }
+    }
   
         /* Navigation Dropdowns */
         .nav-links { display: flex; gap: 40px; list-style: none; margin: 0; padding: 0; align-items: center; }
