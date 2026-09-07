@@ -1,4 +1,13 @@
 (function() {
+    // Some legacy pages load this script without the matching stylesheet.
+    // Load it here as a fallback so the controls are consistent site-wide.
+    if (!document.querySelector('link[href*="icp-final-floating-fix.css"]')) {
+      var stylesheet = document.createElement('link');
+      stylesheet.rel = 'stylesheet';
+      stylesheet.href = '/icp-final-floating-fix.css?v=20260907';
+      document.head.appendChild(stylesheet);
+    }
+
     // Prevent double injection
     if (document.querySelector('.icp-floating-actions')) return;
 
