@@ -1,8 +1,8 @@
 # iColorPacks Batch A Deployment Report
 
-Date: 2026-09-07  
-Branch: `codex/seo-batch-a-2026-09-07`  
-Status: local implementation and preview complete; production push pending owner approval.
+Date: 2026-09-07
+Branch: `codex/seo-batch-a-2026-09-07`
+Status: final review complete; approved for production deployment.
 
 ## Confirmed deployment source
 
@@ -22,6 +22,12 @@ Status: local implementation and preview complete; production push pending owner
 - Removed duplicate and unsupported structured-data blocks, leaving one valid Organization block aligned with visible contact details.
 - Removed obsolete meta keywords and rewrote the meta description around actual page content.
 - Improved the two-column mobile information grid to avoid headline overflow.
+- Repaired malformed home and modal links found during the final pre-deployment review.
+- Added missing bakery-page canonical and description metadata.
+- Reduced the FAQ hero asset from 1.9 MB to about 143 KB without changing its displayed dimensions.
+- Made the FAQ header responsive and replaced fixed MOQ, discount, turnaround and response-time claims with specification-based guidance.
+- Corrected the priority Bakery page's mobile navigation and product grid, and removed its fixed response-time promise.
+- Added missing search descriptions to the Paper Bags and Candle pages included in the sitemap.
 
 ### Crawl and index controls
 
@@ -47,12 +53,12 @@ Status: local implementation and preview complete; production push pending owner
 - Mobile 390 × 844 preview: passed after responsive card-title adjustment
 - Git whitespace/error check: passed; only expected Windows line-ending notices were reported
 
-## Production actions not yet performed
+## Deployment handoff
 
-1. No commit has been pushed to GitHub.
-2. No production deployment has been triggered.
-3. No Cloudflare zone rule has been changed.
-4. Search Console sitemap has not been resubmitted.
+1. Publish the reviewed branch to the production `main` branch.
+2. Verify the production URLs and redirects listed below after the host finishes publishing.
+3. The separate Cloudflare apex-domain redirect remains a zone-level task.
+4. Resubmit the Search Console sitemap only after production checks pass.
 
 ## Required Cloudflare action after code deployment
 
@@ -72,4 +78,3 @@ Preview and test the expression in Cloudflare before enabling it.
 3. Confirm unknown URLs return HTTP 404 rather than homepage content with 200.
 4. Confirm each sitemap URL returns 200 with its own title, H1 and self-canonical.
 5. Resubmit the sitemap in Google Search Console only after production checks pass.
-

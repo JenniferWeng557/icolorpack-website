@@ -25,7 +25,7 @@
         .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
         .nav-links a:hover { color: var(--gold); }
         .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 8px 20px; font-size: 10px; font-weight: 700; text-decoration: none; cursor: pointer; }
-        .faq-hero { height: 55vh; background: linear-gradient(rgba(5,5,8,0.58), rgba(5,5,8,0.68)), url("/images/faq-packaging-planning-banner-v2.png") center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; margin-top: 80px; }
+        .faq-hero { height: 55vh; background: linear-gradient(rgba(5,5,8,0.58), rgba(5,5,8,0.68)), url("/images/faq-packaging-planning-banner-v2.jpg") center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; margin-top: 80px; }
         .faq-hero h1 { font-family: "Playfair Display", serif; font-size: 52px; color: var(--white); margin-bottom: 12px; }
         .faq-hero p { font-size: 12px; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: 5px; }
         .faq-container { padding: 80px 8%; max-width: 1000px; margin: 0 auto; }
@@ -42,6 +42,19 @@
         footer { padding: 60px 8% 30px; background: #050508; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
         footer p { color: var(--text-muted); font-size: 12px; margin-bottom: 10px; }
         footer a { color: var(--gold); text-decoration: none; }
+        @media (max-width: 768px) {
+            nav { padding: 16px; }
+            .nav-links { display: none; }
+            .logo-wrapper { gap: 8px; }
+            .logo-wrapper svg { width: 32px !important; height: 32px !important; }
+            .logo-wrapper span { font-size: 19px !important; }
+            .btn-quote-nav { padding: 8px 14px; }
+            .faq-hero { height: 52vh; min-height: 430px; margin-top: 65px; padding: 0 24px; }
+            .faq-hero h1 { font-size: clamp(42px, 13vw, 56px); line-height: 1.15; }
+            .faq-hero p { font-size: 10px; letter-spacing: 3px; }
+            .faq-container { padding: 64px 20px; }
+            .faq-item { padding: 22px 20px; }
+        }
     </style>
     <link rel="stylesheet" href="/icp-final-floating-fix.css?v=20260907">
 <style>
@@ -102,11 +115,11 @@
             <p class="cat-desc">Minimums, pricing and how to start your custom packaging project.</p>
             <div class="faq-item">
                 <h3>What is your Minimum Order Quantity (MOQ)?</h3>
-                <p>We offer agile MOQ starting at 100&ndash;500 units for custom gift boxes and shopping bags, providing flexibility for brands at all stages.</p>
+                <p>MOQ depends on the packaging structure, dimensions, material, printing and finish. Share your specification and target quantity so we can confirm the practical minimum for your project.</p>
             </div>
             <div class="faq-item">
                 <h3>How is the price of my custom packaging calculated?</h3>
-                <p>Your final cost is determined by material choice, structure complexity, surface finishes, and order volume. Unit prices drop significantly as quantity increases &mdash; ordering 1,000+ units can often reduce your unit cost by up to 40% compared to small-batch MOQs.</p>
+                <p>Your final cost is determined by size, material, structure, insert, print coverage, surface finishes, packing method, order volume and delivery term. Compare quotations using the same specification.</p>
             </div>
             <div class="faq-item">
                 <h3>Can I get a custom sample before bulk production?</h3>
@@ -118,7 +131,7 @@
             <p class="cat-desc">Free design support, dielines and mockups from our in-house team.</p>
             <div class="faq-item">
                 <h3>Do you provide free packaging design support?</h3>
-                <p>Yes, our in-house team assists with structural design, technical file optimization, and provides free 3D mockups within 24 hours.</p>
+                <p>Design support can include structural review, dieline guidance, logo placement and a digital mockup. Scope and timing are confirmed after we review your product dimensions, artwork and project requirements.</p>
             </div>
             <div class="faq-item">
                 <h3>Can I get my boxes printed on both the inside and outside?</h3>
@@ -134,11 +147,11 @@
             <p class="cat-desc">Lead times and global delivery, including direct-to-FBA.</p>
             <div class="faq-item">
                 <h3>What are your typical production lead times?</h3>
-                <p>Standard production at our Wenzhou factory takes 12&ndash;18 days. Urgent seasonal orders can often be expedited.</p>
+                <p>Sampling and production time depend on the structure, materials, finishes, quantity and approval rounds. We confirm sampling, production and freight timing separately against your required arrival date.</p>
             </div>
             <div class="faq-item">
                 <h3>Can you ship directly to Amazon FBA warehouses?</h3>
-                <p>Absolutely. We handle all labeling, DDP logistics, and documentation required for direct-to-warehouse delivery globally.</p>
+                <p>Direct-to-warehouse and DDP options can be reviewed for your destination. Availability, labeling, documentation and delivery terms are confirmed for each order before production.</p>
             </div>
             <div class="faq-item">
                 <h3>Where is the iColorPacks factory located?</h3>
@@ -147,7 +160,7 @@
         </div>
         <div class="faq-cta">
             <h2>Still have questions?</h2>
-            <p>Our packaging consultants reply within 2 hours with a free quote and 3D mockup.</p>
+            <p>Send your size, quantity, artwork status, destination and target date for a specification-based reply.</p>
             <a href="https://wa.me/8618058355198?text=Hello%20iColorPacks%2C%20I%20have%20a%20question%20about%20custom%20packaging.">Chat on WhatsApp</a>
         </div>
     </div>
