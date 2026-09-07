@@ -1,12 +1,6 @@
 /* iColorPacks unified floating actions - VERIFIED FIX */
 .icp-floating-actions {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  z-index: 99999;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 15px;
+  position: static;
   pointer-events: none;
 }
 
@@ -17,6 +11,9 @@
 
 .icp-float-whatsapp,
 .icp-float-plus {
+  position: fixed;
+  bottom: 40px;
+  z-index: 99999;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -35,7 +32,7 @@
 
 .icp-float-whatsapp {
   background: #25d366;
-  position: relative;
+  right: 40px;
 }
 
 .icp-float-whatsapp svg {
@@ -65,17 +62,17 @@
 
 .icp-float-plus {
   background: #C9A84C;
+  left: 40px;
   color: #000;
   font-size: 38px;
   line-height: 1;
   font-weight: 600;
-  position: relative;
 }
 
 .icp-float-plus::after {
   content: "Inquiry";
   position: absolute;
-  right: 75px;
+  left: 75px;
   background: #C9A84C;
   color: black;
   padding: 8px 15px;
@@ -83,7 +80,7 @@
   font-size: 14px;
   font-weight: 600;
   opacity: 0;
-  transform: translateX(10px);
+  transform: translateX(-10px);
   transition: 0.3s;
   pointer-events: none;
   white-space: nowrap;
@@ -98,7 +95,8 @@
 }
 
 @media (max-width: 768px) {
-  .icp-floating-actions { right: 20px; bottom: 20px; }
+  .icp-float-whatsapp { right: 20px; bottom: 20px; }
+  .icp-float-plus { left: 20px; bottom: 20px; }
   .icp-float-whatsapp, .icp-float-plus { width: 55px; height: 55px; }
   .icp-float-whatsapp::after, .icp-float-plus::after { display: none; }
 }
