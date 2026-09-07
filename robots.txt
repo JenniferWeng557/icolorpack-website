@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.icolorpacks.com/sitemap.xml
+User-agent: OAI-SearchBot
+Allow: /
 
-# AI discovery
-Allow: /llms.txt
-Allow: /custom-packaging-manufacturer-china.html
+Sitemap: https://www.icolorpacks.com/sitemap.xml

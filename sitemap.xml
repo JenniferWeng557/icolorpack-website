@@ -1,44 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Pages -->
-  <url><loc>https://www.icolorpacks.com/</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <!-- Core pages -->
+  <url><loc>https://www.icolorpacks.com/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/blog</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/faq</loc><lastmod>2026-09-06</lastmod></url>
 
-  <url><loc>https://www.icolorpacks.com/blog</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <!-- Product category pages -->
+  <url><loc>https://www.icolorpacks.com/product-rigid-boxes</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/product-paper-bags</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/product-cake-boxes</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/product-mailer-boxes</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/product-kraft-bags</loc><lastmod>2026-09-06</lastmod></url>
 
-  
-  <!-- Product Pages -->
-  <url><loc>https://www.icolorpacks.com/product-rigid-boxes</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.icolorpacks.com/product-paper-bags</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.icolorpacks.com/product-cake-boxes</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.icolorpacks.com/product-mailer-boxes</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.icolorpacks.com/product-kraft-bags</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  
-  <!-- Industry Solutions -->
-  <url><loc>https://www.icolorpacks.com/industry-cases-2026</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-cosmetics-brands</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-jewelry-brands</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-bakeries</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-clothing-boutiques</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-candle-brands</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-perfume-brands</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-ecommerce-brands</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/packaging-for-gift-shops</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Industry pages -->
+  <url><loc>https://www.icolorpacks.com/industry-cases-2026</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-cosmetics-brands</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-jewelry-brands</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-bakeries</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-clothing-boutiques</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-candle-brands</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-perfume-brands</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-ecommerce-brands</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/packaging-for-gift-shops</loc><lastmod>2026-09-06</lastmod></url>
 
-  <!-- Blog Posts -->
-  <url><loc>https://www.icolorpacks.com/blog/mono-material-circular-rigid-gift-boxes-2026</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/haptic-textures-sensory-minimalism-luxury-packaging</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/factory-audit-survival-guide-china-packaging</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/inclusive-luxury-accessible-packaging-design</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/when-custom-packaging-worth-it</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/first-time-ordering-custom-packaging-china-guide</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/packaging-design-trends-2026-reddit</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/find-reliable-packaging-manufacturer</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/custom-packaging-roi-data</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/colored-corrugated-mailer-boxes-buyers-guide</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/blog/biobased-coatings-luxury-packaging</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-  <!-- Technical -->
-  <url><loc>https://www.icolorpacks.com/custom-packaging-cost-guide-china</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.icolorpacks.com/custom-packaging-manufacturer-china</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.icolorpacks.com/low-moq-custom-packaging-wholesale</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <!-- Buyer resources -->
+  <url><loc>https://www.icolorpacks.com/custom-packaging-cost-guide-china</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/custom-packaging-manufacturer-china</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/low-moq-custom-packaging-china</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/blog/when-custom-packaging-worth-it</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/blog/first-time-ordering-custom-packaging-china-guide</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/blog/find-reliable-packaging-manufacturer</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/blog/colored-corrugated-mailer-boxes-buyers-guide</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.icolorpacks.com/blog/biobased-coatings-luxury-packaging</loc><lastmod>2026-09-06</lastmod></url>
 </urlset>
