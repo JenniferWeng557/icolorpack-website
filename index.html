@@ -169,27 +169,26 @@
     .reviewer-info h4 { font-size: 12px; color: var(--white); margin-bottom: 2px; }
     .reviewer-info p { font-size: 10px; color: var(--text-muted); }
 
-    
-    
-    .faq { background: #07070a; padding: 120px 10%; border-top: 1px solid rgba(255,255,255,0.08); }
-    .faq-container { max-width: 1100px; margin: 0 auto; }
-    .faq-item { border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; margin-bottom: 25px; background: #0d0d14; transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-    .faq-item:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .faq-item summary { 
-        list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; 
-        color: #FFF; font-size: 24px; font-weight: 700; padding: 35px; letter-spacing: 0.5px;
-    }
-    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 36px; font-weight: 300; transition: 0.4s; }
-    .faq-item details[open] summary::after { transform: rotate(45deg); color: #FFF; }
-    .faq-content { padding: 0 35px 40px; color: #CCC; font-size: 19px; line-height: 1.8; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 25px; }
-
+    /* FAQ */
     .faq { background: #07070a; padding: 60px 10%; border-top: 1px solid rgba(255,255,255,0.02); }
     .faq-container { max-width: 900px; margin: 0 auto; }
     .faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); padding: 20px 0; }
-    .faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--white); font-size: 16px; font-weight: 500; }
+    
+    /* SUPER SIZE FAQ STYLES */
+    .faq { background: #07070a; padding: 120px 10%; border-top: 1px solid rgba(255,255,255,0.08); }
+    .faq-container { max-width: 1100px; margin: 0 auto; }
+    .faq-item { border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; margin-bottom: 25px; background: #0d0d14; transition: 0.4s; }
+    .faq-item summary { 
+        list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; 
+        color: #FFF; font-size: 24px; font-weight: 700; padding: 35px; 
+    }
+    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 36px; transition: 0.3s; }
+    .faq-item details[open] summary::after { transform: rotate(45deg); }
+    .faq-content { padding: 0 35px 40px; color: #CCC; font-size: 19px; line-height: 1.8; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 25px; }
+    
     .faq-item summary::after { content: '+'; color: var(--gold); font-size: 20px; }
     .faq-item details[open] summary::after { content: '\2212'; }
-    .faq-content { padding-top: 15px; color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+    
 
     /* FOOTER */
     footer { padding: 80px 10% 40px; background: #050508; border-top: 1px solid rgba(255,255,255,0.03); }
@@ -1270,21 +1269,18 @@
           <div class="faq-content">We offer agile MOQ starting at 100-500 units for custom gift boxes and shopping bags, providing flexibility for brands at all stages. Ordering 1,000+ units can significantly reduce your unit cost by up to 40%.</div>
         </details>
       </div>
-
       <div class="faq-item">
         <details>
           <summary>Where is the iColorPacks luxury packaging factory located?</summary>
           <div class="faq-content">Our facility is located in Wenzhou, China, known globally as the hub for premium B2B packaging and printing excellence. We welcome clients for video factory tours.</div>
         </details>
       </div>
-
       <div class="faq-item">
         <details>
           <summary>Do you provide free packaging design support?</summary>
           <div class="faq-content">Yes, our in-house team assists with structural design, technical file optimization, and provides free 3D mockups within 24 hours to ensure your brand looks perfect.</div>
         </details>
       </div>
-
       <div class="faq-item">
         <details>
           <summary>Can you ship directly to Amazon FBA warehouses?</summary>
