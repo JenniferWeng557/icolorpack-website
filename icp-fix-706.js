@@ -86,6 +86,7 @@
       }
     }
     /* Hamburger Menu Styles */
+    .menu-toggle{display:none!important;}
     #icpSB{display:none!important;}
     @media(max-width:1024px){
       #icpSB{display:flex!important;align-items:center;justify-content:center;position:fixed!important;top:14px;right:14px;z-index:2147483646;width:46px;height:46px;border:1px solid rgba(201,168,76,.6);border-radius:8px;background:rgba(13,13,20,.96);color:#C9A84C;font-size:24px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.5);}
