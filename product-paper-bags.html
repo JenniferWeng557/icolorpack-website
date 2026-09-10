@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="/icp-analytics.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Luxury Paper Bags with Logo | iColorPacks Factory</title>
@@ -88,10 +89,28 @@
         .footer-links a { color: var(--text-muted); text-decoration: none; transition: 0.3s; }
         .footer-links a:hover { color: var(--gold); }
 
+        .paper-bag-inquiry { max-width: 1280px; margin: 0 auto; padding: 90px 8%; display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: start; border-top: 1px solid var(--border); }
+        .paper-bag-eyebrow { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 4px; margin-bottom: 14px; }
+        .paper-bag-inquiry h2 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.15; margin-bottom: 20px; }
+        .paper-bag-inquiry-copy > p:not(.paper-bag-eyebrow) { color: var(--text-muted); font-size: 15px; }
+        .paper-bag-inquiry-copy ul { margin: 28px 0 0; padding: 0; list-style: none; }
+        .paper-bag-inquiry-copy li { color: #ddd; margin: 12px 0; padding-left: 25px; position: relative; }
+        .paper-bag-inquiry-copy li::before { content: '\2713'; color: var(--gold); position: absolute; left: 0; }
+        .paper-bag-form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 34px; background: var(--card); border: 1px solid var(--border); }
+        .paper-bag-form label { display: grid; gap: 8px; color: #aaa; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+        .paper-bag-form input, .paper-bag-form select, .paper-bag-form textarea { width: 100%; padding: 14px; color: #fff; background: #0b0b10; border: 1px solid rgba(255,255,255,.14); font: 14px 'Montserrat', sans-serif; text-transform: none; letter-spacing: 0; }
+        .paper-bag-form input:focus, .paper-bag-form select:focus, .paper-bag-form textarea:focus { outline: 1px solid var(--gold); border-color: var(--gold); }
+        .paper-bag-form-full, .paper-bag-form button { grid-column: 1 / -1; }
+        .paper-bag-form button { padding: 17px 24px; border: 1px solid var(--gold); background: var(--gold); color: #08080b; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; }
+        .paper-bag-form button:hover { background: var(--gold-light); }
+
         @media (max-width: 1000px) { 
             .styles-grid, .features-grid, .footer-grid { grid-template-columns: 1fr; } 
             .nav-links { display: none; } 
             td:first-child { width: 40%; }
+            .paper-bag-inquiry { grid-template-columns: 1fr; gap: 34px; padding: 70px 20px; }
+            .paper-bag-form { grid-template-columns: 1fr; padding: 24px; }
+            .paper-bag-form-full, .paper-bag-form button { grid-column: auto; }
         }
     </style>
 <style>
@@ -255,6 +274,41 @@
                 <p>Endless options for handle materials, custom sizes, and high-fidelity brand colors.</p>
             </div>
         </div>
+    </section>
+
+    <section class="paper-bag-inquiry" id="inquiry">
+        <div class="paper-bag-inquiry-copy">
+            <p class="paper-bag-eyebrow">DIRECT FACTORY QUOTE</p>
+            <h2>Tell Us Your Paper Bag Specifications</h2>
+            <p>Send the size, quantity, paper stock, handle style and artwork status. Our packaging team will reply with a practical material recommendation and quotation.</p>
+            <ul>
+                <li>MOQ guidance for your construction and finish</li>
+                <li>Free artwork and structure review</li>
+                <li>Sampling, production and shipping timeline</li>
+            </ul>
+        </div>
+        <form name="iColorPacks Paper Bag Inquiry" class="paper-bag-form" action="https://formspree.io/f/maeypklz" method="POST">
+            <input type="hidden" name="_subject" value="New Paper Bag Inquiry from iColorPacks">
+            <input type="hidden" name="product_type" value="Custom Paper Bags">
+            <label>Name *<input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label>Email or WhatsApp *<input type="text" name="contact" required placeholder="name@company.com / +country code"></label>
+            <label>Estimated Quantity
+                <select name="quantity">
+                    <option value="">Select quantity</option>
+                    <option>500-999</option>
+                    <option>1,000-2,999</option>
+                    <option>3,000-9,999</option>
+                    <option>10,000+</option>
+                </select>
+            </label>
+            <label>Bag Size / Product
+                <input type="text" name="size_or_product" placeholder="e.g. 30 x 10 x 25 cm, cosmetics">
+            </label>
+            <label class="paper-bag-form-full">Project Details
+                <textarea name="details" rows="5" placeholder="Paper, handles, printing, finish, destination and required date"></textarea>
+            </label>
+            <button type="submit">Request My Factory Quote</button>
+        </form>
     </section>
 
     <footer>
