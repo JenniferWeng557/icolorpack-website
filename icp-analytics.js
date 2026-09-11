@@ -76,14 +76,43 @@
         });
       });
 
-      form.addEventListener('submit', function () {
-        window.gtag('event', 'generate_lead', {
-          currency: 'USD',
-          value: 1,
-          lead_source: 'website_form',
-          form_id: formLabel(form, index),
-          page_type: pageType(),
-          transport_type: 'beacon'
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var submitButton = form.querySelector('[type="submit"]');
+        var originalText = submitButton ? submitButton.textContent : '';
+        var status = form.querySelector('[data-form-status]');
+        if (!status) {
+          status = document.createElement('p');
+          status.setAttribute('data-form-status', 'true');
+          status.setAttribute('role', 'status');
+          status.style.cssText = 'grid-column:1/-1;margin:12px 0 0;color:#c9a84c;font-size:14px;';
+          form.appendChild(status);
+        }
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+        }
+        status.textContent = '';
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        }).then(function (response) {
+          if (!response.ok) throw new Error('Form submission failed');
+          sessionStorage.setItem('icp_lead_completed', JSON.stringify({
+            form_id: formLabel(form, index),
+            page_type: pageType()
+          }));
+          window.location.assign('/thank-you');
+        }).catch(function () {
+          status.textContent = 'Your message could not be sent. Please try again or contact us on WhatsApp.';
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+          }
         });
       });
     });
