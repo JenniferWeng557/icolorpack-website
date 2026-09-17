@@ -25,6 +25,7 @@
     var path = window.location.pathname;
     if (path === '/' || path === '/index.html') return 'home';
     if (path.indexOf('/product-') === 0) return 'product_category';
+    if (path.indexOf('/custom-') === 0) return 'product_detail';
     if (path.indexOf('/packaging-for-') === 0) return 'industry';
     if (path.indexOf('/blog/') === 0) return 'article';
     if (path === '/blog' || path === '/blog.html') return 'blog_index';
@@ -53,6 +54,25 @@
     form.appendChild(wrapper);
   }
 
+  function addHiddenField(form, name, value) {
+    if (!value || form.querySelector('input[name="' + name + '"]')) return;
+    var input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = name;
+    input.value = value;
+    form.appendChild(input);
+  }
+
+  function addLeadContext(form) {
+    var params = new URLSearchParams(window.location.search);
+    addHiddenField(form, 'source_page', window.location.href);
+    addHiddenField(form, 'source_path', window.location.pathname);
+    addHiddenField(form, 'source_referrer', document.referrer);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (name) {
+      addHiddenField(form, name, params.get(name));
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     window.gtag('event', 'page_context', {
       page_type: pageType(),
@@ -64,6 +84,19 @@
     Array.prototype.forEach.call(document.forms, function (form, index) {
       if (!formIsInquiry(form)) return;
       addHoneypot(form);
+      addLeadContext(form);
+
+      Array.prototype.forEach.call(form.querySelectorAll('input[type="file"]'), function (input) {
+        input.addEventListener('change', function () {
+          if (!input.files || !input.files.length) return;
+          window.gtag('event', 'file_upload', {
+            form_id: formLabel(form, index),
+            file_count: input.files.length,
+            page_type: pageType(),
+            page_path: window.location.pathname
+          });
+        });
+      });
 
       var started = false;
       form.addEventListener('focusin', function () {
@@ -102,9 +135,17 @@
           headers: { Accept: 'application/json' }
         }).then(function (response) {
           if (!response.ok) throw new Error('Form submission failed');
+          window.gtag('event', 'form_submit', {
+            form_id: formLabel(form, index),
+            form_destination: form.getAttribute('action'),
+            page_type: pageType(),
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
           sessionStorage.setItem('icp_lead_completed', JSON.stringify({
             form_id: formLabel(form, index),
-            page_type: pageType()
+            page_type: pageType(),
+            page_path: window.location.pathname
           }));
           window.location.assign('/thank-you');
         }).catch(function () {

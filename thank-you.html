@@ -34,7 +34,8 @@
         window.gtag('event', 'generate_lead', {
           currency: 'USD', value: 1, lead_source: 'website_form',
           form_id: details.form_id || 'website_form',
-          page_type: details.page_type || 'resource'
+          page_type: details.page_type || 'resource',
+          source_page_path: details.page_path || ''
         });
       } catch (error) {}
     }());
