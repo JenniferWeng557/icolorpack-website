@@ -4,7 +4,12 @@
     if (!document.querySelector('link[href*="icp-final-floating-fix.css"]')) {
       var stylesheet = document.createElement('link');
       stylesheet.rel = 'stylesheet';
-      stylesheet.href = '/icp-final-floating-fix.css?v=20260907';
+      // Resolve beside this script so the fallback also works when a page is
+      // opened directly from disk. Root-relative URLs do not resolve on file://.
+      var currentScript = document.currentScript;
+      stylesheet.href = currentScript && currentScript.src
+        ? new URL('icp-final-floating-fix.css?v=20260917', currentScript.src).href
+        : '/icp-final-floating-fix.css?v=20260917';
       document.head.appendChild(stylesheet);
     }
 
