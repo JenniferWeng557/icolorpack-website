@@ -61,6 +61,8 @@ function canonicalHref(html) {
 const pages = trackedHtml.map((file) => {
   const html = fs.readFileSync(path.join(root, file), 'utf8');
   const canonical = canonicalHref(html);
+  const canonicalCount = Array.from(html.matchAll(/<link\b[^>]*>/gi))
+    .filter((match) => attributeValue(match[0], 'rel').toLowerCase() === 'canonical').length;
   const robots = metaContent(html, 'robots');
   const title = firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i);
   const description = metaContent(html, 'description');
@@ -74,6 +76,7 @@ const pages = trackedHtml.map((file) => {
     file,
     path: pagePath(file),
     canonical,
+    canonicalCount,
     robots,
     title,
     description,
@@ -145,6 +148,8 @@ const report = {
     noindexPages: pages.filter((page) => /noindex/i.test(page.robots)).length
   },
   missingCanonical: pages.filter((page) => !page.canonical && !/noindex/i.test(page.robots) && !redirectedFiles.has(page.file)).map((page) => page.file),
+  multipleCanonicalTags: pages.filter((page) => page.canonicalCount > 1)
+    .map((page) => ({ file: page.file, canonicalCount: page.canonicalCount })),
   nonSelfCanonical: pages.filter((page) => page.canonical && page.canonical !== siteOrigin + page.path && !redirectedFiles.has(page.file))
     .map((page) => ({ file: page.file, expected: siteOrigin + page.path, actual: page.canonical })),
   duplicateCanonical: Array.from(canonicalOwners.entries())
@@ -183,6 +188,7 @@ const report = {
 console.log(JSON.stringify(report, null, 2));
 
 const hasCriticalIssues = report.missingCanonical.length
+  || report.multipleCanonicalTags.length
   || report.duplicateCanonical.length
   || report.sitemapMissingLocalTarget.length
   || report.noindexInSitemap.length
