@@ -81,6 +81,30 @@
       non_interaction: true
     });
 
+    if (window.location.pathname === '/thank-you' || window.location.pathname === '/thank-you.html') {
+      var completedLead = sessionStorage.getItem('icp_lead_completed');
+      if (completedLead) {
+        try {
+          var leadContext = JSON.parse(completedLead);
+          window.gtag('event', 'generate_lead', {
+            lead_source: 'website_form',
+            form_id: leadContext.form_id,
+            page_type: leadContext.page_type,
+            source_path: leadContext.page_path,
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        } catch (ignore) {
+          window.gtag('event', 'generate_lead', {
+            lead_source: 'website_form',
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+        sessionStorage.removeItem('icp_lead_completed');
+      }
+    }
+
     Array.prototype.forEach.call(document.forms, function (form, index) {
       if (!formIsInquiry(form)) return;
       addHoneypot(form);
@@ -171,10 +195,29 @@
           page_type: pageType(),
           transport_type: 'beacon'
         });
+        window.gtag('event', 'contact', {
+          method: 'whatsapp',
+          page_type: pageType(),
+          page_path: window.location.pathname,
+          transport_type: 'beacon'
+        });
       } else if (/^mailto:/i.test(href)) {
         window.gtag('event', 'email_click', {
           contact_method: 'email',
           page_type: pageType(),
+          transport_type: 'beacon'
+        });
+        window.gtag('event', 'contact', {
+          method: 'email',
+          page_type: pageType(),
+          page_path: window.location.pathname,
+          transport_type: 'beacon'
+        });
+      } else if (href === '#inquiry' || href === '/#inquiry' || /(^|\s)(quote|inquiry)(\s|$)/i.test(link.className || '')) {
+        window.gtag('event', 'quote_click', {
+          link_text: (link.textContent || '').trim().slice(0, 100),
+          page_type: pageType(),
+          page_path: window.location.pathname,
           transport_type: 'beacon'
         });
       }
