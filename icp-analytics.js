@@ -73,6 +73,40 @@
     });
   }
 
+  // This form's current plan does not support file uploads. Keep inquiries
+  // sendable and explain the separate attachment channel before submission.
+  function replaceUnsupportedUploads(form) {
+    Array.prototype.forEach.call(form.querySelectorAll('input[type="file"]'), function (input) {
+      var upload = input.closest('.luxo-file-upload');
+      var group = input.closest('.luxo-group, .form-group');
+      input.disabled = true;
+      input.remove();
+      var notice = document.createElement('div');
+      notice.setAttribute('data-attachment-alternative', 'true');
+      notice.style.cssText = 'font-size:13px;line-height:1.7;color:#b8b8c4;';
+      var message = document.createElement('p');
+      message.textContent = 'Submit your request first. Then send your logo or reference files via WhatsApp or email, using the same name and contact details.';
+      notice.appendChild(message);
+      var wa = document.createElement('a');
+      wa.href = 'https://wa.me/8618058355198';
+      wa.target = '_blank';
+      wa.rel = 'noopener';
+      wa.textContent = 'Send files on WhatsApp';
+      wa.style.color = '#c9a84c';
+      notice.appendChild(wa);
+      notice.appendChild(document.createTextNode(' or '));
+      var email = document.createElement('a');
+      email.href = 'mailto:jennifer@icolorpacks.com?subject=Packaging%20inquiry%20attachments';
+      email.textContent = 'Email files';
+      email.style.color = '#c9a84c';
+      notice.appendChild(email);
+      var label = group && group.querySelector('label');
+      if (label) label.textContent = 'Logo / reference files — send separately';
+      if (upload) upload.replaceWith(notice);
+      else form.appendChild(notice);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     window.gtag('event', 'page_context', {
       page_type: pageType(),
@@ -109,6 +143,7 @@
       if (!formIsInquiry(form)) return;
       addHoneypot(form);
       addLeadContext(form);
+      replaceUnsupportedUploads(form);
 
       Array.prototype.forEach.call(form.querySelectorAll('input[type="file"]'), function (input) {
         input.addEventListener('change', function () {
@@ -153,9 +188,16 @@
         }
         status.textContent = '';
 
+        var submission = new FormData(form);
+        // Also omit empty file entries or file controls injected after load.
+        var fileFields = [];
+        submission.forEach(function (value, name) {
+          if (typeof File !== 'undefined' && value instanceof File) fileFields.push(name);
+        });
+        fileFields.forEach(function (name) { submission.delete(name); });
         fetch(form.action, {
           method: 'POST',
-          body: new FormData(form),
+          body: submission,
           headers: { Accept: 'application/json' }
         }).then(function (response) {
           if (!response.ok) throw new Error('Form submission failed');
