@@ -266,3 +266,49 @@
     }, true);
   });
 }());
+
+// Approved logo-only update, 2026-10-15. Existing form and analytics code above is preserved.
+(function () {
+  'use strict';
+  function start() {
+    if (document.getElementById('icp-logo-review-style')) return;
+    var style = document.createElement('style');
+    style.id = 'icp-logo-review-style';
+    style.textContent = '.icp-review-logo-slot{position:relative;display:inline-block;flex-shrink:0;vertical-align:middle}.icp-review-logo-crop{position:absolute;display:block;width:40px;height:40px;left:50%;top:50%;transform:translate(-50%,-50%);overflow:hidden}.icp-review-logo-crop .icp-review-logo-image{position:absolute!important;width:136px!important;height:136px!important;max-width:none!important;left:-48px!important;top:-39.36px!important;margin:0!important;object-fit:fill!important}.logo-wrapper[data-icp-logo-review] > span:not(.icp-review-logo-slot){font-family:Montserrat,sans-serif!important;color:#fff!important;font-size:20px!important;letter-spacing:3px!important;font-weight:700!important}@media(max-width:768px){.icp-review-logo-crop{width:34px;height:34px}.icp-review-logo-crop .icp-review-logo-image{width:115.6px!important;height:115.6px!important;left:-40.8px!important;top:-33.46px!important}.logo-wrapper[data-icp-logo-review] > span:not(.icp-review-logo-slot){font-size:19px!important;letter-spacing:1px!important}}';
+    document.head.appendChild(style);
+    document.querySelectorAll('nav a.logo, nav a.logo-wrapper, header a.brand, header a.icp-mobile-logo-text').forEach(function (brand) {
+      if (brand.closest('footer')) return;
+      var image = brand.querySelector('img');
+      var oldSvg = brand.querySelector('svg');
+      if (!image && oldSvg) {
+        var size = getComputedStyle(oldSvg);
+        image = document.createElement('img');
+        image.src = '/images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp';
+        image.alt = 'iColorPacks logo';
+        image.style.width = size.width;
+        image.style.height = size.height;
+        if (oldSvg.classList.contains('icp-mobile-logo-img')) image.className = 'icp-mobile-logo-img';
+        oldSvg.replaceWith(image);
+      }
+      if (!image) return;
+      var computed = getComputedStyle(image);
+      var slot = document.createElement('span');
+      slot.className = 'icp-review-logo-slot';
+      slot.style.width = computed.width;
+      slot.style.height = computed.height;
+      slot.style.marginLeft = computed.marginLeft;
+      slot.style.marginRight = computed.marginRight;
+      var crop = document.createElement('span');
+      crop.className = 'icp-review-logo-crop';
+      image.replaceWith(slot);
+      slot.appendChild(crop);
+      crop.appendChild(image);
+      image.src = '/images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp';
+      brand.setAttribute('data-icp-logo-review', 'true');
+      image.classList.add('icp-review-logo-image');
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+}());
+
