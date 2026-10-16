@@ -665,3 +665,24 @@ html[data-five-points-v6="home"] #navbar .nav-links>li>a:hover,html[data-five-po
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();})();
 
 (function(){function cakeBannerFinal(){if(location.pathname.replace(/\.html$/, "").replace(/\/$/, "")!=="/product-cake-boxes")return;var style=document.createElement("style");style.id="cake-banner-final-20261016";style.textContent="\n/* Final approved correction: continuous cake-banner photograph behind the live text. */\nhtml[data-five-points-v6=\"cake\"] .category-banner{background-image:linear-gradient(90deg,rgba(9,7,5,.58) 0%,rgba(9,7,5,.34) 42%,rgba(9,7,5,.05) 72%),url('/images/cake-banner-full-scene-20261016.png')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}\n@media(max-width:768px){html[data-five-points-v6=\"cake\"] .category-banner{background-image:linear-gradient(0deg,rgba(9,7,5,.75),rgba(9,7,5,.12) 65%),url('/images/cake-banner-full-scene-20261016.png')!important;background-size:cover!important;background-position:74% center!important}}\n";document.head.appendChild(style);}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",cakeBannerFinal);else cakeBannerFinal();})();
+(function(){'use strict';function correctPublishedRegressions(){
+var route=location.pathname.replace(/\.html$/,'').replace(/\/$/,'')||'/';
+if(route==='/packaging-for-bakeries'){
+var style=document.createElement('style');style.id='icp-bakery-consistent-20261016';style.textContent=`
+html[data-icp-industry-v3] .section{box-sizing:border-box;width:calc(100% - 96px);max-width:1600px;margin:0 auto;padding:64px 0}
+html[data-icp-industry-v3] .product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:stretch}
+html[data-icp-industry-v3] .p-card{display:flex;flex-direction:column;height:auto!important;min-width:0;overflow:hidden}
+html[data-icp-industry-v3] .p-card .p-img{display:block;width:100%!important;height:auto!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center!important;transform:none!important;opacity:1!important;flex:none}
+html[data-icp-industry-v3] .p-card .p-overlay{position:static!important;inset:auto!important;padding:18px 22px;background:#111219;flex:1;box-sizing:border-box;width:100%}
+html[data-icp-industry-v3] .p-title{font:700 14px/1.6 Montserrat,Arial,sans-serif;letter-spacing:1px;color:#d8b44a}
+html[data-icp-industry-v3] .p-desc{font:400 13px/1.6 Montserrat,Arial,sans-serif;margin-top:6px;overflow-wrap:break-word}
+nav a.logo[data-icp-brand-v2]{font-family:Montserrat,Arial,sans-serif!important;font-size:20px!important;font-weight:700!important;letter-spacing:3px!important}
+@media(max-width:768px){html[data-icp-industry-v3] .section{width:calc(100% - 32px);padding:32px 0}html[data-icp-industry-v3] .product-grid{grid-template-columns:minmax(0,1fr);gap:22px}nav a.logo[data-icp-brand-v2]{font-size:19px!important;letter-spacing:1px!important}}
+`;document.head.appendChild(style);
+document.querySelectorAll('.product-grid .p-img').forEach(function(image){image.style.setProperty('object-fit','cover','important');});
+}
+if(route==='/low-moq-custom-packaging-china'){
+var image=document.querySelector('.low-moq-photo-grid-v4 figure:nth-child(3) img');
+if(image){image.src='/images/customer-selection-20261015-v2/collapsible-rigid-box-scene.png';image.alt='Collapsible rigid box shown assembled and flat in a coordinated product scene';}
+}
+}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',correctPublishedRegressions);else correctPublishedRegressions();})();
