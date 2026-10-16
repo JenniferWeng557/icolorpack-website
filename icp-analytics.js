@@ -673,7 +673,9 @@ html[data-icp-industry-v3] .section{box-sizing:border-box;width:calc(100% - 96px
 html[data-icp-industry-v3] .product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:stretch}
 html[data-icp-industry-v3] .p-card{display:flex;flex-direction:column;height:auto!important;min-width:0;overflow:hidden}
 html[data-icp-industry-v3] .p-card .p-img{display:block;width:100%!important;height:auto!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center!important;transform:none!important;opacity:1!important;flex:none}
-html[data-icp-industry-v3] .p-card .p-overlay{position:static!important;inset:auto!important;padding:18px 22px;background:#111219;flex:1;box-sizing:border-box;width:100%}
+html[data-icp-industry-v3] .p-card .p-overlay,html[data-point-page="bakery"] #canneles .p-overlay{position:static!important;inset:auto!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;max-width:none!important;width:100%!important;padding:18px 22px!important;background:#111219!important;flex:1;box-sizing:border-box}
+html[data-point-page="bakery"] #canneles .p-title{font:700 14px/1.6 Montserrat,Arial,sans-serif!important;letter-spacing:1px!important}
+html[data-point-page="bakery"] #canneles .p-desc{font:400 13px/1.6 Montserrat,Arial,sans-serif!important;letter-spacing:normal!important}
 html[data-icp-industry-v3] .p-title{font:700 14px/1.6 Montserrat,Arial,sans-serif;letter-spacing:1px;color:#d8b44a}
 html[data-icp-industry-v3] .p-desc{font:400 13px/1.6 Montserrat,Arial,sans-serif;margin-top:6px;overflow-wrap:break-word}
 nav a.logo[data-icp-brand-v2]{font-family:Montserrat,Arial,sans-serif!important;font-size:20px!important;font-weight:700!important;letter-spacing:3px!important}
