@@ -593,6 +593,22 @@
 .dropdown:hover .dropdown-content { display: block !important; }
 </style>
 <link rel="stylesheet" href="/icp-content-refresh-20261020.css">
+<!-- ICP PURCHASE FACTS STYLE START -->
+<style id="icp-purchase-facts-style">
+.icp-purchase-facts{box-sizing:border-box;width:calc(100% - 48px);max-width:1200px;margin:40px auto;padding:28px;background:#15151d;border:1px solid #c9a84c55;border-radius:12px;color:#eee;font-family:Arial,sans-serif;scroll-margin-top:100px}
+.icp-purchase-facts h2{font-size:clamp(24px,3vw,34px);line-height:1.25;margin:0 0 14px;color:#f4e4b6;letter-spacing:normal;text-transform:none}
+.icp-purchase-facts p{font-size:15px;line-height:1.7;margin:12px 0;color:#d4d4dc}
+.icp-purchase-facts .icp-facts-table-wrap{overflow-x:auto;max-width:100%}
+.icp-purchase-facts table{border-collapse:collapse;width:100%;min-width:550px;margin:16px 0;background:transparent}
+.icp-purchase-facts th,.icp-purchase-facts td{padding:13px 14px;border:1px solid #ffffff25;text-align:left;vertical-align:top;font:14px/1.65 Arial,sans-serif;color:#e0e0e7;background:transparent}
+.icp-purchase-facts th{color:#f4e4b6;background:#ffffff08;font-weight:700}
+.icp-purchase-facts a{color:#edce83;text-decoration:underline;text-underline-offset:3px}
+.icp-purchase-facts .icp-facts-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.icp-purchase-facts .icp-facts-quote{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:5px;background:#d5b455;color:#111;text-decoration:none;font-weight:700}
+.icp-purchase-facts a:focus-visible,.icp-purchase-facts .icp-facts-table-wrap:focus-visible{outline:3px solid #f4e4b6;outline-offset:4px}
+@media(max-width:600px){.icp-purchase-facts{width:calc(100% - 32px);padding:20px;margin:24px auto}.icp-purchase-facts th,.icp-purchase-facts td{padding:10px}.icp-purchase-facts .icp-facts-quote{width:100%;box-sizing:border-box}}
+</style>
+<!-- ICP PURCHASE FACTS STYLE END -->
 </head>
 <body>
 
@@ -607,7 +623,7 @@
         iColorPacks
       </a>
       <div class="icp-mobile-header-actions">
-        <a class="icp-mobile-quote-btn" href="https://wa.me/8618058355198">QUOTE</a>
+        <a class="icp-mobile-quote-btn" href="#inquiry">QUOTE</a>
         <button class="icp-mobile-menu-btn" onclick="toggleIcpMenu()">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
@@ -657,12 +673,12 @@
 
     <section class="icp-mobile-hero">
       <div class="icp-mobile-hero-img-wrap">
-        <img src="https://www.icolorpacks.com/images/Acb25be062a874fd7a7fc4b77a51f0790Z.webp" alt="Premium Packaging">
+        <img src="https://www.icolorpacks.com/images/Acb25be062a874fd7a7fc4b77a51f0790Z.webp" alt="Luxury paper bags and rigid gift boxes from iColorPacks">
       </div>
       <p style="color:#C9A84C; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:2px; margin-bottom:5px;">Premium B2B Packaging</p>
       <p class="icp-mobile-hero-heading">Custom Luxury Gift Boxes &amp; Paper Bags Manufacturer in China</p>
       <p class="icp-mobile-hero-text">Custom packaging developed around your product size, quantity, artwork, finish and delivery requirements.</p>
-      <a href="https://wa.me/8618058355198" class="icp-mobile-primary-btn">REQUEST A SPECIFICATION-BASED QUOTE &rarr;</a>
+      <a href="#inquiry" class="icp-mobile-primary-btn">REQUEST A SPECIFICATION-BASED QUOTE &rarr;</a>
     </section>
 
     
@@ -790,7 +806,7 @@
             <li><a href="/blog">BLOG</a></li>
             <li><a href="/faq">FAQ</a></li>
         </ul>
-        <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
+        <a href="#inquiry" class="btn-quote-nav">Inquiry</a>
     </nav>
 
 
@@ -807,7 +823,7 @@
       <h1>Custom Luxury Gift Boxes & Paper Bags Manufacturer in China</h1>
       <p>Rigid Boxes &middot; Paper Bags &middot; Bakery Packaging &middot; Corrugated Mailers &middot; Custom Inserts</p>
       <div class="hero-btns">
-        <a href="https://wa.me/8618058355198?text=Hello%20iColorPacks,%20I%20just%20viewed%20your%20premium%20packaging%20collection%20and%20would%20like%20to%20discuss%20a%20custom%20project.%20Can%20we%20chat?" class="btn-primary" style="display:inline-block; text-align:center;">Get Custom Quote</a>
+        <a href="#inquiry" class="btn-primary" style="display:inline-block; text-align:center;">Get Custom Quote</a>
       </div>
     </div>
   </section>
@@ -825,7 +841,10 @@
 
   </div>
 
-  <!-- FEATURED PRODUCTS: five clear categories, four representative products each -->
+  <!-- ICP PURCHASE FACTS CONTENT START -->
+<section class="icp-purchase-facts" id="purchase-specifications" aria-labelledby="icp-purchase-facts-title"><h2 id="icp-purchase-facts-title">Start with the quantity and structure</h2><p>Compare the starting specifications before choosing your packaging. Quantities below refer to an individual style and specification; send the quantity for each size and artwork version.</p><div class="icp-facts-table-wrap" role="region" aria-label="Order quantities and materials at a glance; scroll horizontally on small screens" tabindex="0"><table><caption style="text-align:left;font-size:14px;margin-bottom:8px;color:#d4d4dc">Order quantities and materials at a glance</caption><thead><tr><th scope="col">Packaging</th><th scope="col">Typical starting quantity</th><th scope="col">Material / construction</th></tr></thead><tbody><tr><td><a href="/product-paper-bags">Luxury paper bags</a></td><td>500 pieces for grosgrain, matte-laminated and metallic-logo styles</td><td>210–250 gsm art paper in the standard range; heavier and textured papers available</td></tr><tr><td><a href="/product-rigid-boxes">Rigid gift boxes</a></td><td>500 units for the magnetic, drawer and two-piece styles shown</td><td>800–1,400 gsm greyboard options; paperboard, EVA or fabric-covered inserts</td></tr><tr><td><a href="/product-cake-boxes">Cake and bakery boxes</a></td><td>500 units for window and tiered-cake styles; 1,000 for the carry-handle style shown</td><td>350–400 gsm ivory board or reinforced corrugated construction</td></tr></tbody></table></div><p>Custom dimensions, decoration and order combinations can change the applicable minimum. Need fewer? Send your target quantity for an individual review.</p><p>For a useful quote, send dimensions, quantity per design, logo or reference, and delivery country/postcode. For bags, include filled weight; for rigid boxes, include the insert; for cakes, include the board and total decorated height.</p><p><strong>Timing and total cost:</strong> Request sample timing, production timing and transit separately, plus unit price, tooling, sampling and freight as separate quote items. Include your required arrival date and delivery postcode.</p><div class="icp-facts-actions"><a class="icp-facts-quote" href="#inquiry">Request a specification-based quote</a><a href="https://wa.me/8618058355198" target="_blank" rel="noopener">Chat on WhatsApp</a><a href="mailto:jennifer@icolorpacks.com">Email Jennifer</a></div></section>
+<!-- ICP PURCHASE FACTS CONTENT END -->
+<!-- FEATURED PRODUCTS: five clear categories, four representative products each -->
   <section id="products" class="home-product-showcase">
     <div class="showcase-heading">
       <span class="section-label">Explore by Product Type</span>
@@ -1039,7 +1058,7 @@
   <!-- PRICING TRANSPARENCY -->
   <section id="pricing" style="padding: 100px 10%; background: #0D0D0D; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
     <span class="section-label">Pricing Guide</span>
-    <h2 class="section-title">Transparent <em>Pricing Structure.</em></h2>
+    <h2 class="section-title">How Your <em>Quote Is Calculated.</em></h2>
     <p style="max-width: 800px; margin: 0 auto 50px; color: #BBB; line-height: 1.8;">
       At iColorPacks, we believe in honest, direct-factory pricing. Your final cost is determined by material choice, structure complexity, surface finishes, and order volume. Review our <a href="/custom-packaging-cost-guide-china" style="color:var(--gold);">custom packaging cost guide</a> before preparing your RFQ.
     </p>
@@ -1114,7 +1133,7 @@
       <div class="faq-item">
         <details>
           <summary>What is your Minimum Order Quantity (MOQ)?</summary>
-          <div class="faq-content">MOQ depends on the structure, material, printing process, finish and number of designs. Send the required quantity for each design and we will confirm the applicable minimum after reviewing the specification.</div>
+          <div class="faq-content">Typical starting quantities are 500 pieces for our featured luxury paper bags and rigid gift boxes. Cake box examples start at 500 units for window and tiered-cake styles, and 1,000 units for the carry-handle style. Minimums apply to the selected size, artwork and construction. Send your quantity per design, including smaller project requirements, so we can confirm the suitable option.</div>
         </details>
       </div>
       <div class="faq-item">
