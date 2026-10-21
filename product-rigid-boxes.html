@@ -424,6 +424,27 @@
 .dropdown:hover .dropdown-content { display: block !important; }
 </style>
 <link rel="stylesheet" href="/icp-content-refresh-20261020.css">
+<!-- ICP RFQ ASSIST STYLE START -->
+<style id="icp-rfq-assist-style">
+.icp-rfq-assist{box-sizing:border-box;max-width:1120px;margin:32px auto;padding:28px;background:#151515;border:1px solid #645334;border-radius:12px;color:#f5f2eb;text-align:left;font:15px/1.65 Montserrat,Arial,sans-serif}
+.icp-rfq-assist *{box-sizing:border-box}
+.icp-rfq-assist h2{margin:0 0 10px;font:600 clamp(24px,3vw,32px)/1.25 'Playfair Display',Georgia,serif;color:#e5c68b}
+.icp-rfq-assist p{margin:8px 0 16px;color:#d0ccc4;max-width:78ch}
+.icp-rfq-assist .icp-rfq-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+.icp-rfq-assist .icp-rfq-actions a{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:11px 20px;border:1px solid #e5c68b;border-radius:5px;color:#151515;background:#e5c68b;text-decoration:none;font-weight:600;line-height:1.5}
+.icp-rfq-assist .icp-rfq-actions a+ a{background:transparent;color:#e5c68b}
+.icp-rfq-assist details{border-top:1px solid #474035;padding-top:14px}
+.icp-rfq-assist summary{cursor:pointer;font-weight:600;color:#e5c68b;min-height:36px}
+.icp-rfq-assist .icp-rfq-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+.icp-rfq-assist label{display:block;color:#eee7db;font-size:14px}
+.icp-rfq-assist input,.icp-rfq-assist select{display:block;width:100%;min-width:0;min-height:46px;margin:6px 0 0;padding:10px;border:1px solid #716652;border-radius:4px;background:#242424;color:#fff;font:inherit}
+.icp-rfq-assist input::placeholder{color:#bcb6ac;opacity:1}
+.icp-rfq-assist .icp-rfq-note{font-size:13px;color:#bcb6ac;margin-bottom:0}
+.icp-rfq-assist :is(a,input,select,summary):focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:1184px){.icp-rfq-assist{margin:24px 24px}}
+@media(max-width:600px){.icp-rfq-assist{margin:20px 16px;padding:22px 18px}.icp-rfq-assist .icp-rfq-fields{grid-template-columns:1fr}.icp-rfq-assist .icp-rfq-actions a{width:100%}}
+</style>
+<!-- ICP RFQ ASSIST STYLE END -->
 </head>
 <body>
   
@@ -482,6 +503,26 @@
       <h1>Custom Rigid Gift Boxes <em>with Logo</em></h1>
     </div>
   </header>
+<!-- ICP RFQ ASSIST PANEL START -->
+<section class="icp-rfq-assist" data-icp-rfq-assist data-rfq-product="custom rigid gift boxes" aria-labelledby="icp-rfq-assist-title">
+  <h2 id="icp-rfq-assist-title">Rigid gift box quote</h2>
+  <p>Tell us the box style, internal dimensions and quantity. You can send reference images or artwork in your WhatsApp chat or email.</p>
+  <details>
+    <summary>Add project details to your message (optional)</summary>
+    <div class="icp-rfq-fields">
+      <label for="icp-rfq-style">Preferred style<select id="icp-rfq-style" data-rfq-label="Preferred style"><option value="">Not sure — please advise</option><option value="Magnetic closure">Magnetic closure</option><option value="Sliding drawer">Sliding drawer</option><option value="Lid and base">Lid and base</option><option value="Shoulder and neck">Shoulder and neck</option></select></label>
+      <label for="icp-rfq-size">Internal size (L × W × H, include unit)<input id="icp-rfq-size" data-rfq-label="Size" maxlength="120" placeholder="e.g. 200 × 150 × 80 mm"></label>
+      <label for="icp-rfq-quantity">Quantity<input id="icp-rfq-quantity" data-rfq-label="Quantity" maxlength="80" placeholder="e.g. 1,000 pieces, or please advise"></label>
+      <label for="icp-rfq-destination">Delivery country / region<input id="icp-rfq-destination" data-rfq-label="Delivery country / region" maxlength="100" placeholder="e.g. United Kingdom"></label>
+    </div>
+    <p class="icp-rfq-note">All fields are optional. Your details are added to the WhatsApp or email draft below; review and send it in your chosen app.</p>
+  </details>
+  <div class="icp-rfq-actions">
+    <a data-rfq-channel="whatsapp" href="https://wa.me/8618058355198?text=Hello%20Jennifer%2C%20I%20would%20like%20a%20quote%20for%20custom%20rigid%20gift%20boxes." target="_blank" rel="noopener noreferrer">Discuss on WhatsApp</a>
+    <a data-rfq-channel="email" href="mailto:jennifer@icolorpacks.com?subject=custom%20rigid%20gift%20boxes%20quote%20request">Email Jennifer</a>
+  </div>
+</section>
+<!-- ICP RFQ ASSIST PANEL END -->
   <section class="catalog-section">
     <div class="section-header">
       <h2>Engineered for Excellence</h2>
@@ -797,5 +838,32 @@
 <script src="https://www.icolorpacks.com/icp-fix-706.js?v=20260908-menu"></script>
 <div id="icpFE"></div><script src="icp-final-floating-fix.js?v=20260907"></script>
 
+<!-- ICP RFQ ASSIST SCRIPT START -->
+<script id="icp-rfq-assist-script">
+(function () {
+  'use strict';
+  document.querySelectorAll('[data-icp-rfq-assist]').forEach(function (panel) {
+    var links = panel.querySelectorAll('[data-rfq-channel]');
+    function updateDraft() {
+      var lines = ['Hello Jennifer, I would like a quote for ' + panel.dataset.rfqProduct + '.'];
+      panel.querySelectorAll('[data-rfq-label]').forEach(function (field) {
+        var value = field.value.trim();
+        if (value) lines.push(field.dataset.rfqLabel + ': ' + value);
+      });
+      lines.push('Product page: ' + location.origin + location.pathname);
+      var message = lines.join('\n');
+      links.forEach(function (link) {
+        link.href = link.dataset.rfqChannel === 'whatsapp'
+          ? 'https://wa.me/8618058355198?text=' + encodeURIComponent(message)
+          : 'mailto:jennifer@icolorpacks.com?subject=' + encodeURIComponent(panel.dataset.rfqProduct + ' quote request') + '&body=' + encodeURIComponent(message);
+      });
+    }
+    panel.addEventListener('input', updateDraft);
+    panel.addEventListener('change', updateDraft);
+    updateDraft();
+  });
+}());
+</script>
+<!-- ICP RFQ ASSIST SCRIPT END -->
 </body>
 </html>
