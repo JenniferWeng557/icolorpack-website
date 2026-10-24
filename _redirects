@@ -1,3 +1,20 @@
+# GSC legacy URL recovery, 2026-10-24; preserve unrelated missing URLs as 404.
+/custom-paper-bags-with-logo  /product-paper-bags  301
+/custom-paper-bags-with-logo.html  /product-paper-bags  301
+/custom-cupcake-boxes  /product-cake-boxes  301
+/custom-cupcake-boxes.html  /product-cake-boxes  301
+/custom-mailer-boxes  /product-mailer-boxes  301
+/custom-mailer-boxes.html  /product-mailer-boxes  301
+/blog/product-paper-bags  /product-paper-bags  301
+/blog/product-paper-bags.html  /product-paper-bags  301
+/blog/case-studies  /industry-cases-2026  301
+/blog/case-studies.html  /industry-cases-2026  301
+/case-studies  /industry-cases-2026  301
+/case-studies.html  /industry-cases-2026  301
+/icolorpack-landing  /  301
+/icolorpack-landing.html  /  301
+/blog/blog/sitemap.xml  /sitemap.xml  301
+
 # GSC-confirmed missing legacy URLs, 2026-10-21
 /custom-drawer-gift-boxes  /custom-drawer-rigid-boxes  301
 /custom-drawer-gift-boxes.html  /custom-drawer-rigid-boxes  301
