@@ -1,0 +1,55 @@
+/* Isolated stock-box module; no changes to existing homepage sections. */
+#stock-magnetic-boxes{padding:64px 24px;background:#111116;border-block:1px solid #c9a84c45;scroll-margin-top:100px;color:#efedf1;font:16px/1.65 Arial,sans-serif;text-align:left}
+#stock-magnetic-boxes *{box-sizing:border-box}
+#stock-magnetic-boxes .stock-box-inner{max-width:1200px;margin:0 auto}
+#stock-magnetic-boxes .stock-box-heading{text-align:center;max-width:900px;margin:0 auto 32px}
+#stock-magnetic-boxes .stock-box-kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#e0c377;font-weight:700}
+#stock-magnetic-boxes h2{font:700 clamp(28px,3.4vw,44px)/1.2 'Playfair Display',Georgia,serif;color:#fff;margin:12px 0 18px;letter-spacing:0;text-transform:none}
+#stock-magnetic-boxes h2 em{color:#dfc175;font-style:normal}
+#stock-magnetic-boxes p{font:400 15px/1.7 Arial,sans-serif;color:#d2d0da;margin:0 0 16px}
+#stock-magnetic-boxes .stock-box-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:32px;align-items:start}
+#stock-magnetic-boxes .stock-box-visual{margin:0;min-width:0}
+#stock-magnetic-boxes .stock-box-visual img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #4b4540}
+#stock-magnetic-boxes figcaption{font-size:12px;color:#b7b4c1;padding:12px 2px;line-height:1.6}
+#stock-magnetic-boxes h3{font:700 20px/1.35 Arial,sans-serif;color:#f4e6bd;margin:0 0 16px;text-transform:none;letter-spacing:0}
+#stock-magnetic-boxes .stock-box-options{margin:0 0 20px}
+#stock-magnetic-boxes .stock-box-options>div{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid #ffffff16}
+#stock-magnetic-boxes dt{font-weight:700;font-size:14px;color:#e0c377}
+#stock-magnetic-boxes dd{margin:0;color:#dddbe4;font-size:14px;line-height:1.65}
+#stock-magnetic-boxes .stock-box-colors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 8px;list-style:none;padding:0;margin:0 0 16px}
+#stock-magnetic-boxes .stock-box-colors li{display:flex;align-items:center;gap:7px;font-size:12px;line-height:1.4;color:#eceaf0}
+#stock-magnetic-boxes .stock-box-colors span{display:block;flex:none;width:20px;height:20px;border-radius:50%;background:var(--swatch);border:1px solid #b7b4be}
+#stock-magnetic-boxes .stock-box-note{font-size:12px;color:#bcb9c6;margin:10px 0 0}
+#stock-magnetic-boxes .stock-box-table-wrap{max-width:100%;overflow-x:auto;margin-top:18px}
+#stock-magnetic-boxes table{width:100%;border-collapse:collapse;background:#19191f;font-size:14px;margin:0}
+#stock-magnetic-boxes caption{text-align:left;color:#e6ce91;font-weight:700;padding:0 0 8px;font-size:13px}
+#stock-magnetic-boxes th,#stock-magnetic-boxes td{border:1px solid #ffffff20;padding:10px 14px;text-align:left;color:#efedf2;width:auto;font-size:14px;text-transform:none;letter-spacing:0}
+#stock-magnetic-boxes thead th{background:#26232a;color:#edcf80;font-weight:700}
+#stock-magnetic-boxes tbody th{font-weight:600}
+#stock-magnetic-boxes .stock-box-prices{margin-top:24px;padding:18px 22px;border:1px solid #c9a84c55;border-radius:10px;background:#19191e}
+#stock-magnetic-boxes summary{font-weight:700;color:#edcf80;cursor:pointer;min-height:26px}
+#stock-magnetic-boxes .stock-box-prices[open]>summary{margin-bottom:16px}
+#stock-magnetic-boxes .stock-box-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:26px}
+#stock-magnetic-boxes .stock-box-actions a{display:inline-flex;justify-content:center;align-items:center;gap:12px;min-height:48px;padding:12px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:700;line-height:1.5;border:1px solid #d5b455}
+#stock-magnetic-boxes .stock-box-primary{background:#d5b455;color:#111}
+#stock-magnetic-boxes .stock-box-secondary{color:#f0d698;background:transparent}
+#stock-magnetic-boxes a:focus-visible,#stock-magnetic-boxes summary:focus-visible,#stock-magnetic-boxes [tabindex]:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:820px){#stock-magnetic-boxes .stock-box-grid{grid-template-columns:minmax(0,1fr);gap:20px}#stock-magnetic-boxes .stock-box-visual{max-width:480px;width:100%;margin:0 auto}}
+@media(max-width:480px){#stock-magnetic-boxes{padding:44px 18px}#stock-magnetic-boxes .stock-box-colors{grid-template-columns:repeat(2,minmax(0,1fr))}#stock-magnetic-boxes .stock-box-options>div{grid-template-columns:1fr;gap:4px}#stock-magnetic-boxes .stock-box-prices{padding:16px}#stock-magnetic-boxes th,#stock-magnetic-boxes td{padding:9px;font-size:13px}#stock-magnetic-boxes .stock-box-actions a{width:100%}}
+
+/* Updated product references: preserve the full photo, no cropped box edges. */
+#stock-magnetic-boxes .stock-box-visual>a{display:block;border:0;text-decoration:none}
+#stock-magnetic-boxes .stock-box-examples{padding:0;margin:32px 0 24px;background:transparent}
+#stock-magnetic-boxes .stock-example-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:20px}
+#stock-magnetic-boxes .stock-example-grid figure{margin:0;min-width:0;border:1px solid #ffffff20;border-radius:10px;overflow:hidden;background:#19191f}
+#stock-magnetic-boxes .stock-example-grid a{display:block;border:0}
+#stock-magnetic-boxes .stock-example-grid img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#eee}
+#stock-magnetic-boxes .stock-example-grid figcaption{padding:14px}
+#stock-magnetic-boxes .stock-example-grid strong{display:block;color:#f0d698;font:700 15px/1.4 Arial,sans-serif;margin-bottom:7px}
+#stock-magnetic-boxes .stock-example-grid figcaption span{display:block;font:400 13px/1.6 Arial,sans-serif;color:#d2d0da}
+#stock-magnetic-boxes .stock-box-reference{margin:12px 0;padding:18px 22px;border:1px solid #c9a84c45;border-radius:10px;background:#19191e}
+#stock-magnetic-boxes .stock-box-reference[open]>summary{margin-bottom:18px}
+#stock-magnetic-boxes .stock-reference-image{display:block;width:100%;max-width:780px;height:auto;margin:16px auto;border-radius:8px}
+#stock-magnetic-boxes .stock-size-image{max-width:900px}
+@media(max-width:900px){#stock-magnetic-boxes .stock-example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){#stock-magnetic-boxes .stock-box-reference{padding:16px}#stock-magnetic-boxes .stock-example-grid{gap:12px}#stock-magnetic-boxes .stock-example-grid figcaption{padding:12px}#stock-magnetic-boxes .stock-example-grid strong{font-size:14px}}

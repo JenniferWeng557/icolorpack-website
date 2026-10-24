@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>Inquiry Received | iColorPacks</title>
+  <meta name="description" content="Your custom packaging inquiry has been received by iColorPacks.">
+  <link rel="canonical" href="https://www.icolorpacks.com/thank-you">
+  <script src="/icp-analytics.js"></script>
+  <style>
+    :root{--bg:#08090d;--panel:#111219;--gold:#d8b44a;--text:#f7f3e8;--muted:#aaa9b5}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at top,#1b1a16 0,#08090d 48%);color:var(--text);font-family:Arial,sans-serif;padding:24px}
+    main{width:min(680px,100%);padding:56px 44px;text-align:center;background:var(--panel);border:1px solid #2c2a22;box-shadow:0 24px 80px rgba(0,0,0,.42)}
+    .mark{width:64px;height:64px;margin:0 auto 24px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#08090d;font-size:32px;font-weight:700}
+    h1{font-family:Georgia,serif;font-size:clamp(34px,6vw,54px);margin:0 0 18px}p{color:var(--muted);font-size:17px;line-height:1.75;margin:0 auto 28px;max-width:520px}
+    a{display:inline-block;padding:14px 24px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-weight:700}a:hover{background:var(--gold);color:#08090d}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">✓</div>
+    <h1>Inquiry received.</h1>
+    <p>Thank you for sharing your packaging requirements. We will review the specifications and contact details you submitted before replying.</p>
+    <a href="/">Return to iColorPacks</a>
+  </main>
+  <script>
+    (function () {
+      var completed = sessionStorage.getItem('icp_lead_completed');
+      if (!completed) return;
+      sessionStorage.removeItem('icp_lead_completed');
+      try {
+        var details = JSON.parse(completed);
+        window.gtag('event', 'generate_lead', {
+          currency: 'USD', value: 1, lead_source: 'website_form',
+          form_id: details.form_id || 'website_form',
+          page_type: details.page_type || 'resource'
+        });
+      } catch (error) {}
+    }());
+  </script>
+</body>
+</html>

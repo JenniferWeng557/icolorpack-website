@@ -1,0 +1,15 @@
+/* icp-m-only.css - 绝对隔离层 */
+@media (min-width: 769px) {
+    #icp-mobile-nav, .icp-m-header, .icp-m-footer { display: none !important; }
+}
+
+@media (max-width: 768px) {
+    /* 手机端样式锁定 */
+    #navbar, .hero-desktop { display: none !important; }
+    .icp-m-header {
+        position: sticky; top: 0; z-index: 9999; height: 60px; background: #0d0d14;
+        display: flex; align-items: center; justify-content: space-between; padding: 0 16px;
+        border-bottom: 1px solid #C9A84C;
+    }
+    /* ... 更多手机端样式 ... */
+}

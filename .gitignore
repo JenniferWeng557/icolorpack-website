@@ -1,0 +1,8 @@
+node_modules
+.git_corrupt
+.git_old
+update_whatsapp_links.py
+inject_widgets.py
+# Ignore other potentially large or temporary files
+*.zip
+*.log

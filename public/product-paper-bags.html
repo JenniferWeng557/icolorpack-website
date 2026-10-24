@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="/icp-analytics.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Paper Bags with Logo | Luxury Shopping Bags</title>
+    <meta name="description" content="Custom luxury paper bags with logo for boutiques and retail. Compare paper weight, handles, reinforcement, print and finishes. Free sample; reply within 2 hours.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        .dropdown:hover .dropdown-content { display: block !important; }
+        :root { 
+            --gold: #C9A84C; 
+            --gold-light: #E8C97A;
+            --dark: #0A0A0F; 
+            --card: #12121A;
+            --text-muted: #8A8A9A;
+            --border: rgba(255, 255, 255, 0.05);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: #FFF; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        
+        /* NAVIGATION */
+        nav { 
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            padding: 20px 8%; display: flex; align-items: center; justify-content: space-between;
+            background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; color: #FFF; font-weight: 700; font-size: 22px; letter-spacing: 1px; }
+        .logo img { height: 32px; margin-right: 12px; }
+        .nav-links { display: flex; gap: 35px; list-style: none; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+        .dropdown { position: relative; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #0D0D14; min-width: 220px; border: 1px solid rgba(255,255,255,0.08); padding: 10px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .dropdown-content a { color: var(--text-muted); padding: 12px 25px; display: block; font-size: 11px; text-decoration: none; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid rgba(255,255,255,0.03); transition: 0.3s; }
+        .dropdown-content a:hover { background: rgba(201, 168, 76, 0.1); color: var(--gold); padding-left: 30px; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .arrow { font-size: 8px; margin-left: 8px; vertical-align: middle; }
+        .btn-quote-nav { border: 1px solid var(--gold); color: var(--gold); padding: 10px 25px; font-size: 13px; font-weight: 600; text-decoration: none; transition: 0.3s; }
+        .btn-quote-nav:hover { background: var(--gold); color: #000; }
+
+        /* HERO */
+        .hero { height: 50vh; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('images/Af7917805351b4da08883e6be4b2a0de3J.webp') center/cover; display: flex; align-items: center; justify-content: center; }
+        .hero h1 { font-family: 'Playfair Display'; font-size: clamp(32px, 5vw, 56px); text-align: center; font-weight: 700; }
+
+        /* INTRO */
+        .intro-section { padding: 100px 10% 40px; text-align: center; max-width: 1000px; margin: 0 auto; }
+        .intro-section h2 { font-family: 'Playfair Display'; font-size: 36px; margin-bottom: 25px; color: var(--gold); }
+        .intro-section p { color: var(--text-muted); font-size: 16px; line-height: 1.8; }
+
+        /* STYLES GRID */
+        .section { padding: 40px 10% 80px; }
+        .styles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .style-card { background: var(--card); border: 1px solid var(--border); overflow: hidden; transition: 0.4s; }
+        .style-card:hover { border-color: var(--gold); transform: translateY(-8px); }
+        .style-img { width: 100%; height: 420px; object-fit: cover; transition: 0.6s; }
+        .style-card:hover .style-img { transform: scale(1.05); }
+        .style-info { padding: 35px; text-align: center; }
+        .style-info h4 { color: var(--gold); margin-bottom: 15px; font-size: 18px; letter-spacing: 1px; }
+        .style-info p { color: var(--text-muted); font-size: 13px; }
+
+        /* TECHNICAL SPECIFICATIONS TABLE */
+        .specs-section { padding: 80px 10%; background: #0f0f15; }
+        .specs-container { max-width: 1100px; margin: 0 auto; }
+        .specs-title { font-size: 28px; text-align: center; margin-bottom: 50px; letter-spacing: 2px; text-transform: uppercase; }
+        table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); }
+        th { background: #1a1a24; color: var(--gold); padding: 20px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid var(--gold); }
+        td { padding: 20px; border-bottom: 1px solid var(--border); font-size: 14px; }
+        td:first-child { font-weight: 700; color: #FFF; width: 30%; }
+        td:nth-child(2) { color: var(--text-muted); }
+        td:last-child { color: #EEE; }
+
+        /* WHY CHOOSE US - FEATURES */
+        .features-section { padding: 100px 10%; background: var(--dark); border-top: 1px solid var(--border); }
+        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; max-width: 1200px; margin: 0 auto; }
+        .feature-item { text-align: center; }
+        .feature-icon { font-size: 40px; color: var(--gold); margin-bottom: 25px; display: block; }
+        .feature-item h4 { font-size: 16px; margin-bottom: 15px; letter-spacing: 1px; text-transform: uppercase; }
+        .feature-item p { font-size: 14px; color: var(--text-muted); }
+
+        /* FOOTER */
+        footer { padding: 80px 10% 40px; background: #050508; text-align: center; color: #555; font-size: 12px; border-top: 1px solid var(--border); }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(2, 1fr); gap: 60px; max-width: 1200px; margin: 0 auto; text-align: left; margin-bottom: 60px; }
+        .footer-col h5 { color: var(--gold); margin-bottom: 25px; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 15px; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; transition: 0.3s; }
+        .footer-links a:hover { color: var(--gold); }
+
+        .paper-bag-inquiry { max-width: 1280px; margin: 0 auto; padding: 90px 8%; display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: start; border-top: 1px solid var(--border); }
+        .paper-bag-eyebrow { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 4px; margin-bottom: 14px; }
+        .paper-bag-inquiry h2 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); line-height: 1.15; margin-bottom: 20px; }
+        .paper-bag-inquiry-copy > p:not(.paper-bag-eyebrow) { color: var(--text-muted); font-size: 15px; }
+        .paper-bag-inquiry-copy ul { margin: 28px 0 0; padding: 0; list-style: none; }
+        .paper-bag-inquiry-copy li { color: #ddd; margin: 12px 0; padding-left: 25px; position: relative; }
+        .paper-bag-inquiry-copy li::before { content: '\2713'; color: var(--gold); position: absolute; left: 0; }
+        .paper-bag-form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 34px; background: var(--card); border: 1px solid var(--border); }
+        .paper-bag-form label { display: grid; gap: 8px; color: #aaa; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+        .paper-bag-form input, .paper-bag-form select, .paper-bag-form textarea { width: 100%; padding: 14px; color: #fff; background: #0b0b10; border: 1px solid rgba(255,255,255,.14); font: 14px 'Montserrat', sans-serif; text-transform: none; letter-spacing: 0; }
+        .paper-bag-form input:focus, .paper-bag-form select:focus, .paper-bag-form textarea:focus { outline: 1px solid var(--gold); border-color: var(--gold); }
+        .paper-bag-form-full, .paper-bag-form button { grid-column: 1 / -1; }
+        .paper-bag-form button { padding: 17px 24px; border: 1px solid var(--gold); background: var(--gold); color: #08080b; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; }
+        .paper-bag-form button:hover { background: var(--gold-light); }
+
+        @media (max-width: 1000px) { 
+            .styles-grid, .features-grid, .footer-grid { grid-template-columns: 1fr; } 
+            .nav-links { display: none; } 
+            td:first-child { width: 40%; }
+            .paper-bag-inquiry { grid-template-columns: 1fr; gap: 34px; padding: 70px 20px; }
+            .paper-bag-form { grid-template-columns: 1fr; padding: 24px; }
+            .paper-bag-form-full, .paper-bag-form button { grid-column: auto; }
+        }
+    </style>
+<style>
+        .dropdown:hover .dropdown-content { display: block !important; }
+  /* STRETCH: FORCE HIDE MOBILE ELEMENTS ON DESKTOP */
+  @media (min-width: 769px) {
+    .icp-mobile-sticky-cta,
+    .icp-m-footer,
+    .floating-email,
+    .email-float,
+    .email-floating,
+    #icpFE,
+    a[href^="mailto:"].floating-email,
+    a[href^="mailto:"].email-float,
+    .icp-mobile-sticky-cta a[href^="mailto:"],
+    .icp-m-footer a[href^="mailto:"] {
+      display: none !important;
+    }
+  }
+</style>
+<link rel="stylesheet" href="/icp-final-floating-fix.css?v=20260907">
+
+    <link rel="canonical" href="https://www.icolorpacks.com/product-paper-bags">
+<style>
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content { display: none; position: absolute; background: #0D0D14; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); z-index: 1000; top: 100%; left: 0; padding: 10px 0; border: 1px solid rgba(255,255,255,0.05); }
+.dropdown-content a { color: #8A8A9A !important; padding: 12px 20px !important; text-decoration: none; display: block !important; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.03) !important; }
+.dropdown-content a:hover { background: rgba(201,168,76,0.1) !important; color: #C9A84C !important; }
+.dropdown:hover .dropdown-content { display: block !important; }
+</style>
+<!-- ICP MOQ 100 POLICY STYLE START -->
+<style id="icp-moq100-style">.icp-moq100-policy{display:block;box-sizing:border-box;max-width:680px;margin:16px 0;padding:10px 14px;border-left:3px solid #c9a84c;background:#15151de6;color:#eee;font:400 14px/1.65 Arial,sans-serif;letter-spacing:normal;text-transform:none}.icp-moq100-policy strong{color:#f3d68c;font-weight:700}.icp-moq100-policy a{color:#f3d68c}.icp-buyer-feedback{box-sizing:border-box;max-width:1200px;width:calc(100% - 48px);margin:48px auto;padding:28px;border:1px solid #c9a84c66;border-radius:12px;background:#15151d;color:#eee}.icp-buyer-feedback h2{font:600 clamp(24px,3vw,34px)/1.3 Arial,sans-serif;color:#f4e4b6;margin:0 0 14px}.icp-buyer-feedback p{font:400 15px/1.8 Arial,sans-serif;color:#d4d4dc}.icp-buyer-feedback a{display:inline-block;min-height:44px;box-sizing:border-box;padding:10px 18px;background:#d5b455;color:#111;text-decoration:none;font:700 14px/1.6 Arial,sans-serif;border-radius:5px;margin-top:12px}.icp-buyer-feedback a:focus-visible{outline:3px solid #fff;outline-offset:4px}@media(max-width:600px){.icp-moq100-policy{font-size:13px}.icp-buyer-feedback{width:calc(100% - 32px);padding:20px;margin:28px auto}}</style>
+<!-- ICP MOQ 100 POLICY STYLE END -->
+<style id="icp-paper-bag-hero-layout">.hero{box-sizing:border-box;flex-direction:column;gap:20px;height:auto;min-height:50vh;padding:56px 24px;text-align:center}.hero h1{width:100%;max-width:1200px;margin:0;line-height:1.2;text-align:center}.hero .icp-moq100-policy{width:100%;max-width:760px;margin:0 auto;text-align:center;border-left:0;border-top:2px solid #c9a84c;padding:12px 18px}@media(max-width:600px){.hero{padding:44px 20px;gap:18px}.hero .icp-moq100-policy{font-size:13px;line-height:1.65;padding:12px}}</style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="images/A94ddad755cf74f0d93ee51ab0229ac3ac.webp" alt="iColorPacks">iColorPacks</a>
+        <ul class="nav-links">
+            <li><a href="/">HOME</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">PRODUCTS <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">&#9660;</span></a>
+                <div class="dropdown-content">
+                    <a href="/product-rigid-boxes.html">Rigid Boxes</a>
+                    <a href="/product-paper-bags.html">Paper Bags</a>
+                    <a href="/product-cake-boxes.html">Cake Boxes</a>
+                    <a href="/product-mailer-boxes.html">Mailer Boxes</a>
+                    <a href="/product-kraft-bags.html">Kraft Bags</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/industry-cases-2026.html" class="dropbtn">INDUSTRIES <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">&#9660;</span></a>
+                <div class="dropdown-content">
+                    <a href="/industry-cases-2026.html" style="font-weight: 700; color: #C9A84C !important;">View All INDUSTRIES <span style="font-size: 8px; margin-left: 5px; vertical-align: middle; opacity: 0.8;">&#9660;</span></a>
+                    <a href="/custom-packaging-for-cosmetics.html">Cosmetics</a>
+                    <a href="/packaging-for-jewelry-brands.html">Jewelry</a>
+                    <a href="/packaging-for-bakeries.html">Bakery</a>
+                    <a href="/custom-packaging-for-clothing-brands.html">Clothing</a>
+                    <a href="/packaging-for-candle-brands.html">Candle</a>
+                    <a href="/custom-packaging-for-perfume.html">Perfume</a>
+                    <a href="/low-moq-custom-packaging-china.html">E-commerce</a>
+                    <a href="/luxury-gift-boxes-with-logo.html">Gift Shop</a>
+                </div>
+            </li>
+            <li><a href="/#factory">FACTORY</a></li>
+            <li><a href="/blog.html">BLOG</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+        <a href="https://wa.me/8618058355198" class="btn-quote-nav">Inquiry</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Custom Luxury <em>Paper Bags with Logo</em></h1><p class="icp-moq100-policy"><strong>MOQ: 100 pcs across all products.</strong> Small-batch orders have a higher unit price. Ask for a quote based on your size, artwork and finish.</p>
+    </section>
+
+    <section class="intro-section">
+        <h2>Unboxing Excellence starts with the Carry</h2>
+        <p>iColorPacks produces world-class custom paper bags for retail, boutique, and luxury gifting. From heavyweight art paper with premium lamination to eco-conscious kraft solutions, we ensure your brand is carried with prestige and structural reliability.</p>
+    </section>
+
+    <section class="section">
+        <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 36px; margin-bottom: 60px;">Premium Custom Styles</h2>
+        <div class="styles-grid">
+            <div class="style-card">
+                <img src="images/Af80f62fa1ca947ccae659a2314e84b25Y.webp" class="style-img" alt="Ribbon Handle Bag">
+                <div class="style-info">
+                    <h4>Grosgrain Ribbon Handles</h4>
+                    <p>High-end 250gsm art paper with silk ribbon for a superior retail experience.</p>
+                </div>
+            </div>
+            <div class="style-card">
+                <img src="images/Af61649da05f94b1496aeb138fbe23dfcV.webp" class="style-img" alt="Matte Luxury Bag">
+                <div class="style-info">
+                    <h4>Matte Finish Elite Bags</h4>
+                    <p>Scratch-resistant matte lamination with reinforced base for premium brands.</p>
+                </div>
+            </div>
+            <div class="style-card">
+                <img src="images/A0e494056f8b04efda7a9a29ceb409bb1n.webp" class="style-img" alt="Metallic Logo Bag">
+                <div class="style-info">
+                    <h4>Metallic Logo Bags</h4>
+                    <p>Gold and silver foil stamping that catches the light and commands attention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs-section">
+        <div class="specs-container">
+            <h2 class="specs-title">Technical Specifications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material Component</th>
+                        <th>Standard Options</th>
+                        <th>Premium Upgrades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paper Stock</td>
+                        <td>210gsm - 250gsm Art Paper</td>
+                        <td>300gsm+ Elite C2S / Special Texture Paper</td>
+                    </tr>
+                    <tr>
+                        <td>Handle Options</td>
+                        <td>Cotton Rope / Twisted Paper</td>
+                        <td>Grosgrain Ribbon / Satin / Die-cut Handles</td>
+                    </tr>
+                    <tr>
+                        <td>Branding Process</td>
+                        <td>CMYK Offset Printing</td>
+                        <td>Pantone Spot Colors / Metallic Inks</td>
+                    </tr>
+                    <tr>
+                        <td>Luxury Finishes</td>
+                        <td>Matte / Gloss Lamination</td>
+                        <td>Gold & Silver Foil / Spot UV / Embossing</td>
+                    </tr>
+                    <tr>
+                        <td>Reinforcement</td>
+                        <td>Standard Top & Bottom Board</td>
+                        <td>Heavy-Duty Reinforced Rigid Base</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-item">
+                <span class="feature-icon">&#128142;</span>
+                <h4>Luxury Perception</h4>
+                <p>Instant brand elevation with artisanal finishes and premium tactile paper stocks.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">&#128737;</span>
+                <h4>Structural Integrity</h4>
+                <p>Reinforced top and bottom cardboard ensures safe carry for heavy luxury gift boxes.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">&#127912;</span>
+                <h4>Full Customization</h4>
+                <p>Endless options for handle materials, custom sizes, and high-fidelity brand colors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="paper-bag-inquiry" id="inquiry">
+        <div class="paper-bag-inquiry-copy">
+            <p class="paper-bag-eyebrow">DIRECT FACTORY QUOTE</p>
+            <h2>Tell Us Your Paper Bag Specifications</h2>
+            <p>Send the size, quantity, paper stock, handle style and artwork status. Our packaging team will reply with a practical material recommendation and quotation.</p>
+            <ul>
+                <li>MOQ guidance for your construction and finish</li>
+                <li>Free artwork and structure review</li>
+                <li>Sampling, production and shipping timeline</li>
+            </ul>
+        </div>
+        <form name="iColorPacks Paper Bag Inquiry" class="paper-bag-form" action="https://formspree.io/f/maeypklz" method="POST">
+            <input type="hidden" name="_subject" value="New Paper Bag Inquiry from iColorPacks">
+            <input type="hidden" name="product_type" value="Custom Paper Bags">
+            <label>Name *<input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label>Email or WhatsApp *<input type="text" name="contact" required placeholder="name@company.com / +country code"></label>
+            <label>Estimated Quantity
+                <select name="quantity">
+                    <option value="">Select quantity</option>
+                    <option value="100-499">100–499 pieces</option><option>500-999</option>
+                    <option>1,000-2,999</option>
+                    <option>3,000-9,999</option>
+                    <option>10,000+</option>
+                </select>
+            </label>
+            <label>Bag Size / Product
+                <input type="text" name="size_or_product" placeholder="e.g. 30 x 10 x 25 cm, cosmetics">
+            </label>
+            <label class="paper-bag-form-full">Project Details
+                <textarea name="details" rows="5" placeholder="Paper, handles, printing, finish, destination and required date"></textarea>
+            </label>
+            <button type="submit">Request My Factory Quote</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5 style="color: #FFF; font-size: 18px; font-weight: 700; margin-bottom: 20px;">iColorPacks</h5>
+                <p style="color: var(--text-muted); font-size: 13px;">Premium B2B luxury packaging manufacturer in Wenzhou, China. Supporting specification-based custom packaging projects for global B2B buyers.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Packaging Solutions</h5>
+                <ul class="footer-links">
+                    <li><a href="product-rigid-boxes.html">Rigid Gift Boxes</a></li>
+                    <li><a href="product-paper-bags.html">Luxury Paper Bags</a></li>
+                    <li><a href="product-cake-boxes.html">Custom Cake Boxes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Connect With Us</h5>
+                <ul class="footer-links">
+                    <li>Email: jennifer@icolorpacks.com</li>
+                    <li>WhatsApp: +86-18058355198</li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top: 50px; border-top: 1px solid var(--border); padding-top: 30px;">&copy; 2026 iColorPacks &mdash; All Rights Reserved.</p>
+    </footer>
+<script src="https://www.icolorpacks.com/icp-fix-706.js?v=20260908-menu"></script>
+<div id="icpFE"></div><script src="icp-final-floating-fix.js?v=20260907"></script>
+
+</body>
+</html>
