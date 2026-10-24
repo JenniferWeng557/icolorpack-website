@@ -16,7 +16,7 @@
     // Prevent double injection
     if (document.querySelector('.icp-floating-actions')) return;
 
-    var WA_URL = "https://wa.me/8618058355198?text=Hello%20iColorPacks%2C%20I%20would%20like%20to%20request%20a%20custom%20packaging%20quote.";
+    var WA_URL = 'https://wa.me/8618058355198?text=' + encodeURIComponent('Hello Jennifer, I would like a packaging quotation.\n\nPage: ' + (document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : document.title) + '\nSource: ' + location.origin + location.pathname + '\nEntry: Floating WhatsApp');
     
     var html = `
     <div class="icp-floating-actions">
