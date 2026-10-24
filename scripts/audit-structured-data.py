@@ -9,6 +9,15 @@ class Metadata(HTMLParser):
         if tag == 'meta' and data.get('name') == 'description':
             assert not set(data) - {'name', 'content'}, f'{self.path}: malformed description'
 
+def nodes(value):
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from nodes(child)
+
 files = subprocess.check_output(['git', 'ls-files', '*.html'], text=True).splitlines()
 services = blogs = checked = 0
 for file in files:
@@ -20,14 +29,12 @@ for file in files:
     blogs += file.startswith('blog/')
     for value in re.findall(r'<script[^>]*type=[\"\']application/ld\+json[\"\'][^>]*>(.*?)</script>', page, re.S):
         data = json.loads(value)
-        roots = data if isinstance(data, list) else [data]
-        for root in roots:
-            for node in [root] + root.get('@graph', []):
-                if node.get('@type') == 'Product':
-                    assert node.get('review') or node.get('aggregateRating') or node.get('offers', {}).get('price') is not None or node.get('offers', {}).get('lowPrice') is not None, f'{file}: incomplete Product snippet'
-                if node.get('@type') == 'Service' and node.get('@id', '').endswith('#custom-packaging-service'):
-                    services += 1
-                    assert node.get('provider') and node.get('serviceType') and node.get('url'), file
+        for node in nodes(data):
+            if node.get('@type') == 'Product':
+                assert node.get('review') or node.get('aggregateRating') or node.get('offers', {}).get('price') is not None or node.get('offers', {}).get('lowPrice') is not None, f'{file}: incomplete Product snippet'
+            if node.get('@type') == 'Service' and node.get('serviceType') == 'Made-to-order paper packaging manufacturing':
+                services += 1
+                assert node.get('provider') and node.get('serviceType') and node.get('url'), file
 rules = {}
 for line in Path('_redirects').read_text().splitlines():
     if not line.strip() or line.startswith('#'): continue
