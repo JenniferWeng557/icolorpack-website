@@ -351,20 +351,21 @@
       .product-category { margin-bottom: 52px; }
       .product-category-head { display: block; }
       .product-category-head p { margin-top: 10px; text-align: left; }
-      .home-product-grid { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 1px 12px; }
-      .home-product-card { flex: 0 0 min(82vw, 340px); scroll-snap-align: start; }
-      .home-product-media { min-height: 0; aspect-ratio: 4 / 3; }
-      .home-product-body { padding: 18px 16px; }
-      .home-product-use { min-height: 0; }
+      .home-product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .home-product-card { min-width: 0; }
+      .home-product-media { min-height: 0; aspect-ratio: 1; }
+      .home-product-badge { left: 6px; top: 6px; max-width: calc(100% - 12px); box-sizing: border-box; padding: 5px 6px; font-size: 8px; line-height: 1.4; letter-spacing: .5px; }
+      .home-product-body { padding: 14px 10px 10px; }
+      .home-product-body h3 { font-size: 14px; line-height: 1.4; letter-spacing: .4px; overflow-wrap: break-word; }
+      .home-product-use { min-height: 0; font-size: 12px; line-height: 1.6; margin-bottom: 14px; }
+      .home-product-actions { grid-template-columns: 1fr; gap: 6px; }
+      .home-product-actions a { min-width: 0; min-height: 44px; box-sizing: border-box; padding: 10px 6px; font-size: 10px; letter-spacing: .5px; }
       .hero-content h1 { font-size: 38px; }
       .nav-links { display: none; }
       .luxo-form, .request-types { grid-template-columns: 1fr; }
       .luxo-group.full, .btn-luxo-submit { grid-column: span 1; }
       .consultant-bar { padding: 20px; }
       .modal-inner { padding: 30px 20px; }
-    }
-    @media (max-width: 520px) {
-      .home-product-actions { grid-template-columns: 1.15fr .85fr; }
     }
 
     /* CASES GRID */
