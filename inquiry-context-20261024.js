@@ -23,7 +23,14 @@
   }
   function remember(c) { c.destination_page = page().url; try { sessionStorage.setItem(KEY, JSON.stringify(c)); } catch (_) {} }
   function pending() {
-    try { var c = JSON.parse(sessionStorage.getItem(KEY)); var ref = new URL(document.referrer || location.href); if(c && (c.source_page === page().url || c.destination_page === page().url || (location.hash === '#inquiry' && ref.origin === location.origin && ref.origin + ref.pathname === c.source_page))) return c; } catch (_) {}
+    try {
+      var c = JSON.parse(sessionStorage.getItem(KEY));
+      if (!c) return null;
+      if (c.source_page === page().url) return c;
+      // Carry another page's source only for an explicit inbound inquiry handoff.
+      var inbound = new URLSearchParams(location.search).get('inquiry_source');
+      if (location.hash === '#inquiry' && inbound === c.source_page && new URL(inbound).origin === location.origin) return c;
+    } catch (_) {}
     return null;
   }
   function setField(form, name, value) {
