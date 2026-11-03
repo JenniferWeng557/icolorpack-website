@@ -344,7 +344,7 @@
         var old = brand.querySelector('.icp-review-logo-slot,img,svg');
         var slot = document.createElement('span');slot.className='icp-brand-slot-v2';slot.setAttribute('aria-hidden','true');
         var crop = document.createElement('span');crop.className='icp-brand-crop-v2';
-        var image = document.createElement('img');image.src=source;image.alt='';image.width=136;image.height=136;
+        var image = document.createElement('img');image.src=source;image.alt='iColorPacks logo';image.width=136;image.height=136;
         crop.appendChild(image);slot.appendChild(crop);
         if (old) old.replaceWith(slot);else brand.insertBefore(slot,brand.firstChild);
         brand.setAttribute('data-icp-brand-v2','true');
