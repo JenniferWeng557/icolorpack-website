@@ -25,21 +25,5 @@
     <p>Thank you for sharing your packaging requirements. We will review the specifications and contact details you submitted before replying.</p>
     <a href="/">Return to iColorPacks</a>
   </main>
-  <script>
-    (function () {
-      var completed = sessionStorage.getItem('icp_lead_completed');
-      if (!completed) return;
-      sessionStorage.removeItem('icp_lead_completed');
-      try {
-        var details = JSON.parse(completed);
-        window.gtag('event', 'generate_lead', {
-          currency: 'USD', value: 1, lead_source: 'website_form',
-          form_id: details.form_id || 'website_form',
-          page_type: details.page_type || 'resource',
-          source_page_path: details.page_path || ''
-        });
-      } catch (error) {}
-    }());
-  </script>
 </body>
 </html>
