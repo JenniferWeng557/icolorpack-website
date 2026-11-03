@@ -1,13 +1,22 @@
 (function () {
   'use strict';
 
+  // Keep tracking and form handlers single-owned if this shared script is included twice.
+  if (window.__icpAnalyticsInitialized) return;
+  window.__icpAnalyticsInitialized = true;
+
   var measurementId = 'G-MQY10GFCR8';
+  var productionHost = /^(www\.)?icolorpacks\.com$/i.test(window.location.hostname);
+  var qaVisit = new URLSearchParams(window.location.search).get('icp_qa') === '1';
+  var analyticsEnabled = productionHost && !qaVisit;
+  // Forms remain available on previews; only measurement is disabled.
+  if (!analyticsEnabled) window['ga-disable-' + measurementId] = true;
   var formEndpoint = 'formspree.io/f/maeypklz';
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
 
-  if (!document.querySelector('script[data-icp-ga4]')) {
+  if (analyticsEnabled && !document.querySelector('script[data-icp-ga4]')) {
     var gaScript = document.createElement('script');
     gaScript.async = true;
     gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
@@ -15,11 +24,13 @@
     document.head.appendChild(gaScript);
   }
 
-  window.gtag('js', new Date());
-  window.gtag('config', measurementId, {
-    send_page_view: true,
-    transport_type: 'beacon'
-  });
+  if (analyticsEnabled) {
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, {
+      send_page_view: true,
+      transport_type: 'beacon'
+    });
+  }
 
   function pageType() {
     var path = window.location.pathname;
@@ -120,20 +131,18 @@
       if (completedLead) {
         try {
           var leadContext = JSON.parse(completedLead);
+          if (!leadContext || !leadContext.form_id || !leadContext.page_path) throw new Error('Invalid lead context');
           window.gtag('event', 'generate_lead', {
             lead_source: 'website_form',
             form_id: leadContext.form_id,
             page_type: leadContext.page_type,
             source_path: leadContext.page_path,
+            source_page_path: leadContext.page_path,
             page_path: window.location.pathname,
             transport_type: 'beacon'
           });
         } catch (ignore) {
-          window.gtag('event', 'generate_lead', {
-            lead_source: 'website_form',
-            page_path: window.location.pathname,
-            transport_type: 'beacon'
-          });
+          // A direct visit or invalid token must not create a successful inquiry.
         }
         sessionStorage.removeItem('icp_lead_completed');
       }
