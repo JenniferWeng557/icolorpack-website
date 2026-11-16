@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.custom-json-schema.example/wrangler",
+  "name": "icolorpack-website",
+  "compatibility_date": "2026-11-16",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
