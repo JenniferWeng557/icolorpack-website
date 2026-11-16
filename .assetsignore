@@ -1,9 +1,10 @@
 # Keep site files at the repository root deployable; omit source-only and duplicate files.
 .assetsignore
+wrangler.jsonc
 .gitignore
 /public/
- /scripts/
- /low-moq-review-20261010/
+/scripts/
+/low-moq-review-20261010/
 *.md
 *.py
 *.ps1
