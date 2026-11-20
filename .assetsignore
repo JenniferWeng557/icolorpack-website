@@ -27,3 +27,9 @@ wrangler.jsonc
 /final_deploy_jewelry.html
 /final_deploy_low_moq.html
 /packaging-for-clothing-boutiques-split.html
+
+# Build metadata and local dependencies are never website assets.
+/.git/
+/.github/
+/.wrangler/
+/node_modules/
